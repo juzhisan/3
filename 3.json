@@ -249,7 +249,8 @@
 				"type": "rect",
 				"ratio": 1.77
 			}
-		},{"key":"TGDouban","name":"TG豆瓣","type":3,"api":"csp_TGDouban","timeout":120, 
+		},
+  {"key":"TGDouban","name":"TG豆瓣","type":3,"api":"csp_TGDouban","timeout":120, 
 			"ext":{
 				"token":"./lib/tokenm.json",
 				"json":"./lib/tgsearch.json",
@@ -266,62 +267,7 @@
 				"ratio": 1.77
 			}
 		},
-    {
-      "key": "Wexzhizhen",
-      "name": "💓至臻┃4K💓",
-      "type": 3,
-      "api": "csp_Wexzhizhen",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
-      "key": "Wexwanni",
-      "name": "💓玩你┃4K💓",
-      "type": 3,
-      "api": "csp_Wexwanni",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "玩偶",
-      "name": "💓‍玩偶┃4K💓‍",
-      "type": 3,
-      "api": "csp_Wogg",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
-      "key": "Wexbaozitv",
-      "name": "🎇包子┃秒播🎇",
-      "type": 3,
-      "api": "csp_Wexbaozitv",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Wexed3000",
-      "name": "🎠易迪┃综合🎠",
-      "type": 3,
-      "api": "csp_Wexed3000",
-      "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
-      "key": "Wexmiso",
-      "name": "🎠米搜┃综合🎠",
-      "type": 3,
-      "api": "csp_Wexmiso",
-      "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
-      "key": "Wexliyuan",
-      "name": "🎎戏曲┃秒播🎎",
-      "type": 3,
-      "api": "csp_Wexliyuan",
-      "searchable": 1,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 2
-      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
+   {
       "key": "夸克云星弹幕",
       "name": "云星资源｜4K弹幕",
       "type": 3,
@@ -584,44 +530,6 @@
                 "欧美综艺"
             ]
         },
-   {
-      "key": "Wextyso",
-      "name": "🎠给力┃天逸🎠",
-      "type": 3,
-      "api": "csp_Wextyso",
-      "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
-      "key": "Wexshandian",
-      "name": "🌺闪电┃秒播🌺",
-      "type": 3,
-      "api": "csp_Wexshandian",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
-      "key": "Wexkoukou",
-      "name": "🌺扣扣┃4K🌺",
-      "type": 3,
-      "api": "csp_Wexkoukou",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Wexkoukou2",
-      "name": "🌺扣扣┃4K2🌺",
-      "type": 3,
-      "api": "csp_Wexkoukou2",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Wexjiazitv",
-      "name": "🌺甲子┃4K🌺",
-      "type": 3,
-      "api": "csp_Wexjiazitv",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
     {
       "key": "荐片",
       "name": "🎬荐片┃磁力",
