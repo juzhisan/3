@@ -68,6 +68,27 @@
       "changeable": 0,
       "ext": "http://www.mucpan.cc","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
+    {
+      "key": "csp_zhizhen",
+      "name": "🌹米QK┃4K4K",
+      "type": 3,
+      "api": "csp_Duopan",
+      "changeable": 0,
+      "filterable": 1,
+      "ext": {
+        "site_urls": [
+          "http://mucpan.cc",
+          "http://mihdr.top"
+        ]
+      },"jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+    },
+    {
+      "key": "米搜",
+      "name": "🌾米搜┃4K4K",
+      "type": 3,
+      "api": "csp_MiSou",
+      "changeable": 0,"jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+    },
  {
             "key": "yyds",
             "name": "多多影音┃网盘pg",
