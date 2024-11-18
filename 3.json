@@ -233,6 +233,90 @@
 			}
 		},
 	{"key":"Panta","name":"盘Ta","type":3,"api":"csp_Panta","quickSearch":1, "changeable":1, "filterable":1, "timeout":30, "ext":"./lib/token.json$$$https://www.91panta.cn/$$$null$$$1","jar": ""},
+	{
+      "key": "TGDouban",
+      "name": "TG豆瓣｜小白推荐",
+      "type": 3,
+      "api": "csp_TGDouban",
+      "jar": "https://gitee.com/lanny520/tv/raw/master/pg.txt",
+      "timeout": 120,
+      "ext": {
+        "token": "./lib/tokenm.json",
+        "json": "https://gitee.com/lanny520/tv/raw/master/pg/tgsearch.json",
+        "keywords": "名称,片名,推荐",
+        "tgsearch_url": "http://127.0.0.1:10199",
+        "tgsearch_media_url": "http://127.0.0.1:10199",
+        "channellist": "alypzyhzq|1000,Mbox115|1000,shares_115|1000,Quark_Share_Channel|1000,Aliyundrive_Share_Channel|1000,wanwansubchat|1000",
+        "proxy": "noproxy",
+        "douban": "https://gitee.com/lanny520/tv/raw/master/pg/douban.json",
+        "danmu": true
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 0.7
+      }
+    },
+    {
+      "key": "TGYunPanLocal",
+      "name": "TG频道搜索 ｜4k纯净",
+      "type": 3,
+      "api": "csp_TGYunPanLocal",
+      "jar": "https://gitee.com/lanny520/tv/raw/master/pg.txt",
+      "timeout": 120,
+      "ext": {
+        "token": "./lib/tokenm.json",
+        "json": "https://gitee.com/lanny520/tv/raw/master/pg/tgsearch.json",
+        "keywords": "名称,片名,推荐",
+        "tgsearch_url": "http://127.0.0.1:10199",
+        "tgsearch_media_url": "http://127.0.0.1:10199",
+        "channellist": "oneonefivewpfx,hao115,guaguale115,Channel_Shares_115,dianyingshare,XiangxiuNB,yunpanpan,kuakeyun,zaihuayun,Quark_Movies,vip115hot,yunpanshare,shareAliyun,ikiviyyp,alyp_1,quanziyuanshe",
+        "proxy": "proxy",
+        "danmu": true
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 1.77
+      }
+    },
+    {
+      "key": "TGYunPan",
+      "name": "TG群组搜索｜4k纯净",
+      "type": 3,
+      "api": "csp_TGYunPan",
+      "jar": "https://gitee.com/lanny520/tv/raw/master/pg.txt",
+      "timeout": 120,
+      "ext": {
+        "token": "./lib/tokenm.json",
+        "json": "https://gitee.com/lanny520/tv/raw/master/pg/tgsearch.json",
+        "keywords": "名称,片名,推荐",
+        "tgsearch_url": "http://127.0.0.1:10199",
+        "tgsearch_media_url": "http://127.0.0.1:10199",
+        "channellist": "alypzyhzq|1000,Mbox115|1000,shares_115|1000,Quark_Share_Channel|1000,Aliyundrive_Share_Channel|1000,wanwansubchat|1000",
+        "proxy": "noproxy",
+        "danmu": true
+      },
+      "style": {
+        "type": "rect",
+        "ratio": 1.77
+      }
+    },
+    {
+      "key": "夸克欧歌弹幕",
+      "name": "欧歌资源｜4K弹幕",
+      "type": 3,
+      "api": "csp_Wobg",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+        "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
+        "site": "https://woog.nxog.eu.org",
+        "danmu": true
+      },"jar":"https://gitee.com/lanny520/tv/raw/master/lanny520.txt"
+    },
 {
       "key": "push_agent",
       "name": "🛴手机┃推送",
