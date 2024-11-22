@@ -59,6 +59,7 @@
         "share": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xiaoya.json"
       },"jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/zx.jar"
     },
+    {"key":"六趣网盘","name":"六趣┃网盘","type":3,"api":"csp_Wobg","jar":"https://jk.123zy.cool/jar/danmu.jar","searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"ext":{"token":"http://127.0.0.1:9978/file/TVBox/token.txt","cookie":"http://127.0.0.1:9978/file/TVBox/quark.txt","uc_cookie":"http://127.0.0.1:9978/file/TVBox/uc.txt","site":"https://wp.0v.fit","danmu":true}},
   {"key":"配置中心","name":"配置中心","type":3,"api":"csp_Config","searchable":0,"changeable":0,"style":{"type":"rect","ratio":1},"ext":"./lib/token.json","jar": ""},
   {
       "key": "csp_xiaomi",
@@ -238,7 +239,7 @@
       "name": "TG豆瓣｜小白推荐",
       "type": 3,
       "api": "csp_TGDouban",
-      "jar": "https://gitee.com/lanny520/tv/raw/master/pg.txt",
+      "jar": "",
       "timeout": 120,
       "ext": {
         "token": "./lib/tokenm.json",
@@ -261,7 +262,7 @@
       "name": "TG频道搜索 ｜4k纯净",
       "type": 3,
       "api": "csp_TGYunPanLocal",
-      "jar": "https://gitee.com/lanny520/tv/raw/master/pg.txt",
+      "jar": "",
       "timeout": 120,
       "ext": {
         "token": "./lib/tokenm.json",
@@ -283,7 +284,7 @@
       "name": "TG群组搜索｜4k纯净",
       "type": 3,
       "api": "csp_TGYunPan",
-      "jar": "https://gitee.com/lanny520/tv/raw/master/pg.txt",
+      "jar": "",
       "timeout": 120,
       "ext": {
         "token": "./lib/tokenm.json",
@@ -328,6 +329,32 @@
         "aliToken": "tvfan/token.txt",
         "quarkCookie": "tvfan/cookie.txt",
         "from": "4k|auto|fhd"
+      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
+    },
+    {
+      "key": "抠搜",
+      "name": "🍄抠抠┃搜搜",
+      "type": 3,
+      "api": "csp_KkSs",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": {
+        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "from": "4k|auto"
+      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
+    },
+    {
+      "key": "UC",
+      "name": "🌈优汐┃搜搜",
+      "type": 3,
+      "api": "csp_UuSs",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": {
+        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "from": "4k|auto"
       },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
     },
     {
@@ -437,6 +464,33 @@
       "filterable": 1,
       "click": "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();",
       "ext": "https://fantuan.vip/","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+    },
+    {
+      "key": "天天",
+      "name": "☁️天天┃1080P",
+      "type": 3,
+      "api": "csp_TTian",
+      "playerType": 2,
+      "ext": "baHR0cDovL29wLnlzZHFqcy5jbg==",
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1732107398295/qj.jar;md5;68959abc51dbfcba14fb08d537dbf230"
+    },
+    {
+      "key": "🌟客星",
+      "name": "🌟客星┃1080P",
+      "type": 3,
+      "api": "csp_Xdai",
+      "playerType": 2,
+      "ext": "caHR0cHM6Ly9zYzEwODAudG9wfGU1OWQ0NGIyZWVmMDNiYTJ8ZTU5ZDQ0YjJlZWYwM2JhMg==",
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1732107398295/qj.jar;md5;68959abc51dbfcba14fb08d537dbf230"
+    },
+    {
+      "key": "繁荣",
+      "name": "🥝凡人┃1080P",
+      "type": 3,
+      "api": "csp_Frong",
+      "playerType": 2,
+      "ext": "FMy4wLjJ8aHR0cDovLzQzLjI0OC4xMjguMTM4OjgxMzN8NDJmN2EyMDl8MjV8NTY4Njg1NDM0RkVDN0M4QzI5MEFFNEZCMzI1RkYxMzB8c2hpamllbWFvdHZ8MzNhN2ZmYTljODU0MTJjNzQyZjdhMjA5fDI1fDU2ODY4NTQzNEZFQzdDOEMyOTBBRTRGQjMyNUZGMTMwfHNoaWppZW1hb3R2fDMzYTdmZmE5Yzg1NDEyYzc=",
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1732107398295/qj.jar;md5;68959abc51dbfcba14fb08d537dbf230"
     },
     {
       "key": "hipy_闪电",
@@ -615,7 +669,7 @@
       "changeable": 0,
       "ext": "https://gitee.com/XIYANkong123/536992286/raw/moyuer/mgtv.js"
     },
-    { "key": "hipy_js_腾云驾雾[官]", "name": "🌞腾腾┃解析", "type": 3, "api": "http://154.9.252.167:666/tvbox/js/drpy_libs/drpy2.min.js", "searchable": 1, "quickSearch": 1, "filterable": 1, "order_num": 0, "changeable": 0, "ext": "https://gitee.com/smallmi1007/mimi/raw/master/tm.js" },
+    { "key": "hipy_js_腾云驾雾[官]", "name": "🌞腾腾┃解析", "type": 3, "api": "https://3450.kstore.vip/js/drpy_libs/drpy2.js", "searchable": 1, "quickSearch": 1, "filterable": 1, "order_num": 0, "changeable": 0, "ext": "https://gitee.com/smallmi1007/mimi/raw/master/tm.js" },
    {
       "key": "guoguo",
       "name": "🌞果果┃解析",
