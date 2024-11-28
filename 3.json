@@ -53,7 +53,7 @@
       "api": "csp_Wexconfig",
       "searchable": 0,
       "changeable": 0,
-      "indexs": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "indexs": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {"key":"网盘集合","name":"🅿网盘集合|4K","type":3,"api":"csp_网盘集合","searchable":1,"filterable":0,"switchable":0,"ext":{"commonConfig":"http://127.0.0.1:9978/file/TVBox/peizhi.json","share":"https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/网盘集合.json"},"jar":"https://jihulab.com/Yoursmile/TVbox/-/raw/master/Yoursmile.jar"},
     {"key":"六趣网盘","name":"六趣┃网盘","type":3,"api":"csp_Wobg","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/danmu.jar","searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"ext":{"token":"http://127.0.0.1:9978/file/TVBox/token.txt","cookie":"http://127.0.0.1:9978/file/TVBox/quark.txt","uc_cookie":"http://127.0.0.1:9978/file/TVBox/uc.txt","site":"https://wp.0v.fit","danmu":true}},
@@ -266,14 +266,14 @@
       "type": 3,
       "api": "csp_Wexed3000",
       "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },{
       "key": "Wexmiso",
       "name": "🎠米搜┃综合🎠",
       "type": 3,
       "api": "csp_Wexmiso",
       "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "易搜",
@@ -281,7 +281,7 @@
       "type": 3,
       "api": "csp_YiSo",
       "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "盤搜",
@@ -289,7 +289,7 @@
       "type": 3,
       "api": "csp_PanSearch",
       "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "Wexyingso",
@@ -297,7 +297,7 @@
       "type": 3,
       "api": "csp_Wexyingso",
       "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "Wexzhizhen",
@@ -305,7 +305,7 @@
       "type": 3,
       "api": "csp_Wexzhizhen",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "Wexwanni",
@@ -313,7 +313,7 @@
       "type": 3,
       "api": "csp_Wexwanni",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "玩偶",
@@ -321,7 +321,7 @@
       "type": 3,
       "api": "csp_Wogg",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "115",
@@ -333,21 +333,21 @@
       "timeout": 50,
       "style": {
         "type": "list"
-      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },{
       "key": "Wexmuougg",
       "name": "💓木偶┃4K💓",
       "type": 3,
       "api": "csp_Wexmuougg",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },{
       "key": "Wexlabi",
       "name": "💓蜡笔┃4K💓",
       "type": 3,
       "api": "csp_Wexlabi",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "Wexbaozitv",
@@ -355,7 +355,7 @@
       "type": 3,
       "api": "csp_Wexbaozitv",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },{
       "key": "Wextyso",
       "name": "🎠给力┃天逸🎠",
@@ -418,15 +418,15 @@
     },
     {
       "key": "csp_饭团",
-      "name": "🍙饭团┃点击",
+      "name": "🍙饭团┃1080P",
       "type": 3,
       "searchable": 1,
       "changeable": 1,
-      "api": "csp_FanTuan",
+      "api": "csp_Fantuan",
       "playerType": 2,
       "filterable": 1,
       "click": "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();",
-      "ext": "https://fantuan.vip/","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+      "ext": "https://fantuan.vip/"
     },
     {
       "key": "Auete",
@@ -567,7 +567,7 @@
       "type": 3,
       "api": "csp_Wexshandian",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "Wexkoukou",
@@ -575,7 +575,7 @@
       "type": 3,
       "api": "csp_Wexkoukou",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "Wexduboku",
@@ -583,7 +583,7 @@
       "type": 3,
       "api": "csp_Wexduboku",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "Diduanys",
@@ -591,7 +591,7 @@
       "type": 3,
       "api": "csp_WexDiduanys",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "Wex4Kav",
@@ -599,7 +599,7 @@
       "type": 3,
       "api": "csp_Wex4Kav",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "Wexbaipiao",
@@ -607,7 +607,7 @@
       "type": 3,
       "api": "csp_Wexbaipiao",
       "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "Wexliyuan",
@@ -619,7 +619,7 @@
       "style": {
         "type": "rect",
         "ratio": 2
-      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "荐片",
