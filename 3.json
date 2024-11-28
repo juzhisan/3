@@ -118,7 +118,68 @@
       "type": 3,
       "api": "csp_MiSou",
       "changeable": 0,"jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
-    },
+    },{
+      "key": "蜡笔网盘",
+      "name": "蜡笔┃网盘pg",
+      "type": 3,
+      "api": "csp_Wobg",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "ext": "./lib/tokenm.json$$$https://duopan.fun/$$$noproxy$$$1$$$./lib/wogg.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+    },{
+            "key": "Mogg",
+            "name": "木偶哥哥┃网盘pg",
+            "type": 3,
+            "api": "csp_Wobg",
+            "quickSearch": 1,
+            "changeable": 1,
+            "filterable": 1,
+            "timeout": 60,
+            "ext": "./lib/tokenm.json$$$http://mogg.top/$$$noproxy$$$1$$$./lib/wogg.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+        },{
+            "key": "混合盘",
+            "name": "混合盘┃网盘搜索pg",
+            "type": 3,
+            "api": "csp_HunHePan",
+            "timeout": 60,
+            "ext": "./lib/tokenm.json",
+            "style": {
+                "type": "list",
+                "ratio": 1.1
+            },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+        },{
+            "key": "秒搜",
+            "name": "秒搜┃网盘搜索pg",
+            "type": 3,
+            "api": "csp_MiaoSou",
+            "timeout": 60,
+            "ext": "./lib/tokenm.json",
+            "style": {
+                "type": "list",
+                "ratio": 1.1
+            },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+        },{
+            "key": "易搜",
+            "name": "易搜┃网盘搜索pg",
+            "type": 3,
+            "api": "csp_YiSo",
+            "quickSearch": 1,
+            "changeable": 1,
+            "filterable": 1,
+            "timeout": 60,
+            "ext": "./lib/tokenm.json$$$./lib/yiso.txt","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+        },{
+            "key": "小纸条",
+            "name": "小纸条┃网盘搜索pg",
+            "type": 3,
+            "api": "csp_XiaoZhiTiao",
+            "searchable": 1,
+            "filterable": 1,
+            "changeable": 0,
+            "ext": "./lib/tokenm.json$$$https://ali.gitcafe.ink/$$$null$$$1","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+        },
  {
             "key": "yyds",
             "name": "多多影音┃网盘pg",
@@ -129,7 +190,52 @@
             "filterable": 1,
             "timeout": 60,
             "ext": "./lib/tokenm.json$$$https://tv.yydsys.cc/$$$noproxy$$$1$$$./lib/wogg.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-        },		
+        },
+   {
+            "key": "Wogg",
+            "name": "玩偶哥哥┃网盘pg",
+            "type": 3,
+            "api": "csp_Wogg",
+            "quickSearch": 1,
+            "changeable": 1,
+            "filterable": 1,
+            "timeout": 60,
+            "ext": "./lib/tokenm.json$$$https://wogg.xxooo.cf/$$$noproxy$$$1$$$./lib/wogg.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+        },	
+     {
+      "key": "夸克奥秘",
+      "name": "奥秘┃网盘pg",
+      "type": 3,
+      "api": "csp_Wobg",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "ext": "./lib/tokenm.json$$$https://vip.omii.top$$$noproxy$$$1$$$./lib/wogg.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+    },{
+      "key": "Ppxzy",
+      "name": "皮皮虾┃网盘pg",
+      "type": 3,
+      "api": "csp_Ppxzy",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "ext": "./lib/tokenm.json$$$https://ppxzy.ink$$$proxy$$$1","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+    },
+	{"key":"YingSo","name":"影搜|网盘pg","type":3,"api":"csp_YingSo","timeout":60, "ext":"./lib/tokenm.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"},
+	{"key":"Funletu","name":"趣盘搜|夸克pg","type":3,"api":"csp_Funletu","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json",
+			"style": {
+				"type": "list",
+				"ratio": 1.1
+			},"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+		},
+		{"key":"PikaSo","name":"皮卡搜|pg","type":3,"api":"csp_PikaSo","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://www.pikaso.top/$$$null",
+			"style": {
+				"type": "list",
+				"ratio": 1.1
+			},"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+		},	
     {
       "key": "Libvio",
       "name": "LIBVIO|pg",
@@ -260,103 +366,7 @@
       "searchable": 1,
       "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
     },
-    {
-      "key": "Wexed3000",
-      "name": "🎠易迪┃综合🎠",
-      "type": 3,
-      "api": "csp_Wexed3000",
-      "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
-      "key": "Wexmiso",
-      "name": "🎠米搜┃综合🎠",
-      "type": 3,
-      "api": "csp_Wexmiso",
-      "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "易搜",
-      "name": "🎠易搜┃综合🎠",
-      "type": 3,
-      "api": "csp_YiSo",
-      "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "盤搜",
-      "name": "🎠盤搜┃综合🎠",
-      "type": 3,
-      "api": "csp_PanSearch",
-      "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Wexyingso",
-      "name": "🎠影子┃综合🎠",
-      "type": 3,
-      "api": "csp_Wexyingso",
-      "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Wexzhizhen",
-      "name": "💓至臻┃4K💓",
-      "type": 3,
-      "api": "csp_Wexzhizhen",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Wexwanni",
-      "name": "💓玩你┃4K💓",
-      "type": 3,
-      "api": "csp_Wexwanni",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "玩偶",
-      "name": "💓‍玩偶┃4K💓‍",
-      "type": 3,
-      "api": "csp_Wogg",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "115",
-      "name": "💓‍115┃4K💓‍",
-      "type": 3,
-      "api": "csp_Wex115share",
-      "searchable": 1,
-      "changeable": 1,
-      "timeout": 50,
-      "style": {
-        "type": "list"
-      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
-      "key": "Wexmuougg",
-      "name": "💓木偶┃4K💓",
-      "type": 3,
-      "api": "csp_Wexmuougg",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
-      "key": "Wexlabi",
-      "name": "💓蜡笔┃4K💓",
-      "type": 3,
-      "api": "csp_Wexlabi",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Wexbaozitv",
-      "name": "🎇包子┃秒播🎇",
-      "type": 3,
-      "api": "csp_Wexbaozitv",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
+   {
       "key": "Wextyso",
       "name": "🎠给力┃天逸🎠",
       "type": 3,
@@ -561,22 +571,6 @@
       "api": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/guot55/yg/main/lib/drpy2.min.js",
       "ext": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/guot55/yg/main/lib/mr.js"
     },
-   {
-      "key": "Wexshandian",
-      "name": "🌺闪电┃秒播🌺",
-      "type": 3,
-      "api": "csp_Wexshandian",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Wexkoukou",
-      "name": "🌺扣扣┃4K🌺",
-      "type": 3,
-      "api": "csp_Wexkoukou",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
     {
       "key": "Wexduboku",
       "name": "🎇独播┃秒播🎇",
@@ -584,42 +578,6 @@
       "api": "csp_Wexduboku",
       "searchable": 1,
       "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Diduanys",
-      "name": "🎇深渊┃秒播🎇",
-      "type": 3,
-      "api": "csp_WexDiduanys",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Wex4Kav",
-      "name": "🎇急速┃秒播🎇",
-      "type": 3,
-      "api": "csp_Wex4Kav",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Wexbaipiao",
-      "name": "🎇星星┃秒播🎇",
-      "type": 3,
-      "api": "csp_Wexbaipiao",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "Wexliyuan",
-      "name": "🎎戏曲┃秒播🎎",
-      "type": 3,
-      "api": "csp_Wexliyuan",
-      "searchable": 1,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 2
-      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "荐片",
