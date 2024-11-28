@@ -1,4 +1,4 @@
-{ "spider":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar", "wallpaper":"http://我不是.摸鱼儿.com/wallpaper/moyu.php", 
+{ "spider":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/spider.jar", "wallpaper":"http://我不是.摸鱼儿.com/wallpaper/moyu.php", 
  "sites":[{
       "key": "豆豆",
       "name": "豆瓣┃主页",
@@ -67,9 +67,21 @@
       "searchable": 0,
       "changeable": 0,
       "indexs": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
+    },{
+			"key": "网盘配置",
+			"name": "TG搜索｜配置中心",
+			"type": 3,
+			"api": "csp_Config",
+			"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar",
+			"searchable": 0,
+			"changeable": 0,
+			"ext":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/pg/tokenm.json",
+			"style": {
+				"type": "rect",
+				"ratio": 1.5
+			}
+		},
     {"key":"网盘集合","name":"🅿网盘集合|4K","type":3,"api":"csp_网盘集合","searchable":1,"filterable":0,"switchable":0,"ext":{"commonConfig":"http://127.0.0.1:9978/file/TVBox/peizhi.json","share":"https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/网盘集合.json"},"jar":"https://jihulab.com/Yoursmile/TVbox/-/raw/master/Yoursmile.jar"},
-    {"key":"六趣网盘","name":"六趣┃网盘","type":3,"api":"csp_Wobg","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/danmu.jar","searchable":1,"quickSearch":1,"filterable":1,"changeable":1,"ext":{"token":"http://127.0.0.1:9978/file/TVBox/token.txt","cookie":"http://127.0.0.1:9978/file/TVBox/quark.txt","uc_cookie":"http://127.0.0.1:9978/file/TVBox/uc.txt","site":"https://wp.0v.fit","danmu":true}},
  {
       "key": "csp_Wogg",
       "name": "🧸玩偶┃4K4K",
@@ -131,220 +143,410 @@
       "type": 3,
       "api": "csp_MiSou",
       "changeable": 0,"jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
-    },{
-      "key": "蜡笔网盘",
-      "name": "蜡笔┃网盘pg",
-      "type": 3,
-      "api": "csp_Wobg",
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 60,
-      "ext": "./lib/tokenm.json$$$https://duopan.fun/$$$noproxy$$$1$$$./lib/wogg.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-    },{
-            "key": "Mogg",
-            "name": "木偶哥哥┃网盘pg",
+    },
+ {
+            "key": "玩偶弹幕",
+            "name": "玩偶哥哥｜4K弹幕",
+            "type": 3,
+            "api": "csp_Wogg",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
+                "wogg": true,
+                "danmu": true
+            }
+        },
+		{
+            "key": "夸克多多弹幕",
+            "name": "多多资源｜4K弹幕",
             "type": 3,
             "api": "csp_Wobg",
             "quickSearch": 1,
             "changeable": 1,
             "filterable": 1,
-            "timeout": 60,
-            "ext": "./lib/tokenm.json$$$http://mogg.小胡.top/$$$noproxy$$$1$$$./lib/wogg.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-        },{
-            "key": "混合盘",
-            "name": "混合盘┃网盘搜索pg",
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "site": "https://tv.yydsys.top",
+                "danmu": true
+            }
+        },
+        {
+            "key": "夸克木偶弹幕",
+            "name": "木偶哥哥｜4K弹幕",
             "type": 3,
-            "api": "csp_HunHePan",
-            "timeout": 60,
-            "ext": "./lib/tokenm.json",
-            "style": {
-                "type": "list",
-                "ratio": 1.1
-            },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-        },{
-            "key": "秒搜",
-            "name": "秒搜┃网盘搜索pg",
-            "type": 3,
-            "api": "csp_MiaoSou",
-            "timeout": 60,
-            "ext": "./lib/tokenm.json",
-            "style": {
-                "type": "list",
-                "ratio": 1.1
-            },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-        },{
-            "key": "易搜",
-            "name": "易搜┃网盘搜索pg",
-            "type": 3,
-            "api": "csp_YiSo",
+            "api": "csp_Wobg",
             "quickSearch": 1,
             "changeable": 1,
             "filterable": 1,
-            "timeout": 60,
-            "ext": "./lib/tokenm.json$$$./lib/yiso.txt","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-        },{
-            "key": "小纸条",
-            "name": "小纸条┃网盘搜索pg",
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
+                "site": "http://mogg.小胡.top",
+                "danmu": true
+            }
+        },
+        {
+            "key": "夸克欧歌弹幕",
+            "name": "欧歌资源｜4K弹幕",
+            "type": 3,
+            "api": "csp_Wobg",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
+                "site": "https://woog.nxog.eu.org",
+                "danmu": true
+            }
+        },      
+        {
+            "key": "夸克蜡笔弹幕",
+            "name": "蜡笔资源｜4K弹幕",
+            "type": 3,
+            "api": "csp_Wobg",
+            "quickSearch": 1,
+            "changeable": 1,
+            "filterable": 1,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "site": "http://duopan.fun",
+                "danmu": true
+            }
+        },
+        {
+            "key": "夸克至臻弹幕",
+            "name": "至臻资源｜4K弹幕",
+            "type": 3,
+            "api": "csp_Wobg",
+            "quickSearch": 1,
+            "changeable": 1,
+            "filterable": 1,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
+                "site": "https://mihdr.top",
+                "danmu": true
+            }
+        },
+        {
+            "key":"六趣网盘",
+            "name":"六趣资源┃4k弹幕",
+            "type":3,
+            "api":"csp_Wobg",
+            "searchable":1,
+            "quickSearch":1,
+            "filterable":1,
+            "changeable":1,
+            "ext":
+               {"token":"http://127.0.0.1:9978/file/TVBox/token.txt",
+               "cookie":"http://127.0.0.1:9978/file/TVBox/quark.txt",
+               "uc_cookie":"http://127.0.0.1:9978/file/TVBox/uc.txt",
+               "site":"https://wp.0v.fit",
+               "danmu":true
+               }
+        },
+        {
+		    "key":"TGDouban",
+		    "name":"TG豆瓣｜小白推荐",
+		    "type":3,
+		    "api":"csp_TGDouban",
+		    "jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar",
+		    "timeout":120, 
+			"ext":{
+				"token":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/pg/tokenm.json",
+				"json":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/pg/tgsearch.json",
+				"keywords":"名称,片名,推荐",
+				"tgsearch_url":"http://127.0.0.1:10199",
+				"tgsearch_media_url":"http://127.0.0.1:10199",
+				"channellist":"alypzyhzq|1000,Mbox115|1000,shares_115|1000,Quark_Share_Channel|1000,Aliyundrive_Share_Channel|1000,wanwansubchat|1000",
+				"proxy":"noproxy",
+				"douban":"./pg/douban.json",
+				"danmu":true
+			},
+			"style": {
+				"type": "rect",
+				"ratio": 0.7
+			}
+		},
+	   { 
+	        "key":"TGYunPanLocal",   
+	        "name":"TG频道搜索",
+	        "type":3,
+	        "api":"csp_TGYunPanLocal",
+	        "jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar",
+	        "timeout":120, 
+			"ext":{
+				"token":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/pg/tokenm.json",
+				"json":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/pg/tgsearch.json",
+				"keywords":"名称,片名,推荐",
+				"tgsearch_url":"http://127.0.0.1:10199",
+				"tgsearch_media_url":"http://127.0.0.1:10199",
+				"channellist":"oneonefivewpfx,hao115,guaguale115,Channel_Shares_115,dianyingshare,XiangxiuNB,yunpanpan,kuakeyun,zaihuayun,Quark_Movies,vip115hot,yunpanshare,shareAliyun,ikiviyyp,alyp_1,quanziyuanshe",
+				"proxy":"proxy",
+				"danmu":true
+			},
+			"style": {
+				"type": "rect",
+				"ratio": 1.77
+			}
+		},
+		{
+	     	"key":"TGYunPan",
+	    	"name":"TG群组搜索",
+	    	"type":3,
+	    	"api":"csp_TGYunPan",    
+	    	"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar",
+	    	"timeout":120, 
+			"ext":{
+				"token":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/pg/tokenm.json",
+				"json":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/pg/tgsearch.json",
+				"keywords":"名称,片名,推荐",
+				"tgsearch_url":"http://127.0.0.1:10199",
+				"tgsearch_media_url":"http://127.0.0.1:10199",
+				"channellist":"alypzyhzq|1000,Mbox115|1000,shares_115|1000,Quark_Share_Channel|1000,Aliyundrive_Share_Channel|1000,wanwansubchat|1000",
+				"proxy":"noproxy",
+				"danmu":true
+			},
+			"style": {
+				"type": "rect",
+				"ratio": 1.77
+			}
+		},
+        {
+            "key": "夸克影搜弹幕",
+            "name": "影搜｜弹幕",
+            "type": 3,
+            "api": "csp_Yingso",
+            "searchable": 1,
+            "filterable": 0,
+            "changeable": 1,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "danmu": true
+            }
+        },
+        {
+            "key": "搜索弹幕",
+            "name": "搜索｜弹幕",
+            "type": 3,
+            "api": "csp_PanSearch",
+            "searchable": 1,
+            "filterable": 0,
+            "changeable": 1,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "danmu": true
+            }
+        },
+        {
+            "key": "云云弹幕",
+            "name": "云云｜弹幕",
+            "type": 3,
+            "api": "csp_Upys",
+            "searchable": 1,
+            "filterable": 0,
+            "changeable": 1,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "danmu": true
+            }
+        },
+        {
+            "key": "云搜弹幕",
+            "name": "云搜｜弹幕",
+            "type": 3,
+            "api": "csp_UpYun",
+            "searchable": 1,
+            "filterable": 0,
+            "changeable": 1,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "danmu": true
+            }
+        },
+        {
+            "key": "盘搜弹幕",
+            "name": "盘搜｜弹幕",
+            "type": 3,
+            "api": "csp_PanSou",
+            "searchable": 1,
+            "filterable": 0,
+            "changeable": 1,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "danmu": true
+            }
+        },
+        {
+            "key": "易搜弹幕",
+            "name": "易搜｜弹幕",
+            "type": 3,
+            "api": "csp_YiSo",
+            "searchable": 1,
+            "filterable": 0,
+            "changeable": 1,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "danmu": true,
+                "cookie": "satoken=0eedba28-be8a-4f01-81af-2d8d44808ecf"
+            }
+        },
+        {
+            "key": "云盘弹幕",
+            "name": "云盘｜弹幕",
+            "type": 3,
+            "api": "csp_Yunpan4k",
+            "searchable": 1,
+            "filterable": 0,
+            "changeable": 1,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "danmu": true
+            }
+        },
+        {
+            "key": "米搜弹幕",
+            "name": "米搜｜弹幕",
+            "type": 3,
+            "api": "csp_Qkpanso",
+            "searchable": 1,
+            "filterable": 1,
+            "changeable": 0,
+            "ext": {
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "site": "https://www.misou.fun",
+                "danmu": true
+            }
+        },
+        {
+            "key": "夸搜弹幕",
+            "name": "夸搜｜弹幕",
+            "type": 3,
+            "api": "csp_Qkso",
+            "searchable": 1,
+            "filterable": 1,
+            "changeable": 0,
+            "ext": {
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "danmu": true
+            }
+        },
+        {
+            "key": "小纸条弹幕",
+            "name": "小纸条｜弹幕",
             "type": 3,
             "api": "csp_XiaoZhiTiao",
             "searchable": 1,
             "filterable": 1,
             "changeable": 0,
-            "ext": "./lib/tokenm.json$$$https://ali.gitcafe.ink/$$$null$$$1","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+                "danmu": true
+            }
         },
- {
-            "key": "yyds",
-            "name": "多多影音┃网盘pg",
+        {
+            "key": "夸克趣盘搜弹幕",
+            "name": "趣盘搜｜弹幕",
             "type": 3,
-            "api": "csp_Wobg",
+            "api": "csp_QuPanSou",
+            "searchable": 1,
             "quickSearch": 1,
-            "changeable": 1,
             "filterable": 1,
-            "timeout": 60,
-            "ext": "./lib/tokenm.json$$$https://tv.yydsys.cc/$$$noproxy$$$1$$$./lib/wogg.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
+            "changeable": 1,
+            "ext": {
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "danmu": true
+            }
         },
-   {
-            "key": "Wogg",
-            "name": "玩偶哥哥┃网盘pg",
+        {
+            "key": "夸克爱盘搜弹幕",
+            "name": "爱盘搜｜弹幕",
             "type": 3,
-            "api": "csp_Wogg",
+            "api": "csp_AiPanSou",
+            "searchable": 1,
             "quickSearch": 1,
-            "changeable": 1,
             "filterable": 1,
-            "timeout": 60,
-            "ext": "./lib/tokenm.json$$$https://wogg.xxooo.cf/$$$noproxy$$$1$$$./lib/wogg.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-        },	
-     {
-      "key": "夸克奥秘",
-      "name": "奥秘┃网盘pg",
-      "type": 3,
-      "api": "csp_Wobg",
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 60,
-      "ext": "./lib/tokenm.json$$$https://vip.omii.top$$$noproxy$$$1$$$./lib/wogg.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-    },{
-      "key": "Ppxzy",
-      "name": "皮皮虾┃网盘pg",
-      "type": 3,
-      "api": "csp_Ppxzy",
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 60,
-      "ext": "./lib/tokenm.json$$$https://ppxzy.ink$$$proxy$$$1","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-    },
-	{"key":"YingSo","name":"影搜|网盘pg","type":3,"api":"csp_YingSo","timeout":60, "ext":"./lib/tokenm.json","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"},
-	{"key":"Funletu","name":"趣盘搜|夸克pg","type":3,"api":"csp_Funletu","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json",
-			"style": {
-				"type": "list",
-				"ratio": 1.1
-			},"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-		},
-		{"key":"PikaSo","name":"皮卡搜|pg","type":3,"api":"csp_PikaSo","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://www.pikaso.top/$$$null",
-			"style": {
-				"type": "list",
-				"ratio": 1.1
-			},"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-		},	
-    {
-      "key": "Libvio",
-      "name": "LIBVIO|pg",
-      "type": 3,
-      "api": "csp_Libvio",
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 30,
-      "ext": "./lib/token.json$$$https://www.libvio.fun$$$null","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"
-    },
+            "changeable": 1,
+            "ext": {
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "danmu": true
+            }
+        },
+        {
+            "key": "夸克盘搜弹幕",
+            "name": "夸克盘搜｜弹幕",
+            "type": 3,
+            "api": "csp_Qkpanso",
+            "searchable": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+                "danmu": true
+            }
+        },
+        {
+            "key": "我的阿里",
+            "name": "我的｜阿里",
+            "type": 3,
+            "api": "csp_MyAli",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 0,
+            "indexs": 0,
+            "ext": {
+                "token": "http://127.0.0.1:9978/file/TVBox/token.txt"
+            },
+            "style": {
+                "type": "list"
+            }
+        },
+        {
+            "key": "我的夸克",
+            "name": "我的｜夸克",
+            "type": 3,
+            "api": "csp_MyQuark",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 0,
+            "indexs": 0,
+            "ext": {
+                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt"
+            },
+            "style": {
+                "type": "list"
+            }
+        },
+        {
+            "key": "我的UC",
+            "name": "我的｜UC",
+            "type": 3,
+            "api": "csp_MyUc",
+            "searchable": 0,
+            "quickSearch": 0,
+            "filterable": 0,
+            "indexs": 0,
+            "ext": {
+                "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt"
+            },
+            "style": {
+                "type": "list"
+            }
+        },
 	{"key":"Panta","name":"盘Tapg","type":3,"api":"csp_Panta","quickSearch":1, "changeable":1, "filterable":1, "timeout":30, "ext":"./lib/token.json$$$https://www.91panta.cn/$$$null$$$1","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"},
-	{
-      "key": "TGDouban",
-      "name": "TG豆瓣｜小白推荐",
-      "type": 3,
-      "api": "csp_TGDouban",
-      "jar": "https://gitee.com/lanny520/tv/raw/master/pg.txt",
-      "timeout": 120,
-      "ext": {
-        "token": "./lib/tokenm.json",
-        "json": "https://gitee.com/lanny520/tv/raw/master/pg/tgsearch.json",
-        "keywords": "名称,片名,推荐",
-        "tgsearch_url": "http://127.0.0.1:10199",
-        "tgsearch_media_url": "http://127.0.0.1:10199",
-        "channellist": "ucpanpan,alypzyhzq|1000,Mbox115|1000,shares_115|1000,Quark_Share_Channel|1000,Aliyundrive_Share_Channel|1000,wanwansubchat|1000",
-        "proxy": "noproxy",
-        "douban": "https://gitee.com/lanny520/tv/raw/master/pg/douban.json",
-        "danmu": true
-      },
-      "style": {
-        "type": "rect",
-        "ratio": 0.7
-      }
-    },
-    {
-      "key": "TGYunPanLocal",
-      "name": "TG频道搜索 ｜4k纯净",
-      "type": 3,
-      "api": "csp_TGYunPanLocal",
-      "jar": "https://gitee.com/lanny520/tv/raw/master/pg.txt",
-      "timeout": 120,
-      "ext": {
-        "token": "./lib/tokenm.json",
-        "json": "https://gitee.com/lanny520/tv/raw/master/pg/tgsearch.json",
-        "keywords": "名称,片名,推荐",
-        "tgsearch_url": "http://127.0.0.1:10199",
-        "tgsearch_media_url": "http://127.0.0.1:10199",
-        "channellist": "ucpanpan,oneonefivewpfx,hao115,guaguale115,Channel_Shares_115,dianyingshare,XiangxiuNB,yunpanpan,kuakeyun,zaihuayun,Quark_Movies,vip115hot,yunpanshare,shareAliyun,ikiviyyp,alyp_1,quanziyuanshe",
-        "proxy": "proxy",
-        "danmu": true
-      },
-      "style": {
-        "type": "rect",
-        "ratio": 1.77
-      }
-    },
-    {
-      "key": "TGYunPan",
-      "name": "TG群组搜索｜4k纯净",
-      "type": 3,
-      "api": "csp_TGYunPan",
-      "jar": "https://gitee.com/lanny520/tv/raw/master/pg.txt",
-      "timeout": 120,
-      "ext": {
-        "token": "./lib/tokenm.json",
-        "json": "https://gitee.com/lanny520/tv/raw/master/pg/tgsearch.json",
-        "keywords": "名称,片名,推荐",
-        "tgsearch_url": "http://127.0.0.1:10199",
-        "tgsearch_media_url": "http://127.0.0.1:10199",
-        "channellist": "ucpanpan,alypzyhzq|1000,Mbox115|1000,shares_115|1000,Quark_Share_Channel|1000,Aliyundrive_Share_Channel|1000,wanwansubchat|1000",
-        "proxy": "noproxy",
-        "danmu": true
-      },
-      "style": {
-        "type": "rect",
-        "ratio": 1.77
-      }
-    },
-    {
-      "key": "夸克欧歌弹幕",
-      "name": "欧歌资源｜4K弹幕",
-      "type": 3,
-      "api": "csp_Wobg",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "ext": {
-        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "https://woog.nxog.eu.org",
-        "danmu": true
-      },"jar":"https://gitee.com/lanny520/tv/raw/master/lanny520.txt"
-    },
     {
       "key": "抠搜",
       "name": "🍄抠抠┃搜搜",
@@ -437,7 +639,7 @@
       "type": 3,
       "api": "csp_SuBaiBai",
       "playerType": 2,
-      "ext": "https://subaibai.com/"
+      "ext": "https://subaibai.com/","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
     {
       "key": "csp_饭团",
@@ -449,7 +651,7 @@
       "playerType": 2,
       "filterable": 1,
       "click": "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();",
-      "ext": "https://fantuan.vip/"
+      "ext": "https://fantuan.vip/","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
     {
       "key": "Auete",
@@ -817,7 +1019,7 @@
       "style": {
         "type": "rect",
         "ratio": 1.333
-      }
+      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
    {"key":"Local","name":"本地","type":3,"api":"csp_Local","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"} ],
   "parses":[{
