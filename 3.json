@@ -609,23 +609,33 @@
       "ext": "","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
     {
-      "key": "瓜子",
-      "name": "🍉瓜子┃1080P",
+      "key": "瓜子影视",
+      "name": "瓜子｜影视",
       "type": 3,
       "api": "csp_Gz360",
       "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 1,
-      "order_num": 0,
-      "changeable": 0,"jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+      "quickSearch": 1,
+      "filterable": 1
+    },{
+      "key": "洽洽影视",
+      "name": "洽洽｜APP",
+      "type": 3,
+      "api": "csp_AppGZ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
-      "key": "csp_Czsapp",
-      "name": "🏭厂长┃1080P",
+      "key": "厂长弹幕",
+      "name": "厂长｜弹幕",
       "type": 3,
-      "api": "csp_Czsapp",
-      "playerType": 2,
-      "ext": "http://www.czzyvideo.com","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+      "api": "csp_Czzy",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "danmu": true
+      }
     },
     {
       "key": "csp_Tvyb",
@@ -633,13 +643,15 @@
       "type": 3,
       "api": "csp_Tvyb","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
-    {
-      "key": "csp_SuBaiBai",
-      "name": "☁️白白┃1080P",
+   {
+      "key": "素白白",
+      "name": "素白白｜影视",
       "type": 3,
-      "api": "csp_SuBaiBai",
-      "playerType": 2,
-      "ext": "https://subaibai.com/","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+      "api": "csp_Subaibai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://subaibai.com"
     },
     {
       "key": "csp_饭团",
@@ -663,41 +675,55 @@
       "changeable": 1,
       "ext": "https://auete.com/","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
     }, 
-    {"key":"DiDuan","name":"⏮️低端┃直连","type":3,"api":"csp_Ddrk","playerType":"2","searchable":1,"quickSearch":1,"changeable":1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/moyu.php"},
    {
-      "key": "Lib",
-      "name": "🌟立播┃秒播",
+      "key": "低端影视",
+      "name": "低端｜影视",
+      "type": 3,
+      "api": "csp_Ddys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+   {
+      "key": "立播弹幕",
+      "name": "立播｜弹幕",
       "type": 3,
       "api": "csp_Libvio",
       "searchable": 1,
-      "quickSearch": 1,
+      "filterable": 1,
       "changeable": 1,
       "ext": {
-        "quarkCookie": "tvfan/cookie.txt",
-        "from": "4k|auto|fhd"
-      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
+        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+        "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
+        "site": "https://libvio.link",
+        "danmu": true
+      }
     },
     {
-      "key": "比特",
-      "name": "🍄比特┃秒播",
+      "key": "小苹果弹幕",
+      "name": "小苹果｜弹幕",
       "type": 3,
-      "api": "csp_Bttwoo",
+      "api": "csp_Xpg",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
+      "filterable": 1,
+      "ext": {
+        "danmu": true
+      }
     },
-    {"key":"苹果","name":"🍎小苹果┃复活","type":3,"api":"csp_LiteApple","searchable":1,"quickSearch":1,"changeable":1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"},
-   {
-      "key": "厂长",
-      "name": "📔厂长┃无广",
+    {
+      "key": "荐片弹幕",
+      "name": "荐片｜弹幕",
       "type": 3,
-      "api": "csp_NewCz",
-      "timeout": 15,
-      "playerType": 2,
+      "api": "csp_Jianpian",
+      "playerType": 1,
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,
-      "ext": "https://www.czzy77.com/","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
+      "filterable": 1,
+      "ext": {
+        "danmu": true
+      }
     },
     {
       "key": "zxzj",
@@ -721,14 +747,16 @@
       "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
     },
     {
-      "key": "文采",
-      "name": "💮文采┃秒播",
+      "key": "文才弹幕",
+      "name": "文才｜弹幕",
       "type": 3,
       "api": "csp_Jpys",
-      "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
+      "filterable": 1,
+      "ext": {
+        "danmu": true
+      }
     },
     {
       "key": "天天",
@@ -769,12 +797,11 @@
       "changeable": 0,
       "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/闪电.js"
     },
-    {
+   {
       "key": "饺子影视",
-      "name": "🥟饺子┃外剧┃纯净",
+      "name": "饺子｜影视",
       "type": 3,
       "api": "csp_Jiaozi",
-      "jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/danmu.php",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -793,14 +820,6 @@
       "api": "csp_Wexduboku",
       "searchable": 1,
       "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },
-    {
-      "key": "荐片",
-      "name": "🎬荐片┃磁力",
-      "api": "csp_Jianpian",
-      "type": 3,
-      "playerType": "1",
-      "ext": "http://api2.rinhome.com","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
     {
       "key": "新6V",
