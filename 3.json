@@ -686,7 +686,7 @@
     },
     {
       "key": "Auete",
-      "name": "🏝奥特┃直连",
+      "name": "🏝奥特┃饭",
       "type": 3,
       "api": "csp_Auete",
       "searchable": 1,
@@ -746,7 +746,7 @@
     },
     {
       "key": "zxzj",
-      "name": "🍊在线┃秒播",
+      "name": "🍊在线┃饭",
       "type": 3,
       "api": "csp_Zxzj",
       "timeout": 15,
@@ -755,6 +755,36 @@
       "changeable": 1,
       "ext": "https://www.zxzjhd.com/","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
     }, 
+    {
+      "key": "厂长",
+      "name": "📔厂长┃饭",
+      "type": 3,
+      "api": "csp_NewCz",
+      "playerType": 2,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "https://www.czzyvideo.com/","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
+    },{
+      "key": "低端",
+      "name": "⏮️低端┃饭",
+      "type": 3,
+      "api": "csp_Ddrk",
+      "playerType": "2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
+    },{
+      "key": "原创",
+      "name": "☀原创┃饭",
+      "type": 3,
+      "api": "csp_YCyz",
+      "timeout": 15,
+      "playerType": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
+    },
    {
       "key": "alllive",
       "name": "📽️一直播┃LIVE",
