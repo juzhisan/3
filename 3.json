@@ -1,4 +1,4 @@
-{ "spider":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/spider.jar", "wallpaper":"http://我不是.摸鱼儿.com/wallpaper/moyu.php", 
+{ "spider":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt", "wallpaper":"http://我不是.摸鱼儿.com/wallpaper/moyu.php", 
  "sites":[{
       "key": "豆豆",
       "name": "豆瓣┃主页",
@@ -642,6 +642,25 @@
       "name": "☁️云播┃1080P",
       "type": 3,
       "api": "csp_Tvyb","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+    },{
+      "key": "比特影视",
+      "name": "比特影视｜1k纯净",
+      "type": 3,
+      "api": "csp_Bttwo",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },{
+      "key": "热播弹幕",
+      "name": "热播影视｜1k弹幕",
+      "type": 3,
+      "api": "csp_ReBo",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "danmu": true
+      }
     },
    {
       "key": "素白白",
@@ -777,13 +796,35 @@
       "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1732107398295/qj.jar;md5;68959abc51dbfcba14fb08d537dbf230"
     },
     {
-      "key": "繁荣",
-      "name": "🥝凡人┃1080P",
+      "key": "zhaixing",
+      "name": "✨摘星┃1080P",
       "type": 3,
-      "api": "csp_Frong",
+      "api": "csp_AppZX",
+      "playerType": 2,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+    },
+    {
+      "key": "csp_zhufan",
+      "name": "🚗追饭┃1080P",
+      "searchable": 1,
+      "quickSearch": 1,
+      "type": 3,
+      "api": "csp_MiTo",
+      "ext": {
+        "url": "http://xiafan.zhuiju666.com",
+        "dataKey": "aassddwwxxllsx1x",
+        "playKey": "bbssqdbbssll25sx",
+        "version": "1.1.0"
+      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+    },{
+      "key": "csp_视觉",
+      "name": "🔭视觉┃PYTHON",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "api": "https://3450.kstore.vip/shijue.py",
       "playerType": 2,
-      "ext": "FMy4wLjJ8aHR0cDovLzQzLjI0OC4xMjguMTM4OjgxMzN8NDJmN2EyMDl8MjV8NTY4Njg1NDM0RkVDN0M4QzI5MEFFNEZCMzI1RkYxMzB8c2hpamllbWFvdHZ8MzNhN2ZmYTljODU0MTJjNzQyZjdhMjA5fDI1fDU2ODY4NTQzNEZFQzdDOEMyOTBBRTRGQjMyNUZGMTMwfHNoaWppZW1hb3R2fDMzYTdmZmE5Yzg1NDEyYzc=",
-      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1732107398295/qj.jar;md5;68959abc51dbfcba14fb08d537dbf230"
+      "filterable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
     {
       "key": "hipy_闪电",
