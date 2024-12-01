@@ -1142,6 +1142,10 @@
       "name": "小米4k",
       "type": 1,
       "url": "https://jx.xiaofengtv.com/jx.php?url="
+    },{
+      "name": "6趣",
+      "type": 1,
+      "url": "http://jx.0v.fit/api.php?url="
     },
     {
       "name": "芒果4k",
