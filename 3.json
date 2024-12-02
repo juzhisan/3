@@ -611,45 +611,36 @@
       "filterable": 1
     },
    {
-      "key": "立播弹幕",
-      "name": "立播｜弹幕",
+      "key": "Lib",
+      "name": "🌟立播┃饭",
       "type": 3,
       "api": "csp_Libvio",
       "searchable": 1,
-      "filterable": 1,
+      "quickSearch": 1,
       "changeable": 1,
       "ext": {
-        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "https://libvio.link",
-        "danmu": true
-      }
+        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "from": "4k|auto"
+      },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
     },
     {
-      "key": "小苹果弹幕",
-      "name": "小苹果｜弹幕",
+      "key": "文采",
+      "name": "💮文采┃饭",
       "type": 3,
-      "api": "csp_Xpg",
+      "api": "csp_Jpys",
+      "playerType": 2,
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
     },
-    {
-      "key": "荐片弹幕",
-      "name": "荐片｜弹幕",
+   {
+      "key": "苹果",
+      "name": "🍎苹果┃不卡",
       "type": 3,
-      "api": "csp_Jianpian",
-      "playerType": 1,
+      "api": "csp_LiteApple",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
     },
     {
       "key": "zxzj",
@@ -701,18 +692,6 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
-    },
-    {
-      "key": "文才弹幕",
-      "name": "文才｜弹幕",
-      "type": 3,
-      "api": "csp_Jpys",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
     },
     {
       "key": "天天",
@@ -798,6 +777,14 @@
       "api": "csp_Wexduboku",
       "searchable": 1,
       "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
+    },
+    {
+      "key": "荐片",
+      "name": "🍭荐片┃磁力",
+      "api": "csp_Jianpian",
+      "type": 3,
+      "playerType": "1",
+      "ext": "http://api2.rinhome.com","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
     {
       "key": "新6V",
