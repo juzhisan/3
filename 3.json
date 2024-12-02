@@ -95,7 +95,7 @@
     {"key":"网盘集合","name":"🅿网盘集合|4K","type":3,"api":"csp_网盘集合","searchable":1,"filterable":0,"switchable":0,"ext":{"commonConfig":"http://127.0.0.1:9978/file/TVBox/peizhi.json","share":"https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/网盘集合.json"},"jar":"https://jihulab.com/Yoursmile/TVbox/-/raw/master/Yoursmile.jar"},
  {
       "key": "csp_Wogg",
-      "name": "🧸玩偶┃4K4K",
+      "name": "🧸玩偶┃米",
       "type": 3,
       "api": "csp_Wogg",
       "filterable": 1,
@@ -113,7 +113,7 @@
     },
     {
       "key": "csp_Netfixtv",
-      "name": "💯至臻┃4K4K",
+      "name": "💯至臻┃米",
       "type": 3,
       "api": "csp_Duopan",
       "filterable": 1,
@@ -131,7 +131,7 @@
     },
     {
       "key": "csp_UC",
-      "name": "💌MIUC┃4K4K",
+      "name": "💌MIUC┃米",
       "type": 3,
       "api": "csp_Duopan",
       "filterable": 1,
@@ -150,7 +150,7 @@
     },
     {
       "key": "米搜",
-      "name": "🌾米搜┃4K4K",
+      "name": "🌾米搜┃米",
       "type": 3,
       "api": "csp_MiSou",
       "changeable": 0,"jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
@@ -335,72 +335,6 @@
 			}
 		},
         {
-            "key": "夸克影搜弹幕",
-            "name": "影搜｜弹幕",
-            "type": 3,
-            "api": "csp_Yingso",
-            "searchable": 1,
-            "filterable": 0,
-            "changeable": 1,
-            "ext": {
-                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-                "danmu": true
-            }
-        },
-        {
-            "key": "搜索弹幕",
-            "name": "搜索｜弹幕",
-            "type": 3,
-            "api": "csp_PanSearch",
-            "searchable": 1,
-            "filterable": 0,
-            "changeable": 1,
-            "ext": {
-                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-                "danmu": true
-            }
-        },
-        {
-            "key": "云云弹幕",
-            "name": "云云｜弹幕",
-            "type": 3,
-            "api": "csp_Upys",
-            "searchable": 1,
-            "filterable": 0,
-            "changeable": 1,
-            "ext": {
-                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-                "danmu": true
-            }
-        },
-        {
-            "key": "云搜弹幕",
-            "name": "云搜｜弹幕",
-            "type": 3,
-            "api": "csp_UpYun",
-            "searchable": 1,
-            "filterable": 0,
-            "changeable": 1,
-            "ext": {
-                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-                "danmu": true
-            }
-        },
-        {
-            "key": "盘搜弹幕",
-            "name": "盘搜｜弹幕",
-            "type": 3,
-            "api": "csp_PanSou",
-            "searchable": 1,
-            "filterable": 0,
-            "changeable": 1,
-            "ext": {
-                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-                "danmu": true
-            }
-        },
-        {
             "key": "易搜弹幕",
             "name": "易搜｜弹幕",
             "type": 3,
@@ -412,20 +346,6 @@
                 "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
                 "danmu": true,
                 "cookie": "satoken=0eedba28-be8a-4f01-81af-2d8d44808ecf"
-            }
-        },
-        {
-            "key": "云盘弹幕",
-            "name": "云盘｜弹幕",
-            "type": 3,
-            "api": "csp_Yunpan4k",
-            "searchable": 1,
-            "filterable": 0,
-            "changeable": 1,
-            "ext": {
-                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-                "danmu": true
             }
         },
         {
@@ -456,37 +376,10 @@
             }
         },
         {
-            "key": "小纸条弹幕",
-            "name": "小纸条｜弹幕",
-            "type": 3,
-            "api": "csp_XiaoZhiTiao",
-            "searchable": 1,
-            "filterable": 1,
-            "changeable": 0,
-            "ext": {
-                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-                "danmu": true
-            }
-        },
-        {
             "key": "夸克趣盘搜弹幕",
             "name": "趣盘搜｜弹幕",
             "type": 3,
             "api": "csp_QuPanSou",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-                "danmu": true
-            }
-        },
-        {
-            "key": "夸克爱盘搜弹幕",
-            "name": "爱盘搜｜弹幕",
-            "type": 3,
-            "api": "csp_AiPanSou",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
@@ -560,7 +453,7 @@
 	{"key":"Panta","name":"盘Tapg","type":3,"api":"csp_Panta","quickSearch":1, "changeable":1, "filterable":1, "timeout":30, "ext":"./lib/token.json$$$https://www.91panta.cn/$$$null$$$1","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/pg.jar"},
     {
       "key": "抠搜",
-      "name": "🍄抠抠┃搜搜",
+      "name": "🍄抠抠┃饭",
       "type": 3,
       "api": "csp_KkSs",
       "searchable": 1,
@@ -573,7 +466,7 @@
     },
     {
       "key": "UC",
-      "name": "🌈优汐┃搜搜",
+      "name": "🌈优汐┃饭",
       "type": 3,
       "api": "csp_UuSs",
       "searchable": 1,
