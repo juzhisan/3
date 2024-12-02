@@ -512,15 +512,18 @@
       "filterable": 1,
       "ext": "","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
-    {
-      "key": "瓜子影视",
-      "name": "瓜子｜影视",
+   {
+      "key": "瓜子",
+      "name": "🍉瓜子┃1080P",
       "type": 3,
       "api": "csp_Gz360",
       "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },{
+      "quickSearch": 0,
+      "filterable": 1,
+      "order_num": 0,
+      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+    },
+   {
       "key": "洽洽影视",
       "name": "洽洽｜APP",
       "type": 3,
