@@ -93,6 +93,18 @@
       },"jar":"https://jihulab.com/Yoursmile/TVbox/-/raw/master/Yoursmile.jar"
     },
     {"key":"网盘集合","name":"🅿网盘集合|4K","type":3,"api":"csp_网盘集合","searchable":1,"filterable":0,"switchable":0,"ext":{"commonConfig":"http://127.0.0.1:9978/file/TVBox/peizhi.json","share":"https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/sub/网盘集合.json"},"jar":"https://jihulab.com/Yoursmile/TVbox/-/raw/master/Yoursmile.jar"},
+    {
+      "key": "星剧社",
+      "name": "⭐️星剧社",
+      "type": 3,
+      "api": "csp_Star",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json"
+      },"jar":"https://jihulab.com/Yoursmile/TVbox/-/raw/master/Yoursmile.jar"
+    },
  {
       "key": "csp_Wogg",
       "name": "🧸玩偶┃米",
