@@ -155,6 +155,22 @@
       "api": "csp_MiSou",
       "changeable": 0,"jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
+    {
+      "key": "雷鲸",
+      "name": "💓‍雷鲸┃4K💓‍",
+      "type": 3,
+      "api": "csp_Wexleijing",
+      "searchable": 1,
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+    },
+   {
+      "key": "Wextyso",
+      "name": "🎠给力┃天逸🎠",
+      "type": 3,
+      "api": "csp_Wextyso",
+      "searchable": 1,
+      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
+    },
  {
             "key": "玩偶弹幕",
             "name": "玩偶哥哥｜4K弹幕",
@@ -488,22 +504,6 @@
         "Cloud-drive": "tvfan/Cloud-drive.txt",
         "from": "4k|auto"
       },"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
-    },
-    {
-      "key": "雷鲸",
-      "name": "💓‍雷鲸┃4K💓‍",
-      "type": 3,
-      "api": "csp_Wexleijing",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
-    },
-   {
-      "key": "Wextyso",
-      "name": "🎠给力┃天逸🎠",
-      "type": 3,
-      "api": "csp_Wextyso",
-      "searchable": 1,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/xiaobai/master/wex.jar"
     },
     {
       "key": "zhaixing",
