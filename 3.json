@@ -791,6 +791,13 @@
       "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
+      "key": "米兔弹幕",
+      "name": "米兔｜弹幕",
+      "type": 3,
+      "api": "https://gitee.com/PizazzXS/four-d/raw/master/js/drpy2.min.js",
+      "ext": "https://gitee.com/PizazzXS/four-d/raw/master/movie/js/MTDM.js"
+    },
+    {
       "key": "荐片",
       "name": "🍭荐片┃磁力",
       "api": "csp_Jianpian",
