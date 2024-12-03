@@ -97,13 +97,13 @@
       "key": "星剧社",
       "name": "⭐️星剧社",
       "type": 3,
-      "api": "csp_Star",
+      "api": "csp_Star2",
       "searchable": 1,
       "filterable": 0,
       "switchable": 0,
       "ext": {
         "commonConfig": "http://127.0.0.1:9978/file/TVBox/peizhi.json"
-      },"jar":"https://jihulab.com/Yoursmile/TVbox/-/raw/master/Yoursmile.jar"
+      },"jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/zx.jar"
     },
  {
       "key": "csp_Wogg",
