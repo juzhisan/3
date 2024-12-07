@@ -567,15 +567,8 @@
       "name": "☁️云播┃1080P",
       "type": 3,
       "api": "csp_Tvyb","jar":"https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
-    },{
-      "key": "比特影视",
-      "name": "比特影视｜1k纯净",
-      "type": 3,
-      "api": "csp_Bttwo",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },{
+    },
+    {
       "key": "热播弹幕",
       "name": "热播影视｜1k弹幕",
       "type": 3,
@@ -595,19 +588,14 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "http://subaibai.com","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+      "ext": "http://subaibai.com/","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
-    {
-      "key": "csp_饭团",
-      "name": "🍙饭团┃1080P",
+   {
+      "key": "huohuo",
+      "name": "💥火火┃1080P",
       "type": 3,
-      "searchable": 1,
-      "changeable": 1,
-      "api": "csp_Fantuan",
-      "playerType": 2,
-      "filterable": 1,
-      "click": "document.querySelector(\"#playleft iframe\").contentWindow.document.querySelector(\"#start\").click();",
-      "ext": "https://fantuan.vip/","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+      "changeable": 0,
+      "api": "csp_SaoHuo","jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
     {
       "key": "csp_MiTuApp",
