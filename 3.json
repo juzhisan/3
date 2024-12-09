@@ -430,6 +430,13 @@
       "filterable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
     {
+      "key": "zhaixing",
+      "name": "✨摘星┃米",
+      "type": 3,
+      "api": "csp_AppZX",
+      "playerType": 2,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
+    },
+    {
       "key": "Auete",
       "name": "🏝奥特┃饭",
       "type": 3,
@@ -578,7 +585,32 @@
       "api": "csp_Wexduboku",
       "searchable": 1,
       "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
-    },{
+    },
+    {
+      "key": "hipy_js_腾云驾雾[官]",
+      "name": "🌞腾腾┃解析",
+      "type": 3,
+      "api": "https://3450.kstore.vip/js/drpy_libs/drpy2.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "changeable": 0,
+      "ext": "https://gitee.com/smallmi1007/mimi/raw/master/tm.js"
+    },
+    {
+      "key": "guoguo",
+      "name": "🌞果果┃解析",
+      "type": 3,
+      "api": "https://3450.kstore.vip/js/drpy_libs/drpy2.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "changeable": 0,
+      "ext": "https://gitee.com/smallmi1007/mimi/raw/master/guoguo.js"
+    },
+    {
       "key": "荐片",
       "name": "🍭荐片┃磁力",
       "api": "csp_Jianpian",
@@ -1006,16 +1038,97 @@
     }
   ],
   "parses": [
+  {
+      "name": "Json聚合",
+      "type": 3,
+      "url": "Demo"
+    },
     {
-      "name": "4k",
+      "name": "Web聚合",
+      "type": 3,
+      "url": "Web"
+    },
+    {
+      "name": "解析1",
       "type": 1,
-      "url": "",
+      "url": "https://www.mpanso.com/muou/qilin.php?url=",
       "ext": {
         "flag": [
           "qq",
           "腾讯",
+          "qiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "优酷",
+          "sohu",
+          "搜狐",
+          "letv",
+          "乐视",
+          "mgtv",
           "芒果",
-          "mgtv"
+          "tnmb",
+          "seven",
+          "bilibili",
+          "1905"
+        ],
+        "header": {
+          "User-Agent": "okhttp/4.9.1"
+        }
+      }
+    },
+    {
+      "name": "反弹",
+      "type": 0,
+      "url": "https://jx.hls.one/?url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "优酷",
+          "sohu",
+          "搜狐",
+          "letv",
+          "乐视",
+          "mgtv",
+          "芒果",
+          "tnmb",
+          "seven",
+          "bilibili",
+          "1905"
+        ],
+        "header": {
+          "User-Agent": "User-Agent:Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36"
+        }
+      }
+    },
+    {
+      "name": "1080解析",
+      "type": 1,
+      "url": "https://zy.qiaoji8.com/gouzi.php?url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "优酷",
+          "sohu",
+          "搜狐",
+          "letv",
+          "乐视",
+          "mgtv",
+          "芒果",
+          "tnmb",
+          "seven",
+          "bilibili",
+          "1905"
         ],
         "header": {
           "User-Agent": "okhttp/4.9.1"
