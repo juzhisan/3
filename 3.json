@@ -891,6 +891,18 @@
       "filterable": 1
     },
     {
+      "key": "hipy_闪电",
+      "name": "⚡️闪电┃1080P",
+      "type": 3,
+      "api": "http://我不是.摸鱼儿.com/json/js/drpy.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "changeable": 0,
+      "ext": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/闪电.js"
+    },
+    {
       "key": "hipy_js_腾云驾雾[官]",
       "name": "🌞腾腾┃解析",
       "type": 3,
