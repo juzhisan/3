@@ -184,6 +184,23 @@
       }
     },
     {
+      "key": "夸克肥猫弹幕",
+      "name": "肥猫｜4K弹幕",
+      "type": 3,
+      "api": "csp_Wobg",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+        "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
+        "site": "http://feimaouc.cloud:666",
+        "danmu": true
+      }
+    },
+    {
       "key": "夸克蜡笔弹幕",
       "name": "蜡笔资源｜4K弹幕",
       "type": 3,
@@ -501,20 +518,6 @@
       }
     },
     {
-      "key": "米搜弹幕",
-      "name": "米搜｜4K搜索",
-      "type": 3,
-      "api": "csp_Qkpanso",
-      "searchable": 1,
-      "filterable": 1,
-      "changeable": 0,
-      "ext": {
-        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "site": "https://www.misou.fun",
-        "danmu": true
-      }
-    },
-    {
       "key": "夸搜弹幕",
       "name": "夸搜｜4K搜索",
       "type": 3,
@@ -654,6 +657,23 @@
       "searchable": 1,
       "changeable": 0,
       "jar": "https://gitee.com/PizazzXS/four-d/raw/master/wex.txt
+    },
+    {
+      "key": "Alllive",
+      "name": "聚合｜直播‍",
+      "type": 3,
+      "api": "csp_Wexalllive",
+      "searchable": 1,
+      "changeable": 1,
+      "jar": "https://gitee.com/PizazzXS/four-d/raw/master/wex.txt
+    },
+    {
+      "key": "Wexduboku",
+      "name": "🎇独播┃秒播🎇",
+      "type": 3,
+      "api": "csp_Wexduboku",
+      "searchable": 1,
+      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "csp_XSX",
@@ -821,16 +841,6 @@
       "quickSearch": 1,
       "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
     },
-   {
-      "key": "alllive",
-      "name": "📽️一直播┃饭",
-      "type": 3,
-      "api": "csp_Alllive",
-      "playerType": 2,
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/fan.txt"
-    },
     {
       "key": "哔哩弹幕",
       "name": "哔哩哔哩｜4k弹幕",
@@ -880,13 +890,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
-    },{
-      "key": "Wexduboku",
-      "name": "🎇独播┃秒播🎇",
-      "type": 3,
-      "api": "csp_Wexduboku",
-      "searchable": 1,
-      "changeable": 1,"jar": "https://github.moeyy.xyz/https://raw.githubusercontent.com/juzhisan/3/master/wex.txt"
     },
     {
       "key": "hipy_js_腾云驾雾[官]",
