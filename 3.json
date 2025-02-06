@@ -1,8 +1,8 @@
   {
   "spider": "./spider.txt",
   "wallpaper": "http://我不是.摸鱼儿.com/wallpaper/moyu.php",
-  "logo": "./logo.jpg",
-  "homeLogo": "./logo.jpg",
+  "logo": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/JS/logo.jpg",
+  "homeLogo": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/JS/logo.jpg",
   "sites": [
     {
       "key": "豆瓣",
@@ -303,7 +303,7 @@
 			"style": {
 				"type": "list",
 				"ratio": 1.1
-			},"jar": "./pg.txt"
+			},"jar": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg.txt"
 		},
 	{
       "key": "FourKFM",
@@ -613,8 +613,8 @@
       "key": "Jrsjs",
       "name": "⚽ Jrs┃球迷",
       "type": 3,
-      "api": "https://ghfast.top/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-      "ext": "https://ghfast.top/raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/jrk.js",
+      "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/jrk.js",
       "style": {
         "type": "list"
       },
@@ -818,7 +818,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "http://subaibai.com"
+      "ext": "https://www.subaibaiys.com/"
     },
     {
       "key": "骚火影视",
