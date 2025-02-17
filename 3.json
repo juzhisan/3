@@ -734,6 +734,9 @@
       "jar": "",
       "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=樱花"
     },
+    {"key":"23ys","name":"二三┃App","type":3,"api":"csp_Muou","playerType":2,"ext":"caHR0cHM6Ly8xMjN5c3cuY29tfDIz5b2x6KeGfDQuMS44"},
+
+   {"key":"主角","name":"主角┃App","type":3,"api":"csp_Muou","playerType":2,"ext":"caHR0cHM6Ly9tdW91Lmxpbmd1dHYuY2586L+95Ymn5b2x6ZmifDQuMS44"},
     {
             "key": "星河",
             "name": "星河｜App",
