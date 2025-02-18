@@ -300,14 +300,13 @@
        "changeable":1
     },
    {
-        "key":"移动云盘",
-        "name":"移动极速",
-        "type":3,
-        "api":"csp_YDjisu",
-        "searchable":1,
-        "changeable":1,
-      "jar": "./YD.jar"
-    },
+            "key": "移动",
+            "name": "移动｜极速",
+            "type": 3,
+            "api": "csp_YD",
+            "searchable": 1,
+            "quickSearch": 1
+        },
 	{
       "key": "FourKFM",
       "name": "4K影库 | 4k弹幕",
