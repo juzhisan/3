@@ -139,7 +139,7 @@
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "http://tv.666291.xyz/",
+        "site": "https://mogg1.banye.tech:7777",
         "danmu": true
       }
     },
@@ -242,37 +242,37 @@
       }
     },
     {
-            "key": "夸克白嫖弹幕",
-            "name": "白嫖｜4K弹幕",
-            "type": 3,
-            "api": "csp_Wobg",
-            "quickSearch": 1,
-            "changeable": 1,
-            "filterable": 1,
-            "ext": {
-                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-                "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-                "site": "http://失眠的夜.top",
-                "danmu": true
-            }
-        },
+      "key": "虎斑网盘",
+      "name": "虎斑资源｜4K弹幕",
+      "type": 3,
+      "api": "csp_Wobg",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+        "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
+        "site": "http://103.45.162.207:20720",
+        "danmu": true
+      }
+    },
     {
-            "key": "下饭网盘",
-            "name": "下饭资源｜4K弹幕",
-            "type": 3,
-            "api": "csp_Wobg",
-            "quickSearch": 1,
-            "changeable": 1,
-            "filterable": 1,
-            "ext": {
-                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-                "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-                "site": "http://txfyyds.top/",
-                "danmu": true
-            }
-        },
+      "key": "下饭网盘",
+      "name": "下饭资源｜4K弹幕",
+      "type": 3,
+      "api": "csp_Wobg",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "ext": {
+        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
+        "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
+        "site": "http://txfpan.top/",
+        "danmu": true
+      }
+    },
     {
       "key": "Wextyso",
       "name": "天翼云盘｜4k搜索",
@@ -732,6 +732,20 @@
       "api": "csp_XBPQ",
       "jar": "",
       "ext": "http://我不是.摸鱼儿.com/api/moyu.php?file=樱花"
+    },
+    {
+      "key": "轻风细雨",
+      "name": "轻风细雨｜4k弹幕",
+      "type": 3,
+      "api": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/JS/drpy2.min.js",
+      "ext": "http://8.129.30.117:90/腾讯.js"
+    },
+    {
+      "key": "鸟语花香",
+      "name": "鸟语花香｜4k弹幕",
+      "type": 3,
+      "api": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/JS/drpy2.min.js",
+      "ext": "http://8.129.30.117:90/百忙无果.js"
     },
     {"key":"23ys","name":"二三┃App","type":3,"api":"csp_Muou","playerType":2,"ext":"caHR0cHM6Ly8xMjN5c3cuY29tfDIz5b2x6KeGfDQuMS44"},
   {
