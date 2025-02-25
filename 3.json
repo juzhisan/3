@@ -176,6 +176,7 @@
                  "danmu": true
             }
         },
+    { "key": "小二网盘", "name": "小二资源｜4K弹幕", "type": 3, "api": "csp_Wobg", "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "token": "http://127.0.0.1:9978/file/TVBox/token.txt", "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt", "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt", "site": "https://xhww.net/", "danmu": true } },
     {
       "key": "夸克欧歌弹幕",
       "name": "欧歌资源｜4K弹幕",
