@@ -16,17 +16,17 @@
       "name": "TG豆瓣|小白推荐",
       "type": 3,
       "api": "csp_TGDouban",
-      "jar": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg.txt",
+      "jar": "http://101.132.194.59:2233/pg.jar",
       "timeout": 120,
       "ext": {
-        "token": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg/tokenm.json",
-        "json": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg/tgsearch.json",
+        "token": "http://101.132.194.59:2233/pg/tokenm.json",
+        "json": "http://101.132.194.59:2233/pg/tgsearch.json",
         "keywords": "名称,片名,推荐",
         "tgsearch_url": "http://tg.uu8.pro",
         "tgsearch_media_url": "http://tg.uu8.pro",
         "channellist": "ucpanpan|1000,ucquark|1000,alypzyhzq|1000,Mbox115|1000,shares_115|1000,Quark_Share_Channel|1000,Aliyundrive_Share_Channel|1000,wanwansubchat|1000",
         "proxy": "noproxy",
-        "douban": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg/douban.json",
+        "douban": "http://101.132.194.59:2233/pg/douban.json",
         "danmu": true
       },
       "style": {
@@ -49,53 +49,52 @@
     },
     {
       "key": "网盘配置",
-      "name": "TG搜索｜配置中心",
+      "name": "PG功能｜配置中心",
       "type": 3,
       "api": "csp_Config",
-      "jar": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg.txt",
+      "jar": "http://101.132.194.59:2233/pg.jar",
       "searchable": 0,
       "changeable": 0,
-      "ext": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg/tokenm.json",
+      "ext": "http://101.132.194.59:2233/pg/tokenm.json",
       "style": {
         "type": "rect",
         "ratio": 1.5
       }
     },
-   {
-            "key": "影视配置",
-            "name": "影视｜配置",
-            "type": 3,
-            "api": "csp_Wexconfig",
-            "searchable": 0,
-            "changeable": 0,
-            "indexs": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 1.597
-            },
-            "jar": "./wex.txt"
-        },
     {
-      "key": "115",
-      "name": "115｜4K",
+      "key": "Wexokconfig",
+      "name": "天翼&移动｜配置中心",
       "type": 3,
-      "api": "csp_Wex115share",
-      "searchable": 1,
-      "changeable": 1,
-      "timeout": 50,
-      "style": {
-        "type": "list"
-      },
-      "jar": "./wex.txt"
-    },  
-    {
-      "key": "小怡",
-      "name": "🔍怡搜┃米",
-      "type": 3,
-      "api": "csp_XiaoYi",
+      "api": "csp_Wexconfig",
+      "jar": "./wex.txt",
+      "searchable": 0,
       "changeable": 0,
-      "jar": "./xm.jar"
-    },  
+      "indexs": 0
+    },
+    {
+      "key": "FourKFM",
+      "name": "4K影库 | 4k弹幕",
+      "type": 3,
+      "api": "csp_FourKFM",
+      "jar": "http://101.132.194.59:2233/pg.jar",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "ext": "http://101.132.194.59:2233/pg/tokenm.json$$$http://4kfm.com/$$$noproxy$$$1$$$.http://101.132.194.59:2233/pg/4kfm.txt$$$4KFM"
+    },
+    {
+      "key": "Guanying",
+      "name": "观影 | 4k纯净",
+      "type": 3,
+      "api": "csp_Guanying",
+      "jar": "http://101.132.194.59:2233/pg.jar",
+      "quickSearch": 1,
+      "changeable": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "ext": "http://101.132.194.59:2233/pg/tokenm.json$$$https://www.gying.net$$$noproxy$$$1$$$http://101.132.194.59:2233/pg/guanying.txt$$$GUANYING"
+    },
     {
       "key": "玩偶弹幕",
       "name": "玩偶哥哥｜4K弹幕",
@@ -123,7 +122,7 @@
       "ext": {
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "site": "https://tv.yydsys.top",
+        "site": "https://duoduo.banye.tech:7086",
         "danmu": true
       }
     },
@@ -139,11 +138,11 @@
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "https://mogg1.banye.tech:7777",
+        "site": "http://149.88.87.72:5666/",
         "danmu": true
       }
     },
-            {
+    {
                "key": "UC小米弹幕",
                "name": "小米资源｜4K弹幕",
                "type": 3,
@@ -155,7 +154,7 @@
                  "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
                  "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
                  "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-               "site": "http://milvdou.fun",
+               "site": "https://xiaomi.banye.tech:7086",
                "danmu": true
             }
         }, 
@@ -172,11 +171,10 @@
                  "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
                  "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
                  "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-                 "site": "http://1.95.79.193",
+                 "site": "https://shandian.banye.tech:7086",
                  "danmu": true
             }
         },
-    { "key": "小二网盘", "name": "小二资源｜4K弹幕", "type": 3, "api": "csp_Wobg", "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "token": "http://127.0.0.1:9978/file/TVBox/token.txt", "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt", "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt", "site": "https://xhww.net/", "danmu": true } },
     {
       "key": "夸克欧歌弹幕",
       "name": "欧歌资源｜4K弹幕",
@@ -190,7 +188,7 @@
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "https://woog.nxog.eu.org",
+        "site": "https://ouge.banye.tech:7086",
         "danmu": true
       }
     },
@@ -205,7 +203,7 @@
       "ext": {
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "site": "http://feimaoai.site",
+        "site": "https://labi.banye.tech:7086",
         "danmu": true
       }
     },
@@ -221,7 +219,7 @@
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "https://mihdr.top",
+        "site": "https://zhizhen.banye.tech:7086",
         "danmu": true
       }
     },
@@ -254,7 +252,7 @@
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "http://103.45.162.207:20720",
+        "site": "https://huban.banye.tech:7086",
         "danmu": true
       }
     },
@@ -270,10 +268,11 @@
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "http://txfpan.top/",
+        "site": "https://xiafan.banye.tech:7086",
         "danmu": true
       }
     },
+    { "key": "小二网盘", "name": "小二资源｜4K弹幕", "type": 3, "api": "csp_Wobg", "quickSearch": 1, "changeable": 1, "filterable": 1, "ext": { "token": "http://127.0.0.1:9978/file/TVBox/token.txt", "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt", "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt", "site": "https://xhww.net/", "danmu": true } },
     {
       "key": "Wextyso",
       "name": "天翼云盘｜4k搜索",
@@ -291,7 +290,8 @@
        "jar": "./wex.txt",
        "searchable": 1,
        "changeable": 1
-    },{ 
+    },
+    { 
        "key":"盘他",
        "name":"移动盘他┃4K纯净‍",
        "type":3,
@@ -309,27 +309,15 @@
             "quickSearch": 1
         },
 	{
-      "key": "FourKFM",
-      "name": "4K影库 | 4k弹幕",
-      "type": 3,
-      "api": "csp_FourKFM",
-      "jar": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg.txt",
-      "quickSearch": 1,
-      "changeable": 1,
-      "filterable": 1,
-      "timeout": 60,
-      "ext": "./pg/tokenm.json$$$http://4kfm.com/$$$noproxy$$$1$$$./lib/4kfm.txt$$$4KFM"
-    },
-    {
       "key": "TGYunPanLocal",
       "name": "TG频道｜4k搜索",
       "type": 3,
       "api": "csp_TGYunPanLocal",
-      "jar": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg.txt",
+      "jar": "http://101.132.194.59:2233/pg.jar",
       "timeout": 120,
       "ext": {
-        "token": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg/tokenm.json",
-        "json": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg/tgsearch.json",
+        "token": "http://101.132.194.59:2233/pg/tokenm.json",
+        "json": "http://101.132.194.59:2233/pg/tgsearch.json",
         "keywords": "名称,片名,推荐",
         "tgsearch_url": "http://tg.uu8.pro",
         "tgsearch_media_url": "http://tg.uu8.pro",
@@ -347,11 +335,11 @@
       "name": "TG群组｜4k搜索",
       "type": 3,
       "api": "csp_TGYunPan",
-      "jar": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg.txt",
+      "jar": "http://101.132.194.59:2233/pg.jar",
       "timeout": 120,
       "ext": {
-        "token": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg/tokenm.json",
-        "json": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg/tgsearch.json",
+        "token": "http://101.132.194.59:2233/pg/tokenm.json",
+        "json": "http://101.132.194.59:2233/pg/tgsearch.json",
         "keywords": "名称,片名,推荐",
         "tgsearch_url": "http://tg.uu8.pro",
         "tgsearch_media_url": "http://tg.uu8.pro",
@@ -524,6 +512,19 @@
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "danmu": true
       }
+    },
+    {
+      "key": "115",
+      "name": "115｜4K",
+      "type": 3,
+      "api": "csp_Wex115share",
+      "searchable": 1,
+      "changeable": 1,
+      "timeout": 50,
+      "style": {
+        "type": "list"
+      },
+      "jar": "./wex.txt"
     },
     {
       "key": "我的阿里",
@@ -1261,49 +1262,10 @@
       "url": "Web"
     },
      {
-            "name": "优选1",
-            "type": 1,
-            "url": "http://1.94.221.189:88/algorithm.php?url=",
-            "ext": {
-                "flag": [
-                    "qq",
-                    "腾讯视频",
-                    "qiyi",
-                    "爱奇艺",
-                    "奇艺",
-                    "youku",
-                    "优酷",
-                    "sohu",
-                    "搜狐",
-                    "letv",
-                    "乐视",
-                    "mgtv",
-                    "芒果",
-                    "tnmb",
-                    "seven",
-                    "bilibili",
-                    "1905"
-                ],
-                "header": {
-                    "User-Agent": "okhttp/4.9.1"
-                }
-            }
-        },
-       {
-            "name": "蓝光解析1",
-            "type": 0,
-            "url": "https://bd.jx.cn/?url="
-        },
-        {
-            "name": "六趣",
-            "type": 1,
-            "url": "http://jx.0v.fit/api.php?url="
-        },
-        {
-            "name":"蓝光解析2",
-            "type":0,
-            "url":"https://dm.xmflv.com:4433/?url="
-        }
+      "name": "优选解析",
+      "type": 1,
+      "url": "http://60.211.124.23:10101/tvbox/json/json.php/?key=36925817322&url="
+    }
   ],
   "rules": [
     {
@@ -1587,7 +1549,7 @@
     {
       "name": "小白最强直播",
       "type": 0,
-      "jar": " https://gh.8090x.eu.org/https://raw.githubusercontent.com/lanny520/tvbox/refs/heads/master/pg.txt",
+      "jar": " http://101.132.194.59:2233/pg.jar",
       "url": "http://127.0.0.1:10079/c/3600/null/http://127.0.0.1:35456/tv.m3u",
       "ua": "okhttp/3.15",
       "epg": "http://127.0.0.1:10079/p/0/proxy/http://epg.112114.xyz/?ch={name}&date=DATE1SUB",
@@ -1687,15 +1649,6 @@
             "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
             "logo": "https://epg.112114.eu.org/logo/{name}.png"
         },
-      {
-      "name": "钵钵鸡",
-      "type": 0,
-      "url": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1736923192652/boboji.m3u",
-      "playerType": 1,
-      "ua": "okhttp/3.15",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
     {
       "name": "IPV4",
       "type": 0,
@@ -1705,10 +1658,22 @@
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
-        {
+    {
+      "name": "钵钵鸡(移动广电专用)",
+      "type": 0,
+      "url": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1736923192652/boboji.m3u",
+      "playerType": 1
+    },
+    {
+      "name": "钵钵鸡(联通电信专用)",
+      "type": 0,
+      "url": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1740249509912/boboji2.m3u",
+      "playerType": 1
+    },
+    {
       "name": "Yoursmile",
       "type": 0,
-      "url": "https://ghproxy.net/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt",
+      "url": "https://gh.8090x.eu.org/https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/live.txt",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
