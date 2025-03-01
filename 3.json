@@ -825,21 +825,6 @@
       "ext": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1740038979341/cksp.txt"
     },
    {
-            "key": "永夜",
-            "name": "永夜｜App",
-            "type": 3,
-            "api": "csp_Muou",
-            "playerType": 2,
-            "ext": "caHR0cDovL2FwcC55aXlpNTIxLnRvcHxZSVlJ5b2x6KeGfDQuMS44"
-        },
-        {
-            "key": "星河",
-            "name": "星河｜APP",
-            "type": 3,
-            "api": "csp_Muou",
-            "playerType": 2,
-            "ext": "caHR0cHM6Ly9odC5tb3liay5jbnzphZLlrqLlvbHop4Z8NC4xLjg="
-        },{
             "key": "现代",
             "name": "现代｜APP",
             "type": 3,
@@ -1016,39 +1001,12 @@
       "jar": "./xm.jar"
     },
     {
-      "key": "csp_兄弟",
-      "name": "👬兄弟┃1080P",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGetV2Guard",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn/5M8HcHgek+Ooq1I/D7QwiKWuFuH+GgIBIVVLdQZft6Mk9Fka1EbHxTztWHQiNgHXHiVvk+ejCBjD0BSR7r/OQwRXL/hnWvB8cCuPH3bAlRsZq1yhTb0zSRe2x+RTMdYfwvn+DcgXmgQUv3onmUYi/m3QjlolWtutbTn4SlOrjxkhOqN1iBdPJ37o3/6zKuYuEx9lEF8Vwgc6SSDnjuQ4O3nhZ4IkkS5Le3RdRoVDwe",
-      "jar": "./xm.jar"
-    },
-    {
       "key": "电影",
       "name": "🎬电影┃1080P",
       "type": 3,
       "quickSearch": 0,
       "api": "csp_AppGetV2Guard",
       "ext": "sHR2rlsfjI4L3t4RXQMkn9pXqDDJVVS6pwdk2S4nTvU6TUFngKGexyvHMXSXO57AN6M4LsBHwZ1tcHnPZ2gPH1m7qu7r1zc7CkawgqunMPxZznGnqtbiv5NVOliQUr2NK4Pee7PFE2+BCvbGUPd3IR9Hiub1wBkbrfqjptJFLEpVXeR1pgeGp6pPUjADtyQPuXHj4azaFzDrobUCcdcn7KM6ZC4rjkupd5HlbdqhOJTRBv917h5RUlXs1sgRU1+EWkMXuNopX+18VjWwSrFYPw==",
-      "jar": "./xm.jar"
-    },
-    {
-      "key": "小猫",
-      "name": "🐱小猫┃1080P",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGetV2Guard",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn35bf/1LEoRwqTXcrC7IQ0LqkJ9uquhjeheQXMJ/1jcyl7dTdYTs2tmJx3JQfbM+sLOHa3gv0n6rwfqf5gycuzU7dkNLItKvRFx3Cc438fy/s56XVJJZXZczLxopwnsmcYwYi1Ry6merfTK6wL78+y09P00Emc+qYY6cbo9/0p3aoyI75hXhhWfgk2fsdhl/CJ63tm0h5nu8u2sR6MVAG9bXBLHLiasPCrBhIBKlseXE",
-      "jar": "./xm.jar"
-    },
-    {
-      "key": "︎酷云",
-      "name": "🐰米兔┃1080P",
-      "type": 3,
-      "quickSearch": 0,
-      "api": "csp_AppGetV2Guard",
-      "ext": "sHR2rlsfjI4L3t4RXQMknwIID6HUaZ7fMpUHnejxryN5hsS4yit06Lnf2r+dC+sQvVkljL9jiPtd8pMWr4fNfWKjGEfNt1bpDmN5e2aBCPjIZR4UXJCYTrfMnVcmHKgKoreMTaxuE5/5bSRuOI00lrntzq3KElTThhfQG1pBRYlruaU55rzaVwdDETvkWDgAa/b2wNbZqTrjcVemPpod4zhBsMUGnTLFIVIA01378wI=",
       "jar": "./xm.jar"
     },
     {
@@ -1079,33 +1037,15 @@
       "key": "csp_Lkdy",
       "name": "💐来看┃1080P",
       "type": 3,
-      "api": "csp_Lkdy",
-      "jar": "./xm.jar"
-    },
-    {
-      "key": "csp_SuBaiBai",
-      "name": "☁️白白┃1080P",
-      "type": 3,
-      "api": "csp_SuBaiBai",
-      "playerType": 2,
-      "ext": "https://subaibai.vip/",
-      "jar": "./xm.jar"
-    },
-    {
-      "key": "csp_MiSou",
-      "name": "🔍米搜┃夸克",
-      "type": 3,
-      "changeable": "0",
-      "api": "csp_MiSouGuard",
-      "ext": "",
+      "api": "csp_LkdyGuard",
       "jar": "./xm.jar"
     },
     {
       "key": "csp_Wwys",
       "name": "👨农民┃1080P",
       "type": 3,
-      "api": "csp_Wwys",
-      "ext": "https://m.wwgz.cn",
+      "api": "csp_WwysGuard",
+      "ext": "https://www.wwgz.cn",
       "jar": "./xm.jar"
     },
     {
