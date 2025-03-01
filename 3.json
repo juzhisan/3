@@ -563,21 +563,21 @@
       }
     },
     {
-      "key": "926看球",
+      "key": "926",
       "name": "⚽926┃看球",
       "type": 3,
-      "api": "csp_kanqiu926",
+      "api": "csp_kanqiu926Guard",
       "searchable": 0,
       "changeable": 0,
       "style": {
         "type": "list"
       },"jar": "./fan.txt"
     },
-   {
-      "key": "88看球",
+    {
+      "key": "88",
       "name": "⚽88┃看球",
       "type": 3,
-      "api": "csp_Sir88",
+      "api": "csp_Sir88Guard",
       "searchable": 0,
       "changeable": 0,
       "style": {
@@ -588,7 +588,7 @@
       "key": "看球",
       "name": "⚽看球┃直播",
       "type": 3,
-      "api": "csp_Kanqiu",
+      "api": "csp_KanqiuGuard",
       "searchable": 0,
       "changeable": 0,
       "style": {
@@ -599,44 +599,66 @@
       "key": "Jrsjs",
       "name": "⚽ Jrs┃球迷",
       "type": 3,
-      "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/jrk.js",
+      "api": "https://raw.gitmirror.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
+      "ext": "https://raw.gitmirror.com/fantaiying7/EXT/refs/heads/main/jrk.js",
       "style": {
         "type": "list"
       },
       "searchable": 0,
       "quickSearch": 0,
-      "changeable": 0
-    },
-  {
-      "key": "310js",
-      "name": "⚽ 310┃看球",
+      "changeable": 0,"jar": "./fan.txt"
+    },{
+      "key": "alllive",
+      "name": "📽️一直播┃直播",
       "type": 3,
-      "api": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/310直播.js",
-      "style": {
-        "type": "list"
-      },
+      "api": "csp_AllliveGuard",
+      "playerType": 2,
       "searchable": 0,
       "quickSearch": 0,
-      "changeable": 0
+      "changeable": 0,"jar": "./fan.txt"
     },
-    {"key":"Aid","name":"🚑急救┃饭","type":3,"api":"csp_FirstAid","jar": "./fan.txt","searchable":0,"quickSearch":0,"changeable":0,"style": { "type": "rect", "ratio":3.8}},
     {
-      "key": "Auete",
-      "name": "🏝奥特┃饭",
+      "key": "抠搜",
+      "name": "🍄抠抠┃搜搜",
       "type": 3,
-      "api": "csp_Auete",
+      "api": "csp_KkSsGuard",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,
-      "ext": "https://auete.com/","jar": "./fan.txt"
-    }, 
+      "changeable": 0,
+      "ext": {
+        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "from": "4k|auto"
+      },"jar": "./fan.txt"
+    },
     {
-      "key": "zxzj",
-      "name": "🍊在线┃饭",
+      "key": "UC",
+      "name": "🌈优汐┃搜搜",
       "type": 3,
-      "api": "csp_Zxzj",
+      "api": "csp_UuSsGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": {
+        "Cloud-drive": "tvfan/Cloud-drive.txt",
+        "from": "4k|auto",
+        "pturl": "http://mo.91muou.icu/|http://54271.fun/|http://mo.666291.xyz/"
+      },"jar": "./fan.txt"
+    },
+    {
+      "key": "原创",
+      "name": "☀原创┃不卡",
+      "type": 3,
+      "api": "csp_YCyzGuard",
+      "timeout": 15,
+      "playerType": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,"jar": "./fan.txt"
+    },{
+      "key": "zxzj",
+      "name": "🍊在线┃秒播",
+      "type": 3,
+      "api": "csp_ZxzjGuard",
       "timeout": 15,
       "searchable": 1,
       "quickSearch": 1,
@@ -644,21 +666,42 @@
       "ext": "https://www.zxzjhd.com/","jar": "./fan.txt"
     },
     {
-      "key": "原创",
-      "name": "☀原创┃饭",
+      "key": "比特",
+      "name": "🍄比特┃秒播",
       "type": 3,
-      "api": "csp_YCyz",
-      "timeout": 15,
-      "playerType": 1,
+      "api": "csp_BttwooGuard",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,"jar": "./fan.txt"
+    },{
+      "key": "奥特",
+      "name": "🏝奥特┃多线",
+      "type": 3,
+      "api": "csp_AueteGuard",
+      "timeout": 15,
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "ext": "https://auete.com/","jar": "./fan.txt"
+    },{
+      "key": "Aid",
+      "name": "🚑急救┃教学",
+      "type": 3,
+      "api": "csp_FirstAidGuard",
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 3.8
+      },"jar": "./fan.txt"
     },
     {
-      "key": "csp_Bttoo",
-      "name": "🍄比特┃饭",
+      "key": "低端",
+      "name": "⏮️低端┃外剧",
       "type": 3,
-      "api": "csp_Bttwoo",
+      "api": "csp_DdrkGuard",
+      "playerType": "2",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,"jar": "./fan.txt"
@@ -703,20 +746,7 @@
         "danmu": true
       }
     },
-   {
-            "key": "天天弹幕",
-            "name": "天天｜弹幕",
-            "type": 3,
-            "api": "csp_TianTian",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-                "danmu": true,
-                "site": "aHR0cDovL29wLnlzZHFqcy5jbg=="
-            }
-        },
-        {
+    {
             "key": "热播弹幕",
             "name": "热播｜弹幕",
             "type": 3,
@@ -861,30 +891,6 @@
       "filterable": 1,
       "ext": "aHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrL2FwaS5waHB8azlvM3AyYzhiN20zejBvOHxrOW8zcDJjOGI3bTN6MG84"
     },
-    {
-      "key": "csp_现代",
-      "name": "🔭现代┃App",
-      "type": 3,
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "api": "./Appapi.js",
-      "playerType": 2,
-      "filterable": 1,
-      "ext": "aHR0cHM6Ly9nZXQuYnJvdm9kLmNvbS9hcGkucGhwfHN6ZGp3ZGFwcHdjbm1kaGJ8c3pkandkYXBwd2NubWRoYg=="
-    },
-    {
-      "key": "csp_酷云",
-      "name": "🔭酷云┃App",
-      "type": 3,
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "api": "./Appapi.js",
-      "playerType": 2,
-      "filterable": 1,
-      "ext": "aHR0cHM6Ly9zYzEwODAudG9wL2FwaS5waHB8ZTU5ZDQ0YjJlZWYwM2JhMnxlNTlkNDRiMmVlZjAzYmEy"
-    },
    {
       "key": "csp_次元派对",
       "name": "🔭次元派对动漫┃App",
@@ -909,57 +915,11 @@
       "filterable": 1,
       "ext": "aHR0cDovL2dldC5vcGVuLm1pZnVuLm9yZy9hcGkucGhwfEdFVE1JRlVOR0VJTUlGVU58R0VUTUlGVU5HRUlNSUZVTg=="
     },
-   {
-      "key": "csp_良人",
-      "name": "🔭良人┃App",
-      "type": 3,
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "api": "./Appapi.js",
-      "playerType": 2,
-      "filterable": 1,
-      "ext": "aHR0cDovLzExMC40Mi4zLjE5NTo4OTg5L2FwaS5waHB8RDZxN2hqYjg3RkowOUY3N3xENnE3aGpiODdGSjA5Rjc3"
-    },
-    {
-            "key": "虎斑",
-            "name": "虎斑｜4K",
-            "type": 3,
-            "api": "csp_Wobg",
-            "quickSearch": 1,
-            "changeable": 1,
-            "filterable": 1,
-            "ext": {
-                "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-                "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-                "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-                "site": "http://45.207.212.215:12121",
-                "danmu": true
-            }
-        },
-    {
-      "key": "骚火影视",
-      "name": "骚火｜影视",
-      "type": 3,
-      "api": "csp_SaoHuo",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
     {
       "key": "瓜子影视",
       "name": "瓜子｜影视",
       "type": 3,
       "api": "csp_Gz360",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "低端影视",
-      "name": "低端｜影视",
-      "type": 3,
-      "api": "csp_Ddys",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -972,32 +932,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
-    },
-    {
-      "key": "抠搜",
-      "name": "🍄抠抠┃饭",
-      "type": 3,
-      "api": "csp_KkSs",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": {
-        "Cloud-drive": "tvfan/Cloud-drive.txt",
-        "from": "4k|auto"
-      },"jar": "./fan.txt"
-    },
-    {
-      "key": "UC",
-      "name": "🌈优汐┃饭",
-      "type": 3,
-      "api": "csp_UuSs",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": {
-        "Cloud-drive": "tvfan/Cloud-drive.txt",
-        "from": "4k|auto"
-      },"jar": "./fan.txt"
     },
     {
       "key": "csp_Wogg",
@@ -1118,18 +1052,27 @@
       "jar": "./xm.jar"
     },
     {
-      "key": "csp_Xlys",
-      "name": "🍤哔嘀┃米",
-      "api": "csp_Xlys",
+      "key": "天天",
+      "name": "🦢天天┃1080P",
       "type": 3,
-      "playerType": 2,
+      "api": "csp_AppRJGuard",
+      "ext": "sHR2rlsfjI4L3t4RXQMknxhunFUlA4159TKiKvIPpfcM1xianxebcSLajBbwFymqC+z9WoGzQYbh7FSvh8KdiC0BKF0CalaPaCEMOZm+ClGEeNzXAaR0FnrV04SiB2NK",
       "jar": "./xm.jar"
     },
     {
-      "key": "csp_Lgyy",
-      "name": "⏳️️流光┃1080P",
+      "key": "csp_AppXY",
+      "name": "🐸上头┃短剧",
       "type": 3,
-      "api": "csp_Lgyy",
+      "api": "csp_AppXYGuard",
+      "jar": "./xm.jar"
+    },
+    {
+      "key": "csp_MiSou",
+      "name": "🔍米搜┃夸克",
+      "type": 3,
+      "changeable": "0",
+      "api": "csp_MiSouGuard",
+      "ext": "",
       "jar": "./xm.jar"
     },
     {
@@ -1146,6 +1089,15 @@
       "api": "csp_SuBaiBai",
       "playerType": 2,
       "ext": "https://subaibai.vip/",
+      "jar": "./xm.jar"
+    },
+    {
+      "key": "csp_MiSou",
+      "name": "🔍米搜┃夸克",
+      "type": 3,
+      "changeable": "0",
+      "api": "csp_MiSouGuard",
+      "ext": "",
       "jar": "./xm.jar"
     },
     {
