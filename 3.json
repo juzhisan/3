@@ -785,6 +785,15 @@
             "playerType": 2,
             "ext": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1740038979341/cksp.txt"
         },
+     {
+      "key": "巧技",
+      "name": "🚗来源┃巧记",
+      "type": 3,
+      "api": "csp_qiao2",
+      "playerType": 2,
+      "jar": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1740559814912/qiaoji2.jar;md5;699723f205e4b8d409ccbbad8d4a7780",
+      "ext": "https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1740038979341/cksp.txt"
+    },
    {
             "key": "永夜",
             "name": "永夜｜App",
@@ -851,7 +860,8 @@
       "playerType": 2,
       "filterable": 1,
       "ext": "aHR0cDovL2M4dzJvdjd1NXdnMnoxbzhwMjFjLmFsaXl1bmNzLmNsaWNrL2FwaS5waHB8azlvM3AyYzhiN20zejBvOHxrOW8zcDJjOGI3bTN6MG84"
-    },{
+    },
+    {
       "key": "csp_现代",
       "name": "🔭现代┃App",
       "type": 3,
@@ -964,91 +974,6 @@
       "filterable": 1
     },
     {
-      "key": "IKTV",
-      "name": "KTV｜音乐",
-      "type": 3,
-      "api": "csp_WexIktv",
-      "searchable": 1,
-      "changeable": 0,
-      "jar": "./wex.txt"
-    },
-    {
-      "key": "Alllive",
-      "name": "聚合｜直播‍",
-      "type": 3,
-      "api": "csp_Wexalllive",
-      "searchable": 1,
-      "changeable": 1,
-      "jar": "./wex.txt"},
-      {
-      "key": "csp_Wogg",
-      "name": "🧸玩偶┃米",
-      "type": 3,
-      "api": "csp_Wogg",
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "site_urls": [
-          "https://wogg.xxooo.cf",
-          "http://www.wogg.bf",
-          "https://www.wogg.net"
-        ],
-        "threadinfo": {
-          "chunksize": 450,
-          "threads": 10
-        }
-      },"jar":"./xm.jar"
-    },
-    {
-      "key": "csp_Netfixtv",
-      "name": "💯至臻┃米",
-      "type": 3,
-      "api": "csp_Duopan",
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "site_urls": [
-          "https://mihdr.top",
-          "http://www.miqk.cc",
-          "http://www.xhww.net",
-          "http://xhww.net",
-          "https://xiaomiai.site"
-        ],
-        "url_key": "Duopan",
-        "threadinfo": {
-          "chunksize": 250,
-          "threads": 10
-        }
-      },"jar":"./xm.jar"
-    },
-    {
-      "key": "csp_UC",
-      "name": "💌MIUC┃米",
-      "type": 3,
-      "api": "csp_MiUc",
-      "changeable": 0,
-      "filterable": 1,
-      "ext": {
-        "site_urls": [
-          "http://www.54271.fun/",
-          "https://www.milvdou.fun",
-          "http://54271.fun/",
-          "http://milvdou.fun"
-        ],
-        "url_key": "MiUc",
-        "threadinfo": {
-          "chunksize": 450,
-          "threads": 10
-        }
-      },"jar":"./xm.jar"
-    },
-    {
-      "key": "米搜",
-      "name": "🌾米搜┃米",
-      "type": 3,
-      "api": "csp_MiSou",
-      "changeable": 0,"jar":"./xm.jar"
-    },{
       "key": "抠搜",
       "name": "🍄抠抠┃饭",
       "type": 3,
@@ -1073,6 +998,124 @@
         "Cloud-drive": "tvfan/Cloud-drive.txt",
         "from": "4k|auto"
       },"jar": "./fan.txt"
+    },
+    {
+      "key": "csp_Wogg",
+      "name": "🧸玩偶┃4K弹幕",
+      "type": 3,
+      "api": "csp_WoggGuard",
+      "changeable": "0",
+      "filterable": 1,
+      "ext": "Yu2Y3Q8tqDTqZ+GCqfQZz8i/vsP/tl9O+/0ZjpgnBg9L+drzR5a6bo7DML9hTEHvIuMN0JxvcbUflFgvOz4etYDN7y7HMBVx1lySKZMORlcuy1+QT6/78n70h0VE/aynmB7qR812bPh9IctEX1Ps5UNq6pz9lHJJ1Xswkl1pdKUNhW2GeDuw/9oMUymKtN9kmIud7WEkjTn+4UP1eQ+h81m46INuB1oOPvQeSETQWcmVhbczAnXcEmK7u4bVxZ5oKKZWjoc6mDscqXOk5nbOUX52zFPanQSC/17o2QbbQLaJxb1pZElZk98+QyUvepv9LCexfurB9htmgG0UGHMk6d3o8iOPb0WWKJ40YYZVPVpXfosqsA/sBZbsfJssj3T6FFu6ZdXWbQWpP1Z8oaOAApeC/OKWsDirH7A5bOpjz4o=",
+      "jar": "./xm.jar"
+    },
+    {
+      "key": "csp_Netfixtv",
+      "name": "💌至臻┃4K弹幕",
+      "type": 3,
+      "changeable": "0",
+      "api": "csp_DuopanGuard",
+      "filterable": 1,
+      "ext": {
+        "site_urls": [
+          "https://mihdr.top",
+          "http://www.miqk.cc",
+          "http://www.xhww.net",
+          "http://xhww.net",
+          "https://xiaomiai.site"
+        ],
+        "url_key": "Netfixtv",
+        "token": "",
+        "ucCookie": "",
+        "quarkCookie": "",
+        "threadinfo": {
+          "chunksize": 400,
+          "threads": 12
+        }
+      },
+      "jar": "./xm.jar"
+    },
+    {
+      "key": "csp_UC",
+      "name": "🍚小米┃UC4K4K",
+      "type": 3,
+      "changeable": "0",
+      "api": "csp_DuopanGuard",
+      "filterable": 1,
+      "ext": {
+        "site_urls": [
+          "http://www.54271.fun/",
+          "https://www.milvdou.fun",
+          "http://www.54271.fun/",
+          "https://www.mucpan.cc/",
+          "https://mucpan.cc/",
+          "http://milvdou.fun"
+        ],
+        "url_key": "UC",
+        "token": "",
+        "ucCookie": "",
+        "quarkCookie": "",
+        "threadinfo": {
+          "chunksize": 400,
+          "threads": 12
+        }
+      },
+      "jar": "./xm.jar"
+    },
+    {
+      "key": "csp_麻花",
+      "name": "🍡麻花┃1080P",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGetV2Guard",
+      "ext": "sHR2rlsfjI4L3t4RXQMkn64XzcQ7xvStB8jMisBReTIxM41ceZBHTzUgk3r/HwfaQHDZorN0nnVVuvE2MPKn8MPxE7ylJqasRuICMIOVVttRnHTeArnRbQHtOtv9F+MUHJKlwhy6U0meUqFlwIn7psnaR3hGPEBEsJYJsPp76XCOFyL1bvM3tTLekJMN0bE6C8wUUmg83iijAB1Xb6BFY0SFjRkJUBqkeUVtwAx1KA1QQjwUVBpGjtQEZ08jK7hLlREWx4foeg01L1aMK+viow==",
+      "jar": "./xm.jar"
+    },
+    {
+      "key": "csp_良人",
+      "name": "⚽️良人┃1080P",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "api": "csp_AppGetV2Guard",
+      "ext": "sHR2rlsfjI4L3t4RXQMkn0xaBCNcSQUCvczzn7zWpJd7PJ5uE10QNLrWWS17wAYgh1d6T+lyAGWYDDt/yJr/VNQuyK2VSIuevNakK2GvE1EQejlklHv7etmkohoSdYeXfClYcFjVBjQD/3ueLIRu5mRtC17xwZEKgga5OKghvkNOKFHeBC8zljBC+o7LY640uwI3xUCS6H6I1Xn+MXnhLIdXvzJq3jAPBvKIxWrDUVfkCH94kY9cJ8WJisUFWHbs",
+      "jar": "./xm.jar"
+    },
+    {
+      "key": "csp_兄弟",
+      "name": "👬兄弟┃1080P",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGetV2Guard",
+      "ext": "sHR2rlsfjI4L3t4RXQMkn/5M8HcHgek+Ooq1I/D7QwiKWuFuH+GgIBIVVLdQZft6Mk9Fka1EbHxTztWHQiNgHXHiVvk+ejCBjD0BSR7r/OQwRXL/hnWvB8cCuPH3bAlRsZq1yhTb0zSRe2x+RTMdYfwvn+DcgXmgQUv3onmUYi/m3QjlolWtutbTn4SlOrjxkhOqN1iBdPJ37o3/6zKuYuEx9lEF8Vwgc6SSDnjuQ4O3nhZ4IkkS5Le3RdRoVDwe",
+      "jar": "./xm.jar"
+    },
+    {
+      "key": "电影",
+      "name": "🎬电影┃1080P",
+      "type": 3,
+      "quickSearch": 0,
+      "api": "csp_AppGetV2Guard",
+      "ext": "sHR2rlsfjI4L3t4RXQMkn9pXqDDJVVS6pwdk2S4nTvU6TUFngKGexyvHMXSXO57AN6M4LsBHwZ1tcHnPZ2gPH1m7qu7r1zc7CkawgqunMPxZznGnqtbiv5NVOliQUr2NK4Pee7PFE2+BCvbGUPd3IR9Hiub1wBkbrfqjptJFLEpVXeR1pgeGp6pPUjADtyQPuXHj4azaFzDrobUCcdcn7KM6ZC4rjkupd5HlbdqhOJTRBv917h5RUlXs1sgRU1+EWkMXuNopX+18VjWwSrFYPw==",
+      "jar": "./xm.jar"
+    },
+    {
+      "key": "小猫",
+      "name": "🐱小猫┃1080P",
+      "type": 3,
+      "quickSearch": 1,
+      "api": "csp_AppGetV2Guard",
+      "ext": "sHR2rlsfjI4L3t4RXQMkn35bf/1LEoRwqTXcrC7IQ0LqkJ9uquhjeheQXMJ/1jcyl7dTdYTs2tmJx3JQfbM+sLOHa3gv0n6rwfqf5gycuzU7dkNLItKvRFx3Cc438fy/s56XVJJZXZczLxopwnsmcYwYi1Ry6merfTK6wL78+y09P00Emc+qYY6cbo9/0p3aoyI75hXhhWfgk2fsdhl/CJ63tm0h5nu8u2sR6MVAG9bXBLHLiasPCrBhIBKlseXE",
+      "jar": "./xm.jar"
+    },
+    {
+      "key": "︎酷云",
+      "name": "🐰米兔┃1080P",
+      "type": 3,
+      "quickSearch": 0,
+      "api": "csp_AppGetV2Guard",
+      "ext": "sHR2rlsfjI4L3t4RXQMknwIID6HUaZ7fMpUHnejxryN5hsS4yit06Lnf2r+dC+sQvVkljL9jiPtd8pMWr4fNfWKjGEfNt1bpDmN5e2aBCPjIZR4UXJCYTrfMnVcmHKgKoreMTaxuE5/5bSRuOI00lrntzq3KElTThhfQG1pBRYlruaU55rzaVwdDETvkWDgAa/b2wNbZqTrjcVemPpod4zhBsMUGnTLFIVIA01378wI=",
+      "jar": "./xm.jar"
     },
     {
       "key": "csp_Xlys",
@@ -1124,61 +1167,6 @@
       "order_num": 0,
       "changeable": 0,
       "ext": "https://gitee.com/smallmi1007/mimi/raw/master/wencai.js"
-    },
-    {
-      "key": "csp_麻花",
-      "name": "🍡麻花┃1080P",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_MiTuApp",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn64XzcQ7xvStB8jMisBReTIxM41ceZBHTzUgk3r/HwfaQHDZorN0nnVVuvE2MPKn8MPxE7ylJqasRuICMIOVVttRnHTeArnRbQHtOtv9F+MUHJKlwhy6U0meUqFlwIn7psnaR3hGPEBEsJYJsPp76XCOFyL1bvM3tTLekJMN0bE6C8wUUmg83iijAB1Xb6BFY0SFjRkJUBqkeUVtwAx1KA1QQjwUVBpGjtQEZ08jK7hLlREWx4foeg01L1aMK+viow==",
-      "jar": "./xm.jar"
-    },
-    {
-      "key": "csp_良人",
-      "name": "⚽️良人┃1080P",
-      "type": 3,
-      "searchable": 1,
-      "quickSearch": 1,
-      "api": "csp_MiTuApp",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn+pzOh0GsJJgcwHHxDs8FcBDGD81qAZtun78VAJxzshCbStdXIlQiksUvc2b5fXyuxJO9KBNp5LzL/pYLLOs1V3R3WOh90eVpJGxxXWEZtoq+F7Cq4CbQ3J1TTXahpYpecvphwmIcDJBAufEtnAznmjxxk6qVoA6w/eypA9oHqhDmy914I15LE2N8YnLptcACiTzTT1iakLVXE0Tyc1UhQT4AJ3fQ31m2DKm0pdhPTyT",
-      "jar": "./xm.jar"
-    },
-    {
-      "key": "csp_兄弟",
-      "name": "👬兄弟┃1080P",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_MiTuApp",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn/5M8HcHgek+Ooq1I/D7QwiKWuFuH+GgIBIVVLdQZft6Mk9Fka1EbHxTztWHQiNgHXHiVvk+ejCBjD0BSR7r/OQwRXL/hnWvB8cCuPH3bAlRsZq1yhTb0zSRe2x+RTMdYfwvn+DcgXmgQUv3onmUYi/m3QjlolWtutbTn4SlOrjxkhOqN1iBdPJ37o3/6zKuYuEx9lEF8Vwgc6SSDnjuQ4O3nhZ4IkkS5Le3RdRoVDwe",
-      "jar": "./xm.jar"
-    },
-    {
-      "key": "电影",
-      "name": "🎬电影┃1080P",
-      "type": 3,
-      "quickSearch": 0,
-      "api": "csp_MiTuApp",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn9pXqDDJVVS6pwdk2S4nTvU6TUFngKGexyvHMXSXO57AN6M4LsBHwZ1tcHnPZ2gPH1m7qu7r1zc7CkawgqunMPxZznGnqtbiv5NVOliQUr2NK4Pee7PFE2+BCvbGUPd3IR9Hiub1wBkbrfqjptJFLEpVXeR1pgeGp6pPUjADtyQPuXHj4azaFzDrobUCcdcn7KM6ZC4rjkupd5HlbdqhOJTRBv917h5RUlXs1sgRU1+EWkMXuNopX+18VjWwSrFYPw==",
-      "jar": "./xm.jar"
-    },
-    {
-      "key": "小猫",
-      "name": "🐱小猫┃1080P",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_MiTuApp",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn35bf/1LEoRwqTXcrC7IQ0LqkJ9uquhjeheQXMJ/1jcyl7dTdYTs2tmJx3JQfbM+sLOHa3gv0n6rwfqf5gycuzU7dkNLItKvRFx3Cc438fy/s56XVJJZXZczLxopwnsmcYwYi1Ry6merfTK6wL78+y09P00Emc+qYY6cbo9/0p3aoyI75hXhhWfgk2fsdhl/CJ63tm0h5nu8u2sR6MVAG9bXBLHLiasPCrBhIBKlseXE",
-      "jar": "./xm.jar"
-    },
-    {
-      "key": "︎酷云",
-      "name": "🐰米兔┃1080P",
-      "type": 3,
-      "quickSearch": 0,
-      "api": "csp_MiTuApp",
-      "ext": "sHR2rlsfjI4L3t4RXQMkn9vBxsiZMC9mEjdFHy1b0JxMI9e9kwLyaPtpomLvf/SELlR2tG4av7VLVOnJfhzo9ctafjyVzyG8mJz6OMXeHP7ApPRdTfqKs9a3vBioIdqaC4SFZmteBwEWgHRwJv8Eecn5qIoxur3gmurN6cdUqIwRj8TAAm0asiETQ4b9bq0OXuO6Att6+aOM406026kk7qswMkcs8TxRXUyvexxaQgk=",
-      "jar": "./xm.jar"
     },
     {
       "key": "荐片弹幕",
