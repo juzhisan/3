@@ -72,44 +72,6 @@
       "indexs": 0
     },
     {
-      "key": "Wexconfig",
-      "name": "🐮通用类型┃王二小🐮",
-      "type": 3,
-      "api": "csp_WexconfigGuard",
-      "searchable": 0,
-      "changeable": 0,
-      "indexs": 0,
-      "jar": "./wexq.txt"
-    },
-    {
-      "key": "Wexnullname",
-      "name": "💓无名┃4K💓",
-      "type": 3,
-      "api": "csp_WexnullnameGuard",
-      "searchable": 1,
-      "changeable": 1,
-      "timeout": 120,
-      "jar": "./wexq.txt"
-    },
-    {
-      "key": "WexshuangzixingGuard",
-      "name": "💓双星┃4K💓",
-      "type": 3,
-      "api": "csp_WexshuangzixingGuard",
-      "searchable": 1,
-      "changeable": 1,
-      "jar": "./wexq.txt"
-    },
-    {
-      "key": "WexxzysGuard",
-      "name": "💓校长┃4K💓",
-      "type": 3,
-      "api": "csp_WexxzysGuard",
-      "searchable": 1,
-      "changeable": 1,
-      "jar": "./wexq.txt"
-    },
-    {
       "key": "FourKFM",
       "name": "4K影库 | 4k弹幕",
       "type": 3,
