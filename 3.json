@@ -1,5 +1,5 @@
   {
-  "spider": "https://3141.kstore.space/JAR/xs.jar",
+  "spider": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt",
   "wallpaper": "http://我不是.摸鱼儿.com/wallpaper/moyu.php",
   "logo": "https://3141.kstore.space/logo.jpg",
   "homeLogo": "https://3141.kstore.space/logo.jpg",
@@ -756,12 +756,6 @@
   "name": "芒果T4",
   "type": 4
 },
-{
-  "api": "https://learnpython.ggff.net/shanyoumuxi",
-  "key": "山有木兮",
-  "name": "山有木兮",
-  "type": 4
-},
    { "api": "https://learnpython.ggff.net/youkushipin",
   "key": "优酷视频",
   "name": "优酷 T4",
@@ -850,40 +844,6 @@
                 "device_id": "a9f74849-83d5-4a28-8b85-a087af1402e3"
             }
         },
-        {
-            "key": "夸克影视",
-            "name": "💕夸克┃影视",
-            "type": 3,
-            "api": "https://3141.kstore.space/JS/drpy2.min.js",
-            "ext": "https://3141.kstore.space/JS/%E5%A4%B8%E5%85%8B%E5%BD%B1%E8%A7%86.js"
-        },
-         {
-            "key": "人人电影",
-            "name": "👰人人┃电影",
-            "type": 3,
-            "api": "https://3141.kstore.space/JS/drpy2.min.js",
-            "ext": "https://3141.kstore.space/JS/%E4%BA%BA%E4%BA%BA%E7%94%B5%E5%BD%B1.js"
-        },
-        {
-            "key": "爱看资源网",
-            "name": "🐸爱看┃网盘",
-            "type": 3,
-            "api": "https://3141.kstore.space/JS/drpy2.min.js",
-            "ext": "https://3141.kstore.space/JS/%E7%88%B1%E7%9C%8B%E8%B5%84%E6%BA%90%E7%BD%91.js"
-        },
-        {
-            "key": "金牌影视",
-            "name": "🏅金牌┃蓝光┃无广",
-            "type": 3,
-            "api": "https://3141.kstore.space/PY/%E9%87%91%E7%89%8C%E5%BD%B1%E8%A7%86.py",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "playerType": 2,
-            "ext": {
-                "site": "https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn"
-            }
-        },
       {
             "key": "巧技",
             "name": "🚗聚搜┃影视",
@@ -954,16 +914,7 @@
             "quickSearch": 1,
             "style": {
                 "type": "list"
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
-        },
-        {
-            "key": "戏曲多多",
-            "name": "戏曲｜多多",
-            "type": 3,
-            "api": "csp_AppLY",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "驿站",
@@ -979,7 +930,7 @@
                 "deviceId": "",
                 "version": "",
                 "ua": ""
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "火花",
@@ -995,7 +946,7 @@
                 "deviceId": "",
                 "version": "",
                 "ua": ""
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "火锅",
@@ -1010,7 +961,7 @@
                 "dataIv": "062dec75d039980e",
                 "deviceId": "",
                 "version": ""
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "蓝鹰",
@@ -1025,7 +976,7 @@
                 "dataIv": "ca94b06ca359d80e",
                 "deviceId": "",
                 "version": "120"
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "热剧",
@@ -1041,7 +992,7 @@
                 "deviceId": "",
                 "version": "",
                 "ua": ""
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "影视",
@@ -1057,7 +1008,7 @@
                 "deviceId": "",
                 "version": "",
                 "ua": ""
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "小猪",
@@ -1073,7 +1024,7 @@
                 "deviceId": "",
                 "version": "",
                 "ua": "okhttp/3.10.0"
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "星空",
@@ -1088,7 +1039,7 @@
                 "dataIv": "AJcdjkAjkdJDkvcd",
                 "deviceId": "",
                 "version": ""
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "金牌",
@@ -1101,7 +1052,7 @@
                 "url": "",
                 "site": "https://muouapp.oss-cn-hangzhou.aliyuncs.com/MUOUAPP/godbbq.txt",
                 "name": "金牌影院（请断网再安装）"
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "余白",
@@ -1118,7 +1069,7 @@
                 "version": "",
                 "token": "d51f0cf047e7d4c5f76e2720cfdcaa927055e77c5e8cc0a1a7e49ca198067161",
                 "ua": ""
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "秒看",
@@ -1132,7 +1083,7 @@
                 "dataIv": "c60d88b2eep53za8",
                 "token": "06caee3952a4c97d1ad4c766c875a99d3fa83aa68f46188823600d59ebba4469",
                 "ua": "okhttp/3.10.0"
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "咖啡",
@@ -1145,7 +1096,7 @@
                 "dataKey": "37kj83zs1q16jk6t",
                 "dataIv": "37kj83zs1q16jk6t",
                 "version": "101"
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "仓鼠",
@@ -1158,7 +1109,7 @@
                 "dataKey": "da61247f5b662597",
                 "dataIv": "da61247f5b662597",
                 "version": "120"
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "云云",
@@ -1171,7 +1122,7 @@
                 "dataKey": "staraugust123456",
                 "dataIv": "staraugust123456",
                 "version": "120"
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "鲸鱼",
@@ -1183,12 +1134,12 @@
                 "site": "https://jingyu4k-1312635929.cos.ap-nanjing.myqcloud.com/1.json",
                 "dataKey": "AAdgrdghjfgswerA",
                 "dataIv": "AAdgrdghjfgswerA"
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
       "key": "还行",
       "name": "🌀还行｜4K测试",
-      "jar": "https://3141.kstore.space/JAR/xs.jar",
+      "jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt",
       "type": 3,
       "api": "csp_AppYs",
       "searchable": 1,
@@ -1206,7 +1157,7 @@
                 "dataKey": "ca94b06ca3c7d80e",
                 "dataIv": "ca94b06ca3c7d80e",
                 "ua": "okhttp/3.10.0"
-            },"jar": "https://3141.kstore.space/JAR/xs.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xiaosa.txt"
         },
         {
             "key": "Max",
@@ -1220,7 +1171,7 @@
                 "api": "http://yjyi.juyongjiu.com:80/icciu_api.php/v1.vod",
                 "datasignkey": "6QQNUsP3PkD2ajJCPCY8",
                 "apisignkey": "lvdoutv-1.0.0"
-            },"jar": "https://3141.kstore.space/JAR/vox.jar"
+            },"jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/vox.jar"
         },
     {
       "key": "追忆",
@@ -1228,7 +1179,7 @@
       "type": 3,
       "api": "csp_AppSy",
       "quickSearch": 0,
-      "ext": "oJGDh+VBrPcwnx19VbSGqy9EkivA/Gc+cSt3uSBzyPzDTmKYyoi6Wr4VgqU2u0Sh7AAuGc4/a7UWVU6BEmFetA==","jar": "https://3141.kstore.space/JAR/xm.jar"
+      "ext": "oJGDh+VBrPcwnx19VbSGqy9EkivA/Gc+cSt3uSBzyPzDTmKYyoi6Wr4VgqU2u0Sh7AAuGc4/a7UWVU6BEmFetA==","jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
     {
       "key": "麻花",
@@ -1237,7 +1188,7 @@
       "quickSearch": 0,
       "searchable": 1,
       "api": "csp_AppGet",
-      "ext": "L5CUOokkdA53FISUojI6hPrPTI97cTkdA/ji0bBBqAxKRl2ZBcdyMIPZYXkkVxwyvG4rB4PEPXKIt7+cirUe3BI+KdfWiEtEO4bT/XoF0PYU0GWsBFU3ARUcHsGqNpNy","jar": "https://3141.kstore.space/JAR/xm.jar"
+      "ext": "L5CUOokkdA53FISUojI6hPrPTI97cTkdA/ji0bBBqAxKRl2ZBcdyMIPZYXkkVxwyvG4rB4PEPXKIt7+cirUe3BI+KdfWiEtEO4bT/XoF0PYU0GWsBFU3ARUcHsGqNpNy","jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
     {
       "key": "AppQi1",
@@ -1247,13 +1198,13 @@
       "changeable": "0",
       "quickSearch": 0,
       "filterable": 1,
-      "ext": "BciM/oLDYQqSU++RAsI5xz2Dmz98Blyw0pp0T+0QPiqzXAOG2XsUSh62armSJmz6+8BN455Lbt5tpPqGfXnKgoQ1N+ZOhu3N/KDZ+r/7HZc=","jar": "https://3141.kstore.space/JAR/xm.jar"
+      "ext": "BciM/oLDYQqSU++RAsI5xz2Dmz98Blyw0pp0T+0QPiqzXAOG2XsUSh62armSJmz6+8BN455Lbt5tpPqGfXnKgoQ1N+ZOhu3N/KDZ+r/7HZc=","jar": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/xm.jar"
     },
     {
   "key": "js_en_gf",
   "name": "官方采集(js)",
   "type": 3,
-  "api": "https://3141.kstore.space/JS/en_gf.js",
+  "api": "https://ghfast.top/https://raw.githubusercontent.com/juzhisan/3/master/gfcj.min.js",
   "searchable": 1,
   "quickSearch": 0,
   "filterable": 0,
