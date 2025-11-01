@@ -715,6 +715,17 @@
             },
             "changeable": 1
         },
+        {
+            "key": "企鹅体育",
+            "name": "企鹅体育",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net:5052/?sp=企鹅体育",
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            },
+            "changeable": 1
+        },
         {"api": "https://learnpython.ggff.net/feifanziyuanmin",
   "key": "非凡资源.min",
   "name": "非凡资源 T4",
