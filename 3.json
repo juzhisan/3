@@ -683,10 +683,21 @@
       "changeable": 0
     },
     {
-            "key": "小苹果",
-            "name": "小苹果T4",
+            "key": "小苹果影视",
+            "name": "小苹果 T4",
             "type": 4,
-            "api": "http://zhangqun19.serv00.net/pingguo.php",
+            "api": "http://zhangqun1818.serv00.net:5052/?sp=小苹果影视",
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            },
+            "changeable": 1
+        },
+        {
+            "key": "厂长资源",
+            "name": "厂长 T4",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net:5052/?sp=厂长资源",
             "style": {
                 "type": "rect",
                 "ratio": 1.33
@@ -726,12 +737,51 @@
             },
             "changeable": 1
         },
-        {"api": "https://learnpython.ggff.net/feifanziyuanmin",
-  "key": "非凡资源.min",
-  "name": "非凡资源 T4",
-  "type": 4
-},
-{
+       {
+            "key": "非凡资源.min",
+            "name": "非凡资源 T4",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net:5052/?sp=非凡资源.min",
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            },
+            "changeable": 1
+        },
+  {
+            "key": "奇优动漫",
+            "name": "奇优 T4",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net:5052/?sp=奇优动漫",
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            },
+            "changeable": 1
+        },
+        {
+            "key": "努努影院",
+            "name": "努努影院",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net:5052/?sp=努努影院",
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            },
+            "changeable": 1
+        }, 
+        {
+            "key": "欣欣影视",
+            "name": "欣欣影视",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net:5052/?sp=欣欣影视",
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            },
+            "changeable": 1
+        },
+        {
       "key": "wangwangguazi",
       "name": "guaziT4",
       "type": 4,
@@ -744,40 +794,34 @@
       "api": "https://learnpython.ggff.net/py_jieyingshi"
     },
     {
-  "api": "https://learnpython.ggff.net/changzhangziyuan",
-  "key": "厂长资源",
-  "name": "厂长T4",
-  "type": 4
-},
-  {
   "api": "https://learnpython.ggff.net/4KVM",
   "key": "4KVM",
   "name": "4KT4",
   "type": 4
-},
-{
+   },
+   {
   "api": "https://learnpython.ggff.net/xiaohongyingshi",
   "key": "小红影视",
   "name": "小红 T4",
   "type": 4
-},
-  {
+   },
+   {
   "api": "https://learnpython.ggff.net/mangguoTV",
   "key": "芒果TV",
   "name": "芒果T4",
   "type": 4
-},
+   },
    { "api": "https://learnpython.ggff.net/youkushipin",
   "key": "优酷视频",
   "name": "优酷 T4",
   "type": 4
-},
+  },
   {
   "api": "https://learnpython.ggff.net/yunyun",
   "key": "云云",
   "name": "云云 T4",
   "type": 4
-},
+  },
         {
             "key": "py_DianYingTanTang",
             "name": "🫐电影天堂(T4)",
@@ -788,16 +832,6 @@
             "filterable": 0,
             "changeable": 0
         },
-        {
-      "key": "py_Dm84",
-      "name": "🍋动漫巴士(T4)",
-      "type": 4,
-      "api": "https://py.doube.eu.org/spider?site=Dm84",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
     {
             "key": "夸克推送",
             "name": "👊夸克┃推送",
