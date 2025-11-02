@@ -805,17 +805,6 @@
   "name": "小红 T4",
   "type": 4
    },
-   {
-  "api": "https://learnpython.ggff.net/mangguoTV",
-  "key": "芒果TV",
-  "name": "芒果T4",
-  "type": 4
-   },
-   { "api": "https://learnpython.ggff.net/youkushipin",
-  "key": "优酷视频",
-  "name": "优酷 T4",
-  "type": 4
-  },
   {
   "api": "https://learnpython.ggff.net/yunyun",
   "key": "云云",
