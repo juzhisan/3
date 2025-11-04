@@ -967,22 +967,6 @@
             },"jar": "./xiaosa.txt"
         },
         {
-            "key": "火花",
-            "name": "火花丨APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "",
-                "site": "http://v.itcxo.cn/txt/1.txt",
-                "dataKey": "PoiUytRedFghjklm",
-                "dataIv": "PoiUytRedFghjklm",
-                "deviceId": "",
-                "version": "",
-                "ua": ""
-            },"jar": "./xiaosa.txt"
-        },
-        {
             "key": "火锅",
             "name": "火锅｜APP",
             "type": 3,
@@ -1086,37 +1070,6 @@
                 "url": "",
                 "site": "https://muouapp.oss-cn-hangzhou.aliyuncs.com/MUOUAPP/godbbq.txt",
                 "name": "金牌影院（请断网再安装）"
-            },"jar": "./xiaosa.txt"
-        },
-        {
-            "key": "余白",
-            "name": "余白丨APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "https://dec.yb4k.top",
-                "site": "",
-                "dataKey": "KsmJgfp3MVQFKWRa",
-                "dataIv": "KsmJgfp3MVQFKWRa",
-                "deviceId": "",
-                "version": "",
-                "token": "d51f0cf047e7d4c5f76e2720cfdcaa927055e77c5e8cc0a1a7e49ca198067161",
-                "ua": ""
-            },"jar": "./xiaosa.txt"
-        },
-        {
-            "key": "秒看",
-            "name": "秒看丨APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "site": "https://mk1080.top/get.txt",
-                "dataKey": "c60d88b2eep53za8",
-                "dataIv": "c60d88b2eep53za8",
-                "token": "06caee3952a4c97d1ad4c766c875a99d3fa83aa68f46188823600d59ebba4469",
-                "ua": "okhttp/3.10.0"
             },"jar": "./xiaosa.txt"
         },
         {
