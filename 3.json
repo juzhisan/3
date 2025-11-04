@@ -781,36 +781,28 @@
             },
             "changeable": 1
         },
+      {
+            "key": "界影视",
+            "name": "界影视",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net:5052/?sp=界影视",
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            },
+            "changeable": 1
+        },
         {
-      "key": "wangwangguazi",
-      "name": "guaziT4",
-      "type": 4,
-      "api": "https://learnpython.ggff.net/wangwangguazi"
-    },
-    {
-      "key": "py_jieyingshi",
-      "name": "jieyingshiT4",
-      "type": 4,
-      "api": "https://learnpython.ggff.net/py_jieyingshi"
-    },
-    {
-  "api": "https://learnpython.ggff.net/4KVM",
-  "key": "4KVM",
-  "name": "4KT4",
-  "type": 4
-   },
-   {
-  "api": "https://learnpython.ggff.net/xiaohongyingshi",
-  "key": "小红影视",
-  "name": "小红 T4",
-  "type": 4
-   },
-  {
-  "api": "https://learnpython.ggff.net/yunyun",
-  "key": "云云",
-  "name": "云云 T4",
-  "type": 4
-  },
+            "key": "云云",
+            "name": "云云",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net:5052/?sp=云云",
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            },
+            "changeable": 1
+        },
         {
             "key": "py_DianYingTanTang",
             "name": "🫐电影天堂(T4)",
@@ -1160,14 +1152,6 @@
                 "apisignkey": "lvdoutv-1.0.0"
             },"jar": "./vox.jar"
         },
-    {
-      "key": "追忆",
-      "name": "🐖追忆┃APP",
-      "type": 3,
-      "api": "csp_AppSy",
-      "quickSearch": 0,
-      "ext": "oJGDh+VBrPcwnx19VbSGqy9EkivA/Gc+cSt3uSBzyPzDTmKYyoi6Wr4VgqU2u0Sh7AAuGc4/a7UWVU6BEmFetA==","jar": "./xm.jar"
-    },
     {
       "key": "麻花",
       "name": "🌸麻花┃影视",
