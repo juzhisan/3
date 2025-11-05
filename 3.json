@@ -737,17 +737,6 @@
             },
             "changeable": 1
         },
-       {
-            "key": "非凡资源.min",
-            "name": "非凡资源 T4",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net:5052/?sp=非凡资源.min",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
   {
             "key": "奇优动漫",
             "name": "奇优 T4",
@@ -803,6 +792,17 @@
             },
             "changeable": 1
         },
+       {
+            "key": "UVod",
+            "name": "UVod",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net:5052/?sp=UVod",
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            },
+            "changeable": 1
+        }, 
         {
             "key": "py_DianYingTanTang",
             "name": "🫐电影天堂(T4)",
@@ -1170,16 +1170,6 @@
       "quickSearch": 0,
       "filterable": 1,
       "ext": "BciM/oLDYQqSU++RAsI5xz2Dmz98Blyw0pp0T+0QPiqzXAOG2XsUSh62armSJmz6+8BN455Lbt5tpPqGfXnKgoQ1N+ZOhu3N/KDZ+r/7HZc=","jar": "./xm.jar"
-    },
-    {
-  "key": "js_en_gf",
-  "name": "官方采集(js)",
-  "type": 3,
-  "api": "./gfcj.min.js",
-  "searchable": 1,
-  "quickSearch": 0,
-  "filterable": 0,
-  "changeable": 0
     }
   ],
 "parses": [
