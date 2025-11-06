@@ -905,6 +905,16 @@
       "changeable": 1
     },
     {
+  "key": "js_en_gf",
+  "name": "官方采集(js)",
+  "type": 3,
+  "api": "./gfcj.min.js",
+  "searchable": 1,
+  "quickSearch": 0,
+  "filterable": 0,
+  "changeable": 0
+    },
+    {
             "key": "天翼影视",
             "name": "天翼｜影视",
             "type": 1,
