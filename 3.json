@@ -793,10 +793,89 @@
             "changeable": 1
         }, 
         {
+            "key": "py集合",
+            "name": "py集合",
+            "type": 4,
+            "api": "http://zhangqun1818.serv00.net/py.php",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            }
+        },
+        {
+            "key": "金牌",
+            "name": "金牌",
+            "type": 3,
+            "api": "./金牌.py",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "playerType": 2
+        },
+        {
+            "key": "电影猎手",
+            "name": "电影猎手",
+            "type": 3,
+            "api": "./电影猎手.py",
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            },
+            "changeable": 1
+        },
+        {
+            "key": "4KVM",
+            "name": "4KVM",
+            "type": 3,
+            "api": "./4KVM.py",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "playerType": 2
+        },
+        {
+            "key": "4K影院",
+            "name": "4K影院",
+            "type": 3,
+            "api": "./4K.py",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "playerType": 2
+        },
+        {
+            "key": "采集集合",
+            "name": "采集集合GO",
+            "type": 1,
+            "api": "http://127.0.0.1:1988/lb?lb=3",
+            "searchable": 1,
+            "style": {
+                "type": "rect",
+                "ratio": 1.33
+            },
+            "changeable": 1
+        },
+        {
             "key": "py_DianYingTanTang",
             "name": "🫐电影天堂(T4)",
             "type": 4,
             "api": "https://py.doube.eu.org/spider?site=DianYingTanTang",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0
+        },
+        {
+            "key": "py_Dm84",
+            "name": "🍋动漫巴士(T4)",
+            "type": 4,
+            "api": "https://py.doube.eu.org/spider?site=Dm84",
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 0,
@@ -842,7 +921,7 @@
             "key": "hohaiemby",
             "name": "hohai| EMBY",
             "type": 3,
-            "api": "https://3141.kstore.space/PY/emby.py",
+            "api": "./emby.py",
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
@@ -851,6 +930,48 @@
                 "server": "https://emby.hohai.eu.org:443",
                 "username": "chuxin666",
                 "password": "ycc123456",
+                "proxy": "",
+                "thread": 0,
+                "device_name": "My Computer",
+                "client": "Hills Windows",
+                "client_version": "0.2.2",
+                "device_id": "a9f74849-83d5-4a28-8b85-a087af1402e3"
+            }
+        },
+        {
+            "key": "NYa",
+            "name": "NYA|EMBY",
+            "type": 3,
+            "api": "./emby.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "server": "https://emby.bangumi.ca:443",
+                "username": "tangsan",
+                "password": "tangsan",
+                "proxy": "",
+                "thread": 0,
+                "device_name": "My Computer",
+                "client": "Hills Windows",
+                "client_version": "0.2.2",
+                "device_id": "a9f74849-83d5-4a28-8b85-a087af1402e3"
+            }
+        },
+        {
+            "key": "hohai",
+            "name": "好嗨|EMBY",
+            "type": 3,
+            "api": "./emby.py",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "server": "https://emby.hohai.eu.org:443",
+                "username": "hohai",
+                "password": "hohai",
                 "proxy": "",
                 "thread": 0,
                 "device_name": "My Computer",
