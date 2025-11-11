@@ -1201,6 +1201,31 @@
             },"jar": "./xiaosa.txt"
         },
         {
+            "key": "蓝鹰",
+            "name": "蓝鹰｜APP",
+            "type": 3,
+            "quickSearch": 1,
+            "api": "csp_AppQi",
+            "ext": {
+                "site": "https://lanyinghz.oss-cn-hangzhou.aliyuncs.com/lanyingxmy.txt",
+                "dataKey": "ca94b06ca359d80e",
+                "dataIv": "ca94b06ca359d80e",
+                "version": "120"
+            }
+        },
+        {
+            "key": "一一",
+            "name": "一一｜APP",
+            "type": 3,
+            "api": "csp_AppMuou",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "url": "http://app.yiyi521.top",
+                "name": "YIYI影视"
+            }
+        },
+        {
       "key": "还行",
       "name": "🌀还行｜4K测试",
       "jar": "./xiaosa.txt",
