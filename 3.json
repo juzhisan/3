@@ -1572,6 +1572,23 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
+      "name": "4gtv",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/judy-gotv/iptv/refs/heads/main/4gtv.m3u",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },{
+      "name": "中天",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/judy-gotv/iptv/refs/heads/main/ofiii.m3u",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+      "logo": "https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
       "name": "电视家",
       "type": 0,
       "url": "https://down.nigx.cn/dsj.zzong6599.workers.dev/",
