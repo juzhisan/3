@@ -1062,6 +1062,20 @@
             ]
         }, 
         {
+            "key": "荐片",
+            "name": "荐片｜磁力",
+            "api": "csp_Jianpian",
+            "type": 3,
+            "ext": "https://api.ztcgi.com"
+        },
+        {
+            "key": "修罗",
+            "name": "修罗｜磁力",
+            "api": "csp_Xlys",
+            "type": 3,
+            "ext": "https://xl01.com.de"
+        },
+        {
             "key": "私人",
             "name": "私人｜APP",
             "type": 3,
