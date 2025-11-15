@@ -1261,7 +1261,36 @@
                 "datasignkey": "6QQNUsP3PkD2ajJCPCY8",
                 "apisignkey": "lvdoutv-1.0.0"
             },"jar": "./vox.jar"
-        }
+        },
+        {
+      "key": "AppQi1",
+      "name": "🎴爱盈┃小米",
+      "type": 3,
+      "api": "csp_AppQi",
+      "changeable": "1",
+      "quickSearch": 0,
+      "filterable": 1,
+      "ext": "BciM/oLDYQqSU++RAsI5xz2Dmz98Blyw0pp0T+0QPirf6Vdve9+he2trz5wUFyGCAvVzxSDvmI757t+V5ttwollSfRzsReOERBBsIGN+x9g=","jar": "./xm.jar"
+    },
+    {
+      "key": "AppQi3",
+      "name": "💣爆炸┃小米",
+      "type": 3,
+      "api": "csp_AppQi",
+      "changeable": "1",
+      "quickSearch": 0,
+      "filterable": 1,
+      "ext": "XSJiCWoJEGFoOdKZQ3W3pG4QYj6kuTSnLRDxFYNZWjIPLTHHAeib23CrNf2Ymrxa8iTANsHrwj35FQ3ORCXCuw==","jar": "./xm.jar"
+    },
+    {
+      "key": "布蕾",
+      "name": "💯布蕾┃影视",
+      "quickSearch": 1,
+      "searchable": 1,
+      "type": 3,
+      "api": "csp_AppQi",
+      "ext": "lo54N2bJ4DtrhxC9P676hHekMnvMvX1mNNhVKf3kE5Wgy3H/b30VkkDKAYauTqZs2oYEHsmeJ7qO916dp7EwGSHrLa99AaS96nuzx3wbRg9O4Syz4DgXRB/Lb2vvIW/H","jar": "./xm.jar"
+    }
   ],
 "parses": [
         {
@@ -1602,7 +1631,7 @@
         },
    {
         "name": "冰茶订阅",
-        "url": "https://fy.188766.xyz/?ip=&mishitong=true&lunbo=false&mima=mianfeidehaimaiqian",
+        "url": "https://bc.188766.xyz/?ip=&mishitong=true&lunbo=false&mima=mianfeidehaimaiqian",
         "header": {
             "User-Agent": "bingcha/1.1"
         }
