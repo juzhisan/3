@@ -1226,18 +1226,6 @@
             },"jar": "./xiaosa.txt"
         },
         {
-            "key": "一一",
-            "name": "一一｜APP",
-            "type": 3,
-            "api": "csp_AppMuou",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "url": "http://app.yiyi521.top",
-                "name": "YIYI影视"
-            }
-        },
-        {
       "key": "还行",
       "name": "🌀还行｜4K测试",
       "jar": "./xiaosa.txt",
@@ -1273,26 +1261,7 @@
                 "datasignkey": "6QQNUsP3PkD2ajJCPCY8",
                 "apisignkey": "lvdoutv-1.0.0"
             },"jar": "./vox.jar"
-        },
-    {
-      "key": "麻花",
-      "name": "🌸麻花┃影视",
-      "type": 3,
-      "quickSearch": 0,
-      "searchable": 1,
-      "api": "csp_AppGet",
-      "ext": "L5CUOokkdA53FISUojI6hPrPTI97cTkdA/ji0bBBqAxKRl2ZBcdyMIPZYXkkVxwyvG4rB4PEPXKIt7+cirUe3BI+KdfWiEtEO4bT/XoF0PYU0GWsBFU3ARUcHsGqNpNy","jar": "./xm.jar"
-    },
-    {
-      "key": "AppQi1",
-      "name": "🎴爱盈┃小米",
-      "type": 3,
-      "api": "csp_AppQi",
-      "changeable": "0",
-      "quickSearch": 0,
-      "filterable": 1,
-      "ext": "BciM/oLDYQqSU++RAsI5xz2Dmz98Blyw0pp0T+0QPiqzXAOG2XsUSh62armSJmz6+8BN455Lbt5tpPqGfXnKgoQ1N+ZOhu3N/KDZ+r/7HZc=","jar": "./xm.jar"
-    }
+        }
   ],
 "parses": [
         {
