@@ -426,36 +426,10 @@
             "filterable": 1
         },
         {
-            "key": "锦鲤短剧",
-            "name": "锦鲤｜短剧",
-            "type": 3,
-            "api": "https://gitee.com/PizazzXS/another-d/raw/master/movie/py/JLDJ.py",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
-            "key": "剧王短剧",
-            "name": "剧王｜短剧",
-            "type": 3,
-            "api": "https://gitee.com/PizazzXS/another-d/raw/master/movie/py/JWDJ.py",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
             "key": "奇优影视",
             "name": "奇优｜影视",
             "type": 3,
             "api": "csp_Qiyou"
-        },
-        {
-            "key": "饺子影视",
-            "name": "饺子｜影视",
-            "type": 3,
-            "api": "csp_Jiaozi"
         },
         {
             "key": "骚火影视",
@@ -480,13 +454,6 @@
             "type": 3,
             "api": "csp_XBPQ",
             "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/json/YLYS.json"
-        },
-        {
-            "key": "采集之王",
-            "name": "采集｜合集",
-            "type": 3,
-            "api": "https://9877.kstore.space/TVBox/JS/drpy2.min.js",
-            "ext": "https://gitee.com/PizazzXS/another-d/raw/master/movie/js/CJZW.js?type=url&params=https://gitee.com/PizazzXS/another-d/raw/master/movie/json/CJJT.json$1$1"
         },
         {
             "key": "糖果",
@@ -779,17 +746,6 @@
             "changeable": 1
         },
         {
-            "key": "厂长资源",
-            "name": "厂长 T4",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net:5052/?sp=厂长资源",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-        {
             "key": "两个BT",
             "name": "两个T4",
             "type": 4,
@@ -801,65 +757,10 @@
             "changeable": 1
         },
         {
-            "key": "永乐视频",
-            "name": "永乐视频 T4",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net:5052/?sp=永乐视频",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-        {
             "key": "企鹅体育",
             "name": "企鹅体育",
             "type": 4,
             "api": "http://zhangqun1818.serv00.net:5052/?sp=企鹅体育",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-        {
-            "key": "努努影院",
-            "name": "努努影院",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net:5052/?sp=努努影院",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        }, 
-        {
-            "key": "欣欣影视",
-            "name": "欣欣影视",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net:5052/?sp=欣欣影视",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-      {
-            "key": "界影视",
-            "name": "界影视",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net:5052/?sp=界影视",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-        {
-            "key": "云云",
-            "name": "云云",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net:5052/?sp=云云",
             "style": {
                 "type": "rect",
                 "ratio": 1.33
