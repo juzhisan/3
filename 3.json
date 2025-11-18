@@ -25,15 +25,6 @@
             },"jar": ""
         },
         {
-            "key": "低端影视",
-            "name": "低端｜影视",
-            "type": 3,
-            "api": "csp_Ddys",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
             "key": "厂长影视",
             "name": "厂长｜影视",
             "type": 3,
@@ -575,37 +566,6 @@
             "style": {
                 "type": "list"
             }
-        },
-        {
-            "key": "瓜子看球",
-            "name": "🌐瓜子┃体育🌐",
-            "type": 3,
-            "api": "csp_WexGZsportGuard",
-            "searchable": 1,
-            "changeable": 0,
-            "style": {
-                "type": "list"
-            }
-        },
-        {
-            "key": "Wexliyuan",
-            "name": "🎎戏曲┃秒播🎎",
-            "type": 3,
-            "api": "csp_WexliyuanGuard",
-            "searchable": 1,
-            "changeable": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 2
-            },"jar": "./wex.txt"
-        },
-        {
-            "key": "Wex275tingshu",
-            "name": "🎃‍极品┃听书🎃",
-            "type": 3,
-            "api": "csp_Wex275tingshuGuard",
-            "searchable": 1,
-            "changeable": 1,"jar": "./wex.txt"
         },
         {
             "key": "戏曲多多",
