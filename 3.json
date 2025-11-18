@@ -985,6 +985,19 @@
             "ext": "https://v.catcs.cc//api.php/v1.vod"
         },
         {
+            "key": "魔方",
+            "name": "魔方｜APP",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "url": "http://app.ybn-ooo.top",
+                "dataKey": "vcfgytu7654rtyui",
+                "dataIv": "vcfgytu7654rtyui"
+            }
+        },
+        {
             "key": "驿站",
             "name": "驿站丨APP",
             "type": 3,
