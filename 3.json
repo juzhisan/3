@@ -136,7 +136,7 @@
 			"key": "hipy_js_非凡资源[资]",
 			"name": "非凡资源[资]",
 			"type": 3,
-			"api": "https://9877.kstore.space/TVBox/JS/drpy2.min.js",
+			"api": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
 			"searchable": 1,
 			"quickSearch": 1,
 			"filterable": 1,
@@ -152,7 +152,7 @@
             "quickSearch": 1,
             "style": {
                 "type": "list"
-            },"jar": "./xiaosa.txt"
+            }
         },
       {
             "key": "哔哩视频",
@@ -168,38 +168,38 @@
                 "ratio": 1.433
             },
             "ext": {
-                "json": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/movie/json/BLSP.json",
+                "json": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/json/BLSP.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             }
         },
-       {
-      "key": "腾讯视频",
-      "name": "腾讯｜视频",
-      "type": 3,
-      "api": "https://9877.kstore.space/TVBox/JS/drpy2.min.js",
-      "ext": "https://9877.kstore.space/TVBox/Moive/js/TXSP.js"
-    },
+      {
+            "key": "腾讯视频",
+            "name": "腾讯｜视频",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
+        },
         {
-      "key": "优酷视频",
-      "name": "优酷｜视频",
-      "type": 3,
-      "api": "https://9877.kstore.space/TVBox/JS/drpy2.min.js",
-      "ext": "https://9877.kstore.space/TVBox/Moive/js/YKSP.js"
-    },
-    {
-      "key": "芒果视频",
-      "name": "芒果｜视频",
-      "type": 3,
-      "api": "https://9877.kstore.space/TVBox/JS/drpy2.min.js",
-      "ext": "https://9877.kstore.space/TVBox/Moive/js/MGSP.js"
-    },
-    {
-      "key": "爱奇艺",
-      "name": "爱奇艺｜视频",
-      "type": 3,
-      "api": "https://9877.kstore.space/TVBox/JS/drpy2.min.js",
-      "ext": "https://9877.kstore.space/TVBox/Moive/js/AQY.js"
-    },
+            "key": "优酷视频",
+            "name": "优酷｜视频",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/YKSP.js"
+        },
+        {
+            "key": "芒果视频",
+            "name": "芒果｜视频",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/MGSP.js"
+        },
+        {
+            "key": "爱奇艺",
+            "name": "爱奇艺｜视频",
+            "type": 3,
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/AQY.js"
+        },
      {
             "key": "玩偶",
             "name": "玩偶｜4K",
@@ -367,7 +367,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/cloud/json/lj.json"
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/cloud/json/lj.json"
         },
         {
             "key": "海绵",
@@ -382,7 +382,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/cloud/json/hm.json"
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/cloud/json/hm.json"
         },
         {
             "key": "夸父",
@@ -397,7 +397,7 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/cloud/json/kf.json"
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/cloud/json/kf.json"
         },
         {
             "key": "123",
@@ -412,14 +412,14 @@
                 "type": "list",
                 "ratio": 1.433
             },
-            "ext": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/cloud/json/123.json"
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/cloud/json/123.json"
         },
         {
             "key": "双星",
             "name": "双星｜4K",
             "type": 3,
-            "api": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/cloud/js/SX.js",
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/cloud/js/SX.js",
             "style": {
                 "type": "list"
             }
@@ -428,8 +428,8 @@
             "key": "人人",
             "name": "人人｜4K",
             "type": 3,
-            "api": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/cloud/js/RRDYW.js",
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/cloud/js/RRDYW.js",
             "style": {
                 "type": "list"
             }
@@ -438,7 +438,7 @@
             "key": "星芽短剧",
             "name": "星芽｜短剧",
             "type": 3,
-            "api": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/movie/py/XYDJ.py",
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/py/XYDJ.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -448,7 +448,7 @@
             "key": "甜圈短剧",
             "name": "甜圈｜短剧",
             "type": 3,
-            "api": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/movie/py/TQDJ.py",
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/py/TQDJ.py",
             "searchable": 1,
             "changeable": 1,
             "quickSearch": 1,
@@ -611,13 +611,13 @@
             "key": "网络直播",
             "name": "网络｜直播",
             "type": 3,
-            "api": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/webcast/py/WLZB.py"
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/webcast/py/WLZB.py"
         },
         {
             "key": "哔哩直播",
             "name": "哔哩｜直播",
             "type": 3,
-            "api": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/webcast/py/BLZB.py"
+            "api": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/webcast/py/BLZB.py"
         },
         {
             "key": "哔哩合集",
@@ -656,7 +656,7 @@
             "name": "养生｜知识",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://raw.kkgithub.com/PizazzGY/NewTVBox/main/other/json/YST.json",
+            "ext": "https://ghfast.top/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/YST.json",
             "style": {
                 "type": "rect",
                 "ratio": 1.597
@@ -969,7 +969,7 @@
                 "deviceId": "",
                 "version": "",
                 "ua": ""
-            },"jar": "./xiaosa.txt"
+            }
         },
         {
             "key": "蓝鹰",
@@ -984,7 +984,7 @@
                 "dataIv": "ca94b06ca359d80e",
                 "deviceId": "",
                 "version": "120"
-            },"jar": "./xiaosa.txt"
+            }
         },
         {
             "key": "热剧",
@@ -1000,7 +1000,7 @@
                 "deviceId": "",
                 "version": "",
                 "ua": ""
-            },"jar": "./xiaosa.txt"
+            }
         },
         {
             "key": "小猪",
@@ -1016,7 +1016,7 @@
                 "deviceId": "",
                 "version": "",
                 "ua": "okhttp/3.10.0"
-            },"jar": "./xiaosa.txt"
+            }
         },
         {
             "key": "星空",
@@ -1031,7 +1031,7 @@
                 "dataIv": "AJcdjkAjkdJDkvcd",
                 "deviceId": "",
                 "version": ""
-            },"jar": "./xiaosa.txt"
+            }
         },
         {
             "key": "金牌",
@@ -1044,7 +1044,7 @@
                 "url": "",
                 "site": "https://muouapp.oss-cn-hangzhou.aliyuncs.com/MUOUAPP/godbbq.txt",
                 "name": "金牌影院（请断网再安装）"
-            },"jar": "./xiaosa.txt"
+            }
         },
         {
             "key": "咖啡",
@@ -1057,7 +1057,7 @@
                 "dataKey": "37kj83zs1q16jk6t",
                 "dataIv": "37kj83zs1q16jk6t",
                 "version": "101"
-            },"jar": "./xiaosa.txt"
+            }
         },
         {
             "key": "仓鼠",
@@ -1070,7 +1070,7 @@
                 "dataKey": "da61247f5b662597",
                 "dataIv": "da61247f5b662597",
                 "version": "120"
-            },"jar": "./xiaosa.txt"
+            }
         },
         {
             "key": "云云",
@@ -1083,7 +1083,7 @@
                 "dataKey": "staraugust123456",
                 "dataIv": "staraugust123456",
                 "version": "120"
-            },"jar": "./xiaosa.txt"
+            }
         },
         {
             "key": "鲸鱼",
@@ -1095,7 +1095,7 @@
                 "site": "https://jingyu4k-1312635929.cos.ap-nanjing.myqcloud.com/1.json",
                 "dataKey": "AAdgrdghjfgswerA",
                 "dataIv": "AAdgrdghjfgswerA"
-            },"jar": "./xiaosa.txt"
+            }
         },
         {
       "key": "还行",
@@ -1118,7 +1118,7 @@
                 "dataKey": "ca94b06ca3c7d80e",
                 "dataIv": "ca94b06ca3c7d80e",
                 "ua": "okhttp/3.10.0"
-            },"jar": "./xiaosa.txt"
+            }
         },
         {
             "key": "Max",
