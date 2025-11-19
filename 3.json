@@ -1188,6 +1188,15 @@
       "ext": "XSJiCWoJEGFoOdKZQ3W3pG4QYj6kuTSnLRDxFYNZWjIPLTHHAeib23CrNf2Ymrxa8iTANsHrwj35FQ3ORCXCuw==","jar": "./xm.jar"
     },
     {
+            "key": "大豆",
+            "name": "✅大豆┃影视",
+            "type": 3,
+            "quickSearch": 0,
+            "searchable": 1,
+            "api": "csp_AppQi",
+            "ext": "Ruh/okyt5lxEpcdQOao0NkSkj8M9vdB0soaZbGJldzA3817rfAzlvyWHCewZEFD4+BBCXxVVHkmAtv6gi+JRQlKwhK1WjuT8blTygReol77ICMmtZZPsmzfgjOtOXiEJ","jar": "./xm.jar"
+        },
+    {
       "key": "布蕾",
       "name": "💯布蕾┃影视",
       "quickSearch": 1,
