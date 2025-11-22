@@ -28,7 +28,7 @@
       "key": "设置",
       "name": "网弹|设置",
       "type": 3,
-      "api": "csp_HBconfig","jar": "./hb.jar"
+      "api": "csp_HBconfig","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
     },
         {
             "key": "厂长影视",
@@ -165,42 +165,42 @@
       "name": "景天|4K弹幕",
       "type": 3,
       "api": "csp_HBcms10Dou",
-      "ext": "https://zy.sh0o.cn/api.php/provide/vod/from/qq/","jar": "./hb.jar"
+      "ext": "https://zy.sh0o.cn/api.php/provide/vod/from/qq/","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
     },
     {
       "key": "茂茂",
       "name": "茂茂|4K弹幕",
       "type": 3,
       "api": "csp_HBcms10Dou",
-      "ext": "https://zy.sh0o.cn/api.php/provide/vod/from/mgtv/","jar": "./hb.jar"
+      "ext": "https://zy.sh0o.cn/api.php/provide/vod/from/mgtv/","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
     },
     {
       "key": "竹生",
       "name": "竹生|4K弹幕",
       "type": 3,
       "api": "csp_HBT4",
-"ext":"YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qVTROall2ZEdWemRDNXdhSEEvYzJsMFpUMXNZV0pwSXlNamJHRmlhUT09","jar": "./hb.jar"
+"ext":"YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qVTROall2ZEdWemRDNXdhSEEvYzJsMFpUMXNZV0pwSXlNamJHRmlhUT09","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
     },
     {
       "key": "归安",
       "name": "归安|4K弹幕",
       "type": 3,
       "api": "csp_HBT4",
-      "ext": "YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qUTROall2ZEdWemRDNXdhSEEvYzJsMFpUMXRhV2hrY2lNakkyMXBhR1J5","jar": "./hb.jar"
+      "ext": "YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qUTROall2ZEdWemRDNXdhSEEvYzJsMFpUMXRhV2hrY2lNakkyMXBhR1J5","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
     },
     {
       "key": "薄心",
       "name": "薄心|4K弹幕",
       "type": 3,
       "api": "csp_HBT4",
-      "ext": "YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qUTROall2ZEdWemRDNXdhSEEvYzJsMFpUMWxjbmhwWVc4akl5TmxjbmhwWVc4PQ==","jar": "./hb.jar"
+      "ext": "YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qUTROall2ZEdWemRDNXdhSEEvYzJsMFpUMWxjbmhwWVc4akl5TmxjbmhwWVc4PQ==","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
     },
     {
       "key": "甜橙",
       "name": "甜橙|4K弹幕",
       "type": 3,
       "api": "csp_HBT4",
-      "ext": "YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qUTROall2ZEdWemRDNXdhSEEvYzJsMFpUMXZkV2RsSXlNamIzVm5aUT09","jar": "./hb.jar"
+      "ext": "YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qUTROall2ZEdWemRDNXdhSEEvYzJsMFpUMXZkV2RsSXlNamIzVm5aUT09","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
     },
       {
             "key": "哔哩视频",
