@@ -870,6 +870,28 @@
             "playerType": 2
         },
         {
+            "key": "飞快.py",
+            "name": "飞快TV.py",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "api": "./lib/飞快TV[推].py",
+            "order_num": 5,
+            "ext": ""
+        },
+        {
+            "key": "山有木兮.py",
+            "name": "山有木兮.py",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "api": "./lib/山有木兮.py",
+            "order_num": 5,
+            "ext": ""
+        },
+        {
             "key": "电影猎手",
             "name": "电影猎手",
             "type": 3,
@@ -1061,6 +1083,26 @@
             "ext": {
                 "url": "https://ht.zhenxun.love",
                 "name": "羊羊学院"
+            }
+        },
+        {
+            "key": "快映视频",
+            "name": "🍑快映┃APP",
+            "type": 3,
+            "api": "csp_Appfox",
+            "ext": {
+                "host": "https://snys2.xyz/",
+                "timeout": 15,
+                "ver": 2
+            }
+        },
+        {
+            "key": "星空影视",
+            "name": "🍊星空┃APP",
+            "type": 3,
+            "api": "csp_Appfox",
+            "ext": {
+                "host": "http://fox.qwqfun.com"
             }
         },
         {
