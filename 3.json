@@ -876,7 +876,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "api": "./lib/飞快TV[推].py",
+            "api": "./飞快TV[推].py",
             "order_num": 5,
             "ext": ""
         },
@@ -887,7 +887,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "api": "./lib/山有木兮.py",
+            "api": "./山有木兮.py",
             "order_num": 5,
             "ext": ""
         },
@@ -1094,7 +1094,7 @@
                 "host": "https://snys2.xyz/",
                 "timeout": 15,
                 "ver": 2
-            }
+            },"jar": "./vox.jar"
         },
         {
             "key": "星空影视",
@@ -1103,7 +1103,7 @@
             "api": "csp_Appfox",
             "ext": {
                 "host": "http://fox.qwqfun.com"
-            }
+            },"jar": "./vox.jar"
         },
         {
             "key": "二三",
