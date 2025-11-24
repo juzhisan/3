@@ -963,6 +963,17 @@
             "filterable": 1,
             "playerType": 2
         },
+         {
+            "key": "快直播",
+            "name": "快直播",
+            "type": 3,
+            "api": "./快直播.min.py",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "playerType": 2
+        },
         {
             "key": "py_Dm84",
             "name": "🍋动漫巴士(T4)",
