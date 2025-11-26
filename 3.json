@@ -169,15 +169,17 @@
 			"ext": "./非凡资源[资].js"
 		},
         {
-            "key": "移动",
-            "name": "移动｜APP",
+            "key": "盘它",
+            "name": "盘它｜4K",
             "type": 3,
-            "api": "csp_YD",
+            "api": "csp_PanWebShareCloudPT",
             "searchable": 1,
             "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
             "style": {
                 "type": "list"
-            },"jar": "./yd.jar"
+            }
         },
         {
       "key": "景天",
