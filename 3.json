@@ -1341,6 +1341,32 @@
       "quickSearch": 1,
       "ext": "http://m51.gotto.top/api.php/v1.vod"
     },
+    {
+            "key": "聚搜",
+            "name": "🚗聚搜┃影视",
+            "type": 3,
+            "api": "./100.py",
+            "ext": "http://101.35.85.16:5555"
+        },
+        {
+            "key": "屁屁",
+            "name": "🦐屁屁┃小米",
+            "type": 3,
+            "api": "./100.py",
+            "ext": "http://38.55.237.41:8762"
+        },
+        {
+            "key": "剧下饭",
+            "name": "🍚下饭┃小米",
+            "type": 3,
+            "changeable": 0,
+            "api": "./101.py",
+            "ext": {
+                "api": "http://yjer.jumianfei.com/api.php/v1.vod",
+                "datasignkey": "6QQNUsP3PkD2ajJCPCY8",
+                "apisignkey": "lvdoutv-1.0.0"
+            }
+        },
         {
             "key": "Max",
             "name": "❤️下饭┃Max",
