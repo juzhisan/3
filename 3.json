@@ -1233,8 +1233,8 @@
             }
         },
         {
-            "key": "金牌",
-            "name": "金牌｜APP",
+            "key": "JP",
+            "name": "JP｜APP",
             "type": 3,
             "api": "csp_AppMuou",
             "searchable": 1,
@@ -1243,6 +1243,41 @@
                 "url": "",
                 "site": "https://muouapp.oss-cn-hangzhou.aliyuncs.com/MUOUAPP/godbbq.txt",
                 "name": "金牌影院（请断网再安装）"
+            }
+        },
+        {
+            "key": "火猫",
+            "name": "火猫｜APP",
+            "type": 3,
+            "api": "csp_AppGet",
+            "ext": {
+                "url": "http://103.23.148.70:14500",
+                "dataKey": "J6AIORKJ3PQOJKM8",
+                "dataIv": "J6AIORKJ3PQOJKM8"
+            }
+        },
+        {
+            "key": "鹤雪",
+            "name": "鹤雪｜APP",
+            "type": 3,
+            "api": "csp_AppGet",
+            "ext": {
+                "url": "http://hxys.07hx.shop",
+                "dataKey": "hex200762200762.",
+                "dataIv": "hex200762200762."
+            }
+        },
+        {
+            "key": "新剧",
+            "name": "新剧｜APP",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "url": "http://211.154.24.56:8369",
+                "dataKey": "685bf108bc47b67d",
+                "dataIv": "685bf108bc47b67d"
             }
         },
         {
