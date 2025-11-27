@@ -1121,18 +1121,6 @@
             "type": 3,
             "ext": "https://xl01.com.de"
         },
-         {
-            "key": "羊羊",
-            "name": "羊羊｜APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppMuou",
-            "ext": {
-                "url": "https://ht.zhenxun.love",
-                "name": "羊羊学院"
-            }
-        },
         {
             "key": "快映视频",
             "name": "🍑快映┃APP",
@@ -1152,15 +1140,6 @@
             "ext": {
                 "host": "http://fox.qwqfun.com"
             },"jar": "./vox.jar"
-        },
-        {
-            "key": "二三",
-            "name": "二三｜APP",
-            "type": 3,
-            "api": "csp_AppFox",
-            "ext": {
-                "host": "http://a.cfys.xn--fiqs8s"
-            }
         },
         {
             "key": "魔方",
