@@ -1232,17 +1232,17 @@
                 "version": ""
             }
         },
-        {
-            "key": "JP",
-            "name": "JP｜APP",
+       {
+            "key": "jp",
+            "name": "jp┃APP",
             "type": 3,
-            "api": "csp_AppMuou",
             "searchable": 1,
             "changeable": 1,
+            "api": "csp_AppQi",
             "ext": {
-                "url": "",
-                "site": "https://muouapp.oss-cn-hangzhou.aliyuncs.com/MUOUAPP/godbbq.txt",
-                "name": "金牌影院（请断网再安装）"
+                "site": "https://dtqj1.gg1080.com:443/dtjp.txt",
+                "dataKey": "kecbio48dsq131ed",
+                "dataIv": "kecbio48dsq131ed"
             }
         },
         {
