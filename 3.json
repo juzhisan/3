@@ -1361,24 +1361,6 @@
             }
         },
         {
-            "key": "开心2",
-            "name": "☺开心┃影视",
-            "type": 3,
-            "quickSearch": 0,
-            "searchable": 1,
-            "api": "csp_AppQi",
-            "ext": "https://staraugust123456.oss-cn-hangzhou.aliyuncs.com/2.txt|staraugust123456|qiji| ","jar": "./xm.jar"
-        },
-        {
-            "key": "布蕾",
-            "name": "💯布蕾┃影视",
-            "quickSearch": 1,
-            "searchable": 1,
-            "type": 3,
-            "api": "csp_AppQi",
-            "ext": "https://ceshi307386.oss-cn-beijing.aliyuncs.com/blurl.txt|5f2b7ed203a3a581|qiji| ","jar": "./xm.jar"
-        },
-        {
             "key": "Max",
             "name": "❤️下饭┃Max",
             "type": 3,
