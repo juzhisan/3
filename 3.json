@@ -1349,13 +1349,6 @@
             "ext": "http://101.35.85.16:5555"
         },
         {
-            "key": "屁屁",
-            "name": "🦐屁屁┃小米",
-            "type": 3,
-            "api": "./100.py",
-            "ext": "http://38.55.237.41:8762"
-        },
-        {
             "key": "剧下饭",
             "name": "🍚下饭┃小米",
             "type": 3,
@@ -1366,6 +1359,24 @@
                 "datasignkey": "6QQNUsP3PkD2ajJCPCY8",
                 "apisignkey": "lvdoutv-1.0.0"
             }
+        },
+        {
+            "key": "开心2",
+            "name": "☺开心┃影视",
+            "type": 3,
+            "quickSearch": 0,
+            "searchable": 1,
+            "api": "csp_AppQi",
+            "ext": "https://staraugust123456.oss-cn-hangzhou.aliyuncs.com/2.txt|staraugust123456|qiji| ","jar": "./xm.jar"
+        },
+        {
+            "key": "布蕾",
+            "name": "💯布蕾┃影视",
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3,
+            "api": "csp_AppQi",
+            "ext": "https://ceshi307386.oss-cn-beijing.aliyuncs.com/blurl.txt|5f2b7ed203a3a581|qiji| ","jar": "./xm.jar"
         },
         {
             "key": "Max",
