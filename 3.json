@@ -1122,17 +1122,6 @@
             "ext": "https://xl01.com.de"
         },
         {
-            "key": "快映视频",
-            "name": "🍑快映┃APP",
-            "type": 3,
-            "api": "csp_Appfox",
-            "ext": {
-                "host": "https://snys2.xyz/",
-                "timeout": 15,
-                "ver": 2
-            },"jar": "./vox.jar"
-        },
-        {
             "key": "星空影视",
             "name": "🍊星空┃APP",
             "type": 3,
@@ -1263,17 +1252,6 @@
                 "url": "http://103.23.148.70:14500",
                 "dataKey": "J6AIORKJ3PQOJKM8",
                 "dataIv": "J6AIORKJ3PQOJKM8"
-            }
-        },
-        {
-            "key": "鹤雪",
-            "name": "鹤雪｜APP",
-            "type": 3,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "http://hxys.07hx.shop",
-                "dataKey": "hex200762200762.",
-                "dataIv": "hex200762200762."
             }
         },
         {
