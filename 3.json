@@ -1102,22 +1102,6 @@
   "filterable": 0,
   "changeable": 0
     },
-    {
-            "key": "天翼影视",
-            "name": "天翼｜影视",
-            "type": 1,
-            "api": "http://7.qqqtv.top/api.php/provide/vod/",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "categories": [
-                "推荐",
-                "电影",
-                "电视剧",
-                "综艺",
-                "动漫"
-            ]
-        }, 
         {
             "key": "荐片",
             "name": "荐片｜磁力",
@@ -1131,15 +1115,6 @@
             "api": "csp_Xlys",
             "type": 3,
             "ext": "https://xl01.com.de"
-        },
-        {
-            "key": "星空影视",
-            "name": "🍊星空┃APP",
-            "type": 3,
-            "api": "csp_Appfox",
-            "ext": {
-                "host": "http://fox.qwqfun.com"
-            },"jar": "./vox.jar"
         },
         {
             "key": "魔方",
@@ -1225,6 +1200,62 @@
             "ext": {
                 "host": "http://fox.tvmao.top"
             }
+        },
+        {
+            "key": "星空",
+            "name": "星空｜APP",
+            "type": 3,
+            "api": "csp_AppFox",
+            "ext": {
+                "host": "http://fox.qwqfun.com"
+            }
+        },
+        {
+            "key": "极兔",
+            "name": "极兔｜APP",
+            "type": 3,
+            "api": "csp_AppFox",
+            "ext": {
+                "host": "https://www.dhxxfhsz.top",
+                "ver": 2
+            }
+        },
+        {
+            "key": "爱盈",
+            "name": "爱盈｜APP",
+            "type": 3,
+            "api": "csp_AppQi",
+            "changeable": "1",
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": {
+                "site": "https://aysappto.oss-cn-chengdu.aliyuncs.com/qj3.txt",
+                "dataKey": "sda1231sasddad21",
+                "dataIv": "sda1231sasddad21",
+                "ua": "okhttp/3.10.0"
+            }
+        },
+        {
+            "key": "顾我",
+            "name": "顾我｜APP",
+            "type": 3,
+            "api": "csp_AppQi",
+            "changeable": "1",
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": {
+                "site": "https://guwozj-1319364746.cos.ap-guangzhou.myqcloud.com/guwo.txt",
+                "dataKey": "ca94b06ca3c7d80e",
+                "dataIv": "ca94b06ca3c7d80e",
+                "ua": "okhttp/3.10.0"
+            }
+        },
+        {
+            "key": "追番达人",
+            "name": "🐂达人┃影视",
+            "type": 3,
+            "api": "csp_Appfox",
+            "ext": "https://fox.ystva.com"
         },
         {
             "key": "星空",
