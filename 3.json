@@ -1251,15 +1251,8 @@
             }
         },
         {
-            "key": "追番达人",
-            "name": "🐂达人┃影视",
-            "type": 3,
-            "api": "csp_Appfox",
-            "ext": "https://fox.ystva.com"
-        },
-        {
             "key": "星空",
-            "name": "星空｜APP",
+            "name": "星空2｜APP",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
