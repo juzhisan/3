@@ -783,6 +783,24 @@
             "api": "csp_GuiGui"
         },
         {
+            "key": "混合",
+            "name": "混合｜搜索",
+            "type": 3,
+            "api": "csp_HunHePan"
+        },
+        {
+            "key": "兄弟",
+            "name": "兄弟｜搜索",
+            "type": 3,
+            "api": "csp_XiongDiPan"
+        },
+        {
+            "key": "趣盘",
+            "name": "趣盘｜搜索",
+            "type": 3,
+            "api": "csp_QuPanSo"
+        },
+        {
             "key": "88看球",
             "name": "88｜看球",
             "type": 3,
@@ -1148,16 +1166,55 @@
             }
         },
         {
-            "key": "幕启",
-            "name": "幕启丨APP",
+            "key": "椰子",
+            "name": "椰子｜APP",
             "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppQi",
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
             "ext": {
-                "site": "https://daen-1256234123.cos.ap-shanghai.myqcloud.com/MuQi/mqxh.txt",
-                "dataKey": "37kj83zs1q16jk6t",
-                "dataIv": "37kj83zs1q16jk6t",
-                "version": "120"
+                "url": "http://103.109.20.117:6699",
+                "dataKey": "xxm9N4P9rS2zjdyz",
+                "dataIv": "xxm9N4P9rS2zjdyz"
+            }
+        },
+        {
+            "key": "剧梦",
+            "name": "剧梦｜APP",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "url": "https://www.jumengwu.com",
+                "dataKey": "1f0a873caf2550a5",
+                "dataIv": "1f0a873caf2550a5"
+            }
+        },
+        {
+            "key": "剧猫",
+            "name": "剧猫｜APP",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "site": "https://zjm-1302383509.cos.ap-guangzhou.myqcloud.com/zjm.txt",
+                "dataKey": "zjmznbl2026zcxgb",
+                "dataIv": "zjmznbl2026zcxgb"
+            }
+        },
+        {
+            "key": "缘梦",
+            "name": "缘梦｜APP",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "url": "https://www.zipfve.cn",
+                "dataKey": "1234567890987654",
+                "dataIv": "1234567890987654"
             }
         },
         {
