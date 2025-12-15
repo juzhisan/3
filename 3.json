@@ -1185,6 +1185,32 @@
             }
         },
         {
+            "key": "小猫",
+            "name": "小猫｜APP",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "site": "http://xywlkj.oss-cn-beijing.aliyuncs.com/wp-content/uploads/2024/12/1.txt",
+                "dataKey": "xmyxmyxywlkjxywl",
+                "dataIv": "xmyxmyxywlkjxywl"
+            }
+        },
+        {
+            "key": "魔方",
+            "name": "魔方｜APP",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "url": "https://www.mfsp4k.top",
+                "dataKey": "1234567887654321",
+                "dataIv": "1234567887654321"
+            }
+        },
+        {
             "key": "剧梦",
             "name": "剧梦｜APP",
             "type": 3,
@@ -1454,6 +1480,28 @@
             "type": 3,
             "api": "./100.py",
             "ext": "http://101.35.85.16:5555"
+        },
+        {
+            "key": "巧技1",
+            "name": "🔍搜搜┃影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "api": "csp_qiao2",
+            "playerType": 2,
+            "jar": "https://pan.vma.cc/pan/down.php/9cf0a6c1f62ad83e9dccc2b7dd683a10.png;md5;9cf0a6c1f62ad83e9dccc2b7dd683a10",
+            "ext": "7lj763gg402i7942412h849jg1558j9jl8g19213il86316k465719lik158491h179312hk935886ig2l05g9"
+        },
+        {
+            "key": "巧技2",
+            "name": "🔍搜艘┃影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "api": "csp_qiao2",
+            "playerType": 2,
+            "jar": "https://pan.vma.cc/pan/down.php/9cf0a6c1f62ad83e9dccc2b7dd683a10.png;md5;9cf0a6c1f62ad83e9dccc2b7dd683a10",
+            "ext": "7lj763gg402i7942412h849jg1558j9jl8g19213il86316k465719lik158491h179312h4934183ig2l05g9"
         },
         {
             "key": "剧下饭",
