@@ -1150,15 +1150,6 @@
             "ext": "https://xl01.com.de"
         },
         {
-            "key": "星空影视",
-            "name": "🍊星空┃APP",
-            "type": 3,
-            "api": "csp_Appfox",
-            "ext": {
-                "host": "http://fox.qwqfun.com"
-            },"jar": "./vox.jar"
-        },
-        {
             "key": "麻花",
             "name": "麻花｜APP",
             "type": 3,
@@ -1169,32 +1160,6 @@
                 "url": "http://49.235.114.19:150",
                 "dataKey": "q7gj4f9br3fls6nh",
                 "dataIv": "q7gj4f9br3fls6nh"
-            }
-        },
-        {
-            "key": "椰子",
-            "name": "椰子｜APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "http://103.109.20.117:6699",
-                "dataKey": "xxm9N4P9rS2zjdyz",
-                "dataIv": "xxm9N4P9rS2zjdyz"
-            }
-        },
-        {
-            "key": "小猫",
-            "name": "小猫｜APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "site": "http://xywlkj.oss-cn-beijing.aliyuncs.com/wp-content/uploads/2024/12/1.txt",
-                "dataKey": "xmyxmyxywlkjxywl",
-                "dataIv": "xmyxmyxywlkjxywl"
             }
         },
         {
@@ -1237,19 +1202,6 @@
             }
         },
         {
-            "key": "缘梦",
-            "name": "缘梦｜APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "https://www.zipfve.cn",
-                "dataKey": "1234567890987654",
-                "dataIv": "1234567890987654"
-            }
-        },
-        {
             "key": "驿站",
             "name": "驿站丨APP",
             "type": 3,
@@ -1260,37 +1212,6 @@
                 "site": "https://dyyztvappapigoodgx.68.gy:12689/ciwk28vu38io8/apiurl.txt",
                 "dataKey": "dyyztvapiappyyds",
                 "dataIv": "dyyztvapiappyyds",
-                "deviceId": "",
-                "version": "",
-                "ua": ""
-            }
-        },
-        {
-            "key": "蓝鹰",
-            "name": "蓝鹰｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppQi",
-            "ext": {
-                "url": "",
-                "site": "https://lanyinghz.oss-cn-hangzhou.aliyuncs.com/lanyingxmy.txt",
-                "dataKey": "ca94b06ca359d80e",
-                "dataIv": "ca94b06ca359d80e",
-                "deviceId": "",
-                "version": "120"
-            }
-        },
-        {
-            "key": "热剧",
-            "name": "热剧丨APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppQi",
-            "ext": {
-                "url": "https://www.rebovod.com",
-                "site": "",
-                "dataKey": "8191A7F47B37882F",
-                "dataIv": "8191A7F47B37882F",
                 "deviceId": "",
                 "version": "",
                 "ua": ""
@@ -1361,21 +1282,6 @@
                 "ua": "okhttp/3.10.0"
             }
         },
-        {
-            "key": "星空",
-            "name": "星空｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "http://xkcms.xkgzs.xyz",
-                "site": "",
-                "dataKey": "AJcdjkAjkdJDkvcd",
-                "dataIv": "AJcdjkAjkdJDkvcd",
-                "deviceId": "",
-                "version": ""
-            }
-        },
        {
             "key": "爆炸",
             "name": "爆炸┃APP",
@@ -1411,19 +1317,6 @@
                 "url": "http://211.154.24.56:8369",
                 "dataKey": "685bf108bc47b67d",
                 "dataIv": "685bf108bc47b67d"
-            }
-        },
-        {
-            "key": "咖啡",
-            "name": "咖啡丨APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppQi",
-            "ext": {
-                "site": "https://daen-1256234123.cos.ap-shanghai.myqcloud.com/MuQi/mqxh.txt",
-                "dataKey": "37kj83zs1q16jk6t",
-                "dataIv": "37kj83zs1q16jk6t",
-                "version": "101"
             }
         },
         {
