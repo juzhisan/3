@@ -1747,11 +1747,11 @@
             "url": "https://live.catvod.com/tv.m3u"
         },
    {
-        "name": "冰茶TV",
-        "url": "https://bc.188766.xyz/?ip=&mima=mianfeibuhuaqian&haiwai=true",
-        "header": {
-            "User-Agent": "bingcha/1.1"
-        }
+      "name": "冰茶TV",
+      "type": 0,
+      "url": "https://bc.188766.xyz/?ip=&mima=mianfeibuhuaqian&haiwai=true",
+      "playerType": 1,
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
         "name": "4GTV",
