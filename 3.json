@@ -1,5 +1,5 @@
   {
-  "spider": "./xiaosa.txt",
+  "spider": "./spider.jar",
   "wallpaper": "http://我不是.摸鱼儿.com/wallpaper/moyu.php",
   "logo": "https://3141.kstore.space/logo.jpg",
   "homeLogo": "https://3141.kstore.space/logo.jpg",
@@ -1749,9 +1749,7 @@
    {
       "name": "冰茶TV",
       "type": 0,
-      "url": "https://bc.188766.xyz/?ip=&mima=mianfeibuhuaqian&haiwai=true",
-      "playerType": 1,
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
+      "url": "https://bc.188766.xyz/?ip=&mima=mianfeibuhuaqian&haiwai=true"
     },
     {
         "name": "4GTV",
