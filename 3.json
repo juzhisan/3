@@ -1747,8 +1747,8 @@
             "url": "https://live.catvod.com/tv.m3u"
         },
    {
-        "name": "冰茶订阅",
-        "url": "https://bc.188766.xyz/?ip=&mishitong=true&lunbo=false&mima=mianfeibuhuaqian",
+        "name": "冰茶TV",
+        "url": "https://bc.188766.xyz/?ip=&mima=mianfeibuhuaqian&haiwai=true",
         "header": {
             "User-Agent": "bingcha/1.1"
         }
