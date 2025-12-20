@@ -601,10 +601,21 @@
             "key": "人人",
             "name": "人人｜4K",
             "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/cloud/js/RRDYW.js",
-            "style": {
-                "type": "list"
+            "api": "csp_RenRen"
+        },
+        {
+            "key": "夸克",
+            "name": "夸克｜4K",
+            "type": 3,
+            "api": "csp_PanWebShareCloudKK",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": [
+                    "https://www.quarktv.cc"
+                ]
             }
         },
         {
