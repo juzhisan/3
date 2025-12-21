@@ -1224,12 +1224,13 @@
             }
         },
         {
-            "key": "吉米",
-            "name": "吉米｜APP",
+            "key": "恋鱼",
+            "name": "恋鱼｜APP",
             "type": 3,
             "api": "csp_AppFox",
             "ext": {
-                "host": "http://fox.tvmao.top"
+                "host": "https://173220859-1333208043.cos.ap-shanghai.myqcloud.com/1.json",
+                "ver": 2
             }
         },
         {
@@ -1239,6 +1240,16 @@
             "api": "csp_AppFox",
             "ext": {
                 "host": "https://www.dhxxfhsz.top",
+                "ver": 2
+            }
+        },
+        {
+            "key": "麒麟",
+            "name": "麒麟｜APP",
+            "type": 3,
+            "api": "csp_AppFox",
+            "ext": {
+                "host": "https://www.70yyw.cc",
                 "ver": 2
             }
         },
@@ -1758,7 +1769,7 @@
             "url": "https://live.catvod.com/tv.m3u"
         },
    {
-      "name": "冰茶",
+      "name": "冰茶TV",
       "type": 0,
       "playerType": 2,
       "url": "https://bc.188766.xyz/?ip=&mima=mianfeibuhuaqian&json=true",
@@ -1812,6 +1823,39 @@
             "ua": "okhttp/3.15",
             "epg": "http://127.0.0.1:10079/p/0/proxy/http://epg.112114.xyz/?ch={name}&date={date}",
             "logo": "http://127.0.0.1:10079/p/0/proxy/https://epg.112114.xyz/logo/{name}.png"
+        },
+        {
+            "name": "📡虎牙",
+            "type": 0,
+            "url": "http://xxyyy.eu.org:35455/huyayqk.m3u",
+            "ua": ""
+        },
+        {
+            "name": "📡斗鱼",
+            "type": 0,
+            "url": "http://xxyyy.eu.org:35455/douyuyqk.m3u",
+            "ua": ""
+        },
+        {
+            "name": "📡YY",
+            "type": 0,
+            "url": "http://xxyyy.eu.org:35455/yylunbo.m3u",
+            "ua": ""
+        },
+        {
+            "name": "📡冰茶",
+            "url": "https://bc.188766.xyz/?ip=&mima=bingchawusifengxian",
+            "header": {
+                "User-Agent": "okhttp/5.1.0"
+            }
+        },
+        {
+            "name": "📡冰茶2",
+            "url": "https://bc.188766.xyz/?ip=211.101.246.236&mima=mianfeibuhuaqian",
+            "type": 0,
+            "ua": "okHttp/Mod-1.2.0.1",
+            "epg": "http://127.0.0.1:10079/p/0/proxy/http://content.stream-link.org/epg/guide.xml/?ch={name}&date={date}",
+            "logo": "http://127.0.0.1:10079/p/0/proxy/http://content.stream-link.org/epg/guide.xml/logo/{name}.png"
         },
     {"name":"咪咕•综合","type":0,"url":"https://down.nigx.cn/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}
     ],
