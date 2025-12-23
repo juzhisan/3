@@ -605,8 +605,7 @@
             "key": "双星",
             "name": "双星｜4K",
             "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/cloud/js/SX.js",
+            "api": "csp_ShuangXing",
             "style": {
                 "type": "list"
             }
