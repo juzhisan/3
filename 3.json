@@ -67,6 +67,19 @@
             "filterable": 1
         },
         {
+            "key": "荐片",
+            "name": "荐片｜磁力",
+            "api": "csp_JianPian",
+            "type": 3
+        },
+        {
+            "key": "修罗",
+            "name": "修罗｜磁力",
+            "api": "csp_Xlys",
+            "type": 3,
+            "ext": "https://xl01.com.de"
+        },
+        {
             "key": "醉挽清风",
             "name": "♨️醉挽清风┃4K纯净",
             "type": 4,
@@ -75,66 +88,115 @@
             "quickSearch": 1,
             "changeable": 0
         },
-   {
-      "key": "t1_dian_ying_tian_tang_02",
-      "name": "🫐电影天堂(无广)",
-      "type": 1,
-      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json/?ac=list",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "playUrl": "json:https://py.doube.eu.org/parse_dytt?url=",
-      "categories": [
-        "动作片",
-        "喜剧片",
-        "爱情片",
-        "科幻片",
-        "恐怖片",
-        "剧情片",
-        "战争片",
-        "国产剧",
-        "香港剧",
-        "韩国剧",
-        "欧美剧",
-        "记录片",
-        "台湾剧",
-        "日本剧",
-        "海外剧",
-        "泰国剧",
-        "大陆综艺",
-        "港台综艺",
-        "日韩综艺",
-        "欧美综艺",
-        "国产动漫",
-        "日韩动漫",
-        "欧美动漫",
-        "港台动漫",
-        "伦理片",
-        "短剧",
-        "动画片"
-      ]
-    },
         {
-            "key": "hohai",
-            "name": "好嗨|EMBY",
-            "type": 3,
-            "api": "./emby.py",
+            "key": "t1_dian_ying_tian_tang_02",
+            "name": "🍎 电影天堂 (T1)",
+            "type": 1,
+            "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json/?ac=list",
             "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "server": "https://emby.hohai.eu.org:443",
-                "username": "hohai",
-                "password": "hohai",
-                "proxy": "",
-                "thread": 0,
-                "device_name": "My Computer",
-                "client": "Hills Windows",
-                "client_version": "0.2.2",
-                "device_id": "a9f74849-83d5-4a28-8b85-a087af1402e3"
-            }
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0,
+            "playUrl": "json:https://py.doube.eu.org/parse_dytt?url=",
+            "categories": [
+                "动作片",
+                "喜剧片",
+                "爱情片",
+                "科幻片",
+                "恐怖片",
+                "剧情片",
+                "战争片",
+                "国产剧",
+                "香港剧",
+                "韩国剧",
+                "欧美剧",
+                "记录片",
+                "台湾剧",
+                "日本剧",
+                "海外剧",
+                "泰国剧",
+                "大陆综艺",
+                "港台综艺",
+                "日韩综艺",
+                "欧美综艺",
+                "国产动漫",
+                "日韩动漫",
+                "欧美动漫",
+                "港台动漫",
+                "伦理片",
+                "短剧",
+                "动画片"
+            ]
+        },
+        {
+            "key": "py_小苹果",
+            "name": "🍎 小苹果 (T4)",
+            "type": 4,
+            "api": "../v2/spider?site=9037cfae7c64405111e0e364401adb60",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0
+        },
+        {
+            "key": "py_官方采集789",
+            "name": "🍎 官方采集789 (T4)",
+            "type": 4,
+            "api": "../v2/spider?site=006849a2c19a6be413be5017be468c63",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0
+        },
+        {
+            "key": "py_动漫巴士",
+            "name": "🍎 动漫巴士 (T4)",
+            "type": 4,
+            "api": "../v2/spider?site=6b5899d243816bacb8712de7ab6ceb89",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0
+        },
+        {
+            "key": "py_欧乐影院",
+            "name": "🍎 欧乐影院 (T4)",
+            "type": 4,
+            "api": "../v2/spider?site=8a0bbe9e97c4429a517cd2ece3f6772b",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0
+        },
+        {
+            "key": "py_小红影视",
+            "name": "🍎 小红影视 (T4)",
+            "type": 4,
+            "api": "../v2/spider?site=01d44f1ecd9383f273c0c24989ad87c3",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0
+        },
+        {
+            "key": "py_低端影视",
+            "name": "🍎 低端影视 (T4)",
+            "type": 4,
+            "api": "../v2/spider?site=a4108870c8bac363add59bf0101e2884",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0
+        },
+        {
+            "key": "py_新韩剧网",
+            "name": "🍎 新韩剧网 (T4)",
+            "type": 4,
+            "api": "../v2/spider?site=2a7cc0edf96108c9d57420ff57c654c6",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0
         },
     {
             "key": "csp_非凡资源",
@@ -229,6 +291,28 @@
             }
         },
         {
+            "key": "腾讯视频.py",
+            "name": "腾讯视频.py",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "api": "./腾讯弹幕.js",
+            "order_num": 5,
+            "ext": ""
+        },
+        {
+            "key": "Mang.py",
+            "name": "Mangr.py",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "api": "./芒果弹幕.js",
+            "order_num": 5,
+            "ext": ""
+        },
+        {
             "key": "飞快.py",
             "name": "飞快TV.py",
             "type": 3,
@@ -261,6 +345,50 @@
             "order_num": 5,
             "ext": ""
         },
+        {
+      "key": "爱宜凡",
+      "name": "爱3测试",
+      "type": 3,
+      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
+      "ext": "./闪电.js"
+    },
+    {"key": ".PTT短剧",
+            "name": "PTT短剧.py",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "api": "./PTT短剧.py",
+            "order_num": 5,
+            "ext": ""
+        },
+        {
+      "key": "hipy_js_爱上你听书",
+      "name": "爱上听书",
+      "type": 3,
+      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "ext": "https://gitee.com/abiubiud/xxs/raw/main/dr2/爱上你听书网[听].js"
+    },
+     {"key":"T4-qingting","name":"蜻蜓FM┃","type":4,"api":"https://catbox.n13.club/t9/qingting.php"},
+     {
+      "key": "飞牛",
+      "name": "飞牛影视",
+      "type": 3,
+      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
+      "ext": "./飞牛影视.js"
+    },
+   {
+      "key": "hipy_js_酷我听书[听]",
+      "name": "酷我听书",
+      "type": 3,
+      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://gitee.com/abiubiud/xxs/raw/main/dr2/酷我听书[听].js"
+    },
         {
       "key": "景天",
       "name": "景天|4K弹幕",
@@ -1058,16 +1186,6 @@
             "filterable": 1,
             "playerType": 2
         },
-        {
-            "key": "py_Dm84",
-            "name": "🍋动漫巴士(T4)",
-            "type": 4,
-            "api": "https://py.doube.eu.org/spider?site=Dm84",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0
-        },
     {
             "key": "夸克推送",
             "name": "👊夸克┃推送",
@@ -1110,27 +1228,6 @@
             "type": 4,
             "api": "https://so.yinpai.xyz/duanju.php?type=dquark"
         },
-    {
-            "key": "hohaiemby",
-            "name": "hohai| EMBY",
-            "type": 3,
-            "api": "./emby.py",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "server": "https://emby.hohai.eu.org:443",
-                "username": "chuxin666",
-                "password": "ycc123456",
-                "proxy": "",
-                "thread": 0,
-                "device_name": "My Computer",
-                "client": "Hills Windows",
-                "client_version": "0.2.2",
-                "device_id": "a9f74849-83d5-4a28-8b85-a087af1402e3"
-            }
-        },
         {
       "key": "采集集合",
       "name": "采集集合",
@@ -1153,19 +1250,6 @@
   "filterable": 0,
   "changeable": 0
     },
-        {
-            "key": "荐片",
-            "name": "荐片｜磁力",
-            "api": "csp_JianPian",
-            "type": 3
-        },
-        {
-            "key": "修罗",
-            "name": "修罗｜磁力",
-            "api": "csp_Xlys",
-            "type": 3,
-            "ext": "https://xl01.com.de"
-        },
         {
             "key": "麻花",
             "name": "麻花｜APP",
