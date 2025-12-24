@@ -291,28 +291,6 @@
             }
         },
         {
-            "key": "腾讯视频.py",
-            "name": "腾讯视频.py",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "api": "./腾讯弹幕.js",
-            "order_num": 5,
-            "ext": ""
-        },
-        {
-            "key": "Mang.py",
-            "name": "Mangr.py",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "api": "./芒果弹幕.js",
-            "order_num": 5,
-            "ext": ""
-        },
-        {
             "key": "飞快.py",
             "name": "飞快TV.py",
             "type": 3,
