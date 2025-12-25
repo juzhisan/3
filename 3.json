@@ -1448,6 +1448,53 @@
             }
         },
         {
+            "key": "蒙太奇",
+            "name": "🐢太奇┃APP",
+            "type": 3,
+            "changeable": 0,
+            "searchable": 1,
+            "quickSearch": 1,
+            "api": "csp_AppYsV2",
+            "ext": "http://202.189.9.236:12345/mtq.php/v6"
+        },
+        {
+            "key": "次元方舟",
+            "name": "🛸方舟┃APP",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "host": "https://www.cyfz.vip",
+                "datakey": "e72cdfd629e8895d"
+            }
+        },
+        {
+            "key": "番薯动漫",
+            "name": "🌳番薯┃APP",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "host": "https://new.app.bytegooty.com",
+                "datakey": "N4yj7l7xKxHF4*gz"
+            }
+        },
+        {
+            "key": "影视",
+            "name": "😡影视┃APP",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "host": "https://jingyu4k-1312635929.cos.ap-nanjing.myqcloud.com/1.json",
+                "datakey": "AAdgrdghjfgswerA",
+                "api": 2
+            }
+        },
+        {
       "key": "还行",
       "name": "🌀还行｜4K测试",
       "jar": "./xiaosa.txt",
