@@ -1448,50 +1448,42 @@
             }
         },
         {
-            "key": "蒙太奇",
-            "name": "🐢太奇┃APP",
+            "key": "火锅",
+            "name": "火锅｜APP",
             "type": 3,
-            "changeable": 0,
-            "searchable": 1,
             "quickSearch": 1,
-            "api": "csp_AppYsV2",
-            "ext": "http://202.189.9.236:12345/mtq.php/v6"
-        },
-        {
-            "key": "次元方舟",
-            "name": "🛸方舟┃APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
             "api": "csp_AppGet",
             "ext": {
-                "host": "https://www.cyfz.vip",
-                "datakey": "e72cdfd629e8895d"
+                "url": "https://ios.hgyx.vip",
+                "dataKey": "062dec75d039980e",
+                "dataIv": "062dec75d039980e",
+                "ua": "Dart/3.5 (dart:io)"
             }
         },
         {
-            "key": "番薯动漫",
-            "name": "🌳番薯┃APP",
+            "key": "白鸽",
+            "name": "白鸽｜APP",
             "type": 3,
             "searchable": 1,
             "changeable": 1,
             "api": "csp_AppGet",
             "ext": {
-                "host": "https://new.app.bytegooty.com",
-                "datakey": "N4yj7l7xKxHF4*gz"
+                "url": "https://cy.baige.asia",
+                "dataKey": "599D0FE5178642FD",
+                "dataIv": "599D0FE5178642FD"
             }
         },
         {
-            "key": "影视",
-            "name": "😡影视┃APP",
+            "key": "奇奇",
+            "name": "奇奇｜APP",
             "type": 3,
             "searchable": 1,
             "changeable": 1,
             "api": "csp_AppGet",
             "ext": {
-                "host": "https://jingyu4k-1312635929.cos.ap-nanjing.myqcloud.com/1.json",
-                "datakey": "AAdgrdghjfgswerA",
-                "api": 2
+                "url": "http://103.236.61.192:8006",
+                "dataKey": "123456789abcdefg",
+                "dataIv": "123456789abcdefg"
             }
         },
         {
@@ -1513,25 +1505,38 @@
         },
         {
             "key": "巧技1",
-            "name": "🔍搜搜┃影视",
+            "name": "🔍SOUSOU┃影视",
             "type": 3,
             "searchable": 1,
             "quickSearch": 1,
             "api": "csp_qiao2",
             "playerType": 2,
-            "jar": "https://pan.vma.cc/pan/down.php/9cf0a6c1f62ad83e9dccc2b7dd683a10.png;md5;9cf0a6c1f62ad83e9dccc2b7dd683a10",
+            "jar": "https://cik07-cos.7moor-fs2.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/6a1bc5995387e053/qij.png;md5;eb1ed5578b0a9ac5f3e6c6ee04b813e6",
             "ext": "7lj763gg402i7942412h849jg1558j9jl8g19213il86316k465719lik158491h179312hk935886ig2l05g9"
         },
         {
             "key": "巧技2",
-            "name": "🔍搜艘┃影视",
+            "name": "💢聚搜┃影视✨",
             "type": 3,
             "searchable": 1,
             "quickSearch": 1,
             "api": "csp_qiao2",
             "playerType": 2,
-            "jar": "https://pan.vma.cc/pan/down.php/9cf0a6c1f62ad83e9dccc2b7dd683a10.png;md5;9cf0a6c1f62ad83e9dccc2b7dd683a10",
+            "jar": "https://cik07-cos.7moor-fs2.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/6a1bc5995387e053/qij.png;md5;eb1ed5578b0a9ac5f3e6c6ee04b813e6",
             "ext": "7lj763gg402i7942412h849jg1558j9jl8g19213il86316k465719lik158491h179312h4934183ig2l05g9"
+        },
+        {
+            "key": "老鸭",
+            "name": "🍞老鸭┃影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "./Appapi.js",
+            "ext": {
+                "host": "http://103.109.20.117:550/"
+            }
         },
         {
             "key": "剧下饭",
