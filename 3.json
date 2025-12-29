@@ -11,6 +11,102 @@
             "api": "csp_Douban",
             "searchable": 0
         },
+        {
+            "key": "csp_PgDouban",
+            "name": "😊PG┃豆瓣",
+            "type": 3,
+            "api": "csp_PgDouban",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "filters": "./4.json",
+                "channel": "tgsearchers3,yunpan139,ydypzyfx,sbsbsnsqq,Q_dongman,yoyokuakeduanju,TG654TG,yeqingjie_GJG666"
+            },"jar": "./vox.jar"
+        },
+        {
+            "key": "csp_Pg夸克",
+            "name": "😏PG┃夸克",
+            "type": 3,
+            "api": "csp_PgDouban",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "filters": "./4.json",
+                "channel": "PanjClub,guoman4K,alyp_1,kuake_yppan"
+            },"jar": "./vox.jar"
+        },
+        {
+            "key": "csp_Pg优熙",
+            "name": "😉PG┃优熙",
+            "type": 3,
+            "api": "csp_PgDouban",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "filters": "./4.json",
+                "channel": "yunpanuc"
+            },"jar": "./vox.jar"
+        },
+        {
+            "key": "csp_Pg百度",
+            "name": "😌PG┃百度",
+            "type": 3,
+            "api": "csp_PgDouban",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "filters": "./4.json",
+                "channel": "BaiduCloudDisk,Baidu_Netdisk,bdwpzhpd,baidu_yppan"
+            },"jar": "./vox.jar"
+        },
+        {
+            "key": "csp_Pg123",
+            "name": "🙃PG┃123",
+            "type": 3,
+            "api": "csp_PgDouban",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "filters": "./4.json",
+                "channel": "zyfb123,xx123pan,zyzhpd123,yp123pan"
+            },"jar": "./vox.jar"
+        },
+        {
+            "key": "csp_Pg天翼",
+            "name": "🙂PG┃天翼",
+            "type": 3,
+            "api": "csp_PgDouban",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "filters": "./4.json",
+                "channel": "cloudtianyi,txtyzy,peccxinpd,yunpan189,tianyirigeng,tyypzhpd"
+            },"jar": "./vox.jar"
+        },
+        {
+            "key": "csp_Pg阿里",
+            "name": "🤕PG┃阿里",
+            "type": 3,
+            "api": "csp_PgDouban",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "filters": "./4.json",
+                "channel": "shareAliyun,zaihuayun,ali_yppan"
+            },"jar": "./vox.jar"
+        },
+        {
+            "key": "csp_Pg移动",
+            "name": "😕PG┃移动",
+            "type": 3,
+            "api": "csp_PgDouban",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "filters": "./4.json",
+                "channel": "yunpan139,ydypzyfx"
+            },"jar": "./vox.jar"
+        },
          {
             "key": "配置中心",
             "name": "配置｜潇洒",
@@ -26,10 +122,18 @@
         },
         {
       "key": "设置",
-      "name": "网弹|设置",
+      "name": "虎斑|设置",
       "type": 3,
       "api": "csp_HBconfig","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
     },
+        {
+            "key": "csp_Config",
+            "name": "😊配置┃VOX",
+            "type": 3,
+            "api": "csp_Config",
+            "searchable": 0,
+            "changeable": 0,"jar": "./vox.jar"
+        },
         {
             "key": "厂长影视",
             "name": "厂长｜影视",
