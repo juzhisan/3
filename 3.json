@@ -12,13 +12,16 @@
             "searchable": 0
         },
         {
-            "key": "csp_Douban",
-            "name": "🥰豆瓣┃VOX",
+            "key": "csp_Pg阿里",
+            "name": "🤕PG┃阿里",
             "type": 3,
-            "api": "csp_Douban",
-            "searchable": 0,
+            "api": "csp_PgDouban",
+            "searchable": 1,
             "changeable": 1,
-            "ext": "./4.json","jar": "./vox.jar"
+            "ext": {
+                "filters": "./4.json",
+                "channel": "shareAliyun,zaihuayun,ali_yppan"
+            },"jar": "./vox.jar"
         },
          {
             "key": "配置中心",
