@@ -343,13 +343,6 @@
             "order_num": 5,
             "ext": ""
         },
-        {
-      "key": "爱宜凡",
-      "name": "爱3测试",
-      "type": 3,
-      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
-      "ext": "./闪电.js"
-    },
     {"key": ".PTT短剧",
             "name": "PTT短剧.py",
             "type": 3,
@@ -370,13 +363,6 @@
       "ext": "https://gitee.com/abiubiud/xxs/raw/main/dr2/爱上你听书网[听].js"
     },
      {"key":"T4-qingting","name":"蜻蜓FM┃","type":4,"api":"https://catbox.n13.club/t9/qingting.php"},
-     {
-      "key": "飞牛",
-      "name": "飞牛影视",
-      "type": 3,
-      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
-      "ext": "./飞牛影视.js"
-    },
    {
       "key": "hipy_js_酷我听书[听]",
       "name": "酷我听书",
@@ -791,28 +777,10 @@
             "filterable": 1
         },
         {
-            "key": "甜圈短剧",
-            "name": "甜圈｜短剧",
-            "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/py/TQDJ.py",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
             "key": "奇优影视",
             "name": "奇优｜影视",
             "type": 3,
             "api": "csp_Qiyou"
-        },
-        {
-            "key": "骚火影视",
-            "name": "骚火｜影视",
-            "type": 3,
-            "api": "csp_SaoHuo",
-            "playerType": 2,
-            "ext": "https://shdy5.us"
         },
         {
             "key": "爱看机器人",
@@ -1421,9 +1389,9 @@
             "quickSearch": 1,
             "api": "csp_AppQi",
             "ext": {
-                "site": "https://ceshi307386.oss-cn-beijing.aliyuncs.com/ceshi421.txt",
-                "dataKey": "da61247f5b662597",
-                "dataIv": "da61247f5b662597",
+                "site": "https://ceshi307386.oss-cn-beijing.aliyuncs.com/ceshi430.txt",
+                "dataKey": "7sKhdca8HXGuyZ4x",
+                "dataIv": "7sKhdca8HXGuyZ4x",
                 "version": "120"
             }
         },
@@ -1438,18 +1406,6 @@
                 "dataKey": "staraugust123456",
                 "dataIv": "staraugust123456",
                 "version": "120"
-            }
-        },
-        {
-            "key": "鲸鱼",
-            "name": "鲸鱼｜APP",
-            "type": 3,
-            "quickSearch": 1,
-            "api": "csp_AppQi",
-            "ext": {
-                "site": "https://jingyu4k-1312635929.cos.ap-nanjing.myqcloud.com/1.json",
-                "dataKey": "AAdgrdghjfgswerA",
-                "dataIv": "AAdgrdghjfgswerA"
             }
         },
         {
@@ -1476,19 +1432,6 @@
                 "url": "https://cy.baige.asia",
                 "dataKey": "599D0FE5178642FD",
                 "dataIv": "599D0FE5178642FD"
-            }
-        },
-        {
-            "key": "奇奇",
-            "name": "奇奇｜APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "http://103.236.61.192:8006",
-                "dataKey": "123456789abcdefg",
-                "dataIv": "123456789abcdefg"
             }
         },
         {
