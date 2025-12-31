@@ -1556,6 +1556,40 @@
             }
         },
         {
+            "key": "csp_GuanYing",
+            "name": "😂观影┃4K",
+            "type": 3,
+            "api": "csp_GuanYing",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "cookie": "PHPSESSID=qi7gnbji5akpvj37t72d7sg6ah; vrg_go=1; vrg_sc=f37159ec6997cc319635ebafbfe6a6c5; BT_auth=f973lfGIquys8ItVNalqaX2Q7LJXBNyKyJCAdrDhEYlQ-iKp5DTHesmVWjGAmkPjb2iFzqdqNMi7W_IfcE2vFSOaXTgnLOkGjQVQ6rxgUpr-XenDAhMZB2I1FWXJLm_u9hBsz45BiE7J1rWbFyPhQUYN0OyZ332dLgOM-vwfX9NKRCZpK7kt; BT_cookietime=80645v457Sh58tBVCysGYaA2kdFs2EDn9hJwz592jpxWopRaPKGO",
+                "filters": "./myzb.json",
+                "sites": "https://www.gyg.la,https://www.gyg.si,https://www.gying.net,https://www.gying.org,https://www.gying.si,https://www.gying.in"
+            },"jar": "./vox.jar"
+        },
+        {
+            "key": "csp_SeedHub",
+            "name": "🎳Seed┃Hub",
+            "type": 3,
+            "api": "csp_SeedHub",
+            "searchable": 1,
+            "changeable": 0,"jar": "./vox.jar"
+        },
+        {
+            "key": "csp_Xxzn",
+            "name": "🤑4K┃指南",
+            "type": 3,
+            "api": "csp_Xxzn",
+            "filterable": 1,
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "filters": "./duboku.json",
+                "sites": "https://4kzn.com"
+            },"jar": "./vox.jar"
+        },
+        {
             "key": "魔方4K",
             "name": "🎲魔方┃APP",
             "type": 3,
