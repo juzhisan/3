@@ -109,14 +109,6 @@
             "changeable": 0
         },
         {
-            "key": "TvDy",
-            "name": "天堂资源",
-            "type": 3,
-            "api": "csp_TvDy",
-            "searchable": 1,
-            "filterable": 1,"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
-        },
-        {
             "key": "Kvm4k",
             "name": "流光溢彩",
             "type": 3,
@@ -137,16 +129,6 @@
             "type": 3,
             "api": "csp_BroVods",
             "searchable": 1,"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
-        },
-        {
-            "key": "py_电影天堂",
-            "name": "🍎 电影天堂 (T3)",
-            "type": 3,
-            "api": "https://py.doube.eu.org/static/py/dytt.min.py",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0
         },
         {
             "key": "py_小苹果",
@@ -173,26 +155,6 @@
             "name": "🍎 动漫巴士 (T4)",
             "type": 4,
             "api": "https://py.doube.eu.org/v2/spider?site=6b5899d243816bacb8712de7ab6ceb89",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0
-        },
-        {
-            "key": "py_欧乐影院",
-            "name": "🍎 欧乐影院 (T4)",
-            "type": 4,
-            "api": "https://py.doube.eu.org/v2/spider?site=8a0bbe9e97c4429a517cd2ece3f6772b",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0
-        },
-        {
-            "key": "py_小红影视",
-            "name": "🍎 小红影视 (T4)",
-            "type": 4,
-            "api": "https://py.doube.eu.org/v2/spider?site=01d44f1ecd9383f273c0c24989ad87c3",
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 0,
