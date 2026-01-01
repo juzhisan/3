@@ -109,6 +109,36 @@
             "changeable": 0
         },
         {
+            "key": "TvDy",
+            "name": "天堂资源",
+            "type": 3,
+            "api": "csp_TvDy",
+            "searchable": 1,
+            "filterable": 1,"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
+        },
+        {
+            "key": "Kvm4k",
+            "name": "流光溢彩",
+            "type": 3,
+            "api": "csp_Kvm4k",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": [
+                    "https://www.4kvm.me",
+                    "https://www.4kvm.tv",
+                    "https://www.4kvm.org"
+                ]
+            },"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
+        },
+        {
+            "key": "BroVods",
+            "name": "兄弟视频",
+            "type": 3,
+            "api": "csp_BroVods",
+            "searchable": 1,"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
+        },
+        {
             "key": "t1_dian_ying_tian_tang_02",
             "name": "🍎 电影天堂 (T1)",
             "type": 1,
