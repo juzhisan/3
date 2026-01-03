@@ -1994,19 +1994,12 @@
             "ua": ""
         },
         {
-            "name": "📡冰茶",
-            "url": "https://bc.188766.xyz/?ip=&mima=bingchawusifengxian",
-            "header": {
-                "User-Agent": "okhttp/5.1.0"
-            }
-        },
-        {
-            "name": "📡冰茶2",
-            "url": "https://bc.188766.xyz/?ip=211.101.246.236&mima=mianfeibuhuaqian",
+            "name": "📡冰茶直播",
             "type": 0,
-            "ua": "okHttp/Mod-1.2.0.1",
-            "epg": "http://127.0.0.1:10079/p/0/proxy/http://content.stream-link.org/epg/guide.xml/?ch={name}&date={date}",
-            "logo": "http://127.0.0.1:10079/p/0/proxy/http://content.stream-link.org/epg/guide.xml/logo/{name}.png"
+            "url": "https://bc.188766.xyz/?url=https://live.188766.xyz&mima=bingcha1130",
+            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+            "logo": "https://epg.iill.top/logo/{name}.png",
+            "timeout": 10
         },
     {"name":"咪咕•综合","type":0,"url":"https://down.nigx.cn/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}
     ],
