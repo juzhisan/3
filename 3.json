@@ -151,6 +151,14 @@
             "ext": "wYceOHC6X3P3alhnB4RtmzgFD1Irln8apuUGgGt0cGNu1m3wi32g5216U4VmaeMAakuchzAtkZK4hN76RGX+SgXswlO9BU7AAQg57WGKJIWptJgUaSjRv+dsCFHAMS7NtEkaU8HcHtu3mNmXmiGVLae6KtmpbuT1razd8CkTO1A=","jar": "http://我不是.摸鱼儿.com/d/moyu.php"
         },
         {
+            "key": "Xb6v",
+            "name": "六V视频",
+            "type": 3,
+            "api": "csp_Xb6v",
+            "searchable": 1,
+            "filterable": 1,"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
+        },
+        {
             "key": "py_小苹果",
             "name": "🍎 小苹果 (T4)",
             "type": 4,
