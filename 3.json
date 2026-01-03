@@ -131,6 +131,32 @@
             "searchable": 1,"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
         },
         {
+            "key": "XiaoHongYS",
+            "name": "小红视频",
+            "type": 3,
+            "api": "csp_XiaoHongYS",
+            "searchable": 1,
+            "changeable": 1,"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
+        },
+        {
+            "key": "huahua",
+            "name": "花花视频",
+            "type": 3,
+            "changeable": 0,
+            "api": "csp_AppFox",
+            "ext": "p+FPtr6fYIfomOnA4N4Sl0dFvFqJvfkho3Yem3nNyo6peH9nVFr0wIIfo96V7voEHGrq+0mvfYjwri/nkrWITQ==","jar": "http://我不是.摸鱼儿.com/d/moyu.php"
+        },
+        {
+            "key": "bimoxinghe",
+            "name": "笔墨星河",
+            "type": 3,
+            "changeable": 0,
+            "searchable": 1,
+            "quickSearch": 1,
+            "api": "csp_AppYsV2",
+            "ext": "wYceOHC6X3P3alhnB4RtmzgFD1Irln8apuUGgGt0cGNu1m3wi32g5216U4VmaeMAakuchzAtkZK4hN76RGX+SgXswlO9BU7AAQg57WGKJIWptJgUaSjRv+dsCFHAMS7NtEkaU8HcHtu3mNmXmiGVLae6KtmpbuT1razd8CkTO1A=","jar": "http://我不是.摸鱼儿.com/d/moyu.php"
+        },
+        {
             "key": "py_小苹果",
             "name": "🍎 小苹果 (T4)",
             "type": 4,
@@ -180,15 +206,54 @@
             "filterable": 0,
             "changeable": 0
         },
-        {
-            "key": "py_电影天堂",
-            "name": "🍎 电影天堂 (T3)",
+       {
+            "key": "py_界影视",
+            "name": "🍎 界影视 (T3)",
             "type": 3,
-            "api": "https://py.doube.eu.org/static/py/dytt.min.py",
+            "api": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/py/界影视.py",
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 0,
             "changeable": 0
+        },
+        {
+            "key": "py_非凡资源无广",
+            "name": "🍎 非凡资源无广 (T3)",
+            "type": 3,
+            "api": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/py/采集去广模板.py",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0,
+            "ext": {
+                "url": "http://ffzy.tv/api.php/provide/vod/from/ffm3u8/at/json/",
+                "a": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "key": "py_电影天堂无广",
+            "name": "🍎 电影天堂无广 (T3)",
+            "type": 3,
+            "api": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/py/采集去广模板.py",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0,
+            "ext": {
+                "url": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json/",
+                "a": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    33
+                ]
+            }
         },
     {
             "key": "csp_非凡资源",
@@ -1872,6 +1937,20 @@
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
+    {
+            "name": "(直播)SMT(py)",
+            "type": 3,
+            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/smt.txt",
+            "api": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/py/SMT.py",
+            "ext": {}
+        },
+        {
+            "name": "(直播)快直播(py)",
+            "type": 3,
+            "url": "",
+            "api": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/py/快直播.py",
+            "ext": {}
+        },
     {
       "name": "范明明（需开启V6网络）",
       "type": 0,
