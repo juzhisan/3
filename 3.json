@@ -37,12 +37,6 @@
             },"jar": ""
         },
         {
-      "key": "设置",
-      "name": "虎斑|设置",
-      "type": 3,
-      "api": "csp_HBconfig","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-    },
-        {
             "key": "csp_Config",
             "name": "😊配置┃VOX",
             "type": 3,
@@ -410,48 +404,6 @@
       "filterable": 1,
       "ext": "https://gitee.com/abiubiud/xxs/raw/main/dr2/酷我听书[听].js"
     },
-        {
-      "key": "景天",
-      "name": "景天|4K弹幕",
-      "type": 3,
-      "api": "csp_HBcms10Dou",
-      "ext": "https://zy.sh0o.cn/api.php/provide/vod/from/qq/","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-    },
-    {
-      "key": "茂茂",
-      "name": "茂茂|4K弹幕",
-      "type": 3,
-      "api": "csp_HBcms10Dou",
-      "ext": "https://zy.sh0o.cn/api.php/provide/vod/from/mgtv/","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-    },
-    {
-      "key": "竹生",
-      "name": "竹生|4K弹幕",
-      "type": 3,
-      "api": "csp_HBT4",
-"ext":"YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qVTROall2ZEdWemRDNXdhSEEvYzJsMFpUMXNZV0pwSXlNamJHRmlhUT09","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-    },
-    {
-      "key": "归安",
-      "name": "归安|4K弹幕",
-      "type": 3,
-      "api": "csp_HBT4",
-      "ext": "YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qUTROall2ZEdWemRDNXdhSEEvYzJsMFpUMXRhV2hrY2lNakkyMXBhR1J5","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-    },
-    {
-      "key": "薄心",
-      "name": "薄心|4K弹幕",
-      "type": 3,
-      "api": "csp_HBT4",
-      "ext": "YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qUTROall2ZEdWemRDNXdhSEEvYzJsMFpUMWxjbmhwWVc4akl5TmxjbmhwWVc4PQ==","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-    },
-    {
-      "key": "甜橙",
-      "name": "甜橙|4K弹幕",
-      "type": 3,
-      "api": "csp_HBT4",
-      "ext": "YUhSMGNEb3ZMekUxTkM0eU1Ua3VNVEV6TGpFek9qUTROall2ZEdWemRDNXdhSEEvYzJsMFpUMXZkV2RsSXlNamIzVm5aUT09","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-    },
       {
             "key": "哔哩视频",
             "name": "哔哩｜视频",
@@ -469,34 +421,6 @@
                 "json": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/json/BLSP.json",
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
             }
-        },
-      {
-            "key": "腾讯视频",
-            "name": "腾讯｜视频",
-            "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
-        },
-        {
-            "key": "优酷视频",
-            "name": "优酷｜视频",
-            "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/YKSP.js"
-        },
-        {
-            "key": "芒果视频",
-            "name": "芒果｜视频",
-            "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/MGSP.js"
-        },
-        {
-            "key": "爱奇艺",
-            "name": "爱奇艺｜视频",
-            "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/AQY.js"
         },
         {
             "key": "凤凰FM",
