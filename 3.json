@@ -1514,28 +1514,6 @@
             },"jar": "./vox.jar"
         },
         {
-            "key": "魔方4K",
-            "name": "🎲魔方┃APP",
-            "type": 3,
-            "api": "csp_AppGet",
-            "ext": {
-                "host": "https://snysw.xyz/mf4k326.txt",
-                "datakey": "1234567887654321"
-            },"jar": "./vox.jar"
-        },
-        {
-            "key": "天峰影视",
-            "name": "⛰️天峰┃APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "host": "http://zxy-ys.810211.dpdns.org",
-                "datakey": "1234567890123456"
-            },"jar": "./vox.jar"
-        },
-        {
             "key": "粉象世界",
             "name": "🐘粉象┃APP",
             "type": 3,
@@ -1546,13 +1524,31 @@
                 "ver": 2
             },"jar": "./vox.jar"
         },
-        {
-            "key": "哈基米",
-            "name": "🚵基米┃APP",
+       {
+            "key": "影视",
+            "name": "😡影视┃APP",
             "type": 3,
-            "changeable": 0,
-            "api": "csp_Appfox",
-            "ext": "http://45.207.215.137:8006","jar": "./vox.jar"
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "host": "https://jingyu4k-1312635929.cos.ap-nanjing.myqcloud.com/1.json",
+                "datakey": "AAdgrdghjfgswerA",
+                "api": 2
+            },"jar": "./vox.jar"
+        },
+        {
+            "key": "爱看资源网",
+            "name": "🚘爱看┃网盘",
+            "type": 3,
+            "api": "./drpy2.min.js",
+            "ext": "./闪电.js"
+        },
+        {
+            "key": "cat_HDmoli",
+            "name": "⛵HDmoli┃影院",
+            "type": 3,
+            "api": "./三六零弹幕.js","jar": "./vox.jar"
         },
         {
             "key": "Max",

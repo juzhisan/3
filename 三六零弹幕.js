@@ -1,573 +1,251 @@
-const _0x48c78e = _0x54f6;
-(function (_0x3a7b4a, _0x58eae1) {
-    const _0x4c8dc3 = _0x54f6, _0x35fbe3 = _0x3a7b4a();
-    while (!![]) {
-        try {
-            const _0x542978 = -parseInt(_0x4c8dc3(0xbb)) / (0x11c1 + -0x7 * 0xc2 + -0xc72) * (parseInt(_0x4c8dc3(0x10a)) / (0x3 * -0x591 + -0xd * -0x1c9 + -0x680)) + -parseInt(_0x4c8dc3(0xd8)) / (-0x98a + 0x1142 + -0x1 * 0x7b5) * (parseInt(_0x4c8dc3(0x12e)) / (-0xae6 + 0x2 * -0x11b1 + 0x2e4c)) + -parseInt(_0x4c8dc3(0xc3)) / (0xf1 * -0x8 + -0x9 * 0x192 + 0x15af) + parseInt(_0x4c8dc3(0x12f)) / (-0x5 * 0x4fb + 0x25ee + -0xd01) + -parseInt(_0x4c8dc3(0xa0)) / (0x221d * 0x1 + 0x3cd * 0x7 + 0x3 * -0x143b) + -parseInt(_0x4c8dc3(0x129)) / (-0x44a + 0x21b * 0x7 + -0x7 * 0x17d) * (parseInt(_0x4c8dc3(0xe6)) / (-0x1f5b + -0x158e + 0x34f2)) + parseInt(_0x4c8dc3(0x123)) / (-0x3c + -0x2dd * -0x8 + 0x2 * -0xb51);
-            if (_0x542978 === _0x58eae1)
-                break;
-            else
-                _0x35fbe3['push'](_0x35fbe3['shift']());
-        } catch (_0x7090da) {
-            _0x35fbe3['push'](_0x35fbe3['shift']());
-        }
+/*
+title: 'HDmoli', author: '小可乐/v6.1.1'
+说明：可以不写ext，也可以写ext，ext支持的参数和格式参数如下
+"ext": {
+    "host": "xxxx", //站点网址
+    "timeout": 6000  //请求超时，单位毫秒
+}
+*/
+var HOST;
+const MOBILE_UA = 'Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36';
+const DefHeader = {'User-Agent': MOBILE_UA};
+const KParams = {
+    headers: {'User-Agent': MOBILE_UA},
+    timeout: 5000
+};
+
+async function init(cfg) {
+    try {
+        let host = cfg.ext?.host?.trim() || 'https://www.hdmoli.org';
+        HOST = host.replace(/\/$/, '');
+        KParams.headers['Referer'] = HOST;
+        let parseTimeout = parseInt(cfg.ext?.timeout?.trim(), 10);
+        KParams.timeout = parseTimeout > 0 ? parseTimeout : 5000;
+        KParams.resHtml = await request(HOST);
+    } catch (e) {
+        console.error('初始化参数失败：', e.message);
     }
-}(_0x1e9c, -0x14f995 + -0x1b375 * -0x5 + 0x16ffe4));
-let host = _0x48c78e(0xea) + _0x48c78e(0xd3), headers = { 'User-Agent': _0x48c78e(0xf4) + _0x48c78e(0xcd) + _0x48c78e(0xb7) + _0x48c78e(0xe7) + _0x48c78e(0xdf) + _0x48c78e(0x103) + _0x48c78e(0xfa) + _0x48c78e(0xde) + _0x48c78e(0xb8) + _0x48c78e(0x12a) + _0x48c78e(0xb9) + _0x48c78e(0xc7) + _0x48c78e(0x11f) + _0x48c78e(0xe4) + _0x48c78e(0xa9) + _0x48c78e(0x126) };
-async function init(_0x9bf808) {
 }
-function _0x54f6(_0x9b69d, _0x3b17d3) {
-    const _0x1172b4 = _0x1e9c();
-    return _0x54f6 = function (_0x4995e6, _0x53d438) {
-        _0x4995e6 = _0x4995e6 - (-0x4c3 + 0x755 * 0x1 + -0x1f2);
-        let _0x1f534e = _0x1172b4[_0x4995e6];
-        return _0x1f534e;
-    }, _0x54f6(_0x9b69d, _0x3b17d3);
-}
-function getList(_0x20072d) {
-    const _0x5bc716 = _0x48c78e, _0x231d4b = {
-            'PRLAd': function (_0x53aeed, _0x2d7483) {
-                return _0x53aeed && _0x2d7483;
-            },
-            'EfdfG': function (_0xddf542, _0x5f5c4a) {
-                return _0xddf542 + _0x5f5c4a;
-            },
-            'bcogk': _0x5bc716(0x10c),
-            'BcNIl': function (_0x1f1ee8, _0x577a48, _0x5c0a59) {
-                return _0x1f1ee8(_0x577a48, _0x5c0a59);
-            },
-            'XNJcA': _0x5bc716(0xb6) + 'em'
+
+async function home(filter) {
+    try {
+        let resHtml = KParams.resHtml;
+        let classes = pdfa(resHtml, '.nav-list&&a').slice(1,-1).map(it => {
+            let cName = _pdfh(it, 'Text', '分类名');
+            let cId = _pdfh(it, 'a&&href').match(/(\d+)/)?.[1] ?? '分类值';
+            return {type_name: cName, type_id: cId};
+        });
+        let filters = {
+            "1":[
+                {"key":"cateId","name":"类型","value":[{"n":"全部","v":"1"},{"n":"动作","v":"6"},{"n":"喜剧","v":"7"},{"n":"爱情","v":"8"},{"n":"科幻","v":"9"},{"n":"恐怖","v":"10"},{"n":"剧情","v":"11"},{"n":"战争","v":"12"}]},
+                {"key":"class","name":"剧情","value":[{"n":"全部","v":""},{"n":"爱情","v":"爱情"},{"n":"奇幻","v":"奇幻"},{"n":"喜剧","v":"喜剧"},{"n":"动作","v":"动作"},{"n":"科幻","v":"科幻"},{"n":"武侠","v":"武侠"},{"n":"冒险","v":"冒险"},{"n":"惊悚","v":"惊悚"},{"n":"恐怖","v":"恐怖"},{"n":"犯罪","v":"犯罪"},{"n":"动画","v":"动画"},{"n":"剧情","v":"剧情"},{"n":"悬疑","v":"悬疑"},{"n":"战争","v":"战争"},{"n":"家庭","v":"家庭"},{"n":"运动","v":"运动"},{"n":"灾难","v":"灾难"},{"n":"传记","v":"传记"},{"n":"历史","v":"历史"},{"n":"短片","v":"短片"},{"n":"西部","v":"西部"},{"n":"纪录片","v":"纪录片"},{"n":"歌舞","v":"歌舞"},{"n":"古装","v":"古装"},{"n":"音乐","v":"音乐"},{"n":"剧情片","v":"剧情片"},{"n":"儿童","v":"儿童"},{"n":"真人秀","v":"真人秀"}]},
+                {"key":"area","name":"地区","value":[{"n":"全部","v":""},{"n":"大陆","v":"大陆"},{"n":"香港","v":"香港"},{"n":"台湾","v":"台湾"},{"n":"日本","v":"日本"},{"n":"美国","v":"美国"},{"n":"英国","v":"英国"},{"n":"韩国","v":"韩国"},{"n":"西班牙","v":"西班牙"},{"n":"泰国","v":"泰国"},{"n":"法国","v":"法国"},{"n":"丹麦","v":"丹麦"},{"n":"智利","v":"智利"},{"n":"土耳其","v":"土耳其"},{"n":"德国","v":"德国"},{"n":"瑞典","v":"瑞典"},{"n":"印度","v":"印度"},{"n":"新西兰","v":"新西兰"},{"n":"爱尔兰","v":"爱尔兰"},{"n":"比利时","v":"比利时"},{"n":"希腊","v":"希腊"},{"n":"澳大利亚","v":"澳大利亚"},{"n":"芬兰","v":"芬兰"},{"n":"巴西","v":"巴西"},{"n":"俄罗斯","v":"俄罗斯"},{"n":"加拿大","v":"加拿大"},{"n":"意大利","v":"意大利"},{"n":"其它","v":"其它"}]},
+                {"key":"lang","name":"语言","value":[{"n":"全部","v":""},{"n":"国语","v":"国语"},{"n":"粤语","v":"粤语"},{"n":"日语","v":"日语"},{"n":"英语","v":"英语"},{"n":"韩语","v":"韩语"},{"n":"夏威夷语","v":"夏威夷语"},{"n":"法语","v":"法语"},{"n":"德语","v":"德语"},{"n":"丹麦语","v":"丹麦语"},{"n":"西班牙语","v":"西班牙语"},{"n":"耳其语","v":"耳其语"},{"n":"印地语","v":"印地语"},{"n":"芬兰语","v":"芬兰语"},{"n":"四川乐山话","v":"四川乐山话"},{"n":"俄语","v":"俄语"},{"n":"意大利语","v":"意大利语"},{"n":"汉语普通话","v":"汉语普通话"},{"n":"闽南语","v":"闽南语"},{"n":"其它","v":"其它"}]},
+                {"key":"year","name":"年份","value":[{"n":"全部","v":""},{"n":"2025","v":"2025"},{"n":"2024","v":"2024"},{"n":"2023","v":"2023"},{"n":"2022","v":"2022"},{"n":"2021","v":"2021"},{"n":"2020","v":"2020"},{"n":"2019","v":"2019"},{"n":"2018","v":"2018"},{"n":"2017","v":"2017"},{"n":"2016","v":"2016"},{"n":"2015","v":"2015"},{"n":"2014","v":"2014"},{"n":"2013","v":"2013"},{"n":"2012","v":"2012"},{"n":"2011","v":"2011"}]},
+                {"key":"letter","name":"字母","value":[{"n":"全部","v":""},{"n":"A","v":"A"},{"n":"B","v":"B"},{"n":"C","v":"C"},{"n":"D","v":"D"},{"n":"E","v":"E"},{"n":"F","v":"F"},{"n":"G","v":"G"},{"n":"H","v":"H"},{"n":"I","v":"I"},{"n":"J","v":"J"},{"n":"K","v":"K"},{"n":"L","v":"L"},{"n":"M","v":"M"},{"n":"N","v":"N"},{"n":"O","v":"O"},{"n":"P","v":"P"},{"n":"Q","v":"Q"},{"n":"R","v":"R"},{"n":"S","v":"S"},{"n":"T","v":"T"},{"n":"U","v":"U"},{"n":"V","v":"V"},{"n":"W","v":"W"},{"n":"X","v":"X"},{"n":"Y","v":"Y"},{"n":"Z","v":"Z"},{"n":"0-9","v":"0-9"}]},
+                {"key":"by","name":"排序","value":[{"n":"时间","v":"time"},{"n":"人气","v":"hits"},{"n":"评分","v":"score"}]}
+            ],
+            "2":[
+                {"key":"cateId","name":"类型","value":[{"n":"全部","v":"2"},{"n":"国产剧","v":"13"},{"n":"港台剧","v":"14"},{"n":"日韩剧","v":"15"},{"n":"海外剧","v":"16"}]},
+                {"key":"class","name":"剧情","value":[{"n":"全部","v":""},{"n":"喜剧","v":"喜剧"},{"n":"科幻","v":"科幻"},{"n":"悬疑","v":"悬疑"},{"n":"欧美","v":"欧美"},{"n":"剧情","v":"剧情"},{"n":"奇幻","v":"奇幻"},{"n":"古装","v":"古装"},{"n":"动作","v":"动作"},{"n":"犯罪","v":"犯罪"},{"n":"冒险","v":"冒险"},{"n":"惊悚","v":"惊悚"},{"n":"恐怖","v":"恐怖"},{"n":"历史","v":"历史"},{"n":"爱情","v":"爱情"},{"n":"音乐","v":"音乐"},{"n":"家庭","v":"家庭"},{"n":"国产","v":"国产"},{"n":"运动","v":"运动"},{"n":"动画","v":"动画"},{"n":"西部","v":"西部"},{"n":"战争","v":"战争"},{"n":"传记","v":"传记"},{"n":"灾难","v":"灾难"},{"n":"纪录片","v":"纪录片"},{"n":"短片","v":"短片"},{"n":"海外","v":"海外"},{"n":"真人秀","v":"真人秀"}]},
+                {"key":"area","name":"地区","value":[{"n":"全部","v":""},{"n":"美国","v":"美国"},{"n":"韩国","v":"韩国"},{"n":"英国","v":"英国"},{"n":"日本","v":"日本"},{"n":"大陆","v":"大陆"},{"n":"台湾","v":"台湾"},{"n":"德国","v":"德国"},{"n":"哥伦比亚","v":"哥伦比亚"},{"n":"意大利","v":"意大利"},{"n":"西班牙","v":"西班牙"},{"n":"丹麦","v":"丹麦"},{"n":"挪威","v":"挪威"},{"n":"法国","v":"法国"},{"n":"香港","v":"香港"},{"n":"泰国","v":"泰国"},{"n":"其它","v":"其它"}]},
+                {"key":"lang","name":"语言","value":[{"n":"全部","v":""},{"n":"英语","v":"英语"},{"n":"韩语","v":"韩语"},{"n":"日语","v":"日语"},{"n":"国语","v":"国语"},{"n":"德语","v":"德语"},{"n":"西班牙语","v":"西班牙语"},{"n":"意大利语","v":"意大利语"},{"n":"那不勒","v":"那不勒"},{"n":"挪威语","v":"挪威语"},{"n":"其它","v":"其它"}]},
+                {"key":"year","name":"年份","value":[{"n":"全部","v":""},{"n":"2025","v":"2025"},{"n":"2024","v":"2024"},{"n":"2023","v":"2023"},{"n":"2022","v":"2022"},{"n":"2021","v":"2021"},{"n":"2020","v":"2020"},{"n":"2019","v":"2019"},{"n":"2018","v":"2018"},{"n":"2017","v":"2017"},{"n":"2016","v":"2016"},{"n":"2015","v":"2015"},{"n":"2014","v":"2014"},{"n":"2013","v":"2013"},{"n":"2012","v":"2012"},{"n":"2011","v":"2011"}]},
+                {"key":"letter","name":"字母","value":[{"n":"全部","v":""},{"n":"A","v":"A"},{"n":"B","v":"B"},{"n":"C","v":"C"},{"n":"D","v":"D"},{"n":"E","v":"E"},{"n":"F","v":"F"},{"n":"G","v":"G"},{"n":"H","v":"H"},{"n":"I","v":"I"},{"n":"J","v":"J"},{"n":"K","v":"K"},{"n":"L","v":"L"},{"n":"M","v":"M"},{"n":"N","v":"N"},{"n":"O","v":"O"},{"n":"P","v":"P"},{"n":"Q","v":"Q"},{"n":"R","v":"R"},{"n":"S","v":"S"},{"n":"T","v":"T"},{"n":"U","v":"U"},{"n":"V","v":"V"},{"n":"W","v":"W"},{"n":"X","v":"X"},{"n":"Y","v":"Y"},{"n":"Z","v":"Z"},{"n":"0-9","v":"0-9"}]},
+                {"key":"by","name":"排序","value":[{"n":"时间","v":"time"},{"n":"人气","v":"hits"},{"n":"评分","v":"score"}]}
+            ],
+            "4":[
+                {"key":"cateId","name":"类型","value":[{"n":"全部","v":"4"},{"n":"国产动漫","v":"24"},{"n":"日韩动漫","v":"25"},{"n":"港台动漫","v":"26"},{"n":"欧美动漫","v":"27"}]},
+                {"key":"class","name":"剧情","value":[{"n":"全部","v":""},{"n":"动画","v":"动画"},{"n":"日韩动漫","v":"日韩动漫"},{"n":"喜剧","v":"喜剧"},{"n":"剧情","v":"剧情"},{"n":"科幻","v":"科幻"},{"n":"家庭","v":"家庭"},{"n":"奇幻","v":"奇幻"},{"n":"冒险","v":"冒险"},{"n":"欧美动漫","v":"欧美动漫"},{"n":"动作","v":"动作"},{"n":"悬疑","v":"悬疑"},{"n":"犯罪","v":"犯罪"},{"n":"爱情","v":"爱情"},{"n":"惊悚","v":"惊悚"},{"n":"灾难","v":"灾难"},{"n":"音乐","v":"音乐"},{"n":"恐怖","v":"恐怖"},{"n":"战争","v":"战争"},{"n":"运动","v":"运动"},{"n":"歌舞","v":"歌舞"},{"n":"古装","v":"古装"},{"n":"历史","v":"历史"},{"n":"短片","v":"短片"},{"n":"国产动漫","v":"国产动漫"},{"n":"战斗","v":"战斗"}]},
+                {"key":"area","name":"地区","value":[{"n":"全部","v":""},{"n":"大陆","v":"大陆"},{"n":"日本","v":"日本"},{"n":"美国","v":"美国"},{"n":"韩国","v":"韩国"},{"n":"西班牙","v":"西班牙"},{"n":"其它","v":"其它"}]},
+                {"key":"lang","name":"语言","value":[{"n":"全部","v":""},{"n":"日语","v":"日语"},{"n":"英语","v":"英语"},{"n":"国语","v":"国语"},{"n":"韩语","v":"韩语"},{"n":"其它","v":"其它"}]},
+                {"key":"year","name":"年份","value":[{"n":"全部","v":""},{"n":"2025","v":"2025"},{"n":"2024","v":"2024"},{"n":"2023","v":"2023"},{"n":"2022","v":"2022"},{"n":"2021","v":"2021"},{"n":"2020","v":"2020"},{"n":"2019","v":"2019"},{"n":"2018","v":"2018"},{"n":"2017","v":"2017"},{"n":"2016","v":"2016"},{"n":"2015","v":"2015"},{"n":"2014","v":"2014"},{"n":"2013","v":"2013"},{"n":"2012","v":"2012"},{"n":"2011","v":"2011"}]},
+                {"key":"letter","name":"字母","value":[{"n":"全部","v":""},{"n":"A","v":"A"},{"n":"B","v":"B"},{"n":"C","v":"C"},{"n":"D","v":"D"},{"n":"E","v":"E"},{"n":"F","v":"F"},{"n":"G","v":"G"},{"n":"H","v":"H"},{"n":"I","v":"I"},{"n":"J","v":"J"},{"n":"K","v":"K"},{"n":"L","v":"L"},{"n":"M","v":"M"},{"n":"N","v":"N"},{"n":"O","v":"O"},{"n":"P","v":"P"},{"n":"Q","v":"Q"},{"n":"R","v":"R"},{"n":"S","v":"S"},{"n":"T","v":"T"},{"n":"U","v":"U"},{"n":"V","v":"V"},{"n":"W","v":"W"},{"n":"X","v":"X"},{"n":"Y","v":"Y"},{"n":"Z","v":"Z"},{"n":"0-9","v":"0-9"}]},
+                {"key":"by","name":"排序","value":[{"n":"时间","v":"time"},{"n":"人气","v":"hits"},{"n":"评分","v":"score"}]}
+            ]
         };
-    let _0x36de8c = [], _0x1e2c43 = _0x231d4b[_0x5bc716(0xf7)](pdfa, _0x20072d, _0x231d4b[_0x5bc716(0xa1)]);
-    return _0x1e2c43[_0x5bc716(0x122)](_0x5a9290 => {
-        const _0x5d2874 = _0x5bc716;
-        let _0x33172d = _0x5a9290[_0x5d2874(0xf8)](/detail\/id\/(\d+).html/), _0x1d7f97 = _0x5a9290[_0x5d2874(0xf8)](/title="(.*?)"/) || _0x5a9290[_0x5d2874(0xf8)](/alt="(.*?)"/), _0x5d05c7 = _0x5a9290[_0x5d2874(0xf8)](/data-original="(.*?)"/) || _0x5a9290[_0x5d2874(0xf8)](/src="(.*?)"/), _0x5adda3 = _0x5a9290[_0x5d2874(0xf8)](/<div class="module-item-note">([^>]+)<\/div>/);
-        if (_0x231d4b[_0x5d2874(0x10e)](_0x33172d, _0x1d7f97)) {
-            let _0x526a23 = _0x5d05c7 ? _0x5d05c7[0x7ce + -0x34a * 0x6 + 0xd * 0xeb] || _0x5d05c7[0x25a6 + -0x2 * -0xefd + -0x439e] : '';
-            _0x36de8c[_0x5d2874(0x102)]({
-                'vod_id': _0x33172d[-0x293 * -0x7 + -0xa * -0x71 + -0x166e],
-                'vod_name': _0x1d7f97[-0x9a2 * 0x1 + -0x178a + 0x212d][_0x5d2874(0x115)](/<.*?>/g, ''),
-                'vod_pic': _0x526a23[_0x5d2874(0x108)]('/') ? _0x231d4b[_0x5d2874(0xe8)](host, _0x526a23) : _0x526a23,
-                'vod_remarks': _0x231d4b[_0x5d2874(0xe8)](_0x231d4b[_0x5d2874(0xba)], (_0x5adda3 || [
-                    '',
-                    ''
-                ])[0x3d * -0x7f + 0xdd7 + 0x5 * 0x349][_0x5d2874(0x115)](/<.*?>/g, '')[_0x5d2874(0x115)]('第', ''))
+        return JSON.stringify({class: classes, filters: filters});
+    } catch (e) {
+        console.error('获取分类失败：', e.message);
+        return JSON.stringify({class: [], filters: {}});
+    }
+}
+
+async function homeVod() {
+    try {
+        let resHtml = KParams.resHtml;
+        let VODS = getVodList(resHtml);
+        return JSON.stringify({list: VODS});
+    } catch (e) {
+        console.error('推荐页获取失败：', e.message);
+        return JSON.stringify({list: []});
+    }
+}
+
+async function category(tid, pg, filter, extend) {
+    try {
+        pg = parseInt(pg, 10);
+        pg = pg > 0 ? pg : 1;
+        let cateUrl = `${HOST}/show/${extend?.cateId || tid}-${extend?.area ?? ''}-${extend?.by ?? ''}-${extend?.class ?? ''}-${extend?.lang ?? ''}-${extend?.letter ?? ''}---${pg}---${extend?.year ?? ''}.html`;
+        let resHtml = await request(cateUrl);
+        let VODS = getVodList(resHtml);
+        let pagecount = 999;
+        return JSON.stringify({list: VODS, page: pg, pagecount: pagecount, limit: 30, total: 30*pagecount});
+    } catch (e) {
+        console.error('类别页获取失败：', e.message);
+        return JSON.stringify({list: [], page: 1, pagecount: 0, limit: 30, total: 0});
+    }
+}
+
+async function search(wd, quick, pg) {
+    try {
+        pg = parseInt(pg, 10);
+        pg = pg > 0 ? pg : 1;
+        let searchUrl = `${HOST}/search/${wd}----------${pg}---.html`;
+        let resHtml = await request(searchUrl);
+        let VODS = getVodList(resHtml);
+        return JSON.stringify({list: VODS, page: pg, pagecount: 10, limit: 30, total: 300});
+    } catch (e) {
+        console.error('搜索页获取失败：', e.message);
+        return JSON.stringify({list: [], page: 1, pagecount: 0, limit: 30, total: 0});
+    }
+}
+
+function getVodList(khtml) {
+    try {
+        let kvods = [];
+        let listArr = pdfa(khtml, '.lazyload');
+        for (let it of listArr) {
+            let kname = _pdfh(it, 'a&&title', '名称');
+            let kpic = _pdfh(it, 'a&&data-original', '图片');
+            let kremarks = `${_pdfh(it, '.pic-text&&Text', '状态')}|${_pdfh(it, '.pic-tag &&Text', '无评分')}`;
+            kvods.push({
+                vod_name: kname,
+                vod_pic: kpic,
+                vod_remarks: kremarks,
+                vod_id: `${_pdfh(it, 'a&&href')}@${kname}@${kpic}@${kremarks}`,
             });
         }
-    }), _0x36de8c;
+        return kvods;
+    } catch (e) {
+        console.error(`生成视频列表失败：`, e.message);
+        return [];
+    }
 }
-function _0x1e9c() {
-    const _0x2ba8ae = [
-        'matchAll',
-        'Eavip',
-        '$$$',
-        '动作片',
-        '7719sBzydQ',
-        '\x20/\x20',
-        '恐怖片',
-        '科幻片',
-        '爱情片',
-        'KoVAq',
-        'ppleWebKit',
-        'C\x20Build/TK',
-        '国产动漫',
-        '/index.php',
-        'stringify',
-        'join',
-        '.0.7499.3\x20',
-        '.tab-item',
-        '4872888cWHwsw',
-        ';\x20M2102J2S',
-        'EfdfG',
-        'yyqxK',
-        'https://zr',
-        'UzaQh',
-        'POYFL',
-        'lGWsX',
-        'dmEAZ',
-        'pyqKE',
-        'iIdUe',
-        '其他动漫',
-        '/vod/detai',
-        'edzDi',
-        'Mozilla/5.',
-        '港台剧',
-        'AHRow',
-        'BcNIl',
-        'match',
-        'zgdKh',
-        '001;\x20wv)\x20A',
-        'NvAeg',
-        'clXmh',
-        'PWaRA',
-        'AiNbj',
-        '✨vox👉',
-        '/vod/searc',
-        'tlijA',
-        'push',
-        'Q1.221114.',
-        'content',
-        '/wd/',
-        'xbwdm',
-        'kRJsD',
-        'startsWith',
-        '/page/',
-        '138666GrcGqV',
-        '内地综艺',
-        '✨vox甄选✨',
-        'KuhCD',
-        'PRLAd',
-        'SuGzi',
-        'ABpxf',
-        'CKXBF',
-        '韩国综艺',
-        'KIOQe',
-        'DMeRB',
-        'replace',
-        'id/',
-        'mQnbI',
-        'TXDYR',
-        '喜剧片',
-        'jBGQl',
-        '港台综艺',
-        '📢本资源来源于网络🚓',
-        'ErWaP',
-        '😸vox🎉为你介绍剧情',
-        'Chrome/143',
-        'pagBu',
-        'iwCST',
-        'forEach',
-        '29985680FrUILE',
-        'trim',
-        'UhlTd',
-        'ari/537.36',
-        'IOnVg',
-        'cIuHu',
-        '16ooXevz',
-        'HTML,\x20like',
-        'xFhpY',
-        'from',
-        'KqMDc',
-        '220CeycdS',
-        '178308nZJuEY',
-        'KiZll',
-        'aiRLU',
-        '4880757MEJgTZ',
-        'XNJcA',
-        'class',
-        '欧美剧',
-        'vEAkA',
-        'PjkkM',
-        'opeFo',
-        '侵权请联系删除👉',
-        'qlsGE',
-        'Mobile\x20Saf',
-        'l/id/',
-        'Vvcfs',
-        'lmJlY',
-        'ay-list-co',
-        'gmpRQ',
-        'nfauU',
-        'adkok',
-        'map',
-        '.module-pl',
-        'fmzOw',
-        '/vod/show/',
-        '国产剧',
-        '.module-it',
-        'Android\x2013',
-        '/537.36\x20(K',
-        '\x20Gecko)\x20Ve',
-        'bcogk',
-        '3jlTaZq',
-        'page/',
-        '日本动漫',
-        'gvocr',
-        'pgqAT',
-        '欧美动漫',
-        '📽️vox👉',
-        'pEczO',
-        '1042925fqetBd',
-        'DUSMe',
-        '.html',
-        'Rwdpk',
-        'rsion/4.0\x20',
-        'paOZN',
-        'ntent',
-        'InayJ',
-        '/vod/play/',
-        'QhGkF',
-        '0\x20(Linux;\x20',
-        'JyqVZ',
-        'akbXM',
-        '日本综艺',
-        'mpglL',
-        '短视频',
-        'ys.pw'
-    ];
-    _0x1e9c = function () {
-        return _0x2ba8ae;
-    };
-    return _0x1e9c();
-}
-async function home(_0x2cc051) {
-    const _0x989328 = _0x48c78e, _0x8626f5 = {
-            'TXDYR': _0x989328(0xd2),
-            'PWaRA': _0x989328(0xa2),
-            'xbwdm': _0x989328(0xd7),
-            'InayJ': _0x989328(0x119),
-            'dmEAZ': _0x989328(0xdc),
-            'iwCST': _0x989328(0xdb),
-            'gvocr': _0x989328(0xda),
-            'ABpxf': _0x989328(0xb5),
-            'AHRow': _0x989328(0xf5),
-            'QhGkF': _0x989328(0xa3),
-            'lGWsX': _0x989328(0x10b),
-            'Eavip': _0x989328(0x11b),
-            'KqMDc': _0x989328(0xd0),
-            'JyqVZ': _0x989328(0x112),
-            'zgdKh': _0x989328(0xe0),
-            'pagBu': _0x989328(0xbd),
-            'kRJsD': _0x989328(0xc0),
-            'POYFL': _0x989328(0xf1)
+
+async function detail(ids) {
+    try {
+        let [id, kname, kpic, kremarks] = ids.split('@');
+        let detailUrl = !/^http/.test(id) ? `${HOST}${id}` : id;
+        let resHtml = await request(detailUrl);
+        let intros = pdfh(resHtml, '.myui-content__detail');
+        let ktabs = pdfa(resHtml, '.nav-tabs :has(a)&&a').map((it,idx) => _pdfh(it, 'Text', `线-${idx+1}`));
+        let kurls = pdfa(resHtml, '.sort-list').map(item => {
+            let kurl = pdfa(item, 'a').map(it => { return _pdfh(it, 'Text', 'noEpi')  + '$' + _pdfh(it, 'a&&href', 'noUrl'); });
+            return kurl.join('#');
+        });      
+        let VOD = {
+            vod_id: detailUrl,
+            vod_name: kname,
+            vod_pic: kpic,
+            type_name: cutStrm(intros, '分类：', '<span', '类型'),
+            vod_remarks: kremarks,
+            vod_year: cutStrm(intros, '年份：', '</a>', '1000'),
+            vod_area: cutStrm(intros, '地区：', '<span', '地区'),
+            vod_lang: cutStrm(intros, '语言：', '<span', '语言'),
+            vod_director: cutStrm(intros, '导演：', '</p>', '导演'),
+            vod_actor: cutStrm(intros, '演员：', '</p>', '主演'),
+            vod_content: _pdfh(resHtml, '.col-pd:has(span)&&Text', '简介').split('，').slice(1).join('，'),
+            vod_play_from: ktabs.join('$$$'),
+            vod_play_url: kurls.join('$$$')
         };
-    return JSON[_0x989328(0xe2)]({
-        'class': [
-            {
-                'type_id': '1',
-                'type_name': '电影'
-            },
-            {
-                'type_id': '2',
-                'type_name': '剧集'
-            },
-            {
-                'type_id': '3',
-                'type_name': '综艺'
-            },
-            {
-                'type_id': '4',
-                'type_name': '动漫'
-            },
-            {
-                'type_id': '47',
-                'type_name': _0x8626f5[_0x989328(0x118)]
-            }
-        ],
-        'filters': {
-            '1': [{
-                    'key': _0x8626f5[_0x989328(0xfd)],
-                    'name': '类型',
-                    'value': [
-                        {
-                            'n': '全部',
-                            'v': ''
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0x106)],
-                            'v': '6'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0xca)],
-                            'v': '7'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0xee)],
-                            'v': '8'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0x121)],
-                            'v': '9'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0xbe)],
-                            'v': '11'
-                        }
-                    ]
-                }],
-            '2': [{
-                    'key': _0x8626f5[_0x989328(0xfd)],
-                    'name': '类型',
-                    'value': [
-                        {
-                            'n': '全部',
-                            'v': ''
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0x110)],
-                            'v': '13'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0xf6)],
-                            'v': '14'
-                        },
-                        {
-                            'n': '日剧',
-                            'v': '15'
-                        },
-                        {
-                            'n': '韩剧',
-                            'v': '33'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0xcc)],
-                            'v': '16'
-                        }
-                    ]
-                }],
-            '3': [{
-                    'key': _0x8626f5[_0x989328(0xfd)],
-                    'name': '类型',
-                    'value': [
-                        {
-                            'n': '全部',
-                            'v': ''
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0xed)],
-                            'v': '27'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0xd5)],
-                            'v': '28'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0x12d)],
-                            'v': '29'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0xce)],
-                            'v': '36'
-                        }
-                    ]
-                }],
-            '4': [{
-                    'key': _0x8626f5[_0x989328(0xfd)],
-                    'name': '类型',
-                    'value': [
-                        {
-                            'n': '全部',
-                            'v': ''
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0xf9)],
-                            'v': '31'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0x120)],
-                            'v': '32'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0x107)],
-                            'v': '42'
-                        },
-                        {
-                            'n': _0x8626f5[_0x989328(0xec)],
-                            'v': '43'
-                        }
-                    ]
-                }]
+        return JSON.stringify({list: [VOD]});
+    } catch (e) {
+        console.error('详情页获取失败：', e.message);
+        return JSON.stringify({list: []});
+    }
+}
+
+async function play(flag, ids, flags) {
+    try {
+        let playUrl = !/^http/.test(ids) ? `${HOST}${ids}` : ids;
+        let kp = 1;
+        let resHtml = await request(playUrl);
+        let kcode = safeParseJSON(resHtml.match(/var player_.*?=([^]*?)</)?.[1] ?? '');
+        let kurl = kcode?.url ?? '';
+        if (kurl && /网盘/.test(flag)) {
+            kurl = `push://${kurl}`; 
+            kp = 0;
+        } else {
+            kurl = kurl ? `${HOST}/static/player/artplayer/?url=${kurl}` : playUrl;
         }
-    });
+        return JSON.stringify({jx: 0, parse: kp, url: kurl, header: DefHeader});
+    } catch (e) {
+        console.error('播放失败：', e.message);
+        return JSON.stringify({jx: 0, parse: 0, url: '', header: {}});
+    }
 }
-async function homeVod() {
-    const _0x4a7d51 = _0x48c78e, _0x16e04b = {
-            'PjkkM': function (_0x458554, _0x4dbc52, _0x4509fa) {
-                return _0x458554(_0x4dbc52, _0x4509fa);
-            },
-            'DUSMe': function (_0x9c5733, _0x22f6c0) {
-                return _0x9c5733(_0x22f6c0);
-            }
+
+function _pdfh(dom, selector, defaultValue='') {
+    if (typeof dom !== 'string' || typeof selector !== 'string' || !dom.trim() || !selector.trim()) {return defaultValue;}
+    return (pdfh(dom, selector) || '').replace(/\s+/g, ' ').trim() || defaultValue;
+}
+
+function cutStrm(str, prefix = '', suffix = '', defaultVal = '截取失败') {
+    if (!str || typeof str !== 'string') return defaultVal;
+    const esc = s => String(s).replace(/[.*+?${}()|[\]\\/^]/g, '\\$&');
+    let [pre, end] = [esc(prefix), esc(suffix)];
+    let regex = new RegExp(`${pre ? pre : '^'}([^]*?)${end ? end : '$'}`);
+    let result = str.match(regex)?.[1].replace(/<[^>]*?>/g, ' ').replaceAll('&nbsp;', ' ').trim().replace(/\s+/g, '/') ?? defaultVal;
+    return result;
+}
+
+function safeParseJSON(jStr){
+    try {return JSON.parse(jStr);} catch(e) {return null;}
+}
+
+async function request(reqUrl, options = {}) {
+    try {
+        if (typeof reqUrl !== 'string' || !reqUrl.trim()) { throw new Error('reqUrl需为字符串且非空'); }
+        if (typeof options !== 'object' || Array.isArray(options) || !options) { throw new Error('options类型需为非null对象'); }
+        options.method = options.method?.toLowerCase() || 'get';
+        if (['get', 'head'].includes(options.method)) {
+            delete options.data;
+            delete options.postType;
+        } else {
+            options.data = options.data ?? '';
+            options.postType = options.postType?.toLowerCase() || 'form';
+        }        
+        let {headers, timeout, charset, toBase64 = false, ...restOpts } = options;
+        const optObj = {
+            headers: (typeof headers === 'object' && !Array.isArray(headers) && headers) ? headers : KParams.headers,
+            timeout: parseInt(timeout, 10) > 0 ? parseInt(timeout, 10) : KParams.timeout,
+            charset: charset?.toLowerCase() || 'utf-8',
+            buffer: toBase64 ? 2 : 0,
+            ...restOpts
         };
-    let _0x4cf879 = await _0x16e04b[_0x4a7d51(0xa5)](req, host, { 'headers': headers });
-    return JSON[_0x4a7d51(0xe2)]({ 'list': _0x16e04b[_0x4a7d51(0xc4)](getList, _0x4cf879[_0x4a7d51(0x104)]) });
+        const res = await req(reqUrl, optObj);
+        if (options.withHeaders) {
+            const resHeaders = typeof res.headers === 'object' && !Array.isArray(res.headers) && res.headers ? res.headers : {};
+            const resWithHeaders = { ...resHeaders, body: res?.content ?? '' };
+            return JSON.stringify(resWithHeaders);
+        }
+        return res?.content ?? '';
+    } catch (e) {
+        console.error(`${reqUrl}→请求失败：`, e.message);
+        return options?.withHeaders ? JSON.stringify({ body: '' }) : '';
+    }
 }
-async function category(_0x56e4f6, _0x670029, _0x4fc972, _0x81942d) {
-    const _0x37377c = _0x48c78e, _0x312362 = {
-            'adkok': function (_0x542821, _0x393c4c) {
-                return _0x542821 || _0x393c4c;
-            },
-            'KIOQe': function (_0x5dc9b3, _0x34f50a) {
-                return _0x5dc9b3 + _0x34f50a;
-            },
-            'IOnVg': function (_0x479709, _0x3e244d) {
-                return _0x479709 + _0x3e244d;
-            },
-            'ErWaP': function (_0x4a6d5c, _0x412f54) {
-                return _0x4a6d5c + _0x412f54;
-            },
-            'tlijA': _0x37377c(0xe1) + _0x37377c(0xb4) + _0x37377c(0x116),
-            'mpglL': function (_0x5224fd, _0x20ede8) {
-                return _0x5224fd > _0x20ede8;
-            },
-            'fmzOw': function (_0x5518ed, _0x59cd32) {
-                return _0x5518ed(_0x59cd32);
-            },
-            'yyqxK': function (_0x566b76, _0x55cae7) {
-                return _0x566b76 + _0x55cae7;
-            },
-            'Rwdpk': _0x37377c(0xbc),
-            'vEAkA': _0x37377c(0xc5),
-            'DMeRB': function (_0x19b00e, _0x369a80, _0x5aa167) {
-                return _0x19b00e(_0x369a80, _0x5aa167);
-            }
-        };
-    let _0x1578b6 = _0x312362[_0x37377c(0xb0)](_0x670029, 0x7a9 + -0x16e8 * -0x1 + -0x1e90), _0x5bcc0b = _0x81942d && _0x81942d[_0x37377c(0xa2)] ? _0x81942d[_0x37377c(0xa2)] : _0x56e4f6, _0x57a28d = _0x312362[_0x37377c(0x113)](_0x312362[_0x37377c(0x127)](_0x312362[_0x37377c(0x127)](_0x312362[_0x37377c(0x11d)](host, _0x312362[_0x37377c(0x101)]), _0x5bcc0b), '/'), _0x312362[_0x37377c(0xd1)](_0x312362[_0x37377c(0xb3)](parseInt, _0x1578b6), -0xeb7 + -0x2 * 0x62a + -0x482 * -0x6) ? _0x312362[_0x37377c(0xe9)](_0x312362[_0x37377c(0x113)](_0x312362[_0x37377c(0xc6)], _0x1578b6), _0x312362[_0x37377c(0xa4)]) : ''), _0x3bc68f = await _0x312362[_0x37377c(0x114)](req, _0x57a28d, { 'headers': headers });
-    return JSON[_0x37377c(0xe2)]({
-        'list': _0x312362[_0x37377c(0xb3)](getList, _0x3bc68f[_0x37377c(0x104)]),
-        'page': _0x312362[_0x37377c(0xb3)](parseInt, _0x1578b6)
-    });
+
+export function __jsEvalReturn() {
+    return {
+        init: init,
+        home: home,
+        homeVod: homeVod,
+        category: category,
+        search: search,
+        detail: detail,
+        play: play,
+        proxy: null
+    };
 }
-async function detail(_0x43cc25) {
-    const _0x162935 = _0x48c78e, _0x36e114 = {
-            'UhlTd': function (_0x323f83, _0x568b58) {
-                return _0x323f83 + _0x568b58;
-            },
-            'aiRLU': _0x162935(0xc1),
-            'UzaQh': function (_0x36c960, _0x32627b) {
-                return _0x36c960 + _0x32627b;
-            },
-            'lmJlY': _0x162935(0xd9),
-            'KuhCD': function (_0x1d25b7, _0x570644) {
-                return _0x1d25b7 + _0x570644;
-            },
-            'akbXM': function (_0x489808, _0x725c5e) {
-                return _0x489808 + _0x725c5e;
-            },
-            'nfauU': _0x162935(0xe1) + _0x162935(0xf2) + _0x162935(0xaa),
-            'KiZll': _0x162935(0xc5),
-            'SuGzi': function (_0x224677, _0x1cff52, _0xc64055) {
-                return _0x224677(_0x1cff52, _0xc64055);
-            },
-            'KoVAq': function (_0x46956d, _0xd6f212, _0x2eea6c) {
-                return _0x46956d(_0xd6f212, _0x2eea6c);
-            },
-            'CKXBF': _0x162935(0xe5),
-            'paOZN': _0x162935(0xd6),
-            'AiNbj': function (_0x2d2ebc, _0x21355b, _0x5791b2) {
-                return _0x2d2ebc(_0x21355b, _0x5791b2);
-            },
-            'mQnbI': _0x162935(0xb2) + _0x162935(0xad) + _0x162935(0xc9),
-            'xFhpY': function (_0x1e697a, _0x2f49db) {
-                return _0x1e697a + _0x2f49db;
-            },
-            'Vvcfs': _0x162935(0x11e) + _0x162935(0x11c) + _0x162935(0xa7)
-        };
-    let _0x709862 = _0x36e114[_0x162935(0xeb)](_0x36e114[_0x162935(0x10d)](_0x36e114[_0x162935(0xcf)](host, _0x36e114[_0x162935(0xaf)]), _0x43cc25), _0x36e114[_0x162935(0x130)]), _0x5538fc = await _0x36e114[_0x162935(0x10f)](req, _0x709862, { 'headers': headers }), _0x48804f = _0x5538fc[_0x162935(0x104)], _0x2d063d = _0x36e114[_0x162935(0xdd)](pdfa, _0x48804f, _0x36e114[_0x162935(0x111)])[_0x162935(0xb1)](_0x542923 => _0x162935(0xff) + (_0x542923[_0x162935(0xf8)](/<span>(.*?)<\/span>/) || [
-            '',
-            '线路'
-        ])[0x115 * -0x4 + 0x1f97 + 0x6 * -0x48b])[_0x162935(0xe3)](_0x36e114[_0x162935(0xc8)]), _0x255937 = _0x36e114[_0x162935(0xfe)](pdfa, _0x48804f, _0x36e114[_0x162935(0x117)])[_0x162935(0xb1)](_0x431c0c => pdfa(_0x431c0c, 'a')[_0x162935(0xb1)](_0x5b70f5 => {
-            const _0x5100f3 = _0x162935;
-            let _0x3f1617 = _0x36e114[_0x5100f3(0x125)](_0x36e114[_0x5100f3(0x131)], (_0x5b70f5[_0x5100f3(0xf8)](/<span>(.*?)<\/span>/) || [
-                    '',
-                    '播放'
-                ])[-0x816 + -0x13 * -0x1bf + -0x1916]), _0x38ddc7 = _0x5b70f5[_0x5100f3(0xf8)](/href="\/index.php\/vod\/play\/id\/(.*?).html"/);
-            return _0x36e114[_0x5100f3(0xeb)](_0x36e114[_0x5100f3(0x125)](_0x3f1617, '$'), _0x38ddc7 ? _0x38ddc7[-0x2fb + 0x200b + 0x2b * -0xad] : '');
-        })[_0x162935(0xe3)]('#'))[_0x162935(0xe3)](_0x36e114[_0x162935(0xc8)]);
-    return JSON[_0x162935(0xe2)]({
-        'list': [{
-                'vod_id': _0x43cc25,
-                'vod_name': (_0x48804f[_0x162935(0xf8)](/<h1>(.*?)<\/h1>/) || [
-                    '',
-                    ''
-                ])[-0x1546 + 0x22 * -0x2b + 0x1afd],
-                'vod_pic': (_0x48804f[_0x162935(0xf8)](/data-original="(.*?)"/) || [
-                    '',
-                    ''
-                ])[-0x2545 + -0x1 * -0x1f1f + 0x627],
-                'vod_year': (_0x48804f[_0x162935(0xf8)](/<a title="(\d{4})" href="\/index.php\/vod\/show\/id\/(\d+)\/year\/(\d{4}).html">(\d{4})<\/a>/) || [
-                    '',
-                    ''
-                ])[-0x187e + 0x64 * 0x18 + 0x7 * 0x229],
-                'vod_area': (_0x48804f[_0x162935(0xf8)](/<a title="([^>]+)" href="\/index.php\/vod\/show\/area\/([^>]+)\/id\/(\d+).html">([^>]+)<\/a>/) || [
-                    '',
-                    ''
-                ])[0x257b + 0x58c + -0x2b06],
-                'vod_lang': (_0x48804f[_0x162935(0xf8)](/<span class="module-info-item-title">语言：<\/span>\s*<div class="module-info-item-content">\s*([^<]+)\s*<\/div>/) || [
-                    '',
-                    ''
-                ])[-0x2af * -0x2 + 0x1 * 0x1fe7 + -0x35 * 0xb4][_0x162935(0x124)](),
-                'vod_remarks': (_0x48804f[_0x162935(0xf8)](/<span class="module-info-item-title">集数：<\/span>\s*<div class="module-info-item-content">\s*([^<]+)\s*<\/div>/) || _0x48804f[_0x162935(0xf8)](/<span class="module-info-item-title">备注：<\/span>\s*<div class="module-info-item-content">\s*([^<]+)\s*<\/div>/) || _0x48804f[_0x162935(0xf8)](/<span class="module-info-item-title">连载：<\/span>\s*<div class="module-info-item-content">\s*([^<]+)\s*<\/div>/) || [
-                    '',
-                    ''
-                ])[-0x883 * -0x3 + 0xff8 + -0x2980][_0x162935(0x124)](),
-                'type_name': ((() => {
-                    const _0x3ce61b = _0x162935, _0x58046f = Array[_0x3ce61b(0x12c)](_0x48804f[_0x3ce61b(0xd4)](/<div class="module-info-tag-link">([\s\S]*?)<\/div>/g)), _0xf1e7c5 = _0x58046f[0xa75 + -0x23be + 0x194b];
-                    if (!_0xf1e7c5)
-                        return '';
-                    return Array[_0x3ce61b(0x12c)](_0xf1e7c5[-0x2 * -0x1381 + -0xe64 + -0x189d][_0x3ce61b(0xd4)](/<a[^>]*>([^<]+)<\/a>/g), _0x3978e8 => _0x3978e8[0x2439 + -0x1 * -0x20ef + -0x4527][_0x3ce61b(0x124)]())[_0x3ce61b(0xe3)](_0x36e114[_0x3ce61b(0xac)]);
-                })()),
-                'vod_actor': Array[_0x162935(0x12c)](_0x48804f[_0x162935(0xf8)](/<span class="module-info-item-title">主演：<\/span>\s*<div class="module-info-item-content">([\s\S]*?)<\/div>/)?.[-0x2 * 0x1f3 + -0x1 * -0xc5 + 0x322 * 0x1]?.[_0x162935(0xd4)](/<a [^>]*>([^<]+)<\/a>/g) || [])[_0x162935(0xb1)](_0x261bee => _0x261bee[0x185f + -0x5e9 * -0x3 + 0x1 * -0x2a19])[_0x162935(0xe3)](_0x36e114[_0x162935(0xac)]) || '',
-                'vod_director': Array[_0x162935(0x12c)](_0x48804f[_0x162935(0xf8)](/<span class="module-info-item-title">导演：<\/span>\s*<div class="module-info-item-content">([\s\S]*?)<\/div>/)?.[-0x419 * 0x2 + 0x583 * 0x5 + -0x135c]?.[_0x162935(0xd4)](/<a [^>]*>([^<]+)<\/a>/g) || [])[_0x162935(0xb1)](_0x5adbea => _0x5adbea[-0x2 * 0xc5e + -0xdfb * -0x2 + 0xf * -0x37])[_0x162935(0xe3)](_0x36e114[_0x162935(0xac)]) || '',
-                'vod_content': _0x36e114[_0x162935(0x12b)](_0x36e114[_0x162935(0xab)], (_0x48804f[_0x162935(0xf8)](/module-info-introduction">.*?<p>(.*?)<\/p>/s) || [
-                    '',
-                    ''
-                ])[0xe5e + 0x1bcf + 0x1516 * -0x2][_0x162935(0x115)](/<.*?>/g, '')),
-                'vod_play_from': _0x2d063d,
-                'vod_play_url': _0x255937
-            }]
-    });
-}
-async function search(_0xcc2fac, _0x11f660, _0x10c825) {
-    const _0x3c2dcb = _0x48c78e, _0x37620f = {
-            'jBGQl': function (_0x4ef2bd, _0x2c3bef) {
-                return _0x4ef2bd || _0x2c3bef;
-            },
-            'opeFo': function (_0x526496, _0x150358) {
-                return _0x526496 + _0x150358;
-            },
-            'NvAeg': function (_0x39f1d5, _0x2a82e8) {
-                return _0x39f1d5 > _0x2a82e8;
-            },
-            'edzDi': function (_0x477da0, _0x3f3ec0) {
-                return _0x477da0(_0x3f3ec0);
-            },
-            'clXmh': function (_0x2c117a, _0x1a8911) {
-                return _0x2c117a(_0x1a8911);
-            },
-            'iIdUe': function (_0x4e71dc, _0x18c868, _0x264bb4) {
-                return _0x4e71dc(_0x18c868, _0x264bb4);
-            },
-            'pEczO': function (_0x1fc3e6, _0x572b77) {
-                return _0x1fc3e6(_0x572b77);
-            }
-        };
-    let _0x464799 = _0x37620f[_0x3c2dcb(0x11a)](_0x10c825, 0x7f * -0x2b + -0x1 * 0x218 + 0x176e), _0x3fb1f4 = _0x37620f[_0x3c2dcb(0xa6)](_0x37620f[_0x3c2dcb(0xa6)](host + (_0x3c2dcb(0xe1) + _0x3c2dcb(0x100) + 'h'), _0x37620f[_0x3c2dcb(0xfb)](_0x37620f[_0x3c2dcb(0xf3)](parseInt, _0x464799), -0x1 * -0x2d1 + 0xf57 + -0x1227) ? _0x3c2dcb(0x109) + _0x464799 : ''), _0x3c2dcb(0x105) + _0x37620f[_0x3c2dcb(0xfc)](encodeURIComponent, _0xcc2fac) + _0x3c2dcb(0xc5)), _0x2b47f1 = await _0x37620f[_0x3c2dcb(0xf0)](req, _0x3fb1f4, { 'headers': headers });
-    return JSON[_0x3c2dcb(0xe2)]({ 'list': _0x37620f[_0x3c2dcb(0xc2)](getList, _0x2b47f1[_0x3c2dcb(0x104)]) });
-}
-async function play(_0x20da54, _0x2cb770, _0x4fd940) {
-    const _0x3c0580 = _0x48c78e, _0x3d83af = {
-            'gmpRQ': function (_0x4446bb, _0x3a33d1) {
-                return _0x4446bb + _0x3a33d1;
-            },
-            'pgqAT': function (_0x4a8928, _0x101ed7) {
-                return _0x4a8928 + _0x101ed7;
-            },
-            'qlsGE': _0x3c0580(0xe1) + _0x3c0580(0xcb) + _0x3c0580(0x116),
-            'pyqKE': _0x3c0580(0xc5),
-            'cIuHu': function (_0x5d3f0f, _0x4fcb0d, _0x52ba8c) {
-                return _0x5d3f0f(_0x4fcb0d, _0x52ba8c);
-            }
-        };
-    let _0x1a8ab4 = _0x3d83af[_0x3c0580(0xae)](_0x3d83af[_0x3c0580(0xae)](_0x3d83af[_0x3c0580(0xbf)](host, _0x3d83af[_0x3c0580(0xa8)]), _0x2cb770), _0x3d83af[_0x3c0580(0xef)]), _0x184045 = await _0x3d83af[_0x3c0580(0x128)](req, _0x1a8ab4, { 'headers': headers }), _0x3c38b8 = _0x184045[_0x3c0580(0x104)][_0x3c0580(0xf8)](/"url":"([^"]+\.m3u8)"/);
-    if (_0x3c38b8)
-        return JSON[_0x3c0580(0xe2)]({
-            'parse': 0x0,
-            'url': _0x3c38b8[-0x1c22 + 0x301 * -0x2 + 0x2225 * 0x1][_0x3c0580(0x115)](/\\/g, ''),
-            'header': headers
-        });
-    return JSON[_0x3c0580(0xe2)]({
-        'parse': 0x1,
-        'url': _0x1a8ab4,
-        'header': headers
-    });
-}
-export default {
-    'init': init,
-    'home': home,
-    'homeVod': homeVod,
-    'category': category,
-    'detail': detail,
-    'search': search,
-    'play': play
-};
