@@ -180,6 +180,16 @@
             "filterable": 0,
             "changeable": 0
         },
+        {
+            "key": "py_电影天堂",
+            "name": "🍎 电影天堂 (T3)",
+            "type": 3,
+            "api": "https://py.doube.eu.org/static/py/dytt.min.py",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0
+        },
     {
             "key": "csp_非凡资源",
             "name": "🆕┃非凡┃资源",
@@ -1505,17 +1515,6 @@
                 "filters": "./duboku.json",
                 "sites": "https://4kzn.com"
             },"jar": "./vox.jar"
-        },
-        {
-            "key": "孜然影视",
-            "name": "🐲孜然┃影视",
-            "type": 3,
-            "api": "./三六零弹幕.js",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
         },
         {
             "key": "魔方4K",
