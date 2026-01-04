@@ -159,6 +159,29 @@
             "filterable": 1,"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
         },
         {
+            "key": "TuneFree",
+            "name": "自由音乐",
+            "type": 3,
+            "api": "csp_TuneFree",
+            "searchable": 1,"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
+        },
+        {
+            "key": "啊哈DJ网",
+            "name": "🎵啊哈┃DJ",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "ext": "./V6范明明.txt",
+            "jar": ""
+        },
+        {
+            "key": "100听书",
+            "name": "📚100┃听书",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "ext": "./V4聚合.txt",
+            "jar": ""
+        },
+        {
             "key": "py_小苹果",
             "name": "🍎 小苹果 (T4)",
             "type": 4,
