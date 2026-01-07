@@ -110,13 +110,6 @@
             "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
         },
         {
-            "key": "芒果视频",
-            "name": "芒果｜视频",
-            "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/MGSP.js"
-        },
-        {
       "key": "景天",
       "name": "景天|4K弹幕",
       "type": 3,
