@@ -1321,7 +1321,7 @@
         },
         {
             "key": "金牌",
-            "name": "金牌｜APP",
+            "name": "火花｜APP",
             "type": 3,
             "api": "csp_AppQi",
             "changeable": "1",
