@@ -233,16 +233,6 @@
             "changeable": 0
         },
         {
-            "key": "py_低端影视",
-            "name": "🍎 低端影视 (T4)",
-            "type": 4,
-            "api": "https://py.doube.eu.org/v2/spider?site=a4108870c8bac363add59bf0101e2884",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0
-        },
-        {
             "key": "py_新韩剧网",
             "name": "🍎 新韩剧网 (T4)",
             "type": 4,
@@ -1265,32 +1255,6 @@
   "changeable": 0
     },
         {
-            "key": "剧梦",
-            "name": "剧梦｜APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "https://www.jumengwu.com",
-                "dataKey": "1f0a873caf2550a5",
-                "dataIv": "1f0a873caf2550a5"
-            }
-        },
-        {
-            "key": "剧猫",
-            "name": "剧猫｜APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "site": "https://zjm-1302383509.cos.ap-guangzhou.myqcloud.com/zjm.txt",
-                "dataKey": "zjmznbl2026zcxgb",
-                "dataIv": "zjmznbl2026zcxgb"
-            }
-        },
-        {
             "key": "驿站",
             "name": "驿站丨APP",
             "type": 3,
@@ -1306,50 +1270,37 @@
                 "ua": ""
             }
         },
-        {
-            "key": "小猪",
-            "name": "小猪丨APP",
+      {
+            "key": "爆炸",
+            "name": "爆炸｜APP",
             "type": 3,
-            "quickSearch": 1,
             "api": "csp_AppQi",
+            "changeable": "1",
+            "quickSearch": 0,
+            "filterable": 1,
             "ext": {
-                "url": "",
-                "site": "https://tiantangyoulu.oss-cn-beijing.aliyuncs.com/tengxunyun.txt",
-                "dataKey": "seb5tq9mykp2w9ry",
-                "dataIv": "seb5tq9mykp2w9ry",
-                "deviceId": "",
-                "version": "",
+                "site": "https://daen-1256234123.cos.ap-shanghai.myqcloud.com/MuQi/mqxh.txt",
+                "dataKey": "37kj83zs1q16jk6t",
+                "dataIv": "37kj83zs1q16jk6t",
+                "search": "searchList4",
+                "init": "initV122",
                 "ua": "okhttp/3.10.0"
             }
         },
         {
-            "key": "恋鱼",
-            "name": "恋鱼｜APP",
+            "key": "橘子",
+            "name": "橘子｜APP",
             "type": 3,
-            "api": "csp_AppFox",
+            "api": "csp_AppQi",
+            "changeable": "1",
+            "quickSearch": 0,
+            "filterable": 1,
             "ext": {
-                "host": "https://173220859-1333208043.cos.ap-shanghai.myqcloud.com/1.json",
-                "ver": 2
-            }
-        },
-        {
-            "key": "极兔",
-            "name": "极兔｜APP",
-            "type": 3,
-            "api": "csp_AppFox",
-            "ext": {
-                "host": "https://www.dhxxfhsz.top",
-                "ver": 2
-            }
-        },
-        {
-            "key": "麒麟",
-            "name": "麒麟｜APP",
-            "type": 3,
-            "api": "csp_AppFox",
-            "ext": {
-                "host": "https://www.70yyw.cc",
-                "ver": 2
+                "url": "https://juziapp.tpmbt.cn",
+                "dataKey": "K3h6YvSU8BTUfEcb",
+                "dataIv": "K3h6YvSU8BTUfEcb",
+                "version": "305",
+                "ua": "okhttp/3.10.0"
             }
         },
         {
@@ -1361,9 +1312,28 @@
             "quickSearch": 0,
             "filterable": 1,
             "ext": {
-                "site": "https://aysappto.oss-cn-chengdu.aliyuncs.com/qj3.txt",
-                "dataKey": "sda1231sasddad21",
-                "dataIv": "sda1231sasddad21",
+                "site": "https://rxysyyds.oss-cn-chengdu.aliyuncs.com/qiji.txt",
+                "dataKey": "sjvlwnhk6h9znl61",
+                "dataIv": "sjvlwnhk6h9znl61",
+                "version": "305",
+                "ua": "okhttp/3.10.0"
+            }
+        },
+        {
+            "key": "金牌",
+            "name": "金牌｜APP",
+            "type": 3,
+            "api": "csp_AppQi",
+            "changeable": "1",
+            "quickSearch": 0,
+            "filterable": 1,
+            "ext": {
+                "site": "https://dtqj.ggtvb.cc/dtjp.txt",
+                "dataKey": "eecbio48dsq131ee",
+                "dataIv": "eecbio48dsq131ee",
+                "search": "searchList4",
+                "version": "305",
+                "init": "initV122",
                 "ua": "okhttp/3.10.0"
             }
         },
@@ -1379,44 +1349,8 @@
                 "site": "https://guwozj-1319364746.cos.ap-guangzhou.myqcloud.com/guwo.txt",
                 "dataKey": "ca94b06ca3c7d80e",
                 "dataIv": "ca94b06ca3c7d80e",
+                "version": "305",
                 "ua": "okhttp/3.10.0"
-            }
-        },
-       {
-            "key": "爆炸",
-            "name": "爆炸┃APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppQi",
-            "ext": {
-                "site": "https://dtqj1.gg1080.com:443/dtjp.txt",
-                "dataKey": "kecbio48dsq131ed",
-                "dataIv": "kecbio48dsq131ed"
-            }
-        },
-        {
-            "key": "火猫",
-            "name": "火猫｜APP",
-            "type": 3,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "http://103.23.148.70:14500",
-                "dataKey": "J6AIORKJ3PQOJKM8",
-                "dataIv": "J6AIORKJ3PQOJKM8"
-            }
-        },
-        {
-            "key": "新剧",
-            "name": "新剧｜APP",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "http://211.154.24.56:8369",
-                "dataKey": "685bf108bc47b67d",
-                "dataIv": "685bf108bc47b67d"
             }
         },
         {
@@ -1426,10 +1360,11 @@
             "quickSearch": 1,
             "api": "csp_AppQi",
             "ext": {
-                "site": "https://ceshi307386.oss-cn-beijing.aliyuncs.com/ceshi430.txt",
-                "dataKey": "7sKhdca8HXGuyZ4x",
-                "dataIv": "7sKhdca8HXGuyZ4x",
-                "version": "120"
+                "url": "https://hk440cms.cs4k.top",
+                "dataKey": "fL7sY4zN4kB3pG4p",
+                "dataIv": "fL7sY4zN4kB3pG4p",
+                "init": "initV122",
+                "ua": "okhttp/3.10.0"
             }
         },
         {
@@ -1445,6 +1380,21 @@
             }
         },
         {
+            "key": "小猪",
+            "name": "小猪丨APP",
+            "type": 3,
+            "quickSearch": 1,
+            "api": "csp_AppQi",
+            "ext": {
+                "site": "https://tiantangyoulu.oss-cn-beijing.aliyuncs.com/tengxunyun.txt",
+                "dataKey": "seb5tq9mykp2w9ry",
+                "dataIv": "seb5tq9mykp2w9ry",
+                "search": "qearchList",
+                "init": "initV122",
+                "ua": "okhttp/3.10.0"
+            }
+        },
+        {
             "key": "云云",
             "name": "云云丨APP",
             "type": 3,
@@ -1455,6 +1405,31 @@
                 "dataKey": "staraugust123456",
                 "dataIv": "staraugust123456",
                 "version": "120"
+            }
+        },
+        {
+            "key": "星星",
+            "name": "星星｜APP",
+            "type": 3,
+            "api": "csp_AppGet",
+            "ext": {
+                "site": "http://110.81.153.7:1963/get.txt",
+                "dataKey": "k7L9mQ2xR4pW8n88",
+                "dataIv": "k7L9mQ2xR4pW8n88",
+                "version": "305"
+            }
+        },
+        {
+            "key": "新剧",
+            "name": "新剧｜APP",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "url": "http://211.154.24.56:8369",
+                "dataKey": "685bf108bc47b67d",
+                "dataIv": "685bf108bc47b67d"
             }
         },
         {
