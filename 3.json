@@ -110,20 +110,6 @@
             "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
         },
         {
-      "key": "景天",
-      "name": "景天|4K弹幕",
-      "type": 3,
-      "api": "csp_HBcms10Dou",
-      "ext": "https://zy.jinchancaiji.com/api.php/provide/vod/from/qq/","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-    },
-    {
-      "key": "茂茂",
-      "name": "茂茂|4K弹幕",
-      "type": 3,
-      "api": "csp_HBcms10Dou",
-      "ext": "https://zy.jinchancaiji.com/api.php/provide/vod/from/mgtv/","jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-    },
-        {
             "key": "Kvm4k",
             "name": "流光溢彩",
             "type": 3,
@@ -391,17 +377,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "api": "./飞快TV[推].py",
-            "order_num": 5,
-            "ext": ""
-        },
-        {
-            "key": "山有木兮.py",
-            "name": "山有木兮.py",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "api": "./山有木兮.py",
             "order_num": 5,
             "ext": ""
         },
