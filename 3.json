@@ -1082,7 +1082,7 @@
             "key": "克隆合集",
             "name": "克隆合集",
             "type": 4,
-            "api": "http://zhangqun1818.serv00.net/zq/klhj.php",
+            "api": "http://zhangqun1818.serv00.net/klhj.php",
             "searchable": 1,
             "quickSearch": 1,
             "style": {
@@ -1096,7 +1096,7 @@
             "key": "js集合",
             "name": "js集合",
             "type": 4,
-            "api": "/http://zhangqun1818.serv00.net/js.php",
+            "api": "http://zhangqun1818.serv00.net/js.php",
             "searchable": 1,
             "style": {
                 "type": "rect",
