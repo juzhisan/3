@@ -1096,7 +1096,7 @@
             "key": "js集合",
             "name": "js集合",
             "type": 4,
-            "api": "/http://zhangqun1818.serv00.net/zq/js.php",
+            "api": "/http://zhangqun1818.serv00.net/js.php",
             "searchable": 1,
             "style": {
                 "type": "rect",
@@ -1108,7 +1108,7 @@
             "key": "python集合",
             "name": "python集合",
             "type": 4,
-            "api": "http://zhangqun1818.serv00.net/zq/py.php",
+            "api": "http://zhangqun1818.serv00.net/py.php",
             "searchable": 1,
             "style": {
                 "type": "rect",
@@ -1120,7 +1120,7 @@
             "key": "影视文件播放",
             "name": "影视文件播放",
             "type": 4,
-            "api": "http://zhangqun1818.serv00.net/zq/zh/2242.php",
+            "api": "http://zhangqun1818.serv00.net/zh/2242.php",
             "style": {
                 "type": "rect",
                 "ratio": 1.33
@@ -1132,7 +1132,7 @@
             "key": "清单播放",
             "name": "清单播放",
             "type": 4,
-            "api": "http://zhangqun1818.serv00.net/zq/zh/2243.php",
+            "api": "http://zhangqun1818.serv00.net/zh/2243.php",
             "style": {
                 "type": "rect",
                 "ratio": 1.33
