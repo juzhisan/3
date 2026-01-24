@@ -1624,35 +1624,11 @@
             },"jar": "./vox.jar"
         },
         {
-            "key": "粉象世界",
-            "name": "🐘粉象┃APP",
-            "type": 3,
-            "changeable": 0,
-            "api": "csp_Appfox",
-            "ext": {
-                "host": "http://121.40.131.51:2556/host.json",
-                "ver": 2
-            },"jar": "./vox.jar"
-        },
-       {
-            "key": "影视",
-            "name": "😡影视┃APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "host": "https://jingyu4k-1312635929.cos.ap-nanjing.myqcloud.com/1.json",
-                "datakey": "AAdgrdghjfgswerA",
-                "api": 2
-            },"jar": "./vox.jar"
-        },
-        {
             "key": "爱看资源网",
             "name": "🚘爱看┃网盘",
             "type": 3,
             "api": "./drpy2.min.js",
-            "ext": "./闪电.js"
+            "ext": "./飞牛影视.js"
         },
         {
             "key": "cat_HDmoli",
