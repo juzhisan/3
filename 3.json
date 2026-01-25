@@ -125,6 +125,21 @@
             },"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
         },
         {
+            "key": "Symx",
+            "name": "山有｜木兮",
+            "type": 3,
+            "api": "csp_Symx",
+            "ext": "https://film.symx.club","jar": "http://我不是.摸鱼儿.com/d/moyu.php"
+        },
+        {
+            "key": "Lingdu",
+            "name": "零度｜影视",
+            "type": 3,
+            "api": "csp_Lingdu",
+            "searchable": 1,
+            "filterable": 1,"jar": "http://我不是.摸鱼儿.com/d/moyu.php"
+        },
+        {
             "key": "BroVods",
             "name": "兄弟视频",
             "type": 3,
