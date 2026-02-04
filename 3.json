@@ -428,16 +428,6 @@
             "order_num": 5,
             "ext": ""
         },
-    {"key": ".PTT短剧",
-            "name": "PTT短剧.py",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "api": "./PTT短剧.py",
-            "order_num": 5,
-            "ext": ""
-        },
         {
       "key": "hipy_js_爱上你听书",
       "name": "爱上听书",
@@ -790,12 +780,6 @@
             "changeable": 1,
             "quickSearch": 1,
             "filterable": 1
-        },
-        {
-            "key": "三六零",
-            "name": "三六零｜视频",
-            "type": 3,
-            "api": "csp_SP360"
         },
         {
             "key": "奇优影视",
@@ -1496,16 +1480,15 @@
             }
         },
         {
-            "key": "魔方",
-            "name": "魔方｜APP",
+            "key": "木瓜",
+            "name": "木瓜｜APP",
             "type": 3,
+            "api": "csp_AppFox",
             "searchable": 1,
             "changeable": 1,
-            "api": "csp_AppGet",
             "ext": {
-                "site": "https://snysw.xyz/mf4kzs327.txt",
-                "dataKey": "1234567887654321",
-                "dataIv": "1234567887654321"
+                "host": "http://www.yezitv.top/dtym.json",
+                "ver": 2
             }
         },
         {
