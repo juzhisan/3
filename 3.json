@@ -12,6 +12,16 @@
             "searchable": 0
         },
         {
+      "key": "wv_yszb",
+      "name": "wv | 央视直播(1080P)",
+      "api": "csp_WvSpider",
+      "jar": "./配置中心.jar","type": "3",
+      "ext": "./闪电.js",
+      "searchable": 1,
+      "filterable": 1,
+      "switchable": 1
+    },
+        {
             "key": "csp_Pg阿里",
             "name": "🤕PG┃阿里",
             "type": 3,
