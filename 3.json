@@ -304,47 +304,6 @@
             "ext": "https://film.symx.club","jar": "./moyu.php"
         },
         {
-            "key": "Lingdu",
-            "name": "零度｜影视",
-            "type": 3,
-            "api": "csp_Lingdu",
-            "searchable": 1,
-            "filterable": 1,"jar": "./moyu.php"
-        },
-        {
-            "key": "BroVods",
-            "name": "兄弟视频",
-            "type": 3,
-            "api": "csp_BroVods",
-            "searchable": 1,"jar": "./moyu.php"
-        },
-        {
-            "key": "XiaoHongYS",
-            "name": "小红视频",
-            "type": 3,
-            "api": "csp_XiaoHongYS",
-            "searchable": 1,
-            "changeable": 1,"jar": "./moyu.php"
-        },
-        {
-            "key": "huahua",
-            "name": "花花视频",
-            "type": 3,
-            "changeable": 0,
-            "api": "csp_AppFox",
-            "ext": "p+FPtr6fYIfomOnA4N4Sl0dFvFqJvfkho3Yem3nNyo6peH9nVFr0wIIfo96V7voEHGrq+0mvfYjwri/nkrWITQ==","jar": "./moyu.php"
-        },
-        {
-            "key": "bimoxinghe",
-            "name": "笔墨星河",
-            "type": 3,
-            "changeable": 0,
-            "searchable": 1,
-            "quickSearch": 1,
-            "api": "csp_AppYsV2",
-            "ext": "wYceOHC6X3P3alhnB4RtmzgFD1Irln8apuUGgGt0cGNu1m3wi32g5216U4VmaeMAakuchzAtkZK4hN76RGX+SgXswlO9BU7AAQg57WGKJIWptJgUaSjRv+dsCFHAMS7NtEkaU8HcHtu3mNmXmiGVLae6KtmpbuT1razd8CkTO1A=","jar": "./moyu.php"
-        },
-        {
             "key": "Xb6v",
             "name": "六V视频",
             "type": 3,
@@ -1952,11 +1911,42 @@
             "playerType": 2
         },
     {
+            "name": "裤佬",
+            "type": 0,
+            "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1",
+            "epg": "http://epg.51zmt.top:8000/e.xml",
+            "ua": "okhttp/3.15,AptvPlayer/1.4.0",
+            "timeout": 10,
+            "playerType": 2
+        },
+        {
+            "name": "MY live-catvod",
+            "type": "0",
+            "ua": "okhttp/3.15",
+            "url": "https://iptv.catvod.com/list.php?token=2d62ae8c2cbf2b73f91af91fc6ad2c650affc8fd82e0fa3c41bf537e1585d2b6"
+        },
+        {
+      "name": "Guovin",
+      "type": 0,
+      "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.txt",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
+    {
       "name": "V4聚合（卡顿请按左┃右键换线）",
       "type": 0,
       "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/wwb521/live/main/tv.m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
+    {
+      "name": "develop202",
+      "type": 0,
+      "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+      "playerType": 2,
+      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
     },
     {
       "name": "Yoursmile",
@@ -1997,13 +1987,6 @@
       "playerType": 2
     },
     {
-      "name": "develop202",
-      "type": 0,
-      "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
-      "playerType": 2,
-      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
-    },
-    {
       "name": "中天",
       "type": 0,
       "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/judy-gotv/iptv/refs/heads/main/ofiii.m3u",
@@ -2019,21 +2002,6 @@
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
-    {
-            "name": "裤佬",
-            "type": 0,
-            "url": "https://down.nigx.cn/raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1",
-            "epg": "http://epg.51zmt.top:8000/e.xml",
-            "ua": "okhttp/3.15,AptvPlayer/1.4.0",
-            "timeout": 10,
-            "playerType": 2
-        },
-        {
-            "name": "MY live-catvod",
-            "type": "0",
-            "ua": "okhttp/3.15",
-            "url": "https://live.catvod.com/tv.m3u"
-        },
    {
       "name": "冰茶TV",
       "type": 0,
@@ -2047,15 +2015,6 @@
         "header": {
             "User-Agent": "okhttp/5.1.0"
         }
-    },
-   {
-      "name": "Guovin",
-      "type": 0,
-      "url": "https://gcore.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.txt",
-      "playerType": 1,
-      "ua": "okhttp/3.15",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
       "name": "Guovin国内",
