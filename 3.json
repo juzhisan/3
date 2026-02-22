@@ -78,37 +78,27 @@
             "type": 3
         },
         {
-            "key": "修罗",
-            "name": "修罗｜磁力",
-            "api": "csp_Xlys",
-            "type": 3,
-            "ext": "https://xl01.com.de"
-        },
-        {
             "key": "腾讯视频",
             "name": "腾讯｜视频",
             "type": 3,
             "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
             "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
         },
-        {
-            "key": "Kvm4k",
-            "name": "流光溢彩",
-            "type": 3,
-            "api": "csp_Kvm4k",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": [
-                    "https://www.4kvm.me",
-                    "https://www.4kvm.tv",
-                    "https://www.4kvm.org"
-                ]
-            },"jar": "./moyu.php"
-        },
+       {
+      "key": "Rebo",
+      "name": "热播｜APP",
+      "type": 3,
+      "api": "csp_AppRJ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": {
+        "url": "http://v.rbotv.cn"
+      }
+    },
         {
             "key": "FishConfig",
-            "name": "设置｜中心",
+            "name": "设置｜摸鱼",
             "type": 3,
             "api": "csp_FishConfig","jar": "./moyu.php"
         },
