@@ -1,6 +1,6 @@
   {
   "spider": "./spider.jar",
-  "wallpaper": "http://我不是.摸鱼儿.com/wallpaper/moyu.php",
+  "wallpaper": "http://127.0.0.1:9978/proxy?do=wallpaper",
   "logo": "https://3141.kstore.space/logo.jpg",
   "homeLogo": "https://3141.kstore.space/logo.jpg",
   "sites": [
@@ -21,18 +21,6 @@
       "filterable": 1,
       "switchable": 1
     },
-        {
-            "key": "csp_Pg阿里",
-            "name": "🤕PG┃阿里",
-            "type": 3,
-            "api": "csp_PgDouban",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "filters": "./4.json",
-                "channel": "shareAliyun,zaihuayun,ali_yppan"
-            },"jar": "./vox.jar"
-        },
          {
             "key": "配置中心",
             "name": "配置｜潇洒",
@@ -53,6 +41,12 @@
             "api": "csp_Config",
             "searchable": 0,
             "changeable": 0,"jar": "./vox.jar"
+        },
+        {
+            "key": "FishConfig",
+            "name": "设置｜摸鱼",
+            "type": 3,
+            "api": "csp_FishConfig","jar": "./moyu.php"
         },
         {
             "key": "厂长影视",
@@ -106,12 +100,6 @@
         "url": "http://v.rbotv.cn"
       }
     },
-        {
-            "key": "FishConfig",
-            "name": "设置｜摸鱼",
-            "type": 3,
-            "api": "csp_FishConfig","jar": "./moyu.php"
-        },
         {
             "key": "panglian1",
             "name": "盘链｜4K",
@@ -203,22 +191,35 @@
             "filterable": 0,"jar": "./moyu.php"
         },
         {"key":"人人PHP","name":"👭人人┃PHP","type":4,"api":"http://jiduo666.dpdns.org/rrsp.php","changeable":1},
+    {
+      "key": "Hema",
+      "name": "河马｜短剧",
+      "type": 3,
+      "api": "csp_Hema",
+      "searchable": 1,
+      "quickSearch": 1,
+      "类型": "短剧",
+      "filterable": 1,"jar": "./moyu.php"
+    },
         {
-            "key": "TvDy",
-            "name": "天堂｜影视",
-            "type": 3,
-            "api": "csp_TvDy",
-            "searchable": 1,
-            "filterable": 1,"jar": "./moyu.php"
-        },
-        {
-            "key": "MqTv",
-            "name": "麻雀｜影视",
-            "type": 3,
-            "api": "csp_MqTv",
-            "searchable": 1,
-            "ext": "https://www.mqtv.cc","jar": "./moyu.php"
-        },
+      "key": "HHkk",
+      "name": "好看｜短剧",
+      "type": 3,
+      "api": "csp_HHkk",
+      "searchable": 1,
+      "quickSearch": 1,
+      "类型": "短剧",
+      "filterable": 1,"jar": "./moyu.php"
+    },
+    {
+      "key": "mifun",
+      "name": "米饭｜动漫",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "api": "csp_AppGet",
+      "ext": "GvE9VjZcKAqoJldDfjF/EFjEacvdRgP+DzKluxhIowAt7HBmxO7zYbrt98skapDAKw6Hlx1Iy+mVJuQI6FYGb7NuvCZrhayVbhmr8hS0EeOTcuCxwv7DUtbufpbgslF77hCJqv2EtYD5MpCse/KA1Q==","jar": "./moyu.php"
+    },
         {
             "key": "AoWu",
             "name": "嗷呜｜动漫",
