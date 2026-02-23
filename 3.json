@@ -100,6 +100,28 @@
         "url": "http://v.rbotv.cn"
       }
     },
+    {
+      "key": "gying",
+      "name": "观影｜4K",
+      "type": 3,
+      "api": "csp_Gying",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": {
+        "cookie": "PHPSESSID=qi7gnbji5akpvj37t72d7sg6ah; vrg_go=1; vrg_sc=f37159ec6997cc319635ebafbfe6a6c5; BT_auth=f973lfGIquys8ItVNalqaX2Q7LJXBNyKyJCAdrDhEYlQ-iKp5DTHesmVWjGAmkPjb2iFzqdqNMi7W_IfcE2vFSOaXTgnLOkGjQVQ6rxgUpr-XenDAhMZB2I1FWXJLm_u9hBsz45BiE7J1rWbFyPhQUYN0OyZ332dLgOM-vwfX9NKRCZpK7kt; BT_cookietime=80645v457Sh58tBVCysGYaA2kdFs2EDn9hJwz592jpxWopRaPKGO; app_auth=acccda7kx0L08uNk8zwSCBxPNpdeKoGiKeGZ6e4za_p53-9Z1S5_dDtr6N9OKNQNgE88",
+        "site": [
+          "https://www.gying.si",
+          "https://www.gying.org",
+          "https://www.gying.net",
+          "https://www.gying.in",
+          "https://www.gying.st",
+          "https://www.gyg.la",
+          "https://www.gyg.si",
+          "https://www.gyg.st"
+        ]
+      },"jar": "./moyu.php"
+    },
         {
             "key": "panglian1",
             "name": "盘链｜4K",
@@ -192,26 +214,6 @@
         },
         {"key":"人人PHP","name":"👭人人┃PHP","type":4,"api":"http://jiduo666.dpdns.org/rrsp.php","changeable":1},
     {
-      "key": "Hema",
-      "name": "河马｜短剧",
-      "type": 3,
-      "api": "csp_Hema",
-      "searchable": 1,
-      "quickSearch": 1,
-      "类型": "短剧",
-      "filterable": 1,"jar": "./moyu.php"
-    },
-        {
-      "key": "HHkk",
-      "name": "好看｜短剧",
-      "type": 3,
-      "api": "csp_HHkk",
-      "searchable": 1,
-      "quickSearch": 1,
-      "类型": "短剧",
-      "filterable": 1,"jar": "./moyu.php"
-    },
-    {
       "key": "mifun",
       "name": "米饭｜动漫",
       "type": 3,
@@ -229,6 +231,19 @@
             "quickSearch": 1,
             "filterable": 1,"jar": "./moyu.php"
         },
+    {
+      "key": "Wallpaper",
+      "name": "摸鱼｜壁纸",
+      "type": 3,
+      "api": "csp_Wallpaper",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 0.56
+      },"jar": "./moyu.php"
+    },
         {
             "key": "TingBook",
             "name": "听书｜有声",
@@ -298,6 +313,62 @@
             },"jar": "./moyu.php"
         },
         {
+            "key": "TuneFree",
+            "name": "自由音乐",
+            "type": 3,
+            "api": "csp_TuneFree",
+            "searchable": 1,"jar": "./moyu.php"
+        },
+        {
+            "key": "啊哈DJ网",
+            "name": "🎵啊哈┃DJ",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "ext": "./V6范明明.txt",
+            "jar": ""
+        },
+        {
+            "key": "100听书",
+            "name": "📚100┃听书",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "ext": "./V4聚合.txt",
+            "jar": ""
+        },
+        {
+      "key": "hipy_js_爱上你听书",
+      "name": "爱上听书",
+      "type": 3,
+      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "ext": "https://gitee.com/abiubiud/xxs/raw/main/dr2/爱上你听书网[听].js"
+    },
+   {
+      "key": "hipy_js_酷我听书[听]",
+      "name": "酷我听书",
+      "type": 3,
+      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://gitee.com/abiubiud/xxs/raw/main/dr2/酷我听书[听].js"
+    },
+        {
+            "key": "凤凰FM",
+            "name": "📻凤凰┃FM",
+            "type": 3,
+            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
+            "ext": "./凤凰FM.js"
+        },
+        {
+            "key": "蜻蜓FM",
+            "name": "📻蜻蜓┃FM",
+            "type": 3,
+            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
+            "ext": "./蜻蜓FM.js"
+        },
+        {
             "key": "Symx",
             "name": "山有｜木兮",
             "type": 3,
@@ -333,29 +404,6 @@
                     "https://jx.xmflv.com/?url="
                 ]
             },"jar": "./moyu.php"
-        },
-        {
-            "key": "TuneFree",
-            "name": "自由音乐",
-            "type": 3,
-            "api": "csp_TuneFree",
-            "searchable": 1,"jar": "./moyu.php"
-        },
-        {
-            "key": "啊哈DJ网",
-            "name": "🎵啊哈┃DJ",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "ext": "./V6范明明.txt",
-            "jar": ""
-        },
-        {
-            "key": "100听书",
-            "name": "📚100┃听书",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "ext": "./V4聚合.txt",
-            "jar": ""
         },
         {
             "key": "py_官方采集789",
@@ -515,6 +563,24 @@
 		  "欧美综艺"
 	  ]
     },
+    {
+            "key": "哔哩视频",
+            "name": "哔哩｜视频",
+            "type": 3,
+            "api": "csp_BiliYS",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "changeable": 0,
+            "style": {
+                "type": "rect",
+                "ratio": 1.433
+            },
+            "ext": {
+                "json": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/json/BLSP.json",
+                "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
+            }
+        },
         {
             "key": "盘它",
             "name": "盘它｜4K",
@@ -549,57 +615,6 @@
             "api": "./py_cctv23.py",
             "order_num": 5,
             "ext": ""
-        },
-        {
-      "key": "hipy_js_爱上你听书",
-      "name": "爱上听书",
-      "type": 3,
-      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "ext": "https://gitee.com/abiubiud/xxs/raw/main/dr2/爱上你听书网[听].js"
-    },
-   {
-      "key": "hipy_js_酷我听书[听]",
-      "name": "酷我听书",
-      "type": 3,
-      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://gitee.com/abiubiud/xxs/raw/main/dr2/酷我听书[听].js"
-    },
-      {
-            "key": "哔哩视频",
-            "name": "哔哩｜视频",
-            "type": 3,
-            "api": "csp_BiliYS",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 1.433
-            },
-            "ext": {
-                "json": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/json/BLSP.json",
-                "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
-            }
-        },
-        {
-            "key": "凤凰FM",
-            "name": "📻凤凰┃FM",
-            "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "./凤凰FM.js"
-        },
-        {
-            "key": "蜻蜓FM",
-            "name": "📻蜻蜓┃FM",
-            "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "./蜻蜓FM.js"
         },
      {
             "key": "玩偶",
@@ -1076,6 +1091,21 @@
             "gridview": 3,
             "style": {
                 "type": "list"
+            }
+        },
+        {
+            "key": "Jzb",
+            "name": "⚽┃说球┃回放",
+            "type": 3,
+            "api": "csp_Jzb",
+            "searchable": 0,
+            "changeable": 0,
+            "style": {
+                "type": "list"
+            },
+            "gridview": 3,
+            "ext": {
+                "sites": ""
             }
         },
         {
@@ -1655,27 +1685,6 @@
                 "datasignkey": "6QQNUsP3PkD2ajJCPCY8",
                 "apisignkey": "lvdoutv-1.0.0"
             }
-        },
-        {
-            "key": "csp_GuanYing",
-            "name": "😂观影┃4K",
-            "type": 3,
-            "api": "csp_GuanYing",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "cookie": "PHPSESSID=qi7gnbji5akpvj37t72d7sg6ah; vrg_go=1; vrg_sc=f37159ec6997cc319635ebafbfe6a6c5; BT_auth=f973lfGIquys8ItVNalqaX2Q7LJXBNyKyJCAdrDhEYlQ-iKp5DTHesmVWjGAmkPjb2iFzqdqNMi7W_IfcE2vFSOaXTgnLOkGjQVQ6rxgUpr-XenDAhMZB2I1FWXJLm_u9hBsz45BiE7J1rWbFyPhQUYN0OyZ332dLgOM-vwfX9NKRCZpK7kt; BT_cookietime=80645v457Sh58tBVCysGYaA2kdFs2EDn9hJwz592jpxWopRaPKGO",
-                "filters": "./myzb.json",
-                "sites": "https://www.gyg.la,https://www.gyg.si,https://www.gying.net,https://www.gying.org,https://www.gying.si,https://www.gying.in"
-            },"jar": "./vox.jar"
-        },
-        {
-            "key": "csp_SeedHub",
-            "name": "🎳Seed┃Hub",
-            "type": 3,
-            "api": "csp_SeedHub",
-            "searchable": 1,
-            "changeable": 0,"jar": "./vox.jar"
         },
         {
             "key": "csp_Xxzn",
