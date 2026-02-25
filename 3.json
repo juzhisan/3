@@ -1100,6 +1100,15 @@
             "jar": "./spider.jar"
         },
         {
+            "key": "py_LIBVIO",
+            "name": "🤖LIBVIO┃PY",
+            "api": "./LIBVIO.py",
+            "filterable": 1,
+            "quickSearch": 1,
+            "searchable": 1,
+            "type": 3
+        },
+        {
             "key": "人人",
             "name": "人人｜4K",
             "type": 3,
