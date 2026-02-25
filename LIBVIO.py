@@ -75,7 +75,7 @@ class Spider(Spider):
             result['filters'] = self._generate_filters()
         return result
     def homeVideoContent(self):
-        rsp = self._fetch_with_cache("https://www.libvio.site")
+        rsp = self._fetch_with_cache("https://www.libvio.mov")
         if not rsp:
             return {'list': []}
         doc = self._parse_html_fast(rsp.text)
@@ -120,7 +120,7 @@ class Spider(Spider):
         return result
     def categoryContent(self, tid, pg, filter, extend):
         result = {}
-        url = 'https://www.libvio.site/type/{0}-{1}.html'.format(tid, pg)
+        url = 'https://www.libvio.mov/type/{0}-{1}.html'.format(tid, pg)
         print(url)
         rsp = self._fetch_with_cache(url)
         if not rsp:
@@ -171,7 +171,7 @@ class Spider(Spider):
         return result
     def detailContent(self, array):
         tid = array[0]
-        url = 'https://www.libvio.site/detail/{0}.html'.format(tid)
+        url = 'https://www.libvio.mov/detail/{0}.html'.format(tid)
         rsp = self._fetch_with_cache(url)
         if not rsp:
             return {'list': []}
@@ -252,7 +252,7 @@ class Spider(Spider):
 
     def searchContent(self, key, quick, page=None):
 
-        url = 'https://www.libvio.site/index.php/ajax/suggest?mid=1&wd={0}'.format(key)
+        url = 'https://www.libvio.mov/index.php/ajax/suggest?mid=1&wd={0}'.format(key)
         rsp = self._fetch_with_cache(url, headers=self.header)
         if not rsp:
             return {'list': []}
@@ -407,14 +407,14 @@ class Spider(Spider):
             "15": asian_filters,   # 日韩剧
             "16": western_filters  # 欧美剧
         }
-    header = {"Referer": "https://www.libvio.site", "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
+    header = {"Referer": "https://www.libvio.mov", "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36"}
     def playerContent(self, flag, id, vipFlags):
         # 如果已经是push链接，直接返回
         if id.startswith('push://'):
             return {"parse": 0, "playUrl": "", "url": id, "header": ""}
 
         result = {}
-        url = 'https://www.libvio.site/play/{0}.html'.format(id)
+        url = 'https://www.libvio.mov/play/{0}.html'.format(id)
         try:
             rsp = self._fetch_with_cache(url, headers=self.header)
             if not rsp:
@@ -461,14 +461,14 @@ class Spider(Spider):
             api_match = re.search(r'https://www\.libvio\.site/vid/plyr/vr2\.php\?url=([^&"\s]+)', page_text)
             if api_match:
                 return {"parse": 0, "playUrl": "", "url": api_match.group(1), "header": ujson.dumps
-                    ({"User-Agent": self.header["User-Agent"], "Referer": "https://www.libvio.site/"})}
+                    ({"User-Agent": self.header["User-Agent"], "Referer": "https://www.libvio.mov/"})}
             iframe_src = doc('iframe').attr('src')
             if iframe_src:
                 try:
                     iframe_content = self._fetch_with_cache(iframe_src, headers=self.header)
                     if not iframe_content: raise Exception("Iframe fetch failed")
                     video_match = re.search(r'https://[^"\s]+\.mp4', iframe_content.text)
-                    if video_match: return {"parse": 0, "playUrl": "", "url": video_match.group(0), "header": ujson.dumps({"User-Agent": self.header["User-Agent"], "Referer": "https://www.libvio.site/"})}
+                    if video_match: return {"parse": 0, "playUrl": "", "url": video_match.group(0), "header": ujson.dumps({"User-Agent": self.header["User-Agent"], "Referer": "https://www.libvio.mov/"})}
                 except Exception as e: print(f"iframe视频解析失败: {e}")
             script_match = re.search(r'var player_[^=]*=\s*({[^}]+})', page_text)
             if script_match:
@@ -478,7 +478,7 @@ class Spider(Spider):
                         nid = str(jo.get('nid', ''))
                         player_from = jo.get('from', '')
                         if player_from:
-                            scriptUrl = f'https://www.libvio.site/static/player/{player_from}.js'
+                            scriptUrl = f'https://www.libvio.mov/static/player/{player_from}.js'
                             scriptRsp = self._fetch_with_cache(scriptUrl)
                             if not scriptRsp: raise Exception("Script fetch failed")
                             parse_match = re.search(r'src="([^"]+url=)', scriptRsp.text)
