@@ -971,28 +971,6 @@
 	  ]
     },
         {
-            "key": "飞快.py",
-            "name": "飞快TV.py",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "api": "./飞快TV[推].py",
-            "order_num": 5,
-            "ext": ""
-        },
-        {
-            "key": "电影网盘.py",
-            "name": "电影网盘.py",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "api": "./py_cctv23.py",
-            "order_num": 5,
-            "ext": ""
-        },
-        {
             "key": "Jzb",
             "name": "⚽┃说球┃回放",
             "type": 3,
@@ -1184,6 +1162,24 @@
             "jar": "./spider.jar"
         },
         {
+            "key": "快映",
+            "name": "快映｜4K",
+            "type": 3,
+            "api": "csp_PanWebShare",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": [
+                    "http://xsayang.fun:12512",
+                    "http://154.201.83.50:12512"
+                ]
+            },
+            "timeout": 60,
+            "jar": "./spider.jar"
+        },
+        {
             "key": "两个BT",
             "name": "两个T4",
             "type": 4,
@@ -1215,6 +1211,28 @@
                 "ratio": 1.33
             },
             "changeable": 1
+        },
+        {
+            "key": "飞快.py",
+            "name": "飞快TV.py",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "api": "./飞快TV[推].py",
+            "order_num": 5,
+            "ext": ""
+        },
+        {
+            "key": "电影网盘.py",
+            "name": "电影网盘.py",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "api": "./py_cctv23.py",
+            "order_num": 5,
+            "ext": ""
         },
         {
             "key": "金牌",
