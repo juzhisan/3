@@ -1,367 +1,318 @@
-# coding=utf-8
-# !/usr/bin/python
-# by嗷呜
-import json
-import sys
-import uuid
-import copy
-sys.path.append('..')
-from base.spider import Spider
-from pyquery import PyQuery as pq
-from concurrent.futures import ThreadPoolExecutor, as_completed
+/*
+title: '星辰影院', author: '小可乐/v6.1.1'
+说明：可以不写ext，也可以写ext，ext支持的参数和格式参数如下
+"ext": {
+    "host": "xxxx", //站点网址
+    "timeout": 6000,  //请求超时，单位毫秒
+    "catesSet": "电视剧&电影&综艺",  //指定分类和顺序
+    "tabsSet": "土星&下载线1"  //指定线路和顺序
+}
+*/
 
+const MOBILE_UA = 'Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36';
+const DefHeader = {'User-Agent': MOBILE_UA};
+var HOST;
+var KParams = {
+    headers: {'User-Agent': MOBILE_UA},
+    timeout: 5000
+};
 
-class Spider(Spider):
+async function init(cfg) {
+    try {
+        HOST = (cfg.ext?.host?.trim() || 'https://www.xcyycn.com').replace(/\/$/, '');
+        KParams.headers['Referer'] = HOST;
+        let parseTimeout = parseInt(cfg.ext?.timeout?.trim(), 10);
+        if (parseTimeout > 0) {KParams.timeout = parseTimeout;}
+        KParams.catesSet = cfg.ext?.catesSet?.trim() || '';
+        KParams.tabsSet = cfg.ext?.tabsSet?.trim() || '';
+        KParams.resHtml = await request(HOST);
+    } catch (e) {
+        console.error('初始化参数失败：', e.message);
+    }
+}
 
-    def init(self, extend=""):
-        self.dbody = {
-            "page_params": {
-                "channel_id": "",
-                "filter_params": "sort=75",
-                "page_type": "channel_operation",
-                "page_id": "channel_list_second_page"
+async function home(filter) {
+    try {
+        let resHtml = KParams.resHtml;
+        if (!resHtml) {throw new Error('源码为空');}
+        let typeArr = cutStr(resHtml, 'hl-nav-item£>', '</li>', '', false, 0, true).filter(flt => flt.includes('/v/'));
+        let classes = typeArr.map((it,idx) => {
+            let cName = cutStr(it, '>', '<', `分类${idx+1}`);
+            let cId = cutStr(it, '/v/', '.', `值${idx+1}`);
+            return {type_name: cName, type_id: cId};
+        });
+        if (KParams.catesSet) {classes = ctSet(classes, KParams.catesSet);}
+        let filters = {};
+        try {
+            const nameObj = {class: 'class,剧情', area: 'area,地区', lang: 'lang,语言', year: 'year,年份', letter: 'letter,字母', by: 'by,排序'};
+            const regObj = {class: /\d+---([^-]+)-/, area: /\/\d+-([^-]+)-/, lang: /\d+----([^-]+)-/, year: /-([^-]+)\./, letter: /\d+-----([^-]+)-/, by: /\d+--([^-]+)-/};
+            let resHtmlList = await Promise.all(
+                classes.map(async (it) => {
+                    try {return await request(`${HOST}/vs/${it.type_id}-----------.html`);} catch (sErr) {return '';}
+                })
+            );
+            classes.forEach((it,idx) => {
+                let resfHtml = resHtmlList[idx];
+                if (resfHtml) {
+                    let flValArr = cutStr(resfHtml, 'hl-filter-list', '</ul>', '', false, 0, true).slice(1);
+                    filters[it.type_id] = Object.entries(nameObj).map(([nObjk, nObjv]) => {
+                        let [kkey, kname] = nObjv.split(',');
+                        let tgVal = flValArr.find(fv => regObj[kkey].test(fv)) ?? '';
+                        if (kkey === 'by') {tgVal = cutStr(resfHtml, 'hl-rb-title', '</div>', '', false);}
+                        let tgValArr = cutStr(tgVal, '<a', '/a>', '', false, 0, true);
+                        let tValArr = kkey !== 'by' ? tgValArr.slice(1) : tgValArr;                        
+                        let kvalue = tValArr.map(el => {
+                            let n = cutStr(el, '>', '<', '空白');
+                            let v = n;
+                            if (kkey === 'by') {v = el.match(regObj[kkey])?.[1] ?? '';}
+                            return {n: n, v: v}; 
+                        });
+                        if (kkey !== 'by') {kvalue.unshift({n: '全部', v: ''});}
+                        return {key: kkey, name: kname, value: kvalue};
+                    }).filter(flt => flt.key && flt.value.length > 1);
+                }
+            });
+        } catch (e) {
+            filters = {}
+        }
+        return JSON.stringify({class: classes, filters: filters});
+    } catch (e) {
+        console.error('获取分类失败：', e.message);
+        return JSON.stringify({class: [], filters: {}});
+    }
+}
+
+async function homeVod() {
+    try {
+        let resHtml = KParams.resHtml;
+        let VODS = getVodList(resHtml);
+        return JSON.stringify({list: VODS});
+    } catch (e) {
+        console.error('推荐页获取失败：', e.message);
+        return JSON.stringify({list: []});
+    }
+}
+
+async function category(tid, pg, filter, extend) {
+    try {
+        pg = parseInt(pg, 10), pg = pg > 0 ? pg : 1;
+        let fl = extend || {};
+        let cateUrl = `${HOST}/vs/${fl.cateId || tid}-${fl.area ?? ''}-${fl.by ?? ''}-${fl.class ?? ''}-${fl.lang ?? ''}-${fl.letter ?? ''}---${pg}---${fl.year ?? ''}.html`;        
+        let resHtml = await request(cateUrl);
+        let VODS = getVodList(resHtml);
+        let limit = VODS.length;
+        let pagecount = cutStr(resHtml, 'hl-page-total£/', '页', '1');
+        pagecount = Number(pagecount);
+        return JSON.stringify({list: VODS, page: pg, pagecount: pagecount, limit: limit, total: limit*pagecount});
+    } catch (e) {
+        console.error('类别页获取失败：', e.message);
+        return JSON.stringify({list: [], page: 1, pagecount: 0, limit: 30, total: 0});
+    }
+}
+
+async function search(wd, quick, pg) {
+    try {
+        pg = parseInt(pg, 10), pg = pg > 0 ? pg : 1;
+        let searchUrl = `${HOST}/s${wd}/page/${pg}.html`;
+        let resHtml = await request(searchUrl);
+        let VODS = getVodList(resHtml);
+        return JSON.stringify({list: VODS, page: pg, pagecount: 10, limit: 30, total: 300});
+    } catch (e) {
+        console.error('搜索页获取失败：', e.message);
+        return JSON.stringify({list: [], page: 1, pagecount: 0, limit: 30, total: 0});
+    }
+}
+
+function getVodList(khtml) {
+    try {
+        if (!khtml) {throw new Error('源码为空');}  
+        let kvods = [];
+        let listArr = cutStr(khtml, 'hl-lazy', '</a>', '', false, 0, true).filter(flt => flt.includes('remarks'));
+        for (let it of listArr) {
+            let kname = cutStr(it, 'title="', '"', '名称');
+            let kpic = cutStr(it, 'data-original="', '"', '图片');
+            let kremarks = cutStr(it, 'remarks">', '</', '状态');
+            let kid = cutStr(it, 'href="', '"');
+            if (kid) {
+                kvods.push({
+                    vod_name: kname,
+                    vod_pic: kpic,
+                    vod_remarks: kremarks,
+                    vod_id: `${kid}@${kname}@${kpic}@${kremarks}`
+                });
             }
         }
-        self.body = self.dbody
-        pass
-
-    def getName(self):
-        pass
-
-    def isVideoFormat(self, url):
-        pass
-
-    def manualVideoCheck(self):
-        pass
-
-    def destroy(self):
-        pass
-
-    host = 'https://v.qq.com'
-
-    apihost = 'https://pbaccess.video.qq.com'
-
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.5410.0 Safari/537.36',
-        'origin': host,
-        'referer': f'{host}/'
+        return kvods;
+    } catch (e) {
+        console.error(`生成视频列表失败：`, e.message);
+        return [];
     }
+}
 
-    def homeContent(self, filter):
-        cdata = {
-            "电视剧": "100113",
-            "电影": "100173",
-            "综艺": "100109",
-            "纪录片": "100105",
-            "动漫": "100119",
-            "少儿": "100150",
-            "短剧": "110755"
+async function detail(ids) {
+    try {
+        let [id, kname, kpic, kremarks] = ids.split('@');
+        let detailUrl = !/^http/.test(id) ? `${HOST}${id}` : id;
+        let resHtml = await request(detailUrl);
+        if (!resHtml) {throw new Error('源码为空');}  
+        let intros = cutStr(resHtml, '"clearfix">', '</ul>', '', false);
+        let [ktabs, kurls] = [[], []];
+        let zx_tabs = cutStr(resHtml, '<span class="hl-from', '/span>', '', false, 0, true).map((it,idx) => cutStr(it, '>', '<', `在线${idx+1}`) );
+        ktabs.push(...zx_tabs);
+        let zx_urls = cutStr(resHtml, 'hl-plays-list">', '</ul>', '', false, 0, true).map((item,idx) => cutStr(item, '<li', '</li>', '', false, 0, true).map(it => { return cutStr(it, '>', '</a>', 'noEpi')  + '$' + HOST + cutStr(it, 'href="', '"', 'noUrl'); }).join('#') );
+        kurls.push(...zx_urls);
+        let xzArr = cutStr(resHtml, 'hl-downs-list hl', '</ul>', '', false, 0, true);
+        if (xzArr[0]) {
+            xzArr.forEach((item,idx) => {
+                let siglUrl = cutStr(item, 'down_url', '>', '', false, 0, true).map(it => `${cutStr(it, 'file_name="', '"', 'noEpi')}$${cutStr(it, 'value="', '"', 'noUrl')}` ).join('#');
+                ktabs.push(`下载线${idx+1}`);
+                kurls.push(siglUrl);
+            });
         }
-        result = {}
-        classes = []
-        filters = {}
-        for k in cdata:
-            classes.append({
-                'type_name': k,
-                'type_id': cdata[k]
-            })
-        with ThreadPoolExecutor(max_workers=len(classes)) as executor:
-            futures = [executor.submit(self.get_filter_data, item['type_id']) for item in classes]
-            for future in futures:
-                cid, data = future.result()
-                if not data.get('data', {}).get('module_list_datas'):
-                    continue
-                filter_dict = {}
-                try:
-                    items = data['data']['module_list_datas'][-1]['module_datas'][-1]['item_data_lists']['item_datas']
-                    for item in items:
-                        if not item.get('item_params', {}).get('index_item_key'):
-                            continue
-                        params = item['item_params']
-                        filter_key = params['index_item_key']
-                        if filter_key not in filter_dict:
-                            filter_dict[filter_key] = {
-                                'key': filter_key,
-                                'name': params['index_name'],
-                                'value': []
-                            }
-                        filter_dict[filter_key]['value'].append({
-                            'n': params['option_name'],
-                            'v': params['option_value']
-                        })
-                except (IndexError, KeyError):
-                    continue
-                filters[cid] = list(filter_dict.values())
-        result['class'] = classes
-        result['filters'] = filters
-        return result
-
-    def homeVideoContent(self):
-        vlist = []
-        data = self.gethtml(self.host)
-        its = data('script')
-        s = None
-        for it in its.items():
-            if 'window.__INITIAL_STATE__' in it.text():
-                s = it.text()
-                break
-        if s:
-            index = s.find('=')
-            if index != -1:
-                sd = json.loads(s[index + 1:])
-                if sd.get('storeModulesData', {}).get('channelsModulesMap', {}).get('choice', {}).get('cardListData'):
-                    for its in sd['storeModulesData']['channelsModulesMap']['choice']['cardListData']:
-                        if its and its.get('children_list', {}).get('list', {}).get('cards'):
-                            for it in its['children_list']['list']['cards']:
-                                if it and it.get('params'):
-                                    p = it['params']
-                                    tag = json.loads(p.get('uni_imgtag', '{}') or p.get('imgtag', '{}') or '{}')
-                                    id = it.get('id') or p.get('cid')
-                                    name = p.get('mz_title') or p.get('title')
-                                    if name and 'http' not in id:
-                                        vlist.append({
-                                            'vod_id': id,
-                                            'vod_name': name,
-                                            'vod_pic': p.get('image_url'),
-                                            'vod_year': tag.get('tag_2', {}).get('text'),
-                                            'vod_remarks': tag.get('tag_4', {}).get('text')
-                                        })
-        return {'list': vlist}
-
-    def categoryContent(self, tid, pg, filter, extend):
-        result = {}
-        params = {
-            "sort": extend.get('sort', '75'),
-            "attr": extend.get('attr', '-1'),
-            "itype": extend.get('itype', '-1'),
-            "ipay": extend.get('ipay', '-1'),
-            "iarea": extend.get('iarea', '-1'),
-            "iyear": extend.get('iyear', '-1'),
-            "theater": extend.get('theater', '-1'),
-            "award": extend.get('award', '-1'),
-            "recommend": extend.get('recommend', '-1')
+        if (KParams.tabsSet) {
+            let ktus = ktabs.map((it, idx) => { return {type_name: it, type_value: kurls[idx]} });
+            ktus = ctSet(ktus, KParams.tabsSet);
+            ktabs = ktus.map(it => it.type_name);
+            kurls = ktus.map(it => it.type_value);
         }
-        if pg == '1':
-            self.body = self.dbody.copy()
-        self.body['page_params']['channel_id'] = tid
-        self.body['page_params']['filter_params'] = self.josn_to_params(params)
-        data = self.post(
-            f'{self.apihost}/trpc.universal_backend_service.page_server_rpc.PageServer/GetPageData?video_appid=1000005&vplatform=2&vversion_name=8.9.10&new_mark_label_enabled=1',
-            json=self.body, headers=self.headers).json()
-        ndata = data['data']
-        if ndata['has_next_page']:
-            result['pagecount'] = 9999
-            self.body['page_context'] = ndata['next_page_context']
-        else:
-            result['pagecount'] = int(pg)
-        vlist = []
-        for its in ndata['module_list_datas'][-1]['module_datas'][-1]['item_data_lists']['item_datas']:
-            id = its.get('item_params', {}).get('cid')
-            if id:
-                p = its['item_params']
-                tag = json.loads(p.get('uni_imgtag', '{}') or p.get('imgtag', '{}') or '{}')
-                name = p.get('mz_title') or p.get('title')
-                pic = p.get('new_pic_hz') or p.get('new_pic_vt')
-                vlist.append({
-                    'vod_id': id,
-                    'vod_name': name,
-                    'vod_pic': pic,
-                    'vod_year': tag.get('tag_2', {}).get('text'),
-                    'vod_remarks': tag.get('tag_4', {}).get('text')
-                })
-        result['list'] = vlist
-        result['page'] = pg
-        result['limit'] = 90
-        result['total'] = 999999
-        return result
+        let VOD = {
+            vod_id: detailUrl,
+            vod_name: kname,
+            vod_pic: kpic,
+            vod_remarks: kremarks,
+            type_name: cutStr(intros, '类型：', '</li>', '类型'),
+            vod_year: cutStr(intros, '年份：', '</li>', '1000'),
+            vod_area: cutStr(intros, '地区：', '</li>', '地区'),
+            vod_lang: cutStr(intros, '语言：', '</li>', '语言'),
+            vod_director: cutStr(intros, '导演：', '</li>', '导演'),
+            vod_actor: cutStr(intros, '主演：', '</li>', '主演'),
+            vod_content: cutStr(intros, '简介：', '</li>', kname),
+            vod_play_from: ktabs.join('$$$'),
+            vod_play_url: kurls.join('$$$')
+        };
+        return JSON.stringify({list: [VOD]});
+    } catch (e) {
+        console.error('详情页获取失败：', e.message);
+        return JSON.stringify({list: []});
+    }
+}
 
-    def detailContent(self, ids):
-        vbody = {
-            "page_params": {
-                "req_from": "web",
-                "cid": ids[0],
-                "vid": "",
-                "lid": "",
-                "page_type": "detail_operation",
-                "page_id": "detail_page_introduction"
-            },
-            "has_cache": 1
+async function play(flag, ids, flags) {
+    try {
+        let kp = 0, kurl = '';
+        if (/下载/.test(flag)) {
+            kurl = ids;
+        } else {
+            let resHtml = await request(ids);
+            let codeObj = safeParseJSON(cutStr(resHtml, 'var player_£=', '<', '', false));       
+            kurl = codeObj?.url ?? '';
+            if (!/^http/.test(kurl)) {
+                kurl = ids;
+                kp = 1;
+            }
         }
+        return JSON.stringify({jx: 0, parse: kp, url: kurl, header: DefHeader});
+    } catch (e) {
+        console.error('播放失败：', e.message);
+        return JSON.stringify({jx: 0, parse: 0, url: '', header: {}});
+    }
+}
 
-        body = {
-            "page_params": {
-                "req_from": "web_vsite",
-                "page_id": "vsite_episode_list",
-                "page_type": "detail_operation",
-                "id_type": "1",
-                "page_size": "",
-                "cid": ids[0],
-                "vid": "",
-                "lid": "",
-                "page_num": "",
-                "page_context": "",
-                "detail_page_type": "1"
-            },
-            "has_cache": 1
+function ctSet(kArr, setStr) {
+    try {
+        if (!Array.isArray(kArr) || kArr.length === 0 || typeof setStr !== 'string' || !setStr) { throw new Error('第一参数需为非空数组，第二参数需为非空字符串'); }
+        const set_arr = [...kArr];
+        const arrNames = setStr.split('&');
+        const filtered_arr = arrNames.map(item => set_arr.find(it => it.type_name === item)).filter(Boolean);
+        return filtered_arr.length? filtered_arr : [set_arr[0]];
+    } catch (e) {
+        console.error('ctSet 执行异常：', e.message);
+        return kArr;
+    }
+}
+
+function safeParseJSON(jStr){
+    try {return JSON.parse(jStr);} catch(e) {return null;}
+}
+
+function cutStr(str, prefix = '', suffix = '', defVal = '', clean = true, i = 0, all = false) {
+    try {
+        if (typeof str !== 'string') {throw new Error('被截取对象必须为字符串');}
+        const cleanStr = cs => String(cs).replace(/<[^>]*?>/g, ' ').replace(/(&nbsp;|[\u0020\u00A0\u3000\s])+/g, ' ').trim().replace(/\s+/g, ' ');
+        const esc = s => String(s).replace(/[.*+?${}()|[\]\\/^]/g, '\\$&');
+        let pre = esc(prefix).replace(/£/g, '[^]*?'), end = esc(suffix);
+        const regex = new RegExp(`${pre || '^'}([^]*?)${end || '$'}`, 'g');
+        const matchIter = str.matchAll(regex);
+        if (all) {
+            let matchArr = [...matchIter];
+            if (!matchArr.length) {return [defVal];}
+            return matchArr.map(ela => ela[1] !== undefined ? (clean ? cleanStr(ela[1]) : ela[1]) : defVal);
         }
-
-        with ThreadPoolExecutor(max_workers=2) as executor:
-            future_detail = executor.submit(self.get_vdata, vbody)
-            future_episodes = executor.submit(self.get_vdata, body)
-            vdata = future_detail.result()
-            data = future_episodes.result()
-
-        pdata = self.process_tabs(data, body, ids)
-        if not pdata:
-            return self.handle_exception(None, "No pdata available")
-
-        try:
-            star_list = vdata['data']['module_list_datas'][0]['module_datas'][0]['item_data_lists']['item_datas'][
-                0].get('sub_items', {}).get('star_list', {}).get('item_datas', [])
-            actors = [star['item_params']['name'] for star in star_list]
-            names = ['腾讯视频', '预告片']
-            plist, ylist = self.process_pdata(pdata, ids)
-            if not plist:
-                del names[0]
-            if not ylist:
-                del names[1]
-            vod = self.build_vod(vdata, actors, plist, ylist, names)
-            return {'list': [vod]}
-        except Exception as e:
-            return self.handle_exception(e, "Error processing detail")
-
-    def searchContent(self, key, quick, pg="1"):
-        body = {"version": "24072901", "clientType": 1, "filterValue": "", "uuid": str(uuid.uuid4()), "retry": 0,
-                "query": key, "pagenum": int(pg) - 1, "pagesize": 30, "queryFrom": 0, "searchDatakey": "",
-                "transInfo": "", "isneedQc": True, "preQid": "", "adClientInfo": "",
-                "extraInfo": {"isNewMarkLabel": "1", "multi_terminal_pc": "1"}}
-        data = self.post(f'{self.apihost}/trpc.videosearch.mobile_search.MultiTerminalSearch/MbSearch?vplatform=2',
-                         json=body, headers=self.headers).json()
-        vlist = []
-        for k in data['data']['areaBoxList'][-1]['itemList']:
-            if k.get('doc', {}).get('id'):
-                img_tag = k.get('videoInfo', {}).get('imgTag')
-                if img_tag is not None and isinstance(img_tag, str):
-                    try:
-                        tag = json.loads(img_tag)
-                    except json.JSONDecodeError as e:
-                        tag = {}
-                else:
-                    tag = {}
-                pic = k.get('videoInfo', {}).get('imgUrl')
-                vlist.append({
-                    'vod_id': k['doc']['id'],
-                    'vod_name': k['videoInfo']['title'],
-                    'vod_pic': pic,
-                    'vod_year': tag.get('tag_2', {}).get('text', ''),
-                    'vod_remarks': tag.get('tag_4', {}).get('text', '')
-                })
-        return {'list': vlist, 'page': pg}
-
-    def playerContent(self, flag, id, vipFlags):
-        ids = id.split('@')
-        url = f"{self.host}/x/cover/{ids[0]}/{ids[1]}.html"
-        parse_url = f"https://jx.xmflv.com/?url={url}"
-        return {'parse': 1, 'url': parse_url, 'header': ''}
-        
-    def localProxy(self, param):
-        pass
-
-    def gethtml(self, url):
-        rsp = self.fetch(url, headers=self.headers)
-        rsp = self.cleanText(rsp.text)
-        return pq(rsp)
-
-    def get_filter_data(self, cid):
-        hbody = self.dbody.copy()
-        hbody['page_params']['channel_id'] = cid
-        data = self.post(
-            f'{self.apihost}/trpc.universal_backend_service.page_server_rpc.PageServer/GetPageData?video_appid=1000005&vplatform=2&vversion_name=8.9.10&new_mark_label_enabled=1',
-            json=hbody, headers=self.headers).json()
-        return cid, data
-
-    def get_vdata(self, body):
-        try:
-            vdata = self.post(
-                f'{self.apihost}/trpc.universal_backend_service.page_server_rpc.PageServer/GetPageData?video_appid=3000010&vplatform=2&vversion_name=8.2.96',
-                json=body, headers=self.headers
-            ).json()
-            # print(body)
-            return vdata
-        except Exception as e:
-            print(f"Error in get_vdata: {str(e)}")
-            return {'data': {'module_list_datas': []}}
-
-    def process_pdata(self, pdata, ids):
-        plist = []
-        ylist = []
-        for k in pdata:
-            if k.get('item_id'):
-                pid = f"{k['item_params']['union_title']}${ids[0]}@{k['item_id']}"
-                if '预告' in k['item_params']['union_title']:
-                    ylist.append(pid)
-                else:
-                    plist.append(pid)
-        return plist, ylist
-
-    def build_vod(self, vdata, actors, plist, ylist, names):
-        d = vdata['data']['module_list_datas'][0]['module_datas'][0]['item_data_lists']['item_datas'][0]['item_params']
-        urls = []
-        if plist:
-            urls.append('#'.join(plist))
-        if ylist:
-            urls.append('#'.join(ylist))
-        vod = {
-            'type_name': d.get('sub_genre', ''),
-            'vod_name': d.get('title', ''),
-            'vod_year': d.get('year', ''),
-            'vod_area': d.get('area_name', ''),
-            'vod_remarks': d.get('holly_online_time', '') or d.get('hotval', ''),
-            'vod_actor': ','.join(actors),
-            'vod_content': d.get('cover_description', ''),
-            'vod_play_from': '$$$'.join(names),
-            'vod_play_url': '$$$'.join(urls)
+        const idx = parseInt(i, 10);
+        if (isNaN(idx)) {throw new Error('序号必须为整数');}
+        let tgResult, matchIdx = 0;
+        if (idx >= 0) {
+            for (let elt of matchIter) {
+                if (matchIdx++ === idx) {
+                    tgResult = elt[1];
+                    break;
+                }
+            }
+        } else {
+            let absI = Math.abs(idx), ringBuf = new Array(absI), ringPtr = 0, ringCnt = 0;
+            for (let elt of matchIter) {
+                ringBuf[ringPtr] = elt[1];
+                ringPtr = (ringPtr + 1) % absI;
+                ringCnt = Math.min(ringCnt + 1, absI);
+                matchIdx++;
+            }
+            tgResult = (matchIdx >= absI && ringCnt > 0) ? ringBuf[ringPtr % ringCnt] : undefined;
         }
-        return vod
+        return tgResult !== undefined ? (clean ? (cleanStr(tgResult) || defVal) : tgResult) : defVal;
+    } catch (e) {
+        console.error(`字符串截取错误：`, e.message);
+        return all ? ['cutErr'] : 'cutErr';
+    }
+}
 
-    def handle_exception(self, e, message):
-        print(f"{message}: {str(e)}")
-        return {'list': [{'vod_play_from': '哎呀翻车啦', 'vod_play_url': '翻车啦#555'}]}
+async function request(reqUrl, options = {}) {
+    try {
+        if (typeof reqUrl !== 'string' || !reqUrl.trim()) { throw new Error('reqUrl需为字符串且非空'); }
+        if (typeof options !== 'object' || Array.isArray(options) || options === null) { throw new Error('options类型需为非null对象'); }
+        options.method = options.method?.toUpperCase() || 'GET';
+        if (['GET', 'HEAD'].includes(options.method)) {
+            delete options.body;
+            delete options.data;
+            delete options.postType;
+        }
+        let {headers, timeout, ...restOpts} = options;
+        const optObj = {
+            headers: (typeof headers === 'object' && !Array.isArray(headers) && headers) ? headers : KParams.headers,
+            timeout: parseInt(timeout, 10) > 0 ? parseInt(timeout, 10) : KParams.timeout,
+            ...restOpts
+        };
+        const res = await req(reqUrl, optObj);
+        if (options.withHeaders) {
+            const resHeaders = typeof res.headers === 'object' && !Array.isArray(res.headers) && res.headers ? res.headers : {};
+            const resWithHeaders = { ...resHeaders, body: res?.content ?? '' };
+            return JSON.stringify(resWithHeaders);
+        }
+        return res?.content ?? '';
+    } catch (e) {
+        console.error(`${reqUrl}→请求失败：`, e.message);
+        return options?.withHeaders ? JSON.stringify({ body: '' }) : '';
+    }
+}
 
-    def process_tabs(self, data, body, ids):
-        try:
-            pdata = data['data']['module_list_datas'][-1]['module_datas'][-1]['item_data_lists']['item_datas']
-            tabs = data['data']['module_list_datas'][-1]['module_datas'][-1]['module_params'].get('tabs')
-            if tabs and len(json.loads(tabs)):
-                tabs = json.loads(tabs)
-                remaining_tabs = tabs[1:]
-                task_queue = []
-                for tab in remaining_tabs:
-                    nbody = copy.deepcopy(body)
-                    nbody['page_params']['page_context'] = tab['page_context']
-                    task_queue.append(nbody)
-                with ThreadPoolExecutor(max_workers=10) as executor:
-                    future_map = {executor.submit(self.get_vdata, task): idx for idx, task in enumerate(task_queue)}
-                    results = [None] * len(task_queue)
-                    for future in as_completed(future_map.keys()):
-                        idx = future_map[future]
-                        results[idx] = future.result()
-                    for result in results:
-                        if result:
-                            page_data = result['data']['module_list_datas'][-1]['module_datas'][-1]['item_data_lists'][
-                                'item_datas']
-                            pdata.extend(page_data)
-            return pdata
-        except Exception as e:
-            print(f"Error processing episodes: {str(e)}")
-            return []
-
-    def josn_to_params(self, params, skip_empty=False):
-        query = []
-        for k, v in params.items():
-            if skip_empty and not v:
-                continue
-            query.append(f"{k}={v}")
-        return "&".join(query)
-
-
+export function __jsEvalReturn() {
+    return {
+        init,
+        home,
+        homeVod,
+        category,
+        search,
+        detail,
+        play,
+        proxy: null
+    };
+}
