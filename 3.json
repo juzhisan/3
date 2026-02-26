@@ -742,6 +742,44 @@
             "searchable": 1,"jar": "./moyu.php"
         },
         {
+         "key": "爱听音乐",
+         "name": " 爱听音乐 ┃ python ┃ ",
+         "type": 3,
+         "api": "./PTT短剧.py",
+         "style": {
+            "type": "rect",
+            "ratio": 1.33
+         },
+         "changeable": 1
+      },
+      {
+         "key": "网易云音乐",
+         "name": " 网易云音乐 ┃ python ┃ ",
+         "type": 3,
+         "api": "./101.py",
+         "style": {
+            "type": "rect",
+            "ratio": 1.33
+         },
+         "changeable": 1
+      },
+      {
+            "key": "酷狗",
+            "name": "酷狗丨音乐",
+            "type": 3,
+            "jar": "./Panda.jar",
+            "api": "csp_Kugou",
+            "playerType": 2,
+            "ext": {
+                "classes": [
+                    {
+                        "type_name": "酷狗",
+                        "type_id": "kugou"
+                    }
+                ]
+            }
+        },
+        {
             "key": "啊哈DJ网",
             "name": "🎵啊哈┃DJ",
             "type": 3,
@@ -1146,84 +1184,6 @@
             "jar": "./spider.jar"
         },
         {
-            "key": "闪电",
-            "name": "闪电｜4K",
-            "type": 3,
-            "api": "csp_PanWebShare",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": [
-                    "https://sd.sduc.site","https://shandian.blog"
-                ]
-            },
-            "timeout": 60,
-            "jar": "./spider.jar"
-        },
-        {
-            "key": "克隆合集",
-            "name": "克隆合集",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net/klhj.php",
-            "searchable": 1,
-            "quickSearch": 1,
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1,
-            "filterable": 0
-        },
-        {
-            "key": "js集合",
-            "name": "js集合",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net/js.php",
-            "searchable": 1,
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-        {
-            "key": "python集合",
-            "name": "python集合",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net/py.php",
-            "searchable": 1,
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-        {
-            "key": "影视文件播放",
-            "name": "影视文件播放",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net/zh/2242.php",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "searchable": 1,
-            "changeable": 0
-        },
-        {
-            "key": "清单播放",
-            "name": "清单播放",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net/zh/2243.php",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-        {
             "key": "两个BT",
             "name": "两个T4",
             "type": 4,
@@ -1255,19 +1215,6 @@
                 "ratio": 1.33
             },
             "changeable": 1
-        },
-        {
-            "key": "py集合",
-            "name": "py集合",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net/py.php",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            }
         },
         {
             "key": "金牌",

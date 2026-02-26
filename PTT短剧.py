@@ -1,493 +1,240 @@
-# coding = utf-8
-# !/usr/bin/python
-
-"""
-
-作者 丢丢喵推荐 🚓 内容均从互联网收集而来 仅供交流学习使用 版权归原创者所有 如侵犯了您的权益 请通知作者 将及时删除侵权内容
-                    ====================Diudiumiao====================
-
-"""
-
-from Crypto.Util.Padding import unpad
-from urllib.parse import unquote
-from Crypto.Cipher import ARC4
-from urllib.parse import quote
-from base.spider import Spider
-from Crypto.Cipher import AES
-from bs4 import BeautifulSoup
-from base64 import b64decode
-import urllib.request
-import urllib.parse
-import binascii
-import requests
-import base64
-import json
-import time
-import sys
 import re
-import os
-
+import sys
+from base64 import b64encode, b64decode
+from urllib.parse import quote, unquote
+from pyquery import PyQuery as pq
+from requests import Session, adapters
+from urllib3.util.retry import Retry
+from concurrent.futures import ThreadPoolExecutor, as_completed
 sys.path.append('..')
-
-xurl = "https://ptt.red"
-
-headerx = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36'
-          }
-
-pm = ''
+from base.spider import Spider
 
 class Spider(Spider):
-    global xurl
-    global headerx
-    global headers
+    def init(self, extend=""):
+        self.host = "https://www.22a5.com"
+        self.session = Session()
+        adapter = adapters.HTTPAdapter(max_retries=Retry(total=3, backoff_factor=0.5, status_forcelist=[429, 500, 502, 503, 504]), pool_connections=20, pool_maxsize=50)
+        self.session.mount("http://", adapter)
+        self.session.mount("https://", adapter)
+        self.headers = {"User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"}
+        self.session.headers.update(self.headers)
 
-    def getName(self):
-        return "首页"
-
-    def init(self, extend):
-        pass
-
-    def isVideoFormat(self, url):
-        pass
-
-    def manualVideoCheck(self):
-        pass
-
-    def extract_middle_text(self, text, start_str, end_str, pl, start_index1: str = '', end_index2: str = ''):
-        if pl == 3:
-            plx = []
-            while True:
-                start_index = text.find(start_str)
-                if start_index == -1:
-                    break
-                end_index = text.find(end_str, start_index + len(start_str))
-                if end_index == -1:
-                    break
-                middle_text = text[start_index + len(start_str):end_index]
-                plx.append(middle_text)
-                text = text.replace(start_str + middle_text + end_str, '')
-            if len(plx) > 0:
-                purl = ''
-                for i in range(len(plx)):
-                    matches = re.findall(start_index1, plx[i])
-                    output = ""
-                    for match in matches:
-                        match3 = re.search(r'(?:^|[^0-9])(\d+)(?:[^0-9]|$)', match[1])
-                        if match3:
-                            number = match3.group(1)
-                        else:
-                            number = 0
-                        if 'http' not in match[0]:
-                            output += f"#{match[1]}${number}{xurl}{match[0]}"
-                        else:
-                            output += f"#{match[1]}${number}{match[0]}"
-                    output = output[1:]
-                    purl = purl + output + "$$$"
-                purl = purl[:-3]
-                return purl
-            else:
-                return ""
-        else:
-            start_index = text.find(start_str)
-            if start_index == -1:
-                return ""
-            end_index = text.find(end_str, start_index + len(start_str))
-            if end_index == -1:
-                return ""
-
-        if pl == 0:
-            middle_text = text[start_index + len(start_str):end_index]
-            return middle_text.replace("\\", "")
-
-        if pl == 1:
-            middle_text = text[start_index + len(start_str):end_index]
-            matches = re.findall(start_index1, middle_text)
-            if matches:
-                jg = ' '.join(matches)
-                return jg
-
-        if pl == 2:
-            middle_text = text[start_index + len(start_str):end_index]
-            matches = re.findall(start_index1, middle_text)
-            if matches:
-                new_list = [f'{item}' for item in matches]
-                jg = '$$$'.join(new_list)
-                return jg
+    def getName(self): return "爱听音乐"
+    def isVideoFormat(self, url): return bool(re.search(r'\.(m3u8|mp4|mp3|m4a|flv)(\?|$)', url or "", re.I))
+    def manualVideoCheck(self): return False
+    def destroy(self): self.session.close()
 
     def homeContent(self, filter):
-        result = {}
-        result = {"class": [{"type_id": "67", "type_name": "爽剧"},
-                            {"type_id": "68", "type_name": "言情"},
-                            {"type_id": "70", "type_name": "穿越"},
-                            {"type_id": "71", "type_name": "悬疑"},
-                            {"type_id": "73", "type_name": "古装"},
-                            {"type_id": "80", "type_name": "都市"},
-                            {"type_id": "84", "type_name": "甜宠"},
-                            {"type_id": "85", "type_name": "恋爱"},
-                            {"type_id": "74", "type_name": "其他"}],
+        classes = [{"type_name": n, "type_id": i} for n, i in [("歌手","/singerlist/index/index/index/index.html"), ("TOP榜单","/list/top.html"), ("新歌榜","/list/new.html"), ("电台","/radiolist/index.html"), ("高清MV","/mvlist/oumei.html"), ("专辑","/albumlist/index.html"), ("歌单","/playtype/index.html")]]
+        filters = {p: d for p in [c["type_id"] for c in classes if "singer" not in c["type_id"]] if (d := self._fetch_filters(p))}
+        
+        if "/radiolist/index.html" not in filters:
+            filters["/radiolist/index.html"] = [{"key": "id", "name": "分类", "value": [{"n": n, "v": v} for n,v in zip(["最新","最热","有声小说","相声","音乐","情感","国漫","影视","脱口秀","历史","儿童","教育","八卦","推理","头条"], ["index","hot","novel","xiangyi","music","emotion","game","yingshi","talkshow","history","children","education","gossip","tuili","headline"])]}]
 
-                  "list": [],
-                  "filters": {"67": [{"key": "年代",
-                                     "name": "年代",
-                                     "value": [{"n": "全部", "v": ""},
-                                               {"n": "2025", "v": "2025"},
-                                               {"n": "2024", "v": "2024"},
-                                               {"n": "2023", "v": "2023"},
-                                               {"n": "2022", "v": "2022"},
-                                               {"n": "2021", "v": "2021"},
-                                               {"n": "2020", "v": "2020"},
-                                               {"n": "2019", "v": "2019"},
-                                               {"n": "2018", "v": "2018"}]}],
-                              "68": [{"key": "年代",
-                                     "name": "年代",
-                                     "value": [{"n": "全部", "v": ""},
-                                               {"n": "2025", "v": "2025"},
-                                               {"n": "2024", "v": "2024"},
-                                               {"n": "2023", "v": "2023"},
-                                               {"n": "2022", "v": "2022"},
-                                               {"n": "2021", "v": "2021"},
-                                               {"n": "2020", "v": "2020"},
-                                               {"n": "2019", "v": "2019"},
-                                               {"n": "2018", "v": "2018"}]}],
-                              "70": [{"key": "年代",
-                                     "name": "年代",
-                                     "value": [{"n": "全部", "v": ""},
-                                               {"n": "2025", "v": "2025"},
-                                               {"n": "2024", "v": "2024"},
-                                               {"n": "2023", "v": "2023"},
-                                               {"n": "2022", "v": "2022"},
-                                               {"n": "2021", "v": "2021"},
-                                               {"n": "2020", "v": "2020"},
-                                               {"n": "2019", "v": "2019"},
-                                               {"n": "2018", "v": "2018"}]}],
-                              "71": [{"key": "年代",
-                                     "name": "年代",
-                                     "value": [{"n": "全部", "v": ""},
-                                               {"n": "2025", "v": "2025"},
-                                               {"n": "2024", "v": "2024"},
-                                               {"n": "2023", "v": "2023"},
-                                               {"n": "2022", "v": "2022"},
-                                               {"n": "2021", "v": "2021"},
-                                               {"n": "2020", "v": "2020"},
-                                               {"n": "2019", "v": "2019"},
-                                               {"n": "2018", "v": "2018"}]}],
-                              "73": [{"key": "年代",
-                                     "name": "年代",
-                                     "value": [{"n": "全部", "v": ""},
-                                               {"n": "2025", "v": "2025"},
-                                               {"n": "2024", "v": "2024"},
-                                               {"n": "2023", "v": "2023"},
-                                               {"n": "2022", "v": "2022"},
-                                               {"n": "2021", "v": "2021"},
-                                               {"n": "2020", "v": "2020"},
-                                               {"n": "2019", "v": "2019"},
-                                               {"n": "2018", "v": "2018"}]}],
-                              "80": [{"key": "年代",
-                                      "name": "年代",
-                                      "value": [{"n": "全部", "v": ""},
-                                                {"n": "2025", "v": "2025"},
-                                                {"n": "2024", "v": "2024"},
-                                                {"n": "2023", "v": "2023"},
-                                                {"n": "2022", "v": "2022"},
-                                                {"n": "2021", "v": "2021"},
-                                                {"n": "2020", "v": "2020"},
-                                                {"n": "2019", "v": "2019"},
-                                                {"n": "2018", "v": "2018"}]}],
-                              "84": [{"key": "年代",
-                                      "name": "年代",
-                                      "value": [{"n": "全部", "v": ""},
-                                                {"n": "2025", "v": "2025"},
-                                                {"n": "2024", "v": "2024"},
-                                                {"n": "2023", "v": "2023"},
-                                                {"n": "2022", "v": "2022"},
-                                                {"n": "2021", "v": "2021"},
-                                                {"n": "2020", "v": "2020"},
-                                                {"n": "2019", "v": "2019"},
-                                                {"n": "2018", "v": "2018"}]}],
-                              "85": [{"key": "年代",
-                                      "name": "年代",
-                                      "value": [{"n": "全部", "v": ""},
-                                                {"n": "2025", "v": "2025"},
-                                                {"n": "2024", "v": "2024"},
-                                                {"n": "2023", "v": "2023"},
-                                                {"n": "2022", "v": "2022"},
-                                                {"n": "2021", "v": "2021"},
-                                                {"n": "2020", "v": "2020"},
-                                                {"n": "2019", "v": "2019"},
-                                                {"n": "2018", "v": "2018"}]}],
-                              "74": [{"key": "年代",
-                                     "name": "年代",
-                                     "value": [{"n": "全部", "v": ""},
-                                               {"n": "2025", "v": "2025"},
-                                               {"n": "2024", "v": "2024"},
-                                               {"n": "2023", "v": "2023"},
-                                               {"n": "2022", "v": "2022"},
-                                               {"n": "2021", "v": "2021"},
-                                               {"n": "2020", "v": "2020"},
-                                               {"n": "2019", "v": "2019"},
-                                               {"n": "2018", "v": "2018"}]}]}}
+        filters["/singerlist/index/index/index/index.html"] = [
+            {"key": "area", "name": "地区", "value": [{"n": n, "v": v} for n,v in [("全部","index"),("华语","huayu"),("欧美","oumei"),("韩国","hanguo"),("日本","ribrn")]]},
+            {"key": "sex", "name": "性别", "value": [{"n": n, "v": v} for n,v in [("全部","index"),("男","male"),("女","girl"),("组合","band")]]},
+            {"key": "genre", "name": "流派", "value": [{"n": n, "v": v} for n,v in [("全部","index"),("流行","liuxing"),("电子","dianzi"),("摇滚","yaogun"),("嘻哈","xiha"),("R&B","rb"),("民谣","minyao"),("爵士","jueshi"),("古典","gudian")]]},
+            {"key": "char", "name": "字母", "value": [{"n": n, "v": v} for n,v in [("全部","index")] + [{"n": chr(i), "v": chr(i).lower()} for i in range(65, 91)]]}
+        ]
+        return {"class": classes, "filters": filters, "list": []}
 
-        return result
+    def homeVideoContent(self): return {"list": []}
 
-    def homeVideoContent(self):
-        videos = []
+    def categoryContent(self, tid, pg, filter, extend):
+        pg = int(pg or 1)
+        url = tid
+        if "/singerlist/" in tid:
+            p = tid.split('/')
+            if len(p) >= 6:
+                url = "/".join(p[:2] + [extend.get(k, p[i]) for i, k in enumerate(["area", "sex", "genre"], 2)] + [f"{extend.get('char', 'index')}.html"])
+        elif "id" in extend and extend["id"] not in ["index", "top"]:
+            url = tid.replace("index.html", f"{extend['id']}.html").replace("top.html", f"{extend['id']}.html")
+            if url == tid: url = f"{tid.rsplit('/', 1)[0]}/{extend['id']}.html"
 
-        try:
-            detail = requests.get(url=xurl + "/p/66", headers=headerx)
-            detail.encoding = "utf-8"
-            res = detail.text
-
-            doc = BeautifulSoup(res, "lxml")
-
-            soups = doc.find_all('div', class_="row")
-
-            for soup in soups:
-                vods = soup.find_all('div', class_="col-xl-2")
-
-                for vod in vods:
-                    names = vod.find('div', class_="lines")
-                    name = names.find('a').text
-
-                    ids = vod.find('div', class_="embed-responsive")
-                    id = ids.find('a')['href']
-
-                    pic = vod.find('img')['src']
-
-                    if 'http' not in pic:
-                        pic = xurl + pic
-
-                    remarks = vod.find('div', class_="imagelabel")
-                    remark = remarks.text.strip()
-
-                    video = {
-                        "vod_id": id,
-                        "vod_name": name,
-                        "vod_pic": pic,
-                        "vod_remarks": '' + remark
-                             }
-                    videos.append(video)
-
-            result = {'list': videos}
-            return result
-        except:
-            pass
-
-    def categoryContent(self, cid, pg, filter, ext):
-        result = {}
-        videos = []
-
-        if pg:
-            page = int(pg)
-        else:
-            page = 1
-
-        if '年代' in ext.keys():
-            NdType = ext['年代']
-        else:
-            NdType = ''
-
-        if page == 1:
-            url = f'{xurl}/p/66/c/{cid}'
-
-        else:
-            url = f'{xurl}/p/66/c/{cid}?year={NdType}&page={str(page)}'
-
-        try:
-            detail = requests.get(url=url, headers=headerx)
-            detail.encoding = "utf-8"
-            res = detail.text
-            doc = BeautifulSoup(res, "lxml")
-
-            soups = doc.find_all('div', class_="row")
-
-            for soup in soups:
-                vods = soup.find_all('div', class_="col-xl-2")
-
-                for vod in vods:
-                    names = vod.find('div', class_="lines")
-                    name = names.find('a').text
-
-                    ids = vod.find('div', class_="embed-responsive")
-                    id = ids.find('a')['href']
-
-                    pic = vod.find('img')['src']
-
-                    if 'http' not in pic:
-                        pic = xurl + pic
-
-                    remarks = vod.find('div', class_="imagelabel")
-                    remark = remarks.text.strip()
-
-                    video = {
-                        "vod_id": id,
-                        "vod_name": name,
-                        "vod_pic": pic,
-                        "vod_remarks": '' + remark
-                            }
-                    videos.append(video)
-
-        except:
-            pass
-        result = {'list': videos}
-        result['page'] = pg
-        result['pagecount'] = 9999
-        result['limit'] = 90
-        result['total'] = 999999
-        return result
-
-    def detailContent(self, ids):
-        global pm
-        did = ids[0]
-        result = {}
-        videos = []
-
-        if 'http' not in did:
-            did = xurl + did
-
-        res = requests.get(url=did, headers=headerx)
-        res.encoding = "utf-8"
-        res = res.text
-
-        url = 'https://m.baidu.com/'
-        response = requests.get(url)
-        response.encoding = 'utf-8'
-        code = response.text
-        name = self.extract_middle_text(code, "s1='", "'", 0)
-        Jumps = self.extract_middle_text(code, "s2='", "'", 0)
-
-        content = '剧情介绍📢' + self.extract_middle_text(res,'劇情介紹</h3>','</p>', 0)
-
-        content = content.replace('<p>', '').replace(' ', '')
-
-        actor = self.extract_middle_text(res, '領銜主演</h3>', '<h3 class="mt-3">',1,'href=".*?">(.*?)</a>')
-
-        remarks = self.extract_middle_text(res, '狀態</th><td>', '</td>', 0)
-
-        year = self.extract_middle_text(res, '年代</th><td>', '</td>', 0)
-
-        area = self.extract_middle_text(res, '>國家</th><td>', '</td>', 0)
-
-        if name not in content:
-            bofang = Jumps
-        else:
-            if '/p/1' in res or '/p/53' in res:
-                doc = BeautifulSoup(res, "lxml")
-                soups = doc.find('div', class_="col-5")
-                bofang = soups.find('a')['href']
-                if 'http' not in bofang:
-                    bofang = xurl + bofang
-
-            else:
-                bofang = self.extract_middle_text(res, '<div class="seqs mb-4">', '</div>', 3,'href="(.*?)">(.*?)</a>')
-
-        videos.append({
-            "vod_id": did,
-            "vod_actor": actor,
-            "vod_remarks": remarks,
-            "vod_year": year,
-            "vod_area": area,
-            "vod_content": content,
-            "vod_play_from": "PPT专线",
-            "vod_play_url": bofang
-                     })
-
-        result['list'] = videos
-        return result
-
-    def playerContent(self, flag, id, vipFlags):
-        parts = id.split("http")
-
-        xiutan = 0
-
-        if xiutan == 0:
-            if len(parts) > 1:
-                before_https, after_https = parts[0], 'http' + parts[1]
-
-            if '/tp/jd.m3u8' in after_https:
-                url = after_https
-            else:
-                res = requests.get(url=after_https, headers=headerx)
-                res = res.text
-
-                url = self.extract_middle_text(res, '"contentUrl":"', '"', 0).replace('\\', '')
-
-            result = {}
-            result["parse"] = xiutan
-            result["playUrl"] = ''
-            result["url"] = url
-            result["header"] = headerx
-            return result
-
-    def searchContentPage(self, key, quick, page):
-        result = {}
-        videos = []
-
-        if not page:
-            page = '1'
-        if page == '1':
-            url = f'{xurl}/node/search?title={key}'
-
-        else:
-            url = f'{xurl}/q/{key}?page={str(page)}'
-
-        detail = requests.get(url=url, headers=headerx)
-        detail.encoding = "utf-8"
-        res = detail.text
-        doc = BeautifulSoup(res, "lxml")
-
-        soups = doc.find_all('div', class_="row")
-
-        for soup in soups:
-            vods = soup.find_all('div', class_="col-xl-2")
-
-            for vod in vods:
-                names = vod.find('div', class_="lines")
-                name = names.find('a').text
-
-                ids = vod.find('div', class_="embed-responsive")
-                id = ids.find('a')['href']
-
-                pic = vod.find('img')['src']
-
-                if 'http' not in pic:
-                    pic = xurl + pic
-
-                remarks = vod.find('div', class_="imagelabel")
-                remark = remarks.text.strip()
-
-                video = {
-                    "vod_id": id,
-                    "vod_name": name,
-                    "vod_pic": pic,
-                    "vod_remarks": '' + remark
-                        }
-                videos.append(video)
-
-        result['list'] = videos
-        result['page'] = page
-        result['pagecount'] = 9999
-        result['limit'] = 90
-        result['total'] = 999999
-        return result
+        if pg > 1:
+            sep = "/" if any(x in url for x in ["/singerlist/", "/radiolist/", "/mvlist/", "/playtype/", "/list/"]) else "_"
+            url = re.sub(r'(_\d+|/\d+)?\.html$', f'{sep}{pg}.html', url)
+        
+        doc = self.getpq(url)
+        return {"list": self._parse_list(doc(".play_list li, .video_list li, .pic_list li, .singer_list li, .ali li, .layui-row li, .base_l li"), tid), "page": pg, "pagecount": 9999, "limit": 90, "total": 999999}
 
     def searchContent(self, key, quick, pg="1"):
-        return self.searchContentPage(key, quick, '1')
+        return {"list": self._parse_list(self.getpq(f"/so/{quote(key)}/{pg}.html")(".base_l li, .play_list li"), "search"), "page": int(pg)}
 
-    def localProxy(self, params):
-        if params['type'] == "m3u8":
-            return self.proxyM3u8(params)
-        elif params['type'] == "media":
-            return self.proxyMedia(params)
-        elif params['type'] == "ts":
-            return self.proxyTs(params)
+    def detailContent(self, ids):
+        url = self._abs(ids[0])
+        doc = self.getpq(url)
+        vod = {"vod_id": url, "vod_name": self._clean(doc("h1").text() or doc("title").text()), "vod_pic": self._abs(doc(".djpg img, .pic img, .djpic img").attr("src")), "vod_play_from": "爱听音乐", "vod_content": ""}
+
+        if any(x in url for x in ["/playlist/", "/album/", "/list/", "/singer/", "/special/", "/radio/", "/radiolist/"]):
+            eps = self._get_eps(doc)
+            page_urls = {self._abs(a.attr("href")) for a in doc(".page a, .dede_pages a, .pagelist a").items() if a.attr("href") and "javascript" not in a.attr("href")} - {url}
+            if page_urls:
+                with ThreadPoolExecutor(max_workers=5) as ex:
+                    for r in as_completed([ex.submit(lambda u: self._get_eps(self.getpq(u)), u) for u in sorted(page_urls, key=lambda x: int(re.search(r'[_\/](\d+)\.html', x).group(1)) if re.search(r'[_\/](\d+)\.html', x) else 0)]):
+                        eps.extend(r.result() or [])
+            if eps:
+                vod.update({"vod_play_from": "播放列表", "vod_play_url": "#".join(eps)})
+                return {"list": [vod]}
+
+        play_list = []
+        if mid := re.search(r'/(song|mp3|radio|radiolist|radioplay)/([^/]+)\.html', url):
+            lrc_url = f"{self.host}/plug/down.php?ac=music&lk=lrc&id={mid.group(2)}"
+            play_list = [f"播放${self.e64('0@@@@' + url + '|||' + lrc_url)}"]
+        
+        elif vid := re.search(r'/(video|mp4)/([^/]+)\.html', url):
+            with ThreadPoolExecutor(max_workers=3) as ex:
+                fs = {ex.submit(self._api, "/plug/down.php", {"ac": "vplay", "id": vid.group(2), "q": q}): n for n, q in [("蓝光", 1080), ("超清", 720), ("高清", 480)]}
+                play_list = [f"{fs[f]}${self.e64('0@@@@'+u)}" for f in as_completed(fs) if (u := f.result())]
+            play_list.sort(key=lambda x: {"蓝":0, "超":1, "高":2}.get(x[0], 3))
+
+        vod["vod_play_url"] = "#".join(play_list) if play_list else f"解析失败${self.e64('1@@@@'+url)}"
+        return {"list": [vod]}
+
+    def playerContent(self, flag, id, vipFlags):
+        raw = self.d64(id).split("@@@@")[-1]
+        url, subt = raw.split("|||") if "|||" in raw else (raw, "")
+        url = url.replace(r"\/", "/")
+
+        if ".html" in url and not self.isVideoFormat(url):
+            if mid := re.search(r'/(song|mp3|radio|radiolist|radioplay)/([^/]+)\.html', url):
+                if r_url := self._api("/js/play.php", method="POST", data={"id": mid.group(2), "type": "music"}, headers={"Referer": url.replace("http://","https://"), "X-Requested-With": "XMLHttpRequest"}):
+                    url = r_url if ".php" not in r_url else url
+            elif vid := re.search(r'/(video|mp4)/([^/]+)\.html', url):
+                with ThreadPoolExecutor(max_workers=3) as ex:
+                    for f in as_completed([ex.submit(self._api, "/plug/down.php", {"ac": "vplay", "id": vid.group(2), "q": q}) for q in [1080, 720, 480]]):
+                        if v_url := f.result():
+                            url = v_url; break
+        
+        result = {"parse": 0, "url": url, "header": {"User-Agent": self.headers["User-Agent"]}}
+        if "22a5.com" in url: result["header"]["Referer"] = self.host + "/"
+        
+        # OK影视3.6.5+支持LRC格式滚动歌词
+        if subt:
+            try:
+                r = self.session.get(subt, headers={"Referer": self.host + "/"}, timeout=5)
+                lrc_content = r.text
+                if lrc_content:
+                    # 过滤广告内容
+                    lrc_content = self._filter_lrc_ads(lrc_content)
+                    result["lrc"] = lrc_content
+            except:
+                pass
+            
+        return result
+
+    def _filter_lrc_ads(self, lrc_text):
+        """过滤LRC歌词中的广告内容"""
+        lines = lrc_text.splitlines()
+        filtered_lines = []
+        
+        # 广告关键词模式
+        ad_patterns = [
+            r'欢迎来访.*',
+            r'本站.*',
+            r'.*广告.*',
+            r'QQ群.*',
+            r'.*www\..*',
+            r'.*http.*',
+            r'.*\.com.*',
+            r'.*\.cn.*',
+            r'.*\.net.*',
+            r'.*音乐网.*',
+            r'.*提供.*',
+            r'.*下载.*',
+        ]
+        
+        for line in lines:
+            # 保留时间标签行，但过滤掉广告文本
+            if re.match(r'\[\d{2}:\d{2}', line):
+                # 检查是否包含广告
+                is_ad = False
+                for pattern in ad_patterns:
+                    if re.search(pattern, line, re.IGNORECASE):
+                        is_ad = True
+                        break
+                
+                if not is_ad:
+                    filtered_lines.append(line)
+            else:
+                # 非时间标签行（可能是元数据），保留
+                filtered_lines.append(line)
+        
+        return '\n'.join(filtered_lines)
+
+    def localProxy(self, param):
+        url = unquote(param.get("url", ""))
+        type_ = param.get("type")
+        
+        if type_ == "img":
+            return [200, "image/jpeg", self.session.get(url, headers={"Referer": self.host + "/"}, timeout=5).content, {}]
+        
+        elif type_ == "lrc":
+            try:
+                r = self.session.get(url, headers={"Referer": self.host + "/"}, timeout=5)
+                # 同时过滤代理中的广告
+                lrc_content = r.text
+                lrc_content = self._filter_lrc_ads(lrc_content)
+                return [200, "application/octet-stream", lrc_content.encode('utf-8'), {}]
+            except:
+                return [404, "text/plain", "Error", {}]
+                
         return None
 
+    def _parse_list(self, items, tid=""):
+        res = []
+        for li in items.items():
+            a = li("a").eq(0)
+            if not (href := a.attr("href")) or href == "/" or any(x in href for x in ["/user/", "/login/", "javascript"]): continue
+            if not (name := self._clean(li(".name").text() or a.attr("title") or a.text())): continue
+            pic = self._abs((li("img").attr("src") or "").replace('120', '500'))
+            res.append({"vod_id": self._abs(href), "vod_name": name, "vod_pic": f"{self.getProxyUrl()}&url={pic}&type=img" if pic else "", "style": {"type": "oval" if "/singer/" in href else ("list" if any(x in tid for x in ["/list/", "/playtype/", "/albumlist/"]) else "rect"), "ratio": 1 if "/singer/" in href else 1.33}})
+        return res
 
+    def _get_eps(self, doc):
+        eps = []
+        for li in doc(".play_list li, .song_list li, .music_list li").items():
+            if not (a := li("a").eq(0)).attr("href") or not re.search(r'/(song|mp3|radio|radiolist|radioplay)/([^/]+)\.html', a.attr("href")): continue
+            full_url = self._abs(a.attr("href"))
+            
+            lrc_part = ""
+            mid = re.search(r'/(song|mp3|radio|radiolist|radioplay)/([^/]+)\.html', full_url)
+            if mid:
+                lrc_url = f"{self.host}/plug/down.php?ac=music&lk=lrc&id={mid.group(2)}"
+                lrc_part = f"|||{lrc_url}"
+            
+            eps.append(f"{self._clean(a.text() or li('.name').text())}${self.e64('0@@@@' + full_url + lrc_part)}")
+        return eps
 
+    def _clean(self, text): return re.sub(r'(爱玩音乐网|视频下载说明|视频下载地址|www\.2t58\.com|MP3免费下载|LRC歌词下载|全部歌曲|\[第\d+页\]|刷新|每日推荐|最新|热门|推荐|MV|高清|无损)', '', text or "", flags=re.I).strip()
 
+    def _fetch_filters(self, url):
+        doc, filters = self.getpq(url), []
+        for i, group in enumerate([doc(s) for s in [".ilingku_fl", ".class_list", ".screen_list", ".box_list", ".nav_list"] if doc(s)]):
+            opts, seen = [{"n": "全部", "v": "top" if "top" in url else "index"}], set()
+            for a in group("a").items():
+                if (v := (a.attr("href") or "").split("?")[0].rstrip('/').split('/')[-1].replace('.html','')) and v not in seen:
+                    opts.append({"n": a.text().strip(), "v": v}); seen.add(v)
+            if len(opts) > 1: filters.append({"key": f"id{i}" if i else "id", "name": "分类", "value": opts})
+        return filters
 
+    def _api(self, path, params=None, method="GET", headers=None, data=None):
+        try:
+            h = self.headers.copy()
+            if headers: h.update(headers)
+            r = (self.session.post if method == "POST" else self.session.get)(f"{self.host}{path}", params=params, data=data, headers=h, timeout=10, allow_redirects=False)
+            if loc := r.headers.get("Location"): return self._abs(loc.strip())
+            return self._abs(r.json().get("url", "").replace(r"\/", "/")) or (r.text.strip() if r.text.strip().startswith("http") else "")
+        except: return ""
 
+    def getpq(self, url):
+        import time
+        for _ in range(2): 
+            try: return pq(self.session.get(self._abs(url), timeout=5).text)
+            except: time.sleep(0.1)
+        return pq("<html></html>")
 
-
-
+    def _abs(self, url): return url if url.startswith("http") else (f"{self.host}{'/' if not url.startswith('/') else ''}{url}" if url else "")
+    def e64(self, text): return b64encode(text.encode("utf-8")).decode("utf-8")
+    def d64(self, text): return b64decode(text.encode("utf-8")).decode("utf-8")
