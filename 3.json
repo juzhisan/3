@@ -783,13 +783,7 @@
             "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
             "ext": "./凤凰FM.js"
         },
-        {
-            "key": "蜻蜓FM",
-            "name": "📻蜻蜓┃FM",
-            "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "./蜻蜓FM.js"
-        },
+       {"key":"T4-qingting","name":"蜻蜓FM┃","type":4,"api":"https://catbox.n13.club/t9/qingting.php"},
         {
             "key": "py_官方采集789",
             "name": "🍎 官方采集789 (T4)",
