@@ -1334,7 +1334,8 @@
       "api": "csp_AppYs",
       "searchable": 1,
       "quickSearch": 1,
-      "ext": "http://m51.gotto.top/api.php/v1.vod"
+      "ext": "http://m51.gotto.top/api.php/v1.vod",
+            "jar": "./spider.jar"
     },
     {
             "key": "冥王",
@@ -1350,7 +1351,8 @@
                 "线路标题": ">&&<",
                 "分类url": "http://dyxz.tv/list/{cateId}_{catePg}.html",
                 "分类": "电影$1#电视剧$2#动漫$3#综艺$4"
-            }
+            },
+            "jar": "./spider.jar"
         },
     {
             "key": "聚搜",
@@ -1381,7 +1383,8 @@
             "api": "./Appapi.js",
             "ext": {
                 "host": "https://app2512.ystva.com"
-            }
+            },
+            "jar": "./spider.jar"
         },
         {
             "key": "csp_Xxzn",
