@@ -47,24 +47,6 @@
             }
         },
         {
-            "key": "玩偶",
-            "name": "玩偶｜4K",
-            "type": 3,
-            "api": "csp_Wogg",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": [
-                    "https://www.wogg.one",
-                    "https://wogg.333232.xyz",
-                    "https://woggpan.888484.xyz"
-                ]
-            },
-            "timeout": 60
-        },
-        {
             "key": "快映",
             "name": "快映｜4K",
             "type": 3,
@@ -77,87 +59,6 @@
                 "site": [
                     "http://xsayang.fun:12512",
                     "http://154.201.83.50:12512"
-                ]
-            },
-            "timeout": 60
-        },
-        {
-            "key": "木偶",
-            "name": "木偶｜4K",
-            "type": 3,
-            "api": "csp_PanWebShare",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": [
-                    "https://123.666291.xyz",
-                    "https://666.666291.xyz",
-                    "https://www.muou.site",
-                    "https://www.muou.asia"
-                ]
-            },
-            "timeout": 60
-        },
-        {
-            "key": "蜡笔",
-            "name": "蜡笔｜4K",
-            "type": 3,
-            "api": "csp_PanWebShare",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": [
-                    "http://xiaocge.fun",
-                    "http://feimo.fun",
-                    "https://feimao666.fun",
-                    "http://feimao888.fun",
-                    "http://www.labi88.sbs",
-                    "http://fmao.site",
-                    "http://fmao.shop",
-                    "http://xiaocgege.shop"
-                ]
-            },
-            "timeout": 60
-        },
-        {
-            "key": "至臻",
-            "name": "至臻｜4K",
-            "type": 3,
-            "api": "csp_PanWebShare",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": [
-                    "https://mihdr.top",
-                    "https://www.miqk.cc",
-                    "https://xiaomiai.site",
-                    "https://xiaomi666.fun",
-                    "https://www.mihdr.top",
-                    "https://www.zhizhenpan.fun"
-                ]
-            },
-            "timeout": 60
-        },
-        {
-            "key": "多多",
-            "name": "多多｜4K",
-            "type": 3,
-            "api": "csp_PanWebShare",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": [
-                    "https://tv.yydsys.top",
-                    "https://tv.yydsys.cc",
-                    "https://tv.214521.xyz"
                 ]
             },
             "timeout": 60
@@ -177,42 +78,6 @@
                     "https://woog.nxog.fun",
                     "https://woog.nxog.eu.org",
                     "https://woog.430520.xyz"
-                ]
-            },
-            "timeout": 60
-        },
-        {
-            "key": "二小",
-            "name": "二小｜4K",
-            "type": 3,
-            "api": "csp_PanWebShare",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": [
-                    "https://xhww.net",
-                    "https://erxiaofn.site",
-                    "https://erxiaofn.click",
-                    "https://www.xhww.net"
-                ]
-            },
-            "timeout": 60
-        },
-        {
-            "key": "虎斑",
-            "name": "虎斑｜4K",
-            "type": 3,
-            "api": "csp_PanWebShare",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": [
-                    "http://xhban.xyz:20720",
-                    "http://154.222.27.33:20720"
                 ]
             },
             "timeout": 60
@@ -266,29 +131,6 @@
             "timeout": 60
         },
         {
-            "key": "雷鲸",
-            "name": "雷鲸｜4K",
-            "type": 3,
-            "api": "csp_PanWebShareCloudLJ",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "style": {
-                "type": "list",
-                "ratio": 1.433
-            },
-            "ext": {
-                "site": [
-                    "https://www.leijing.xyz",
-                    "https://www.leijing1.com",
-                    "https://leijing.xyz",
-                    "https://leijing1.com"
-                ]
-            },
-            "timeout": 60
-        },
-        {
             "key": "海绵",
             "name": "海绵｜4K",
             "type": 3,
@@ -307,27 +149,6 @@
                     "https://www.hmxz.org",
                     "https://www.haimianxz.com"
                 ]
-            },
-            "timeout": 60
-        },
-        {
-            "key": "夸父",
-            "name": "夸父｜4K",
-            "type": 3,
-            "api": "csp_PanWebShareCloudKF",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "style": {
-                "type": "list",
-                "ratio": 1.433
-            },
-            "ext": {
-                "site": [
-                    "https://www.kfjwzz.com"
-                ],
-                "cookie": "bbs_sid=d2tkscarsrv66b83hoh1l0c24v; bbs_token=G7OID35A6Z7i0Mv_2B8_2FJwJ8I4gsjCthGBwGVbxPo_2F4pAPghAF"
             },
             "timeout": 60
         },
@@ -378,16 +199,6 @@
             "name": "即刻｜4K",
             "type": 3,
             "api": "csp_Jike",
-            "style": {
-                "type": "list"
-            },
-            "timeout": 60
-        },
-        {
-            "key": "双星",
-            "name": "双星｜4K",
-            "type": 3,
-            "api": "csp_ShuangXing",
             "style": {
                 "type": "list"
             },
@@ -493,16 +304,6 @@
             "filterable": 1
         },
         {
-            "key": "版本信息",
-            "name": "版本｜信息",
-            "type": 3,
-            "api": "csp_Market",
-            "searchable": 0,
-            "changeable": 0,
-            "indexs": 0,
-            "ext": "https://pizazz.s3.bitiful.net/single.json"
-        },
-        {
             "key": "push_agent",
             "name": "手机｜推送",
             "type": 3,
@@ -584,24 +385,6 @@
             "jar": "./moyu.php"
         },
         {
-            "key": "金牌Nox",
-            "name": "金牌｜APP",
-            "type": 3,
-            "api": "csp_AppNox",
-            "ext": "AZxQT8xfUMqFweKa1V4hqUkv/e/3ERhqqXMAhGAJj67FGQPn650EXO/awjdB0issnrNYdvWwFjG80BpTMzwZj+dahbCZ/nMD+qGLBWJPtthB/R2dhoV3qZI9IY3IpgKqngVtr5WylTOS6ehNNfQB5sfCXD+h61biz7mVZjOQb/7+QDN+yNdcEdmMx/qF+gs1Q2Fh+MpJ7pKkgF2IHkzjg0Drfz66sQqtQlRUEHTd2p4HAWJWA9V9Ls1IA5+yQSYswf8P0dhe72kh4HrOtFk33gksqipcmjcBTHnr+3dT9tgSiX9CPUIVs79NEckA7crAQ3Sg3WI7LfzOAAbm2a+S4k+xFzXRYpFNPuR/qi8Yc98vspokzONekkKjSMESB7Y6O/VMf1wjEcyMqI5d2y2v6Yo=",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "魔方",
-            "name": "魔方｜APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": "bB1iyOjtXWh234iOsqOpQ+DjgYRZW8TG8cxUqpxxK69Bp+glCgEE/kF5sOjSfZVtInmtaWIxfpMHTQ7tRS1J46/t6qvA/G5Vo6WHm5blH6Rh7Ev5Z9sCJDAQfJhaTFVr",
-            "jar": "./moyu.php"
-        },
-        {
             "key": "驿站",
             "name": "驿站丨APP",
             "type": 3,
@@ -644,6 +427,22 @@
             "jar": "./moyu.php"
         },
         {
+            "key": "金牌Nox",
+            "name": "金牌｜APP",
+            "type": 3,
+            "api": "csp_AppNox",
+            "ext": "AZxQT8xfUMqFweKa1V4hqUkv/e/3ERhqqXMAhGAJj67FGQPn650EXO/awjdB0issnrNYdvWwFjG80BpTMzwZj+dahbCZ/nMD+qGLBWJPtthB/R2dhoV3qZI9IY3IpgKqngVtr5WylTOS6ehNNfQB5sfCXD+h61biz7mVZjOQb/7+QDN+yNdcEdmMx/qF+gs1Q2Fh+MpJ7pKkgF2IHkzjg0Drfz66sQqtQlRUEHTd2p4HAWJWA9V9Ls1IA5+yQSYswf8P0dhe72kh4HrOtFk33gksqipcmjcBTHnr+3dT9tgSiX9CPUIVs79NEckA7crAQ3Sg3WI7LfzOAAbm2a+S4k+xFzXRYpFNPuR/qi8Yc98vspokzONekkKjSMESB7Y6O/VMf1wjEcyMqI5d2y2v6Yo=",
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "火猫",
+            "name": "火猫｜APP",
+            "type": 3,
+            "api": "csp_AppNox",
+            "ext": "Abpz3wR4BwEqZfUxku208xb3Ftin5UgR4i9HH/iWmtETT2EAcR38+Ksq+CASAJNhRAxrLnzAf9f94W7r4nk40uat0YzpZg7M2R70AmFDRBrXZwiMpsmGepF2V+w8/GY0F6sUFA3ZmikYynt6h1Fj/l+cijMsv5hBSfs7uRG6nfIGmLBT3eX09Vdlm4+6b973PshXKYMMeIhsrlEJ0ctFf/+tri0ArBe+RzH+B5S9DGFv76Qo/xYHXXaNKxDYJqaMPUtr/R7rrHEXXLmh8th7BMIR0v1zNix7ahfYiFZZdOwALjyzYfEsJ869JVeo8dzBzwD3KgM1x37olSbDfeEilBW2wH6ir992ppMC2mR3aXEWsFWdRpcK62sBqTIvw1T6JNgiVXq3nvdG0JvNeTXAKaM=",
+            "jar": "./moyu.php"
+        },
+        {
             "key": "麒麟",
             "name": "麒麟｜APP",
             "type": 3,
@@ -653,12 +452,172 @@
             "jar": "./moyu.php"
         },
         {
-            "key": "咕噜",
-            "name": "咕噜｜APP",
+            "key": "Wogg",
+            "name": "玩偶｜4K",
             "type": 3,
-            "changeable": 0,
-            "api": "csp_AppFox",
-            "ext": "AVxeJLni92C+e8/LzhaR6T2R8Pl82gBs9/Kfg/DeJ5KXV62LI4eZj+4pHIUPStS31pkh0yWUJsQ4pArrU/NwAKpKvqITDSwnRdbPmi4ktDCKLVCH1cQsIBA3Q5RZLxeQcHmG7Covdxsd++FzpaZQqThhpxwVUMFFn8HKtRvF4qbJ",
+            "api": "csp_Wogg",
+            "searchable": 1,
+            "changeable": 1,
+            "filterable": 1,
+            "ext": {
+                "site": [
+                    "https://www.wogg.one",
+                    "https://wogg.333232.xyz",
+                    "https://wogg.xxooo.cf",
+                    "https://woggpan.888484.xyz"
+                ],
+                "filter": "https://open.wya6.com/d/down/2026/json/wogg.json"
+            },
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "FishMuou",
+            "name": "木偶｜4K",
+            "type": 3,
+            "api": "csp_FishCloud",
+            "searchable": 1,
+            "ext": {
+                "site": [
+                    "https://123.666291.xyz",
+                    "https://666.666291.xyz",
+                    "https://www.muou.site",
+                    "https://www.muou.asia"
+                ]
+            },
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "FishLabi",
+            "name": "蜡笔｜4K",
+            "type": 3,
+            "api": "csp_FishCloud",
+            "searchable": 1,
+            "ext": {
+                "site": [
+                    "https://feimao666.fun",
+                    "http://xiaocge.fun",
+                    "http://feimo.fun",
+                    "https://feimao666.fun",
+                    "http://fmao.site",
+                    "http://fmao.shop",
+                    "http://xiaocgege.shop"
+                ]
+            },
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "FishZhizhen",
+            "name": "至臻｜4K",
+            "type": 3,
+            "api": "csp_FishCloud",
+            "searchable": 1,
+            "ext": {
+                "site": [
+                    "https://mihdr.top",
+                    "https://www.mihdr.top",
+                    "https://www.miqk.cc",
+                    "https://zhizhenpan.com/",
+                    "https://zhizhen8.click",
+                    "https://www.zhizhen8.click"
+                ]
+            },
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "FishDuoduo",
+            "name": "多多｜4K",
+            "type": 3,
+            "api": "csp_FishCloud",
+            "searchable": 1,
+            "ext": {
+                "site": [
+                    "https://tv.yydsys.top",
+                    "https://tv.yydsys.cc",
+                    "https://tv.214521.xyz"
+                ]
+            },
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "FishErxiao",
+            "name": "二小｜4K",
+            "type": 3,
+            "api": "csp_FishCloud",
+            "searchable": 1,
+            "ext": {
+                "site": [
+                    "https://www.erixaopan.fun",
+                    "https://www.wexwp.cc",
+                    "https://wexwp.cc",
+                    "https://2xiaopan.top",
+                    "https://www.2xiaopan.top"
+                ]
+            },
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "FishHuban",
+            "name": "虎斑｜4K",
+            "type": 3,
+            "api": "csp_FishCloud",
+            "searchable": 1,
+            "ext": {
+                "site": [
+                    "http://103.45.162.207:20720"
+                ]
+            },
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "LeiJing",
+            "name": "雷鲸｜4K",
+            "type": 3,
+            "api": "csp_LeiJing",
+            "searchable": 1,
+            "changeable": 1,
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "夸父",
+            "name": "夸父｜4K",
+            "type": 3,
+            "api": "csp_FishKF",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "style": {
+                "type": "list",
+                "ratio": 1.433
+            },
+            "ext": {
+                "site": [
+                    "https://www.kfjwzz.com"
+                ],
+                "cookie": "bbs_sid=nqj3m4c3jo14hj61o3mtulmbqm; bbs_token=0DJ_2FBrXm3SPQ2qtwzIJd70iM_2BK02F_2BYOzTNOUy4TquXt5l4J"
+            },
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "ShuangXing",
+            "name": "双星｜4K",
+            "type": 3,
+            "api": "csp_ShuangXing",
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1,
+            "style": {
+                "type": "list",
+                "ratio": 1.433
+            },
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "TGSou",
+            "name": "糖果｜鱼鱼",
+            "type": 3,
+            "api": "csp_TGSou",
+            "searchable": 1,
             "jar": "./moyu.php"
         },
         {
@@ -925,14 +884,6 @@
             "jar": "./moyu.php"
         },
         {
-            "key": "TGSou",
-            "name": "糖果｜搜索",
-            "type": 3,
-            "api": "csp_TGSou",
-            "searchable": 1,
-            "jar": "./moyu.php"
-        },
-        {
             "key": "ChuXin",
             "name": "初心｜音乐",
             "type": 3,
@@ -1113,14 +1064,52 @@
         },
        {"key":"T4-qingting","name":"蜻蜓FM┃","type":4,"api":"https://catbox.n13.club/t9/qingting.php"},
        {
-            "key": "六月听书",
-            "name": "六月｜听书",
+            "key": "Fishdrive",
+            "name": "摸鱼｜媒体库",
             "type": 3,
-            "api": "csp_TingBook",
+            "api": "csp_FishDrive",
+            "indexs": 0,
+            "searchable": 1,
+            "filterable": 1,
+            "ext": "https://tc-new.z.wiki/autoupload/iYHTWVx6T8RrCmqdGD6MOdiO_OyvX7mIgxFBfDMDErs/2026/fishdrive.json",
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "Wallpaper",
+            "name": "摸鱼｜壁纸库",
+            "type": 3,
+            "api": "csp_Wallpaper",
+            "searchable": 0,
+            "indexs": 0,
+            "quickSearch": 0,
+            "filterable": 0,
+            "style": {
+                "type": "rect",
+                "ratio": 0.56
+            },
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "Market",
+            "name": "网盘｜市场",
+            "type": 3,
+            "api": "csp_Market",
+            "searchable": 0,
+            "indexs": 0,
             "style": {
                 "type": "list"
             },
-            "jar": ""
+            "ext": "KeJpmGBHNDNtao15t//le78AVNnA15NohxNlQzOy74KP4rP9PzNe6/JMxl2ealSMH+DMy3pMWGdoIgfZhbU6Gnwr6RCt2yx5qzhbchh4Dkea8uxJiFKZrXXX+78cGsE5xVesK28LUCDPGza58+ymXCFyviXGbf7VroGuGiCSI3O9U0RJIcWVbQWDQ2lWduKWYyFrlmEPQu3ePYFHUX8EGXDXMr15WH88JVlN7vnLqUhJv4qheq3TMcdceNQZ4e96eiWjAtdlSkOId644S2gQbHPsE1m68RxAx95ZTlMf0sGMFzsDp6MA9eQrbRP3sPWfW4I2nNxjTga+BbnLe5ES7TrsDfzJ7wCqjDAzW2LoHxxvnlJ7qrc+pWpKJARiszk+7dVLhNqhfjWY/i/GftEZiA71wbT4wul4QoPCmVrIYyaFWFxUaVHUVGrqEmw++js/87Xb8sawjnFXROsI6qK0+wRmiiGJ37nw0Dsyuxn7jUMYOpzEQFTlxq8Y3JcBGK8lGIcTrx0OTGwFH8Rhdsur4gdF4fxHM9BvKI5LFAO5wNSpAY429fskzXx97IsdI7HIeSQ+YY5Yir2ZnVeDDBK8qA==",
+            "jar": "./moyu.php"
+        },
+       {
+            "key": "戏曲多多",
+            "name": "戏曲｜多多",
+            "type": 3,
+            "api": "csp_AppLY",
+            "style": {
+                "type": "list"
+            }
         },
        {
             "key": "急救教学",
@@ -1150,20 +1139,6 @@
             "jar": ""
         },
         {
-            "key": "Wallpaper",
-            "name": "摸鱼｜壁纸",
-            "type": 3,
-            "api": "csp_Wallpaper",
-            "searchable": 0,
-            "quickSearch": 0,
-            "filterable": 0,
-            "style": {
-                "type": "rect",
-                "ratio": 0.56
-            },
-            "jar": "./moyu.php"
-        },
-         {
             "key": "配置中心",
             "name": "配置｜潇洒",
             "type": 3,
