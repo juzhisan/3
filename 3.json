@@ -452,6 +452,23 @@
             "jar": "./moyu.php"
         },
         {
+            "key": "Libvio",
+            "name": "立播｜4K",
+            "type": 3,
+            "api": "csp_Libvio",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": [
+                    "https://www.libvio.in",
+                    "https://www.libvio.la",
+                    "https://www.libvio.site",
+                    "https://www.libvio.mov"
+                ]
+            },
+            "jar": "./moyu.php"
+        },
+        {
             "key": "Wogg",
             "name": "玩偶｜4K",
             "type": 3,
