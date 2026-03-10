@@ -64,7 +64,8 @@
             "type": 3,
             "api": "csp_Hxq",
             "ext": "https://fishapi.wya6.com/fish/fishhxq.php"
-        },{
+        },
+        {
             "key": "玩偶",
             "name": "玩偶｜4K",
             "type": 3,
@@ -1241,13 +1242,6 @@
             "type": 3,
             "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
             "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
-        },
-        {
-            "key": "腾腾视频",
-            "name": "腾腾｜视频",
-            "type": 3,
-            "api": "https://pan.vma.cc/pan/down.php/ec67b9045d393737f073d2c9365533f0.js",
-            "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
         },
         {
             "key": "果果视频",
