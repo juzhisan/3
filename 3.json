@@ -15,6 +15,7 @@
       "filterable": 1,
       "switchable": 1
     },
+    {"key":"直播转点播","name":"🐼️电视┃直播","type":3,"searchable":0,"api":"./live2vod.js","ext":"./ITV.txt"},
     {
             "key": "豆瓣",
             "name": "豆瓣｜首页",
@@ -1276,8 +1277,15 @@
             "key": "果果视频",
             "name": "果果｜视频",
             "type": 3,
-            "api": "https://pan.vma.cc/pan/down.php/ec67b9045d393737f073d2c9365533f0.js",
+            "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
             "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/MGSP.js"
+        },
+        {
+            "key": "采集之王",
+            "name": "采集｜合集",
+            "type": 3,
+            "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
+            "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/CJZW.js?type=url&params=https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/json/CJJT.json$1$1"
         },
         {"key":"人人PHP","name":"👭人人┃PHP","type":4,"api":"http://jiduo666.dpdns.org/rrsp.php","changeable":1},
         {
