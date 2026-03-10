@@ -8,7 +8,8 @@
       "key": "wv_yszb",
       "name": "wv | 央视直播(1080P)",
       "api": "csp_WvSpider",
-      "jar": "./配置中心.jar","type": "3",
+      "jar": "./配置中心.jar",
+      "type": "3",
       "ext": "./闪电.js",
       "searchable": 1,
       "filterable": 1,
@@ -873,6 +874,39 @@
             "jar": "./moyu.php"
         },
         {
+            "key": "锦鲤短剧",
+            "name": "锦鲤｜短剧",
+            "type": 3,
+            "api": "csp_JinliDJ",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "genre": "shortdrama"
+        },
+        {
+            "key": "星阁短剧",
+            "name": "星阁｜短剧",
+            "type": 3,
+            "api": "csp_XinggeDJ",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "genre": "shortdrama"
+        },
+        {
+            "key": "碎片",
+            "name": "碎片｜短剧",
+            "type": 3,
+            "api": "csp_SuipianDJ",
+            "searchable": 1,
+            "changeable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "genre": "shortdrama"
+        },
+        {
             "key": "番薯动漫",
             "name": "番薯丨动漫",
             "type": 3,
@@ -1059,16 +1093,11 @@
             "searchable": 1,"jar": "./moyu.php"
         },
         {
-         "key": "爱听音乐",
-         "name": " 爱听音乐 ┃ python ┃ ",
-         "type": 3,
-         "api": "./PTT短剧.py",
-         "style": {
-            "type": "rect",
-            "ratio": 1.33
-         },
-         "changeable": 1
-      },
+            "key": "爱听音乐",
+            "name": "爱听｜音乐",
+            "type": 3,
+            "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/py/爱听音乐.py"
+        },
       {
          "key": "网易云音乐",
          "name": " 网易云音乐 ┃ python ┃ ",
@@ -1135,7 +1164,7 @@
             "key": "凤凰FM",
             "name": "📻凤凰┃FM",
             "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
+            "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
             "ext": "./凤凰FM.js"
         },
        {"key":"T4-qingting","name":"蜻蜓FM┃","type":4,"api":"https://catbox.n13.club/t9/qingting.php"},
@@ -1207,7 +1236,7 @@
             "name": "养生｜知识",
             "type": 3,
             "api": "csp_XBPQ",
-            "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/YST.json",
+            "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/YST.json",
             "style": {
                 "type": "rect",
                 "ratio": 1.597
@@ -1240,8 +1269,8 @@
             "key": "腾讯视频",
             "name": "腾讯｜视频",
             "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
+            "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
+            "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
         },
         {
             "key": "果果视频",
@@ -1403,13 +1432,13 @@
             "key": "网络直播",
             "name": "网络｜直播",
             "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/webcast/py/WLZB.py"
+            "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/webcast/py/WLZB.py"
         },
         {
             "key": "哔哩直播",
             "name": "哔哩｜直播",
             "type": 3,
-            "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/webcast/py/BLZB.py"
+            "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/webcast/py/BLZB.py"
         },
         {
             "key": "哔哩哔哩演唱会",
@@ -1421,7 +1450,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/BLYCH.json"
+                "json": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/BLYCH.json"
             },
             "style": {
                 "type": "rect",
@@ -1438,7 +1467,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/BLTS.json"
+                "json": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/BLTS.json"
             },
             "style": {
                 "type": "rect",
@@ -1455,7 +1484,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/BLXS.json"
+                "json": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/BLXS.json"
             },
             "style": {
                 "type": "rect",
@@ -1472,7 +1501,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/BLXP.json"
+                "json": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/BLXP.json"
             },
             "style": {
                 "type": "rect",
@@ -1489,7 +1518,7 @@
             "filterable": 0,
             "ext": {
                 "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt",
-                "json": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/BLXQ.json"
+                "json": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/other/json/BLXQ.json"
             },
             "style": {
                 "type": "rect",
@@ -1947,7 +1976,7 @@
    {
             "name": "APTV",
             "type": 0,
-            "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+            "url": "https://git.yylx.win/raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
             "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
             "logo": "https://epg.iill.top/logo/{name}.png",
             "ua": "okhttp/3.15,AptvPlayer/1.4.0",
@@ -1957,7 +1986,7 @@
     {
             "name": "裤佬",
             "type": 0,
-            "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1",
+            "url": "https://git.yylx.win/raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1",
             "epg": "http://epg.51zmt.top:8000/e.xml",
             "ua": "okhttp/3.15,AptvPlayer/1.4.0",
             "timeout": 10,
@@ -1972,7 +2001,7 @@
         {
       "name": "Guovin",
       "type": 0,
-      "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.txt",
+      "url": "https://git.yylx.win/raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.txt",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
@@ -1981,21 +2010,21 @@
     {
       "name": "V4聚合（卡顿请按左┃右键换线）",
       "type": 0,
-      "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/wwb521/live/main/tv.m3u",
+      "url": "https://git.yylx.win/raw.githubusercontent.com/wwb521/live/main/tv.m3u",
       "playerType": 1,
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
       "name": "develop202",
       "type": 0,
-      "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+      "url": "https://git.yylx.win/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
       "playerType": 2,
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}"
     },
     {
       "name": "Yoursmile",
       "type": 0,
-      "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/live.txt",
+      "url": "https://git.yylx.win/raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/live.txt",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
@@ -2004,7 +2033,7 @@
     {
       "name": "4gtv",
       "type": 0,
-      "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/judy-gotv/iptv/refs/heads/main/4gtv.m3u",
+      "url": "https://git.yylx.win/raw.githubusercontent.com/judy-gotv/iptv/refs/heads/main/4gtv.m3u",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
@@ -2033,7 +2062,7 @@
     {
       "name": "中天",
       "type": 0,
-      "url": "https://hk.gh-proxy.org/raw.githubusercontent.com/judy-gotv/iptv/refs/heads/main/ofiii.m3u",
+      "url": "https://git.yylx.win/raw.githubusercontent.com/judy-gotv/iptv/refs/heads/main/ofiii.m3u",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
