@@ -47,6 +47,42 @@
             }
         },
         {
+            "key": "三秋影视",
+            "name": "三秋｜APP",
+            "type": 3,
+            "api": "csp_App3Q"
+        },
+        {
+            "key": "坚果影视",
+            "name": "坚果｜APP",
+            "type": 3,
+            "api": "csp_AppJg"
+        },
+        {
+            "key": "韩圈",
+            "name": "韩圈｜APP",
+            "type": 3,
+            "api": "csp_Hxq",
+            "ext": "https://fishapi.wya6.com/fish/fishhxq.php"
+        },{
+            "key": "玩偶",
+            "name": "玩偶｜4K",
+            "type": 3,
+            "api": "csp_Wogg",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": [
+                    "https://www.wogg.one",
+                    "https://wogg.333232.xyz",
+                    "https://woggpan.888484.xyz"
+                ]
+            },
+            "timeout": 60
+        },
+        {
             "key": "快映",
             "name": "快映｜4K",
             "type": 3,
@@ -59,6 +95,87 @@
                 "site": [
                     "http://xsayang.fun:12512",
                     "http://154.201.83.50:12512"
+                ]
+            },
+            "timeout": 60
+        },
+        {
+            "key": "木偶",
+            "name": "木偶｜4K",
+            "type": 3,
+            "api": "csp_PanWebShare",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": [
+                    "https://123.666291.xyz",
+                    "https://666.666291.xyz",
+                    "https://www.muou.site",
+                    "https://www.muou.asia"
+                ]
+            },
+            "timeout": 60
+        },
+        {
+            "key": "蜡笔",
+            "name": "蜡笔｜4K",
+            "type": 3,
+            "api": "csp_PanWebShare",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": [
+                    "http://xiaocge.fun",
+                    "http://feimo.fun",
+                    "https://feimao666.fun",
+                    "http://feimao888.fun",
+                    "http://www.labi88.sbs",
+                    "http://fmao.site",
+                    "http://fmao.shop",
+                    "http://xiaocgege.shop"
+                ]
+            },
+            "timeout": 60
+        },
+        {
+            "key": "至臻",
+            "name": "至臻｜4K",
+            "type": 3,
+            "api": "csp_PanWebShare",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": [
+                    "https://mihdr.top",
+                    "https://www.miqk.cc",
+                    "https://xiaomiai.site",
+                    "https://xiaomi666.fun",
+                    "https://www.mihdr.top",
+                    "https://www.zhizhenpan.fun"
+                ]
+            },
+            "timeout": 60
+        },
+        {
+            "key": "多多",
+            "name": "多多｜4K",
+            "type": 3,
+            "api": "csp_PanWebShare",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": [
+                    "https://tv.yydsys.top",
+                    "https://tv.yydsys.cc",
+                    "https://tv.214521.xyz"
                 ]
             },
             "timeout": 60
@@ -78,6 +195,42 @@
                     "https://woog.nxog.fun",
                     "https://woog.nxog.eu.org",
                     "https://woog.430520.xyz"
+                ]
+            },
+            "timeout": 60
+        },
+        {
+            "key": "二小",
+            "name": "二小｜4K",
+            "type": 3,
+            "api": "csp_PanWebShare",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": [
+                    "https://xhww.net",
+                    "https://erxiaofn.site",
+                    "https://erxiaofn.click",
+                    "https://www.xhww.net"
+                ]
+            },
+            "timeout": 60
+        },
+        {
+            "key": "虎斑",
+            "name": "虎斑｜4K",
+            "type": 3,
+            "api": "csp_PanWebShare",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "site": [
+                    "http://xhban.xyz:20720",
+                    "http://154.222.27.33:20720"
                 ]
             },
             "timeout": 60
@@ -131,6 +284,29 @@
             "timeout": 60
         },
         {
+            "key": "雷鲸",
+            "name": "雷鲸｜4K",
+            "type": 3,
+            "api": "csp_PanWebShareCloudLJ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "style": {
+                "type": "list",
+                "ratio": 1.433
+            },
+            "ext": {
+                "site": [
+                    "https://www.leijing.xyz",
+                    "https://www.leijing1.com",
+                    "https://leijing.xyz",
+                    "https://leijing1.com"
+                ]
+            },
+            "timeout": 60
+        },
+        {
             "key": "海绵",
             "name": "海绵｜4K",
             "type": 3,
@@ -149,6 +325,27 @@
                     "https://www.hmxz.org",
                     "https://www.haimianxz.com"
                 ]
+            },
+            "timeout": 60
+        },
+        {
+            "key": "夸父",
+            "name": "夸父｜4K",
+            "type": 3,
+            "api": "csp_PanWebShareCloudKF",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "style": {
+                "type": "list",
+                "ratio": 1.433
+            },
+            "ext": {
+                "site": [
+                    "https://www.kfjwzz.com"
+                ],
+                "cookie": "bbs_sid=bi7dpnm6vp31s38rjqlqq8vq84; bbs_token=TWiR3YUrGoVpbdTkjAJ0xMe_2B_2FiaFvd84V3_2FEZJRRSKU_3D"
             },
             "timeout": 60
         },
@@ -199,6 +396,16 @@
             "name": "即刻｜4K",
             "type": 3,
             "api": "csp_Jike",
+            "style": {
+                "type": "list"
+            },
+            "timeout": 60
+        },
+        {
+            "key": "双星",
+            "name": "双星｜4K",
+            "type": 3,
+            "api": "csp_ShuangXing",
             "style": {
                 "type": "list"
             },
@@ -481,168 +688,7 @@
                 ]
             },
             "jar": "./moyu.php"
-        },
-        {
-            "key": "Wogg",
-            "name": "玩偶｜4K",
-            "type": 3,
-            "api": "csp_Wogg",
-            "searchable": 1,
-            "changeable": 1,
-            "filterable": 1,
-            "ext": {
-                "site": [
-                    "https://www.wogg.one",
-                    "https://wogg.333232.xyz",
-                    "https://wogg.xxooo.cf",
-                    "https://woggpan.888484.xyz"
-                ],
-                "filter": "https://open.wya6.com/d/down/2026/json/wogg.json"
-            },
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "FishMuou",
-            "name": "木偶｜4K",
-            "type": 3,
-            "api": "csp_FishCloud",
-            "searchable": 1,
-            "ext": {
-                "site": [
-                    "https://123.666291.xyz",
-                    "https://666.666291.xyz",
-                    "https://www.muou.site",
-                    "https://www.muou.asia"
-                ]
-            },
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "FishLabi",
-            "name": "蜡笔｜4K",
-            "type": 3,
-            "api": "csp_FishCloud",
-            "searchable": 1,
-            "ext": {
-                "site": [
-                    "https://feimao666.fun",
-                    "http://xiaocge.fun",
-                    "http://feimo.fun",
-                    "https://feimao666.fun",
-                    "http://fmao.site",
-                    "http://fmao.shop",
-                    "http://xiaocgege.shop"
-                ]
-            },
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "FishZhizhen",
-            "name": "至臻｜4K",
-            "type": 3,
-            "api": "csp_FishCloud",
-            "searchable": 1,
-            "ext": {
-                "site": [
-                    "https://mihdr.top",
-                    "https://www.mihdr.top",
-                    "https://www.miqk.cc",
-                    "https://zhizhenpan.com/",
-                    "https://zhizhen8.click",
-                    "https://www.zhizhen8.click"
-                ]
-            },
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "FishDuoduo",
-            "name": "多多｜4K",
-            "type": 3,
-            "api": "csp_FishCloud",
-            "searchable": 1,
-            "ext": {
-                "site": [
-                    "https://tv.yydsys.top",
-                    "https://tv.yydsys.cc",
-                    "https://tv.214521.xyz"
-                ]
-            },
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "FishErxiao",
-            "name": "二小｜4K",
-            "type": 3,
-            "api": "csp_FishCloud",
-            "searchable": 1,
-            "ext": {
-                "site": [
-                    "https://www.erixaopan.fun",
-                    "https://www.wexwp.cc",
-                    "https://wexwp.cc",
-                    "https://2xiaopan.top",
-                    "https://www.2xiaopan.top"
-                ]
-            },
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "FishHuban",
-            "name": "虎斑｜4K",
-            "type": 3,
-            "api": "csp_FishCloud",
-            "searchable": 1,
-            "ext": {
-                "site": [
-                    "http://103.45.162.207:20720"
-                ]
-            },
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "LeiJing",
-            "name": "雷鲸｜4K",
-            "type": 3,
-            "api": "csp_LeiJing",
-            "searchable": 1,
-            "changeable": 1,
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "夸父",
-            "name": "夸父｜4K",
-            "type": 3,
-            "api": "csp_FishKF",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "style": {
-                "type": "list",
-                "ratio": 1.433
-            },
-            "ext": {
-                "site": [
-                    "https://www.kfjwzz.com"
-                ],
-                "cookie": "bbs_sid=nqj3m4c3jo14hj61o3mtulmbqm; bbs_token=0DJ_2FBrXm3SPQ2qtwzIJd70iM_2BK02F_2BYOzTNOUy4TquXt5l4J"
-            },
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "ShuangXing",
-            "name": "双星｜4K",
-            "type": 3,
-            "api": "csp_ShuangXing",
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 1,
-            "style": {
-                "type": "list",
-                "ratio": 1.433
-            },
-            "jar": "./moyu.php"
-        },
+        },       
         {
             "key": "TGSou",
             "name": "糖果｜鱼鱼",
@@ -716,14 +762,6 @@
             "type": 3,
             "api": "csp_SeedHub",
             "searchable": 1,
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "fishhxq",
-            "name": "韩小圈｜影视",
-            "type": 3,
-            "api": "csp_FishHxq",
-            "ext": "https://fishapi.wya6.com/fish/fishhxq.php",
             "jar": "./moyu.php"
         },
         {
@@ -968,17 +1006,23 @@
             },"jar": "./sx.jar"
         },
         {
-            "key": "Kanqiu",
-            "name": "看球｜体育",
+            "key": "88看球",
+            "name": "88｜看球",
             "type": 3,
             "api": "csp_Kanqiu",
-            "searchable": 0,
-            "filterable": 1,
-            "ext": "http://www.88kanqiu.one",
+            "gridview": 3,
             "style": {
                 "type": "list"
-            },
-            "jar": "./moyu.php"
+            }
+        },
+        {
+            "key": "919体育",
+            "name": "919｜体育",
+            "type": 3,
+            "api": "csp_919Tiyu",
+            "style": {
+                "type": "list"
+            }
         },
         {
             "key": "TingBook",
@@ -1133,7 +1177,7 @@
             "ext": "KeJpmGBHNDNtao15t//le78AVNnA15NohxNlQzOy74KP4rP9PzNe6/JMxl2ealSMH+DMy3pMWGdoIgfZhbU6Gnwr6RCt2yx5qzhbchh4Dkea8uxJiFKZrXXX+78cGsE5xVesK28LUCDPGza58+ymXCFyviXGbf7VroGuGiCSI3O9U0RJIcWVbQWDQ2lWduKWYyFrlmEPQu3ePYFHUX8EGXDXMr15WH88JVlN7vnLqUhJv4qheq3TMcdceNQZ4e96eiWjAtdlSkOId644S2gQbHPsE1m68RxAx95ZTlMf0sGMFzsDp6MA9eQrbRP3sPWfW4I2nNxjTga+BbnLe5ES7TrsDfzJ7wCqjDAzW2LoHxxvnlJ7qrc+pWpKJARiszk+7dVLhNqhfjWY/i/GftEZiA71wbT4wul4QoPCmVrIYyaFWFxUaVHUVGrqEmw++js/87Xb8sawjnFXROsI6qK0+wRmiiGJ37nw0Dsyuxn7jUMYOpzEQFTlxq8Y3JcBGK8lGIcTrx0OTGwFH8Rhdsur4gdF4fxHM9BvKI5LFAO5wNSpAY429fskzXx97IsdI7HIeSQ+YY5Yir2ZnVeDDBK8qA==",
             "jar": "./moyu.php"
         },
-       {
+        {
             "key": "戏曲多多",
             "name": "戏曲｜多多",
             "type": 3,
@@ -1197,6 +1241,20 @@
             "type": 3,
             "api": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
             "ext": "https://hk.gh-proxy.org/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
+        },
+        {
+            "key": "腾腾视频",
+            "name": "腾腾｜视频",
+            "type": 3,
+            "api": "https://pan.vma.cc/pan/down.php/ec67b9045d393737f073d2c9365533f0.js",
+            "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
+        },
+        {
+            "key": "果果视频",
+            "name": "果果｜视频",
+            "type": 3,
+            "api": "https://pan.vma.cc/pan/down.php/ec67b9045d393737f073d2c9365533f0.js",
+            "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/MGSP.js"
         },
         {"key":"人人PHP","name":"👭人人┃PHP","type":4,"api":"http://jiduo666.dpdns.org/rrsp.php","changeable":1},
         {
