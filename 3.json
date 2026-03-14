@@ -825,16 +825,6 @@
             },
             "jar": "./moyu.php"
         },
-       {
-            "key": "晚吟",
-            "name": "晚吟｜APP",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": "AS489lHIPXXnFM64nq+j83AKsZBAWHJxiolcdAQhVx+XVHnaLVj3OiTSytruFyLqxsmm1AhgdalU+scPnz4hkUu01Ppy9Ttysn+LieUGod/lwmSMJ4CVW/EDO33YUhidr+lqJcnx7APcA2mG4Y+5AmEYH2Wol6qcFUo1sogtH+iYZ/YXtoPKCywF1JMyBjfj7Pn83+MTjKTUrb53bT4gJlw=",
-            "jar": "./moyu.php"
-        },
         {
             "key": "厌离",
             "name": "厌离｜APP",
@@ -853,14 +843,6 @@
             "searchable": 1,
             "changeable": 1,
             "ext": "ASeCaY5Xxcx0BdbJGIqllhkRBuCPwC/Kv1uDvURkfncW+fNupjJjBKERvDuCKL7Nc8bCYJ/Fboktq3geJgU0aE2SxOjoiU03IEtvv1np76XEOBn7dBJNwW8toIqv9PBY9T18yzCX3DoyksVEv01kRtBDqSTgbilbqOHhtNEm+L3ti2PLM08SEhkA/nE//PAwfIVtUWhsYKorNLuB7RxQ2Egqj4D7q7Tw3sH/yNbHthqw",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "琼林",
-            "name": "琼林｜APP",
-            "type": 3,
-            "api": "csp_AppGet",
-            "ext": "AbxTsrfXTR/X02mKKEFlZ2mWBxkBXDz8hy/1cKUHgVgXe7rjelHgtwVvIUbOOUsniZ2R2mEZVcH1l2nV6ocpV/LkgiCf7uP+GGfv4UBgx4LJ7J9wcc3rHbSA8Fs+DAWFykFa1o37Y/mwDRr/ikbof52Zs7e+qldp4sT/ixG0tvBw7V9zMA0YD8q3rQFc0TZf83MLE+P1y7/q4J8msjy3jx4=",
             "jar": "./moyu.php"
         },
         {
@@ -906,12 +888,20 @@
             "jar": "./moyu.php"
         },
         {
-            "key": "麒麟",
-            "name": "麒麟｜APP",
+            "key": "金牌",
+            "name": "金牌｜APP",
             "type": 3,
-            "changeable": 0,
-            "api": "csp_AppFox",
-            "ext": "Ac9bpM2BcSDtRFXJIKv7cKam+MagzI4MRN9VkD0cdbZYR2sdZMY+KrFlbb/4YNndRu8tZ6ryTJc7jJekLp6O4gnnRwzqwP3+4rp/r5A5u/Qt",
+            "api": "csp_AppQi",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": {
+                "url": "https://qj3.ggtvb.cc",
+                "dataKey": "eecbio48dsq13kkk",
+                "dataIv": "eecbio48dsq13kkk",
+                "search": "searchList4",
+                "init": "initV122",
+                "ua": "okhttp/3.10.0"
+            },
             "jar": "./moyu.php"
         },
         {
@@ -924,13 +914,6 @@
             "ext": "AaIkDkIeL0bF5foLGJpX+cbUjv1IbY05okz9VBt5znOYXxZtodjbPHHdcEg6FdVbb9WW7sl623Wj49ZNOxTIHR9cruqS3Rcl5VJPgjC/JLvofUwvzUraVUMLTIxvs2j5L4vg/hN1o5TDRbWkq8SrCRxY2QopBTqPw75C/ECyvBQlV3NZjWlbu5YUr8jGhJJfdJ7o1gh6Xeg0pGMngVpBeDuQDhdUmkvCl658cEP/Oics",
             "jar": "./moyu.php"
         },
-        {
-            "key": "琼林",
-            "name": "琼林｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "ext": "AW8zc43nkd9VeK5DW/DjDZZyQ8CitfFSJkst0xRXhXKcj6hD8v1lusJ6ESqiEdq4U9Sr7SwyYTtqa4cJasPcQfIJNNXAbtzzK1SRuX5y5rV0MoS7+vWxG8iPCQvXee+amQTW4IiuoWX3HVnOSd+ViPayPdXO+rvvR+ymyTYToZAW8UikQ/chpFk3HKJ+bLBq/FejMjlZvZdbCyM/3ZYxY9E=" ,
-            "jar": "./moyu.php" },
         {
             "key": "ALLLive",
             "name": "星河｜共影",
@@ -1068,15 +1051,6 @@
             "quickSearch": 1,
             "filterable": 0,
             "ext": "https://www.czzymovie.com",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "Jpys",
-            "name": "金牌｜影视",
-            "type": 3,
-            "api": "csp_Jpys",
-            "searchable": 1,
-            "ext": "https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn",
             "jar": "./moyu.php"
         },
         {
