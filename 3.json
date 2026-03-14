@@ -915,6 +915,40 @@
             "jar": "./moyu.php"
         },
         {
+            "key": "明玦",
+            "name": "明玦｜APP",
+            "type": 3,
+            "api": "csp_AppGet",
+            "searchable": 1,
+            "changeable": 1,
+            "ext": "AaIkDkIeL0bF5foLGJpX+cbUjv1IbY05okz9VBt5znOYXxZtodjbPHHdcEg6FdVbb9WW7sl623Wj49ZNOxTIHR9cruqS3Rcl5VJPgjC/JLvofUwvzUraVUMLTIxvs2j5L4vg/hN1o5TDRbWkq8SrCRxY2QopBTqPw75C/ECyvBQlV3NZjWlbu5YUr8jGhJJfdJ7o1gh6Xeg0pGMngVpBeDuQDhdUmkvCl658cEP/Oics",
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "琼林",
+            "name": "琼林｜APP",
+            "type": 3,
+            "api": "csp_AppQi",
+            "ext": "AW8zc43nkd9VeK5DW/DjDZZyQ8CitfFSJkst0xRXhXKcj6hD8v1lusJ6ESqiEdq4U9Sr7SwyYTtqa4cJasPcQfIJNNXAbtzzK1SRuX5y5rV0MoS7+vWxG8iPCQvXee+amQTW4IiuoWX3HVnOSd+ViPayPdXO+rvvR+ymyTYToZAW8UikQ/chpFk3HKJ+bLBq/FejMjlZvZdbCyM/3ZYxY9E=" ,
+            "jar": "./moyu.php" },
+        {
+            "key": "ALLLive",
+            "name": "星河｜共影",
+            "type": 3,
+            "api": "csp_ALLLive",
+            "searchable": 1,
+            "jar": "./moyu.php"
+        },
+        {
+            "key": "wencai",
+            "name": "文才｜影视",
+            "type": 3,
+            "api": "csp_WenCai",
+            "searchable": 1,
+            "ext": "https://www.tjrongze.com,https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.jiabaide.cn",
+            "jar": "./moyu.php"
+        },
+        {
             "key": "Libvio",
             "name": "立播｜4K",
             "type": 3,
