@@ -37,6 +37,87 @@
             "searchable": 0
         },
         {
+  "key": "js_en_gf",
+  "name": "官方采集(js)",
+  "type": 3,
+  "api": "./gfcj.min.js",
+  "searchable": 1,
+  "quickSearch": 0,
+  "filterable": 0,
+  "changeable": 0
+    },
+        {
+      "key": "还行",
+      "name": "🌀还行｜4K",
+      "jar": "",
+      "type": 3,
+      "api": "csp_AppYs",
+      "searchable": 1,
+      "quickSearch": 1,
+      "ext": "http://m51.gotto.top/api.php/v1.vod",
+            "jar": ""
+    },
+    {
+            "key": "冥王",
+            "name": "冥王2k",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "jar": "",
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "线路数组": "<a data-toggle=\"tab\"&&/a>",
+                "线路标题": ">&&<",
+                "分类url": "http://dyxz.tv/list/{cateId}_{catePg}.html",
+                "分类": "电影$1#电视剧$2#动漫$3#综艺$4"
+            },
+            "jar": ""
+        },
+    {
+            "key": "聚搜",
+            "name": "🚗聚搜┃影视",
+            "type": 3,
+            "api": "./100.py",
+        "ext":"http://118.89.203.120:8365/"
+        },
+        {
+            "key": "巧技2",
+            "name": "💢聚搜┃影视✨",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "api": "csp_qiao2",
+            "playerType": 2,
+            "jar": "https://cik07-cos.7moor-fs2.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/6a1bc5995387e053/qij.png;md5;eb1ed5578b0a9ac5f3e6c6ee04b813e6",
+            "ext": "7lj763gg402i7942412h849jg1558j9jl8g19213il86316k465719lik158491h179312h4934183ig2l05g9"
+        },
+        {
+            "key": "老鸭",
+            "name": "🍞老鸭┃影视",
+            "type": 3,
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "api": "./Appapi.js",
+            "ext": {
+                "host": "https://app2512.ystva.com"
+            },
+            "jar": ""
+        },
+        {
+            "key": "爱看资源网",
+            "name": "🚘爱看┃网盘",
+            "type": 3,
+            "api": "./drpy2.min.js",
+            "ext": "./飞牛影视.js"
+        },
+        {"key":"星辰影院","name":"🪐星辰┃（羊）","type":3,"api":"./腾讯弹幕.js"},
+        {"key":"耐看","name":"👀耐看┃（羊）","type":3,"api":"./芒果弹幕.js"},
+        {"key":"聚合短剧","name":"🐑短剧┃（羊）","type":3,"api":"./非凡资源[资].js"},
+        {"key":"月光影视","name":"🌛月光┃（羊）","type":3,"api":"./月光影视.js"},
+        {
             "key": "热播影视",
             "name": "热播｜APP",
             "type": 3,
@@ -1734,59 +1815,6 @@
             }
         },
         {
-            "key": "py_LIBVIO",
-            "name": "🤖LIBVIO┃PY",
-            "api": "./LIBVIO.py",
-            "filterable": 1,
-            "quickSearch": 1,
-            "searchable": 1,
-            "type": 3
-        },
-        {
-            "key": "两个BT",
-            "name": "两个T4",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net:5052/?sp=两个BT",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-         {
-            "key": "永乐视频",
-            "name": "永乐视频",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net:5052/?sp=永乐视频",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-        {
-            "key": "企鹅体育",
-            "name": "企鹅体育",
-            "type": 4,
-            "api": "http://zhangqun1818.serv00.net:5052/?sp=企鹅体育",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-        {
-            "key": "飞快.py",
-            "name": "飞快TV.py",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "api": "./飞快TV[推].py",
-            "order_num": 5,
-            "ext": ""
-        },
-        {
             "key": "电影网盘.py",
             "name": "电影网盘.py",
             "type": 3,
@@ -1796,50 +1824,6 @@
             "api": "./py_cctv23.py",
             "order_num": 5,
             "ext": ""
-        },
-        {
-            "key": "金牌",
-            "name": "金牌",
-            "type": 3,
-            "api": "./金牌.py",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "playerType": 2
-        },
-        {
-            "key": "电影猎手",
-            "name": "电影猎手",
-            "type": 3,
-            "api": "./电影猎手.py",
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            },
-            "changeable": 1
-        },
-        {
-            "key": "4KVM",
-            "name": "4KVM",
-            "type": 3,
-            "api": "./4KVM.py",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "playerType": 2
-        },
-        {
-            "key": "4K影院",
-            "name": "4K影院",
-            "type": 3,
-            "api": "./4K.py",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "playerType": 2
         },
     {
             "key": "夸克推送",
@@ -1883,100 +1867,6 @@
             "type": 4,
             "api": "https://so.yinpai.xyz/duanju.php?type=dquark"
         },
-    {
-  "key": "js_en_gf",
-  "name": "官方采集(js)",
-  "type": 3,
-  "api": "./gfcj.min.js",
-  "searchable": 1,
-  "quickSearch": 0,
-  "filterable": 0,
-  "changeable": 0
-    },
-        {
-      "key": "还行",
-      "name": "🌀还行｜4K",
-      "jar": "",
-      "type": 3,
-      "api": "csp_AppYs",
-      "searchable": 1,
-      "quickSearch": 1,
-      "ext": "http://m51.gotto.top/api.php/v1.vod",
-            "jar": ""
-    },
-    {
-            "key": "冥王",
-            "name": "冥王2k",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "searchable": 1,
-            "jar": "",
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-                "线路数组": "<a data-toggle=\"tab\"&&/a>",
-                "线路标题": ">&&<",
-                "分类url": "http://dyxz.tv/list/{cateId}_{catePg}.html",
-                "分类": "电影$1#电视剧$2#动漫$3#综艺$4"
-            },
-            "jar": ""
-        },
-    {
-            "key": "聚搜",
-            "name": "🚗聚搜┃影视",
-            "type": 3,
-            "api": "./100.py",
-        "ext":"http://118.89.203.120:8365/"
-        },
-        {
-            "key": "巧技2",
-            "name": "💢聚搜┃影视✨",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "api": "csp_qiao2",
-            "playerType": 2,
-            "jar": "https://cik07-cos.7moor-fs2.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/6a1bc5995387e053/qij.png;md5;eb1ed5578b0a9ac5f3e6c6ee04b813e6",
-            "ext": "7lj763gg402i7942412h849jg1558j9jl8g19213il86316k465719lik158491h179312h4934183ig2l05g9"
-        },
-        {
-            "key": "老鸭",
-            "name": "🍞老鸭┃影视",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "api": "./Appapi.js",
-            "ext": {
-                "host": "https://app2512.ystva.com"
-            },
-            "jar": ""
-        },
-        {
-            "key": "csp_Xxzn",
-            "name": "🤑4K┃指南",
-            "type": 3,
-            "api": "csp_Xxzn",
-            "filterable": 1,
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "filters": "./duboku.json",
-                "sites": "https://4kzn.com"
-            },"jar": "./vox.jar"
-        },
-        {
-            "key": "爱看资源网",
-            "name": "🚘爱看┃网盘",
-            "type": 3,
-            "api": "./drpy2.min.js",
-            "ext": "./飞牛影视.js"
-        },
-        {"key":"星辰影院","name":"🪐星辰┃（羊）","type":3,"api":"./腾讯弹幕.js"},
-        {"key":"耐看","name":"👀耐看┃（羊）","type":3,"api":"./芒果弹幕.js"},
-        {"key":"聚合短剧","name":"🐑短剧┃（羊）","type":3,"api":"./非凡资源[资].js"},
-        {"key":"月光影视","name":"🌛月光┃（羊）","type":3,"api":"./月光影视.js"},
         {
             "key": "cat_HDmoli",
             "name": "⛵HDmoli┃影院",
@@ -1985,7 +1875,8 @@
         }     
   ],
 "parses": [
-        {"name":"聚合","type":3,"url":"Demo"},
+        {"name":"测试解析","type":1,"url":"http://127.0.0.1:9978/proxy?do=voxjx&url="},
+        {"name":"夏夜解析","type":1,"url":"https://183933.xyz/xiaye.php?url="},
         {
             "name": "追觅",
             "type": "1",
