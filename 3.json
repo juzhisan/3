@@ -1867,6 +1867,7 @@
             "type": 4,
             "api": "https://so.yinpai.xyz/duanju.php?type=dquark"
         },
+        {"key":"cat_夸克影院","name":"👶夸克┃影院","type":3,"timeout":30,"api":"./蜻蜓FM.js","jar": "./vox.jar"},
         {
             "key": "cat_HDmoli",
             "name": "⛵HDmoli┃影院",
