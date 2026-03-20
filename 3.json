@@ -966,6 +966,15 @@
             "jar": "./moyu.php"
         },
         {
+            "key": "KZN",
+            "name": "指南｜4K",
+            "type": 3,
+            "api": "csp_KZN",
+            "searchable": 1,
+            "changeable": 1,
+            "jar": "./moyu.php"
+        },
+        {
             "key": "Libvio",
             "name": "立播｜4K",
             "type": 3,
