@@ -307,19 +307,6 @@
             }
         },
         {
-            "key": "茉莉",
-            "name": "茉莉｜APP",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": "https://gitee.com/wmmoliill/wimg/raw/master/img/bk/9.txt",
-                "dataKey": "88689667dce61725",
-                "dataIv": "88689667dce61725"
-            }
-        },
-        {
             "key": "闪影",
             "name": "闪影｜APP",
             "type": 3,
@@ -830,7 +817,7 @@
             "api": "csp_Zwqf",
             "searchable": 1,
             "ext": {
-                "url": "https://fishapi.wya6.com/fish/qingfeng/moyu.php",
+                "url": "http://我不是.摸鱼儿.com/api/feng/moyu.php",
                 "token": "moyu996"
             },
             "jar": "./moyu.php"
@@ -990,7 +977,27 @@
                 ]
             },
             "jar": "./moyu.php"
-        },       
+        },
+        {
+            "key": "Qiwei",
+            "name": "七味｜4K",
+            "type": 3,
+            "api": "csp_Qiwei",
+            "searchable": 1,
+            "filterable": 0,
+            "ext": {
+                "site": [
+                    "https://www.qwnull.com",
+                    "https://www.qwmkv.com",
+                    "https://www.qwfilm.com",
+                    "https://www.qnmp4.com",
+                    "https://www.qnnull.com",
+                    "https://www.qnhot.com",
+                    "https://www.qncool.com"
+                ]
+            },
+            "jar": "./moyu.php"
+        },    
         {
             "key": "TGSou",
             "name": "糖果｜鱼鱼",
