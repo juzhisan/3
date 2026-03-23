@@ -46,17 +46,6 @@
   "filterable": 0,
   "changeable": 0
     },
-        {
-      "key": "还行",
-      "name": "🌀还行｜4K",
-      "jar": "",
-      "type": 3,
-      "api": "csp_AppYs",
-      "searchable": 1,
-      "quickSearch": 1,
-      "ext": "http://m51.gotto.top/api.php/v1.vod",
-            "jar": ""
-    },
     {
             "key": "冥王",
             "name": "冥王2k",
@@ -74,24 +63,18 @@
             },
             "jar": ""
         },
-    {
-            "key": "聚搜",
-            "name": "🚗聚搜┃影视",
-            "type": 3,
-            "api": "./100.py",
-        "ext":"http://118.89.203.120:8365/"
-        },
-        {
-            "key": "巧技2",
-            "name": "💢聚搜┃影视✨",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "api": "csp_qiao2",
-            "playerType": 2,
-            "jar": "https://cik07-cos.7moor-fs2.com/im/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/6a1bc5995387e053/qij.png;md5;eb1ed5578b0a9ac5f3e6c6ee04b813e6",
-            "ext": "7lj763gg402i7942412h849jg1558j9jl8g19213il86316k465719lik158491h179312h4934183ig2l05g9"
-        },
+    {"key":"csp_GuaZi","name":"🍉瓜子","type":3,"api":"csp_GuaZi","searchable":1,"changeable":0,"ext":{"commonConfig":"https://gh-proxy.com/raw.githubusercontent.com/yoursmile66/TVBox/main/json/peizhi.json"},
+      "jar": "./smile.jar"},
+{"key":"天天","name":"⛅天天","type":3,"api":"csp_TTian","searchable":1,"quickSearch":1,"filterable":1,"ext":"7lj763gg0939791h1l3888jig44gi291li",
+      "jar": "./smile.jar"},
+{"key":"金牌","name":"🥇金牌","type":3,"api":"csp_Jpys","searchable":1,"quickSearch":1,"filterable":1,"ext":"7lj763gg402i7942463j9j9jh8579590k3hjii5gi4i73l2k5l",
+      "jar": "./smile.jar"},
+{"key":"巧技二","name":"💢聚搜","type":3,"api":"csp_qiao2","searchable":1,"quickSearch":1,"filterable":1,"ext":"7lj763gg402i7942412h849jg1558j9jl8g19213il86316k465719lik158491h179312h4934183ig2l05g9",
+      "jar": "./smile.jar"},
+{"key":"qiao2","name":"💢聚搜2","type":3,"api":"csp_qiao2","playerType":2,"ext":"7lj763gg402i7942412h849jg1558j9jl8g19213il86316k465719lik158491h179312hk935886ig2l05g9,
+      "jar": "./smile.jar""},
+{"key":"真不错","name":"💯真不错","type":3,"api":"csp_Xdai","ext":"7lj763gg402i79424h288987hh518l81hih2i85k98827220425107k5ji43503i4i957hk19261i58k134ghi9lk0j94ikii2377778h2h8l8gg2igj6gl273lk1j12",
+      "jar": "./smile.jar"},
         {
             "key": "老鸭",
             "name": "🍞老鸭┃影视",
@@ -1407,22 +1390,6 @@
          },
          "changeable": 1
       },
-      {
-            "key": "酷狗",
-            "name": "酷狗丨音乐",
-            "type": 3,
-            "jar": "./Panda.jar",
-            "api": "csp_Kugou",
-            "playerType": 2,
-            "ext": {
-                "classes": [
-                    {
-                        "type_name": "酷狗",
-                        "type_id": "kugou"
-                    }
-                ]
-            }
-        },
         {
             "key": "啊哈DJ网",
             "name": "🎵啊哈┃DJ",
@@ -1877,6 +1844,7 @@
             "type": 4,
             "api": "https://so.yinpai.xyz/api.php?type=mobile"
         },
+        {"key":"迅雷","name":"🤝迅雷┃推送","type":4,"hide":1,"api":"https://so.yinpai.xyz/api.php?type=xunlei"},
         {
             "key": "短裤",
             "name": "🐥短剧┃推送",
