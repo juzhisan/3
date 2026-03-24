@@ -47,6 +47,21 @@
   "changeable": 0
     },
     {
+      "key": "秒看",
+      "name": "☀秒看🔹4K源",
+      "type": 3,
+      "quickSearch": 1,
+            "jar": "https://xiuxiu-pro.meitudata.com/posters/5199d8f8bcbe3c6d6938ded33cb90596.png",
+      "api": "csp_AppGet",
+      "ext": {
+        "site": "https://mk1080.top/get.txt",
+        "dataKey": "c60d88b2eep53za8",
+        "dataIv": "c60d88b2eep53za8",
+        "token": "06caee3952a4c97d1ad4c766c875a99d3fa83aa68f46188823600d59ebba4469",
+        "ua": "okhttp/3.10.0"
+      }
+    },
+    {
             "key": "冥王",
             "name": "冥王2k",
             "type": 3,
@@ -1007,15 +1022,7 @@
                 ]
             },
             "jar": "./moyu.php"
-        },    
-        {
-            "key": "TGSou",
-            "name": "糖果｜鱼鱼",
-            "type": 3,
-            "api": "csp_TGSou",
-            "searchable": 1,
-            "jar": "./moyu.php"
-        },
+        },   
         {
             "key": "gying",
             "name": "观影｜4K",
@@ -1025,18 +1032,26 @@
             "quickSearch": 0,
             "filterable": 0,
             "ext": {
-                "cookie": "PHPSESSID=qi7gnbji5akpvj37t72d7sg6ah; vrg_go=1; vrg_sc=f37159ec6997cc319635ebafbfe6a6c5; BT_auth=f973lfGIquys8ItVNalqaX2Q7LJXBNyKyJCAdrDhEYlQ-iKp5DTHesmVWjGAmkPjb2iFzqdqNMi7W_IfcE2vFSOaXTgnLOkGjQVQ6rxgUpr-XenDAhMZB2I1FWXJLm_u9hBsz45BiE7J1rWbFyPhQUYN0OyZ332dLgOM-vwfX9NKRCZpK7kt; BT_cookietime=80645v457Sh58tBVCysGYaA2kdFs2EDn9hJwz592jpxWopRaPKGO; app_auth=acccda7kx0L08uNk8zwSCBxPNpdeKoGiKeGZ6e4za_p53-9Z1S5_dDtr6N9OKNQNgE88",
+                "cookie": "browser_verified=db1d7f42735c3e742c75384f; PHPSESSID=5ua3su7c92p1rcadmucdcutu46; app_auth=a4dbWyPW2NEucy_lA3brLe2qvU6CqeAkDH476c_iuTDobbDrMfBNAaWn-w-hyieiDwML",
                 "site": [
-                    "https://www.gying.si",
-                    "https://www.gying.org",
-                    "https://www.gying.net",
-                    "https://www.gying.in",
-                    "https://www.gying.st",
-                    "https://www.gyg.la",
-                    "https://www.gyg.si",
-                    "https://www.gyg.st"
+                    "https://www.教父.com",
+                    "https://www.星际穿越.com",
+                    "https://www.楚门的世界.com",
+                    "https://www.泰坦尼克号.com",
+                    "https://www.盗梦空间.com",
+                    "https://www.肖申克的救赎.com",
+                    "https://www.阿甘正传.com",
+                    "https://www.黑客帝国.com"
                 ]
             },
+            "jar": "./moyu.php"
+        }, 
+        {
+            "key": "TGSou",
+            "name": "糖果｜鱼鱼",
+            "type": 3,
+            "api": "csp_TGSou",
+            "searchable": 1,
             "jar": "./moyu.php"
         },
         {
