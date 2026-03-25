@@ -2121,72 +2121,11 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
-      "name": "4gtv",
-      "type": 0,
-      "url": "https://git.yylx.win/raw.githubusercontent.com/judy-gotv/iptv/refs/heads/main/4gtv.m3u",
-      "playerType": 1,
-      "ua": "okhttp/3.15",
-      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-            "name": "(直播)SMT(py)",
-            "type": 3,
-            "url": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/smt.txt",
-            "api": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/py/SMT.py",
-            "ext": {}
-        },
-        {
-            "name": "(直播)快直播(py)",
-            "type": 3,
-            "url": "",
-            "api": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/py/快直播.py",
-            "ext": {}
-        },
-    {
-      "name": "范明明（需开启V6网络）",
-      "type": 0,
-      "url": "https://nos.netease.com/ysf/3d75a78a0fc7ede372c03598d6d10367.m3u",
-      "playerType": 2
-    },
-    {
-      "name": "中天",
-      "type": 0,
-      "url": "https://git.yylx.win/raw.githubusercontent.com/judy-gotv/iptv/refs/heads/main/ofiii.m3u",
-      "playerType": 1,
-      "ua": "okhttp/3.15",
-      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "电视家",
-      "type": 0,
-      "url": "https://down.nigx.cn/dsj.zzong6599.workers.dev/",
-      "playerType": 1,
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
-   {
-      "name": "冰茶TV",
-      "type": 0,
-      "playerType": 2,
-      "url": "https://bc.188766.xyz/?ip=&mima=mianfeibuhuaqian&json=true",
-      "ua": "bingcha/1.1 (mianfeifenxiang) "
-    },
-    {
         "name": "4GTV",
-        "url": "http://154.219.113.217:8080/sub?type=txt&token=112233",
+        "url": "http://47.92.252.72:3566",
         "header": {
             "User-Agent": "okhttp/5.1.0"
         }
-    },
-    {
-      "name": "Guovin国内",
-      "type": 0,
-      "url": "https://gitee.com/mytv-android/iptv-api/raw/master/output/result.m3u",
-      "playerType": 1,
-      "ua": "okhttp/3.15",
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
         {
             "name": "肥羊斗鱼一起看",
@@ -2212,33 +2151,7 @@
             "epg": "http://127.0.0.1:10079/p/0/proxy/http://epg.112114.xyz/?ch={name}&date={date}",
             "logo": "http://127.0.0.1:10079/p/0/proxy/https://epg.112114.xyz/logo/{name}.png"
         },
-        {
-            "name": "📡虎牙",
-            "type": 0,
-            "url": "http://xxyyy.eu.org:35455/huyayqk.m3u",
-            "ua": ""
-        },
-        {
-            "name": "📡斗鱼",
-            "type": 0,
-            "url": "http://xxyyy.eu.org:35455/douyuyqk.m3u",
-            "ua": ""
-        },
-        {
-            "name": "📡YY",
-            "type": 0,
-            "url": "http://xxyyy.eu.org:35455/yylunbo.m3u",
-            "ua": ""
-        },
-        {
-            "name": "📡冰茶直播",
-            "type": 0,
-            "url": "https://bc.188766.xyz/?url=https://live.188766.xyz&mima=bingcha1130",
-            "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-            "logo": "https://epg.iill.top/logo/{name}.png",
-            "timeout": 10
-        },
-    {"name":"咪咕•综合","type":0,"url":"https://down.nigx.cn/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}
+    {"name":"咪咕•综合","type":0,"url":"https://git.yylx.win/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt","playerType":1,"epg":"http://epg.112114.xyz/?ch={name}&date={date}","logo":"https://epg.112114.xyz/logo/{name}.png"}
     ],
   "flags": [
     "youku",
