@@ -607,29 +607,6 @@
             "timeout": 60
         },
         {
-            "key": "雷鲸",
-            "name": "雷鲸｜4K",
-            "type": 3,
-            "api": "csp_PanWebShareCloudLJ",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "changeable": 1,
-            "style": {
-                "type": "list",
-                "ratio": 1.433
-            },
-            "ext": {
-                "site": [
-                    "https://www.leijing.xyz",
-                    "https://www.leijing1.com",
-                    "https://leijing.xyz",
-                    "https://leijing1.com"
-                ]
-            },
-            "timeout": 60
-        },
-        {
             "key": "海绵",
             "name": "海绵｜4K",
             "type": 3,
@@ -1057,6 +1034,23 @@
             },
             "jar": "./moyu.php"
         }, 
+        {
+      "key": "LeiJing",
+      "name": "雷鲸｜4K",
+      "type": 3,
+      "api": "csp_LeiJing",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://www.leijing.xyz",
+          "https://www.leijing1.com",
+          "https://leijing1.com"
+        ],
+        "cookie": "JSESSIONID=0DEF2AD05F33E7175A51CD04667D1BDD; cms_token=099c2f24ab5a49cca595e75871171e40; cms_accessToken=00fbbd76f382493788f551da3547f018; cms_refreshToken=c4d1a757e7074a02acbd4fa7309c27d8"
+      },
+            "jar": "./moyu.php"
+    },
         {
             "key": "TGSou",
             "name": "糖果｜鱼鱼",
