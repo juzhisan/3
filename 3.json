@@ -1357,6 +1357,19 @@
             }
         },
         {
+      "key": "Sir88",
+      "name": "超全｜体育",
+      "type": 3,
+      "api": "csp_Sir88",
+      "searchable": 0,
+      "filterable": 1,
+      "indexs": 0,
+      "style": {
+        "type": "list"
+      },
+      "jar": "./moyu.php"
+    },
+        {
             "key": "TingBook",
             "name": "听书｜有声",
             "type": 3,
@@ -1448,7 +1461,6 @@
             "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
             "ext": "./凤凰FM.js"
         },
-       {"key":"T4-qingting","name":"蜻蜓FM┃","type":4,"api":"https://catbox.n13.club/t9/qingting.php"},
        {
             "key": "Fishdrive",
             "name": "摸鱼｜媒体库",
