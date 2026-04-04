@@ -1583,6 +1583,22 @@
             "api": "csp_SP360"
         },
         {
+            "key": "景天",
+            "name": "景天|4K弹幕",
+            "type": 3,
+            "api": "csp_HBcms10Dou",
+            "ext": "https://zy.jinchancaiji.com/api.php/provide/vod/from/qq/",
+      "jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
+        },
+        {
+            "key": "茂茂",
+            "name": "茂茂|4K弹幕",
+            "type": 3,
+            "api": "csp_HBcms10Dou",
+            "ext": "https://zy.jinchancaiji.com/api.php/provide/vod/from/mgtv/",
+      "jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
+        },
+        {
             "key": "采集之王",
             "name": "采集｜合集",
             "type": 3,
