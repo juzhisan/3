@@ -1599,6 +1599,22 @@
       "jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
         },
         {
+            "key": "4Kav",
+            "name": "4Kav|弹幕",
+            "type": 3,
+            "api": "csp_HB4kav",
+            "playerType": 2,
+      "jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
+        },
+        {
+            "key": "追追",
+            "name": "追追|弹幕",
+            "type": 3,
+            "api": "csp_Wcai",
+            "ext": "https://zjuys.com/",
+      "jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
+        },
+        {
             "key": "采集之王",
             "name": "采集｜合集",
             "type": 3,
