@@ -142,6 +142,7 @@
             "api": "./drpy2.min.js",
             "ext": "./飞牛影视.js"
         },
+        {"key":"茶杯狐","name":"🦊茶狐┃（羊）","type":3,"api":"./茶杯狐.js"},
         {"key":"星辰影院","name":"🪐星辰┃（羊）","type":3,"api":"./腾讯弹幕.js"},
         {"key":"耐看","name":"👀耐看┃（羊）","type":3,"api":"./芒果弹幕.js"},
         {"key":"聚合短剧","name":"🐑短剧┃（羊）","type":3,"api":"./非凡资源[资].js"},
@@ -171,12 +172,6 @@
             "api": "csp_App3Q"
         },
         {
-            "key": "坚果影视",
-            "name": "坚果｜APP",
-            "type": 3,
-            "api": "csp_AppJg"
-        },
-        {
             "key": "韩圈",
             "name": "韩圈｜APP",
             "type": 3,
@@ -204,16 +199,6 @@
             "ext": "https://www.nntv.in/api.php/v1.vod"
         },
         {
-            "key": "极影",
-            "name": "极影｜APP",
-            "type": 3,
-            "api": "csp_AppYsV2",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "http://101.201.171.207:802/api.php/app/"
-        },
-        {
             "key": "顾我",
             "name": "顾我｜APP",
             "type": 3,
@@ -224,37 +209,6 @@
                 "url": "http://117.50.204.35:8090",
                 "dataKey": "ca94b06ca3c7d80e",
                 "dataIv": "ca94b06ca3c7d80e",
-                "ua": "okhttp/3.10.0"
-            }
-        },
-        {
-            "key": "爱影",
-            "name": "爱影｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": "https://aysappto.oss-cn-chengdu.aliyuncs.com/q21.txt",
-                "dataKey": "okkfKgnc9JIBISh1",
-                "dataIv": "okkfKgnc9JIBISh1",
-                "init": "initV122",
-                "search": "mineInfo",
-                "ua": "okhttp/3.10.0"
-            }
-        },
-        {
-            "key": "爱盈",
-            "name": "爱盈｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": "https://rxysyyds.oss-cn-chengdu.aliyuncs.com/qiji.txt",
-                "dataKey": "sjvlwnhk6h9znl61",
-                "dataIv": "sjvlwnhk6h9znl61",
-                "version": "305",
                 "ua": "okhttp/3.10.0"
             }
         },
@@ -271,17 +225,6 @@
                 "dataIv": "h5w3d6g1j9s2h3f6",
                 "ua": "okhttp/3.10.0"
             }
-        },
-        {
-            "key": "超前",
-            "name": "超前丨APP",
-            "type": 3,
-            "api": "csp_AppYsV2",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "playerType": 2,
-            "ext": "http://chaoqianys.top:91/api.php/app/"
         },
         {
             "key": "星空",
@@ -331,21 +274,6 @@
                 "dataKey": "eecbio48dsq13kkk",
                 "dataIv": "eecbio48dsq13kkk",
                 "search": "searchList4",
-                "init": "initV122",
-                "ua": "okhttp/3.10.0"
-            }
-        },
-        {
-            "key": "奇奇",
-            "name": "奇奇｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "url": "http://110.42.67.221:8009",
-                "dataKey": "123456789abcdefg",
-                "dataIv": "123456789abcdefg",
                 "init": "initV122",
                 "ua": "okhttp/3.10.0"
             }
@@ -857,95 +785,6 @@
             "jar": "./moyu.php"
         },
         {
-            "key": "厌离",
-            "name": "厌离｜APP",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": "AQ8xy13uUB+vU0X5VQoLoHQ0PbaWVadAyXpMKT4lGXmz4P8/XgMiirPtAaVdXwlAm5uF7AEvL3DXQh1rGvz8VkkK/iJRxAipX1t/HMeh8FiNDuXLu5Z6IRNARKpTACYVrIClJSw/mWpypTq/VHPWokB3OA8LPPKPaOao8P8nVbJ8xyA50XNWEVFnl2cVRf3xMlAzAZVOwhnDWXYRcDjo8oE=",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "枫眠",
-            "name": "枫眠｜APP",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": "ASeCaY5Xxcx0BdbJGIqllhkRBuCPwC/Kv1uDvURkfncW+fNupjJjBKERvDuCKL7Nc8bCYJ/Fboktq3geJgU0aE2SxOjoiU03IEtvv1np76XEOBn7dBJNwW8toIqv9PBY9T18yzCX3DoyksVEv01kRtBDqSTgbilbqOHhtNEm+L3ti2PLM08SEhkA/nE//PAwfIVtUWhsYKorNLuB7RxQ2Egqj4D7q7Tw3sH/yNbHthqw",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "思追",
-            "name": "思追丨APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": "AZMWjtBVHqg1eqc24zPBCnp+8nUMJ1DhABffeziVNB/hZ1AHDr9HynmQ7Hea0MJa9TQvImvwo+VcBjCulptXIj6796jroFgU16XtcGODMtfDJ8RJjrEa+2QJ1eVamXkB+N3GrowCHjQsVd5GK4QAxVeW7oVMa/kmxFpF4XWFHhz5YGcXOSxIhznhRlZln5Ap8sol6sjWUfBhblNbLgjDBzKdTxu/NjbUZFhO8y6IP8SZhvrY0CxMo8/Kp6AnCYGRyA==",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "忘机",
-            "name": "忘机｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "changeable": "1",
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "ARIf/javCFZrnb7bhwzDQ1I/gYi3vwqodTXDNuHLJQLoHd59j15mVOndyVuPO6QgZdzkptgM5xHcyglZVNZ5Y03yB+SaFazAu3GCkMHSzwpbm/dSSiQ8OxQeetnxiSz91ibY5976IFoMCFopDPhKbYNTr7teWVcVWi20mwhdkrg3Ul7mJ8cYHqa57ZUYzAH1Ab4ht/EMVZSnHosw6B+3jUNcHywS4S4CgRS+0BRsZFNaTcutrXgEYm7d12jGjT9cj7XmK0cj+2mV6zrCROKE+wUb6bLDVrtsxwHLykBah4DLQIlRxqKtSkCA3NU1U+Zlb800G77DrCf3g86bItws62w=",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "曦臣",
-            "name": "曦臣｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "changeable": "1",
-            "quickSearch": 0,
-            "filterable": 1,
-            "ext": "AcQgxCZJh0zfuqWhi3EWO0lHZHvcxjcjkSwh/L0j5HEY9Fq3+o2hdqQXb/2viRHayRmBY64JuCWIkKKgRdpy650qa/qp5Yx5LMXbHLNBOw7Y2ZGmPIKIXZw4s07EI1OuOTxg5Jj1a2VvZaGGrWPO5Zx84C6LNBDniS3O/XXNtDexGf7mP03SjlVcLkS00BSjgZJIy7PZA3fuP0lUeIdK+T0JzxKFrX5IxrgxOGYTCb4UUXOKaASBFqPcbpdj1SMNkCxWhqz9lcA8n+r81dRn4TMOKoyFaxJmX3DfKc1UzGgH",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "景仪",
-            "name": "景仪｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": "AXBlmIaXssBpd3Fa+kwjwLQb1/iS17U9n98QF7PrEQQBsrDqGYa/UHvP9eMSQFc7xxy63YaGklVEc+zsxq7CHCQEnNfRoaZdDnwsUwKmWxnYn4lRh3CRnB6gOvpRkamwTzo6Ytzy0enTk/xpedKn+Z8DUSn7CsdzN51bXQA8I2K32X7yAnnIKXwZfslGY5H8Y0eMEYSLh/Ny+xy2UQO2jT7GrWI9Ih8uT6wSdIXGXAnpjySRe5YMMXwVltzCkBw0Ow==",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "金牌",
-            "name": "金牌｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "url": "https://qj3.ggtvb.cc",
-                "dataKey": "eecbio48dsq13kkk",
-                "dataIv": "eecbio48dsq13kkk",
-                "search": "searchList4",
-                "init": "initV122",
-                "ua": "okhttp/3.10.0"
-            },
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "明玦",
-            "name": "明玦｜APP",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": "AaIkDkIeL0bF5foLGJpX+cbUjv1IbY05okz9VBt5znOYXxZtodjbPHHdcEg6FdVbb9WW7sl623Wj49ZNOxTIHR9cruqS3Rcl5VJPgjC/JLvofUwvzUraVUMLTIxvs2j5L4vg/hN1o5TDRbWkq8SrCRxY2QopBTqPw75C/ECyvBQlV3NZjWlbu5YUr8jGhJJfdJ7o1gh6Xeg0pGMngVpBeDuQDhdUmkvCl658cEP/Oics",
-            "jar": "./moyu.php"
-        },
-        {
             "key": "ALLLive",
             "name": "星河｜共影",
             "type": 3,
@@ -1089,15 +928,6 @@
             "type": 3,
             "api": "csp_SeedHub",
             "searchable": 1,
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "CupFox",
-            "name": "茶杯狐｜影视",
-            "type": 3,
-            "api": "csp_CupFox",
-            "searchable": 1,
-            "changeable": 1,
             "jar": "./moyu.php"
         },
         {
@@ -1621,7 +1451,6 @@
             "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
             "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/CJZW.js?type=url&params=https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/json/CJJT.json$1$1"
         },
-        {"key":"人人PHP","name":"👭人人┃PHP","type":4,"api":"http://jiduo666.dpdns.org/rrsp.php","changeable":1},
         {
             "key": "py_官方采集789",
             "name": "🍎 官方采集789 (T4)",
