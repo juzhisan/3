@@ -690,6 +690,12 @@
             "timeout": 60
         },
         {
+            "key": "独播影视",
+            "name": "独播｜影视",
+            "type": 3,
+            "api": "csp_Duboku"
+        },
+        {
             "key": "云播影视",
             "name": "云播｜影视",
             "type": 3,
