@@ -90,8 +90,6 @@
       "jar": "./smile.jar"},
 {"key":"qiao2","name":"💢聚搜2","type":3,"api":"csp_qiao2","playerType":2,"ext":"7lj763gg402i7942412h849jg1558j9jl8g19213il86316k465719lik158491h179312hk935886ig2l05g9",
       "jar": "./smile.jar"},
-{"key":"趣看","name":"🥽趣看","type":3,"api":"csp_Qiji","playerType":2,"ext":"7lj763gg402i794245238hjjg45j8295k5hji64882862l321l4215hkkg1l5g001i9k5ihkj6539l8j2208h380k5h21hk8lj2l7546kjh0igh2329j29kl67l85g13lkg1i5l3li2k312g97113g038kll1j7121h5gi6976ki97hlj7837gg73k03403l33",
-      "jar": "./smile.jar"},
 {"key":"王子","name":"🍟王子","type":3,"api":"csp_Xdai","ext":"7lj763gg402i7942503g9g9jk909jji3g0li9j088291253h4k141gggkk41435h43924kg6ik48i0856j01k882glkh4kllg538704jl5k4j1gl27j321g03lll",
       "jar": "./smile.jar"},
 {"key":"灵虎","name":"🦁灵虎","type":3,"api":"csp_Xdai","ext":"7lj763gg402i7942532384j7lk0ljji7ghl19313j490266k0g1855k7k103474j1i9349h68842h3h016399jj1g6gk4jlhh367714gk5g2jhji12g819j33jlj1l15k6g492l0",
@@ -192,16 +190,6 @@
             "ext": "https://fishapi.wya6.com/fish/fishhxq.php"
         },
         {
-            "key": "久久",
-            "name": "久久｜APP",
-            "type": 3,
-            "api": "csp_AppYsV2",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "http://99cms.jj99.icu:8199/api.php/app/"
-        },
-        {
             "key": "奴娜",
             "name": "奴娜丨APP",
             "type": 3,
@@ -210,20 +198,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://www.nntv.in/api.php/v1.vod"
-        },
-        {
-            "key": "花猪",
-            "name": "花猪｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": "https://tiantangwulu.oss-cn-shanghai.aliyuncs.com/axiba.txt",
-                "dataKey": "h5w3d6g1j9s2h3f6",
-                "dataIv": "h5w3d6g1j9s2h3f6",
-                "ua": "okhttp/3.10.0"
-            }
         },
         {
             "key": "星空",
@@ -288,20 +262,6 @@
                 "site": "https://maotouyinghubei.oss-cn-wuhan-lr.aliyuncs.com/maotouyinghb.txt",
                 "dataKey": "zxPtEUDGVllIUhDB",
                 "dataIv": "zxPtEUDGVllIUhDB",
-                "ua": "okhttp/3.10.0"
-            }
-        },
-        {
-            "key": "小猪",
-            "name": "小猪｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "site": "https://tiantangyoulu.oss-cn-beijing.aliyuncs.com/wenxintishi.txt",
-                "dataKey": "h2t8fjo964j2sl6a",
-                "dataIv": "h2t8fjo964j2sl6a",
                 "ua": "okhttp/3.10.0"
             }
         },
@@ -1083,77 +1043,12 @@
             "genre": "shortdrama"
         },
         {
-            "key": "锦鲤短剧",
-            "name": "锦鲤｜短剧",
-            "type": 3,
-            "api": "csp_JinliDJ",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "genre": "shortdrama"
-        },
-        {
-            "key": "星阁短剧",
-            "name": "星阁｜短剧",
-            "type": 3,
-            "api": "csp_XinggeDJ",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "genre": "shortdrama"
-        },
-        {
-            "key": "碎片",
-            "name": "碎片｜短剧",
-            "type": 3,
-            "api": "csp_SuipianDJ",
-            "searchable": 1,
-            "changeable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "genre": "shortdrama"
-        },
-        {
             "key": "番薯动漫",
             "name": "番薯丨动漫",
             "type": 3,
             "quickSearch": 1,
             "api": "csp_AppGet",
             "ext": "N5u2FS3i/elUFAoSVYBzne8+r0r/kX1E+KdfHQ6FVY6/wHmWZoFfjCv2f3YfjfSbJm0/trORuqYE1PzwW9Z2IT6SnMHG1Beaes3+9Ad9p9Dy7MPFARRTA33haDFOP4SZtpBkd4utjKPyprZNVKMxvA==",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "AoWu",
-            "name": "嗷呜｜动漫",
-            "type": 3,
-            "api": "csp_AoWu",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "mifun",
-            "name": "米饭｜动漫",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": "GvE9VjZcKAqoJldDfjF/EFjEacvdRgP+DzKluxhIowAt7HBmxO7zYbrt98skapDAKw6Hlx1Iy+mVJuQI6FYGb7NuvCZrhayVbhmr8hS0EeOTcuCxwv7DUtbufpbgslF77hCJqv2EtYD5MpCse/KA1Q==",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "XiFan",
-            "name": "稀饭｜动漫",
-            "type": 3,
-            "api": "csp_XiFan",
-            "searchable": 1,
-            "quickSearch": 1,
-            "ext": {
-                "SiteUrl": "https://dm.xifanacg.com"
-            },
             "jar": "./moyu.php"
         },
         {
@@ -1165,17 +1060,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "N5u2FS3i/elUFAoSVYBznRMvuK1KLSV1DN4HBOs//GWvWksCYwvNDoPf16hWOVsnftf5i6fmT2utdVhcCOZaQrECH9tmtsiG6f+4GP6h27DsVeuwTbSSbDAx+58B3Gtp",
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "Gugu",
-            "name": "咕咕｜动漫",
-            "type": 3,
-            "api": "csp_AppGet",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": "N5u2FS3i/elUFAoSVYBznXUeEAt3X+JD9YKl5MjJCWQR4USFFmoQtTGE0mJDLVeOv00lc599YBqQsYAl+dw0i/1Jq4wgCPncJOqYhT21G0n+faZ/AOCfRq6fnnZcQCfX",
             "jar": "./moyu.php"
         },
         {
@@ -1250,25 +1134,6 @@
             },"jar": "./sx.jar"
         },
         {
-            "key": "88看球",
-            "name": "88｜看球",
-            "type": 3,
-            "api": "csp_Kanqiu",
-            "gridview": 3,
-            "style": {
-                "type": "list"
-            }
-        },
-        {
-            "key": "919体育",
-            "name": "919｜体育",
-            "type": 3,
-            "api": "csp_919Tiyu",
-            "style": {
-                "type": "list"
-            }
-        },
-        {
       "key": "Sir88",
       "name": "超全｜体育",
       "type": 3,
@@ -1281,6 +1146,52 @@
       },
       "jar": "./moyu.php"
     },
+    {
+            "key": "88看球",
+            "name": "88｜看球",
+            "type": 3,
+            "api": "csp_Kanqiu",
+            "gridview": 3,
+            "style": {
+                "type": "list"
+            }
+        },
+        {
+            "key": "球通体育",
+            "name": "球通｜体育",
+            "type": 3,
+            "api": "csp_QiutongTY",
+            "style": {
+                "type": "list"
+            }
+        },
+        {
+            "key": "瓜子体育",
+            "name": "瓜子｜体育",
+            "type": 3,
+            "api": "csp_GuaziTY",
+            "style": {
+                "type": "list"
+            }
+        },
+        {
+            "key": "919体育",
+            "name": "919｜体育",
+            "type": 3,
+            "api": "csp_919TY",
+            "style": {
+                "type": "list"
+            }
+        },
+        {
+            "key": "世界听书",
+            "name": "世界｜听书",
+            "type": 3,
+            "api": "csp_TingShijie",
+            "style": {
+                "type": "list"
+            }
+        },
         {
             "key": "TingBook",
             "name": "听书｜有声",
@@ -1856,11 +1767,6 @@
     {"name":"手动解析③","type":0,"url":"https://jx.m3u8.tv/jiexi/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57"}}},
     {"name":"手动解析④","type":0,"url":"https://www.ckplayer.vip/jiexi/?url=","ext":{"header":{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57"}}},
         {"name":"夏夜解析","type":1,"url":"https://183933.xyz/xiaye.php?url="},
-        {"name":"解","type":1,"url":"https://kalbim.xatut.top/kalbim2025/781718/play/video_player.php?url="},
-        {"name":"夜","type":1,"url":"http://shybot.top/v2/video/jx/?shykey=4595a71a4e7712568edcfa43949236b42fcfcb04997788ebe7984d6da2c6a51c&url="},
-        {"name":"夏","type":1,"url":"http://shybot.top/v2/video/jx/?shykey=4595a71a4e7712568edcfa43949236b42fcfcb04997788ebe7984d6da2c6a51c&qn=max&url="},
-        {"name":"析","type":1,"url":"http://sspa8.top:8100/api/?cat_ext=eyJmbGFnIjpbInFxIiwi6IW+6K6vIiwicWl5aSIsIueIseWlh+iJuiIsIuWlh+iJuiIsInlvdWt1Iiwi5LyY6YW3Iiwic29odSIsIuaQnOeLkCIsImxldHYiLCLkuZDop4YiLCJtZ3R2Iiwi6IqS5p6cIiwidG5tYiIsInNldmVuIiwiYmlsaWJpbGkiLCIxOTA1Il0sImhlYWRlciI6eyJVc2VyLUFnZW50Ijoib2todHRwLzQuOS4xIn19&key=星睿4k&url="},
-        {"name":"夏夜木","type":1,"url":"http://sspa8.top:8100/api/?key=1060089351&url="},
         {
             "name": "追觅",
             "type": "1",
