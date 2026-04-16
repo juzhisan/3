@@ -8,7 +8,7 @@
 */
 import { Crypto, load, _ } from 'assets://js/lib/cat.js';
 
-let HOST = 'https://nkvod.org';
+let HOST = 'https://www.yimidu.cn';
 let siteKey = "", siteType = "", sourceKey = "", ext = "";
 let searchCookie = '';
 
