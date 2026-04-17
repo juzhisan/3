@@ -134,7 +134,6 @@
         {"key":"星辰影院","name":"🪐星辰┃（羊）","type":3,"api":"./腾讯弹幕.js"},
         {"key":"聚合短剧","name":"🐑短剧┃（羊）","type":3,"api":"./非凡资源[资].js"},
         {"key":"月光影视","name":"🌛月光┃（羊）","type":3,"api":"./月光影视.js"},
-        {"key":"厂长","name":"🙋厂长┃（羊）","type":3,"api":"./厂长.js"},
       {"key":"低端","name":"📺低端","type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://gh-proxy.com/raw.githubusercontent.com/yoursmile66/TVBox/main/json/低端影视.json",
       "jar": "./smile.jar"}, 
       {"key":"csp_Kugou","name":"🐶酷狗","type":3,"api":"csp_Kugou","playerType":2,"ext":{"classes":[{"type_name":"酷狗","type_id":"kugou"}]},
