@@ -1250,6 +1250,8 @@
                 "type": "list"
             }
         },
+        {"key":"酷克PHP","name":"🏀酷克┃PHP","type":4,"api":"http://jiduo.3116598.xyz/PHP/pkty.php","changeable":1},
+        {"key":"人人PHP","name":"👭人人┃PHP","type":4,"api":"http://jiduo.3116598.xyz/PHP/rrsp.php","changeable":1},
         {
             "key": "世界听书",
             "name": "世界｜听书",
