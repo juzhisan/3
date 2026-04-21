@@ -130,8 +130,6 @@
             "api": "./drpy2.min.js",
             "ext": "./飞牛影视.js"
         },
-        {"key":"茶杯狐","name":"🦊茶狐┃（羊）","type":3,"api":"./茶杯狐.js"},
-        {"key":"星辰影院","name":"🪐星辰┃（羊）","type":3,"api":"./腾讯弹幕.js"},
         {"key":"聚合短剧","name":"🐑短剧┃（羊）","type":3,"api":"./非凡资源[资].js"},
         {"key":"月光影视","name":"🌛月光┃（羊）","type":3,"api":"./月光影视.js"},
       {"key":"低端","name":"📺低端","type":3,"api":"csp_XYQHiker","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://gh-proxy.com/raw.githubusercontent.com/yoursmile66/TVBox/main/json/低端影视.json",
@@ -220,32 +218,78 @@
             }
         },
         {
-            "key": "顾我",
-            "name": "顾我｜APP",
+            "key": "星夜",
+            "name": "星夜4K┃🍀星河🍀",
             "type": 3,
             "api": "csp_AppQi",
+            "changeable": "1",
+            "quickSearch": 0,
+            "filterable": 1,
             "searchable": 1,
-            "changeable": 1,
             "ext": {
-                "url": "http://117.50.204.35:8090",
-                "dataKey": "ca94b06ca3c7d80e",
-                "dataIv": "ca94b06ca3c7d80e",
-                "ua": "okhttp/3.10.0"
+                "url": "https://qj4.catbb.xyz",
+                "dataKey": "eecbio48dsq13kkk",
+                "dataIv": "eecbio48dsq13kkk",
+                "search": "searchList4",
+                "version": "305",
+                "init": "initV122",
+                "ua": "Lavf/58.12.100"
             }
         },
         {
             "key": "爱影",
-            "name": "爱影｜APP",
+            "name": "爱盈4K┃🍀星河🍀",
+            "type": 3,
+            "api": "csp_AppQi",
+            "changeable": "1",
+            "quickSearch": 0,
+            "filterable": 1,
+            "searchable": 1,
+            "ext": {
+                "url": "http://222.211.75.252:22188",
+                "dataKey": "nzEqOYYH3QzHuEPl",
+                "dataIv": "nzEqOYYH3QzHuEPl",
+                "search": "searchList4",
+                "version": "305",
+                "init": "initV122",
+                "ua": "Lavf/58.12.10"
+            }
+        },
+        {
+            "key": "星空2",
+            "name": "星空4K┃🍀星河🍀",
+            "type": 3,
+            "searchable": 1,
+            "changeable": 1,
+            "api": "csp_AppGet",
+            "ext": {
+                "url": "http://xkcms.xkgzs.xyz",
+                "dataKey": "107jkcdncofcdkjk",
+                "dataIv": "107jkcdncofcdkjk"
+            }
+        },
+        {
+            "key": "星空",
+            "name": "山有木兮┃🍀星河🍀",
+            "type": 3,
+            "api": "http://mytv6688.xyz/pyplugin/木兮.py",
+            "searchable": 1,
+            "filterable": 0,
+            "changeable": 0
+        },
+        {
+            "key": "吉米",
+            "name": "星河秒播┃🍀星河🍀",
             "type": 3,
             "api": "csp_AppQi",
             "searchable": 1,
-            "changeable": 1,
             "ext": {
-                "site": "https://aysappto.oss-cn-chengdu.aliyuncs.com/q21.txt",
-                "dataKey": "okkfKgnc9JIBISh1",
-                "dataIv": "okkfKgnc9JIBISh1",
+                "url": "http://117.50.204.35:8090",
+                "dataKey": "ca94b06ca3c7d80e",
+                "dataIv": "ca94b06ca3c7d80e",
+                "version": "305",
                 "init": "initV122",
-                "search": "mineInfo",
+                "search": "searchList4",
                 "ua": "okhttp/3.10.0"
             }
         },
@@ -265,19 +309,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://www.nntv.in/api.php/v1.vod"
-        },
-        {
-            "key": "星空",
-            "name": "星空｜APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppGet",
-            "ext": {
-                "url": "http://xk7.xkgzs.xyz",
-                "dataKey": "107jkcdncofcdkjk",
-                "dataIv": "107jkcdncofcdkjk"
-            }
         },
         {
             "key": "云播",
@@ -303,22 +334,6 @@
             }
         },
         {
-            "key": "金牌",
-            "name": "金牌｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "searchable": 1,
-            "changeable": 1,
-            "ext": {
-                "url": "https://qj4.catbb.xyz",
-                "dataKey": "eecbio48dsq13kkk",
-                "dataIv": "eecbio48dsq13kkk",
-                "search": "searchList4",
-                "init": "initV122",
-                "ua": "okhttp/3.10.0"
-            }
-        },
-        {
             "key": "老鹰",
             "name": "老鹰｜APP",
             "type": 3,
@@ -341,17 +356,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "http://38.47.213.61:41271/mogai_api.php/v1.vod"
-        },
-        {
-            "key": "小羊",
-            "name": "小羊｜APP",
-            "type": 3,
-            "api": "csp_AppQi",
-            "ext": {
-                "url": "https://qjappcms410.xy4k.com",
-                "dataKey": "mC6kG4mI1uM8tS4o",
-                "dataIv": "mC6kG4mI1uM8tS4o"
-            }
         },
         {
             "key": "玩偶",
