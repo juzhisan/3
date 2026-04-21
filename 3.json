@@ -278,22 +278,6 @@
             "changeable": 0
         },
         {
-            "key": "吉米",
-            "name": "星河秒播┃🍀星河🍀",
-            "type": 3,
-            "api": "csp_AppQi",
-            "searchable": 1,
-            "ext": {
-                "url": "http://117.50.204.35:8090",
-                "dataKey": "ca94b06ca3c7d80e",
-                "dataIv": "ca94b06ca3c7d80e",
-                "version": "305",
-                "init": "initV122",
-                "search": "searchList4",
-                "ua": "okhttp/3.10.0"
-            }
-        },
-        {
             "key": "韩圈",
             "name": "韩圈｜APP",
             "type": 3,
@@ -896,21 +880,6 @@
             "ext": {
                 "url": "http://我不是.摸鱼儿.com/api/feng/xiaoman.php",
                 "token": "xiaoman666"
-            },
-            "jar": "./moyu.php"
-        },
-        {
-            "key": "Kan360",
-            "name": "流离｜寒鸦",
-            "type": 3,
-            "api": "csp_Kan360",
-            "searchable": 1,
-            "filterable": 1,
-            "ext": {
-                "filter": "https://open.wya6.com/d/down/2026/json/360.json",
-                "fishjx": [
-                    "http://zhuimi.摸鱼儿.com/moyu/zhuimi?token=92VMJ965&url="
-                ]
             },
             "jar": "./moyu.php"
         },
