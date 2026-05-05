@@ -1658,70 +1658,10 @@
             "changeable": 0,"jar": "./vox.jar"
         },
         {
-            "key": "腾讯视频",
-            "name": "腾讯｜视频",
-            "type": 3,
-            "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/TXSP.js"
-        },
-        {
-            "key": "果果视频",
-            "name": "果果｜视频",
-            "type": 3,
-            "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
-            "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/MGSP.js"
-        },
-        {
-            "key": "奇奇视频",
-            "name": "奇奇｜视频",
-            "type": 3,
-            "api": "https://pan.vma.cc/pan/down.php/ec67b9045d393737f073d2c9365533f0.js",
-            "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/AQY.js"
-        },
-        {
-            "key": "酷酷视频",
-            "name": "酷酷｜视频",
-            "type": 3,
-            "api": "https://pan.vma.cc/pan/down.php/ec67b9045d393737f073d2c9365533f0.js",
-            "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/YKSP.js"
-        },
-        {
             "key": "三六零",
             "name": "三六零｜视频",
             "type": 3,
             "api": "csp_SP360"
-        },
-        {
-            "key": "景天",
-            "name": "景天|4K弹幕",
-            "type": 3,
-            "api": "csp_HBcms10Dou",
-            "ext": "https://zy.jinchancaiji.com/api.php/provide/vod/from/qq/",
-      "jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-        },
-        {
-            "key": "茂茂",
-            "name": "茂茂|4K弹幕",
-            "type": 3,
-            "api": "csp_HBcms10Dou",
-            "ext": "https://zy.jinchancaiji.com/api.php/provide/vod/from/mgtv/",
-      "jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-        },
-        {
-            "key": "4Kav",
-            "name": "4Kav|弹幕",
-            "type": 3,
-            "api": "csp_HB4kav",
-            "playerType": 2,
-      "jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
-        },
-        {
-            "key": "追追",
-            "name": "追追|弹幕",
-            "type": 3,
-            "api": "csp_Wcai",
-            "ext": "https://zjuys.com/",
-      "jar": "http://103.45.162.207:25252/仅供测试/custom_spider.jar"
         },
         {
             "key": "采集之王",
