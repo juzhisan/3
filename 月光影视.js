@@ -1,26 +1,30 @@
 /*
-title: '月光影视', author: '小可乐/v5.12.1'
+title: '星辰影院', author: '小可乐/v6.1.1'
 说明：可以不写ext，也可以写ext，ext支持的参数和格式参数如下
 "ext": {
     "host": "xxxx", //站点网址
-    "timeout": 6000  //请求超时，单位毫秒
+    "timeout": 6000,  //请求超时，单位毫秒
+    "catesSet": "电视剧&电影&综艺",  //指定分类和顺序
+    "tabsSet": "土星&下载线1"  //指定线路和顺序
 }
 */
-var HOST;
+
 const MOBILE_UA = 'Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36';
 const DefHeader = {'User-Agent': MOBILE_UA};
-const KParams = {
+var HOST;
+var KParams = {
     headers: {'User-Agent': MOBILE_UA},
     timeout: 5000
 };
 
 async function init(cfg) {
     try {
-        let host = cfg.ext?.host?.trim() || 'https://www.dzwhs.com';
-        HOST = host.replace(/\/$/, '');
+        HOST = (cfg.ext?.host?.trim() || 'https://www.xcyycn.com').replace(/\/$/, '');
         KParams.headers['Referer'] = HOST;
         let parseTimeout = parseInt(cfg.ext?.timeout?.trim(), 10);
-        KParams.timeout = parseTimeout > 0 ? parseTimeout : 5000;
+        if (parseTimeout > 0) {KParams.timeout = parseTimeout;}
+        KParams.catesSet = cfg.ext?.catesSet?.trim() || '';
+        KParams.tabsSet = cfg.ext?.tabsSet?.trim() || '';
         KParams.resHtml = await request(HOST);
     } catch (e) {
         console.error('初始化参数失败：', e.message);
@@ -30,26 +34,47 @@ async function init(cfg) {
 async function home(filter) {
     try {
         let resHtml = KParams.resHtml;
-        if (!resHtml) {throw new Error('源码为空');}   
-        let classes = cutStr(resHtml, '/zwhstp', '/a>', '', false, 1, true).map(it => {
-            let cName = cutStr(it, '>', '<', '分类名');
-            let cId = cutStr(it, '/', '.', '分类值');
+        if (!resHtml) {throw new Error('源码为空');}
+        let typeArr = cutStr(resHtml, 'hl-nav-item£>', '</li>', '', false, 0, true).filter(flt => flt.includes('/v/'));
+        let classes = typeArr.map((it,idx) => {
+            let cName = cutStr(it, '>', '<', `分类${idx+1}`);
+            let cId = cutStr(it, '/v/', '.', `值${idx+1}`);
             return {type_name: cName, type_id: cId};
         });
-        let filters = {
-            "1":[
-                {"key":"cateId","name":"类型","value":[{"n":"全部","v":"全部"},{"n":"动作片","v":"6"},{"n":"喜剧片","v":"7"},{"n":"爱情片","v":"8"},{"n":"科幻片","v":"9"},{"n":"恐怖片","v":"10"},{"n":"剧情片","v":"11"},{"n":"战争片","v":"12"},{"n":"纪录片","v":"13"},{"n":"悬疑片","v":"14"},{"n":"犯罪片","v":"15"},{"n":"奇幻片","v":"16"},{"n":"动画片","v":"31"},{"n":"预告片","v":"32"}]}
-            ],
-            "2":[
-                {"key":"cateId","name":"类型","value":[{"n":"全部","v":"全部"},{"n":"国产剧","v":"17"},{"n":"港台剧","v":"18"},{"n":"日韩剧","v":"20"},{"n":"欧美剧","v":"21"},{"n":"海外剧","v":"22"}]}
-            ],
-            "3":[
-                {"key":"cateId","name":"类型","value":[{"n":"全部","v":"全部"},{"n":"大陆综艺","v":"23"},{"n":"日韩综艺","v":"24"},{"n":"欧美综艺","v":"25"},{"n":"港台综艺","v":"26"}]}
-            ],
-            "4":[
-                {"key":"cateId","name":"类型","value":[{"n":"全部","v":"全部"},{"n":"国产动漫","v":"27"},{"n":"日韩动漫","v":"28"},{"n":"欧美动漫","v":"29"},{"n":"其他动漫","v":"30"}]}
-            ]
-        };
+        if (KParams.catesSet) {classes = ctSet(classes, KParams.catesSet);}
+        let filters = {};
+        try {
+            const nameObj = {class: 'class,剧情', area: 'area,地区', lang: 'lang,语言', year: 'year,年份', letter: 'letter,字母', by: 'by,排序'};
+            const regObj = {class: /\d+---([^-]+)-/, area: /\/\d+-([^-]+)-/, lang: /\d+----([^-]+)-/, year: /-([^-]+)\./, letter: /\d+-----([^-]+)-/, by: /\d+--([^-]+)-/};
+            let resHtmlList = await Promise.all(
+                classes.map(async (it) => {
+                    try {return await request(`${HOST}/vs/${it.type_id}-----------.html`);} catch (sErr) {return '';}
+                })
+            );
+            classes.forEach((it,idx) => {
+                let resfHtml = resHtmlList[idx];
+                if (resfHtml) {
+                    let flValArr = cutStr(resfHtml, 'hl-filter-list', '</ul>', '', false, 0, true).slice(1);
+                    filters[it.type_id] = Object.entries(nameObj).map(([nObjk, nObjv]) => {
+                        let [kkey, kname] = nObjv.split(',');
+                        let tgVal = flValArr.find(fv => regObj[kkey].test(fv)) ?? '';
+                        if (kkey === 'by') {tgVal = cutStr(resfHtml, 'hl-rb-title', '</div>', '', false);}
+                        let tgValArr = cutStr(tgVal, '<a', '/a>', '', false, 0, true);
+                        let tValArr = kkey !== 'by' ? tgValArr.slice(1) : tgValArr;                        
+                        let kvalue = tValArr.map(el => {
+                            let n = cutStr(el, '>', '<', '空白');
+                            let v = n;
+                            if (kkey === 'by') {v = el.match(regObj[kkey])?.[1] ?? '';}
+                            return {n: n, v: v}; 
+                        });
+                        if (kkey !== 'by') {kvalue.unshift({n: '全部', v: ''});}
+                        return {key: kkey, name: kname, value: kvalue};
+                    }).filter(flt => flt.key && flt.value.length > 1);
+                }
+            });
+        } catch (e) {
+            filters = {}
+        }
         return JSON.stringify({class: classes, filters: filters});
     } catch (e) {
         console.error('获取分类失败：', e.message);
@@ -70,13 +95,15 @@ async function homeVod() {
 
 async function category(tid, pg, filter, extend) {
     try {
-        pg = parseInt(pg, 10);
-        pg = pg > 0 ? pg : 1;
-        let cateUrl = `${HOST}/zwhstp/${extend?.cateId ?? tid}-${pg}.html`;
+        pg = parseInt(pg, 10), pg = pg > 0 ? pg : 1;
+        let fl = extend || {};
+        let cateUrl = `${HOST}/vs/${fl.cateId || tid}-${fl.area ?? ''}-${fl.by ?? ''}-${fl.class ?? ''}-${fl.lang ?? ''}-${fl.letter ?? ''}---${pg}---${fl.year ?? ''}.html`;        
         let resHtml = await request(cateUrl);
         let VODS = getVodList(resHtml);
-        let pagecount = 999;
-        return JSON.stringify({list: VODS, page: pg, pagecount: pagecount, limit: 30, total: 30*pagecount});
+        let limit = VODS.length;
+        let pagecount = cutStr(resHtml, 'hl-page-total£/', '页', '1');
+        pagecount = Number(pagecount);
+        return JSON.stringify({list: VODS, page: pg, pagecount: pagecount, limit: limit, total: limit*pagecount});
     } catch (e) {
         console.error('类别页获取失败：', e.message);
         return JSON.stringify({list: [], page: 1, pagecount: 0, limit: 30, total: 0});
@@ -85,9 +112,8 @@ async function category(tid, pg, filter, extend) {
 
 async function search(wd, quick, pg) {
     try {
-        pg = parseInt(pg, 10);
-        pg = pg > 0 ? pg : 1;
-        let searchUrl = `${HOST}/zwhstp/id.html?wd=${wd}&page=${pg}`;
+        pg = parseInt(pg, 10), pg = pg > 0 ? pg : 1;
+        let searchUrl = `${HOST}/s${wd}/page/${pg}.html`;
         let resHtml = await request(searchUrl);
         let VODS = getVodList(resHtml);
         return JSON.stringify({list: VODS, page: pg, pagecount: 10, limit: 30, total: 300});
@@ -99,19 +125,22 @@ async function search(wd, quick, pg) {
 
 function getVodList(khtml) {
     try {
-        if (!khtml) {throw new Error('源码为空');}
+        if (!khtml) {throw new Error('源码为空');}  
         let kvods = [];
-        let listArr = cutStr(khtml, 'lazyload"', '/a>', '', false, 1, true);
+        let listArr = cutStr(khtml, 'hl-lazy', '</a>', '', false, 0, true).filter(flt => flt.includes('remarks'));
         for (let it of listArr) {
             let kname = cutStr(it, 'title="', '"', '名称');
             let kpic = cutStr(it, 'data-original="', '"', '图片');
-            let kremarks = cutStr(it, 'text-right">', '<', '状态');
-            kvods.push({
-                vod_name: kname,
-                vod_pic: kpic,
-                vod_remarks: kremarks,
-                vod_id: `${cutStr(it, 'href="', '"', 'Id')}@${kname}@${kpic}@${kremarks}`
-            });
+            let kremarks = cutStr(it, 'remarks">', '</', '状态');
+            let kid = cutStr(it, 'href="', '"');
+            if (kid) {
+                kvods.push({
+                    vod_name: kname,
+                    vod_pic: kpic,
+                    vod_remarks: kremarks,
+                    vod_id: `${kid}@${kname}@${kpic}@${kremarks}`
+                });
+            }
         }
         return kvods;
     } catch (e) {
@@ -125,25 +154,39 @@ async function detail(ids) {
         let [id, kname, kpic, kremarks] = ids.split('@');
         let detailUrl = !/^http/.test(id) ? `${HOST}${id}` : id;
         let resHtml = await request(detailUrl);
-        if (!resHtml) {throw new Error('源码为空');}
-        let intros = cutStr(resHtml, 'stui-content col-pd', 'play-btn', '', false);
-        let ktabs = cutStr(resHtml, 'pull-right"></span>', '/h3>', '', false, 1, true).map((it,idx) => cutStr(it, 'title">', '<', `线-${idx+1}`));
-        let kurls = cutStr(resHtml, '"stui-content__playlist', '</ul>', '', false, 1, true).map(item => {
-            let kurl = cutStr(item, '<a', '/a>', '', false, 1, true).map(it => { return cutStr(it, '>', '<', 'noEpi')  + '$' + cutStr(it, 'href="', '"', 'noUrl'); });
-            return kurl.join('#');
-        });      
+        if (!resHtml) {throw new Error('源码为空');}  
+        let intros = cutStr(resHtml, '"clearfix">', '</ul>', '', false);
+        let [ktabs, kurls] = [[], []];
+        let zx_tabs = cutStr(resHtml, '<span class="hl-from', '/span>', '', false, 0, true).map((it,idx) => cutStr(it, '>', '<', `在线${idx+1}`) );
+        ktabs.push(...zx_tabs);
+        let zx_urls = cutStr(resHtml, 'hl-plays-list">', '</ul>', '', false, 0, true).map((item,idx) => cutStr(item, '<li', '</li>', '', false, 0, true).map(it => { return cutStr(it, '>', '</a>', 'noEpi')  + '$' + HOST + cutStr(it, 'href="', '"', 'noUrl'); }).join('#') );
+        kurls.push(...zx_urls);
+        let xzArr = cutStr(resHtml, 'hl-downs-list hl', '</ul>', '', false, 0, true);
+        if (xzArr[0]) {
+            xzArr.forEach((item,idx) => {
+                let siglUrl = cutStr(item, 'down_url', '>', '', false, 0, true).map(it => `${cutStr(it, 'file_name="', '"', 'noEpi')}$${cutStr(it, 'value="', '"', 'noUrl')}` ).join('#');
+                ktabs.push(`下载线${idx+1}`);
+                kurls.push(siglUrl);
+            });
+        }
+        if (KParams.tabsSet) {
+            let ktus = ktabs.map((it, idx) => { return {type_name: it, type_value: kurls[idx]} });
+            ktus = ctSet(ktus, KParams.tabsSet);
+            ktabs = ktus.map(it => it.type_name);
+            kurls = ktus.map(it => it.type_value);
+        }
         let VOD = {
             vod_id: detailUrl,
             vod_name: kname,
             vod_pic: kpic,
-            type_name: cutStr(intros, '类型：', '<span', '类型'),
             vod_remarks: kremarks,
-            vod_year: cutStr(intros, '年份：', '</p>', '1000'),
-            vod_area: cutStr(intros, '地区：', '<span', '地区'),
-            vod_lang: '语言',
-            vod_director: cutStr(intros, '导演：', '</p>', '导演'),
-            vod_actor: cutStr(intros, '主演：', '</p>', '主演'),
-            vod_content: cutStr(intros, 'detail-content£>', '</span>', '简介'),
+            type_name: cutStr(intros, '类型：', '</li>', '类型'),
+            vod_year: cutStr(intros, '年份：', '</li>', '1000'),
+            vod_area: cutStr(intros, '地区：', '</li>', '地区'),
+            vod_lang: cutStr(intros, '语言：', '</li>', '语言'),
+            vod_director: cutStr(intros, '导演：', '</li>', '导演'),
+            vod_actor: cutStr(intros, '主演：', '</li>', '主演'),
+            vod_content: cutStr(intros, '简介：', '</li>', kname),
             vod_play_from: ktabs.join('$$$'),
             vod_play_url: kurls.join('$$$')
         };
@@ -156,14 +199,17 @@ async function detail(ids) {
 
 async function play(flag, ids, flags) {
     try {
-        let playUrl = !/^http/.test(ids) ? `${HOST}${ids}` : ids;
-        let kp = 0;
-        let resHtml = await request(playUrl);
-        let kcode = safeParseJSON(cutStr(resHtml, 'var player_£=', '<', '', false));        
-        let kurl = kcode?.url ?? '';
-        if (!/m3u8|mp4|mkv/.test(kurl)) {
-            kp = 1;
-            kurl = playUrl;
+        let kp = 0, kurl = '';
+        if (/下载/.test(flag)) {
+            kurl = ids;
+        } else {
+            let resHtml = await request(ids);
+            let codeObj = safeParseJSON(cutStr(resHtml, 'var player_£=', '<', '', false));       
+            kurl = codeObj?.url ?? '';
+            if (!/^http/.test(kurl)) {
+                kurl = ids;
+                kp = 1;
+            }
         }
         return JSON.stringify({jx: 0, parse: kp, url: kurl, header: DefHeader});
     } catch (e) {
@@ -172,30 +218,16 @@ async function play(flag, ids, flags) {
     }
 }
 
-function cutStr(str, prefix = '', suffix = '', defaultVal = 'cutFaile', clean = true, i = 1, all = false) {
+function ctSet(kArr, setStr) {
     try {
-        if (!str || typeof str !== 'string') {throw new Error('被截取对象需为非空字符串');}
-        const dealStr = ds => String(ds).replace(/<[^>]*?>/g, ' ').replace(/(&nbsp;|\u00A0|\s)+/g, ' ').trim().replace(/\s+/g, ' ');
-        const esc = s => String(s).replace(/[.*+?${}()|[\]\\/^]/g, '\\$&');
-        let pre = esc(prefix).replace(/£/g, '[^]*?');
-        let end = esc(suffix);
-        let regex = new RegExp(`${pre ? pre : '^'}([^]*?)${end ? end : '$'}`, 'g');
-        let matchArr = [...str.matchAll(regex)];
-        if (all) {
-            return matchArr.map(it => {
-                const val = it[1] ?? defaultVal;
-                return clean && val !== defaultVal ? dealStr(val) : val;
-            });
-        }     
-        i = parseInt(i, 10);
-        if (isNaN(i) || i < 1) {throw new Error('序号需为大于0的整数');}
-        i = i - 1;
-        if (i >= matchArr.length) {throw new Error('序号越界');}
-        let result = matchArr[i][1] ?? defaultVal;
-        return clean && result !== defaultVal ? dealStr(result) : result;
+        if (!Array.isArray(kArr) || kArr.length === 0 || typeof setStr !== 'string' || !setStr) { throw new Error('第一参数需为非空数组，第二参数需为非空字符串'); }
+        const set_arr = [...kArr];
+        const arrNames = setStr.split('&');
+        const filtered_arr = arrNames.map(item => set_arr.find(it => it.type_name === item)).filter(Boolean);
+        return filtered_arr.length? filtered_arr : [set_arr[0]];
     } catch (e) {
-        console.error(`字符串截取失败：`, e.message);
-        return all ? ['cutErr'] : 'cutErr';
+        console.error('ctSet 执行异常：', e.message);
+        return kArr;
     }
 }
 
@@ -203,24 +235,60 @@ function safeParseJSON(jStr){
     try {return JSON.parse(jStr);} catch(e) {return null;}
 }
 
+function cutStr(str, prefix = '', suffix = '', defVal = '', clean = true, i = 0, all = false) {
+    try {
+        if (typeof str !== 'string') {throw new Error('被截取对象必须为字符串');}
+        const cleanStr = cs => String(cs).replace(/<[^>]*?>/g, ' ').replace(/(&nbsp;|[\u0020\u00A0\u3000\s])+/g, ' ').trim().replace(/\s+/g, ' ');
+        const esc = s => String(s).replace(/[.*+?${}()|[\]\\/^]/g, '\\$&');
+        let pre = esc(prefix).replace(/£/g, '[^]*?'), end = esc(suffix);
+        const regex = new RegExp(`${pre || '^'}([^]*?)${end || '$'}`, 'g');
+        const matchIter = str.matchAll(regex);
+        if (all) {
+            let matchArr = [...matchIter];
+            if (!matchArr.length) {return [defVal];}
+            return matchArr.map(ela => ela[1] !== undefined ? (clean ? cleanStr(ela[1]) : ela[1]) : defVal);
+        }
+        const idx = parseInt(i, 10);
+        if (isNaN(idx)) {throw new Error('序号必须为整数');}
+        let tgResult, matchIdx = 0;
+        if (idx >= 0) {
+            for (let elt of matchIter) {
+                if (matchIdx++ === idx) {
+                    tgResult = elt[1];
+                    break;
+                }
+            }
+        } else {
+            let absI = Math.abs(idx), ringBuf = new Array(absI), ringPtr = 0, ringCnt = 0;
+            for (let elt of matchIter) {
+                ringBuf[ringPtr] = elt[1];
+                ringPtr = (ringPtr + 1) % absI;
+                ringCnt = Math.min(ringCnt + 1, absI);
+                matchIdx++;
+            }
+            tgResult = (matchIdx >= absI && ringCnt > 0) ? ringBuf[ringPtr % ringCnt] : undefined;
+        }
+        return tgResult !== undefined ? (clean ? (cleanStr(tgResult) || defVal) : tgResult) : defVal;
+    } catch (e) {
+        console.error(`字符串截取错误：`, e.message);
+        return all ? ['cutErr'] : 'cutErr';
+    }
+}
+
 async function request(reqUrl, options = {}) {
     try {
         if (typeof reqUrl !== 'string' || !reqUrl.trim()) { throw new Error('reqUrl需为字符串且非空'); }
-        if (typeof options !== 'object' || Array.isArray(options) || !options) { throw new Error('options类型需为非null对象'); }
-        options.method = options.method?.toLowerCase() || 'get';
-        if (['get', 'head'].includes(options.method)) {
+        if (typeof options !== 'object' || Array.isArray(options) || options === null) { throw new Error('options类型需为非null对象'); }
+        options.method = options.method?.toUpperCase() || 'GET';
+        if (['GET', 'HEAD'].includes(options.method)) {
+            delete options.body;
             delete options.data;
             delete options.postType;
-        } else {
-            options.data = options.data ?? '';
-            options.postType = options.postType?.toLowerCase() || 'form';
-        }        
-        let {headers, timeout, charset, toBase64 = false, ...restOpts } = options;
+        }
+        let {headers, timeout, ...restOpts} = options;
         const optObj = {
             headers: (typeof headers === 'object' && !Array.isArray(headers) && headers) ? headers : KParams.headers,
             timeout: parseInt(timeout, 10) > 0 ? parseInt(timeout, 10) : KParams.timeout,
-            charset: charset?.toLowerCase() || 'utf-8',
-            buffer: toBase64 ? 2 : 0,
             ...restOpts
         };
         const res = await req(reqUrl, optObj);
@@ -238,13 +306,13 @@ async function request(reqUrl, options = {}) {
 
 export function __jsEvalReturn() {
     return {
-        init: init,
-        home: home,
-        homeVod: homeVod,
-        category: category,
-        search: search,
-        detail: detail,
-        play: play,
+        init,
+        home,
+        homeVod,
+        category,
+        search,
+        detail,
+        play,
         proxy: null
     };
 }
