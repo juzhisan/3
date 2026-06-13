@@ -412,15 +412,6 @@
             }
         },
         {
-            "key": "云播",
-            "name": "云播｜APP",
-            "type": 3,
-            "searchable": 1,
-            "changeable": 1,
-            "api": "csp_AppFox",
-            "ext": "http://app.hktvyb.cc"
-        },
-        {
             "key": "围观短剧",
             "name": "围观｜短剧",
             "type": 3,
@@ -972,35 +963,6 @@
             "type": 3
         },
         {
-            "key": "修罗",
-            "name": "修罗｜磁力",
-            "api": "csp_Xlys",
-            "type": 3,
-            "ext": "https://xl02.com.de"
-        },
-        {
-            "key": "七味",
-            "name": "七味｜磁力",
-            "type": 3,
-            "api": "csp_QnMp4",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "ext": {
-                "url": "https://www.qwnull.com,https://www.qwmkv.com,https://www.qwfilm.com,https://www.qnmp4.com,https://www.qnnull.com,https://www.qnhot.com,https://www.qncool.com"
-            }
-        },
-        {
-            "key": "80S",
-            "name": "80S｜磁力",
-            "type": 3,
-            "api": "csp_BLSGod",
-            "playerType": 1,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
-        },
-        {
             "key": "New6v",
             "name": "New6V｜磁力",
             "type": 3,
@@ -1028,15 +990,6 @@
             "quickSearch": 1,
             "filterable": 1,
             "ext": "https://xunlei8.me"
-        },
-        {
-            "key": "电影天堂",
-            "name": "电影天堂｜磁力",
-            "type": 3,
-            "api": "csp_DyGod",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1
         },
         {"key":"酷克PHP","name":"🏀酷克┃PHP","type":4,"api":"http://jiduo.3116598.xyz/PHP/pkty.php","changeable":1},
         {"key":"人人PHP","name":"👭人人┃PHP","type":4,"api":"http://jiduo.3116598.xyz/PHP/rrsp.php","changeable":1},
@@ -1093,33 +1046,6 @@
             "jar": ""
         },
         {
-            "key": "100听书",
-            "name": "📚100┃听书",
-            "type": 3,
-            "api": "csp_XBPQ",
-            "ext": "./V4聚合.txt",
-            "jar": ""
-        },
-        {
-      "key": "hipy_js_爱上你听书",
-      "name": "爱上听书",
-      "type": 3,
-      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "ext": "https://gitee.com/abiubiud/xxs/raw/main/dr2/爱上你听书网[听].js"
-    },
-   {
-      "key": "hipy_js_酷我听书[听]",
-      "name": "酷我听书",
-      "type": 3,
-      "api": "https://gitee.com/abiubiud/xxs/raw/main/lib/drpy2.min.js",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://gitee.com/abiubiud/xxs/raw/main/dr2/酷我听书[听].js"
-    },
-        {
             "key": "凤凰FM",
             "name": "📻凤凰┃FM",
             "type": 3,
@@ -1175,75 +1101,7 @@
             "api": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/js/drpy2.min.js",
             "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/js/CJZW.js?type=url&params=https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/json/CJJT.json$1$1"
         },
-        {
-            "key": "py_官方采集789",
-            "name": "🍎 官方采集789 (T4)",
-            "type": 4,
-            "api": "https://py.doube.eu.org/v2/spider?site=006849a2c19a6be413be5017be468c63",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0
-        },
-        {
-            "key": "py_新韩剧网",
-            "name": "🍎 新韩剧网 (T4)",
-            "type": 4,
-            "api": "https://py.doube.eu.org/v2/spider?site=2a7cc0edf96108c9d57420ff57c654c6",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0
-        },
-       {
-            "key": "py_界影视",
-            "name": "🍎 界影视 (T3)",
-            "type": 3,
-            "api": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/py/界影视.py",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0
-        },
-        {
-            "key": "py_非凡资源无广",
-            "name": "🍎 非凡资源无广 (T3)",
-            "type": 3,
-            "api": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/py/采集去广模板.py",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0,
-            "ext": {
-                "url": "http://ffzy.tv/api.php/provide/vod/from/ffm3u8/at/json/",
-                "a": [
-                    1,
-                    2,
-                    3
-                ]
-            }
-        },
-        {
-            "key": "py_电影天堂无广",
-            "name": "🍎 电影天堂无广 (T3)",
-            "type": 3,
-            "api": "https://gh-proxy.com/https://raw.githubusercontent.com/doube-ba/TVlogo/refs/heads/main/py/采集去广模板.py",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "changeable": 0,
-            "ext": {
-                "url": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json/",
-                "a": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    33
-                ]
-            }
-        },
+    {"key":"电影天堂","name":"🧞无广┃天堂","type":1,"api":"http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json/?ac=list","searchable":1,"quickSearch":0,"filterable":0,"changeable":0,"playUrl":"","categories":["短剧","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","香港剧","韩国剧","欧美剧","记录片","台湾剧","日本剧","海外剧","泰国剧","大陆综艺","港台综艺","日韩综艺","欧美综艺","国产动漫","日韩动漫","欧美动漫","港台动漫","动画片"]},
     {
             "key": "csp_非凡资源",
             "name": "🆕┃非凡┃资源",
@@ -1420,17 +1278,8 @@
                 "ratio": 1.597
             }
         },
-        {
-            "key": "电影网盘.py",
-            "name": "电影网盘.py",
-            "type": 3,
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "api": "./py_cctv23.py",
-            "order_num": 5,
-            "ext": ""
-        },
+       {"key":"csp_GuanYing","name":"😂观影┃4K","type":3,"api":"csp_GuanYing","searchable":1,"changeable":1,"timeout":60,"ext":{"cookie":"","filters":"./4.json","sites":"https://www.xn--wcv59z.com/","proxy":"noproxy"},"jar":"./vox.jar"},
+       {"key":"csp_PingLian","name":"😃盘链┃4K","type":3,"api":"csp_PingLian","searchable":1,"changeable":1,"timeout":60,"ext":{"cookie":"","filters":"./V4聚合.txt","sites":"https://pinglian.lol","proxy":"proxy"},"jar":"./vox.jar"},{"key":"csp_Gyzzs","name":"🦆光鸭┃至臻","type":3,"searchable":1,"playerType":2,"quickSearch":1,"filterable":1,"timeout":60,"api":"csp_Qsxy","ext":{"cookie":"","comment":""},"jar":"./vox.jar"},{"key":"csp_QiWei","name":"🏇七味┃4K","type":3,"timeout":60,"api":"csp_QiWei","searchable":1,"changeable":0,"jar":"./vox.jar"},{"key":"csp_SeedHub","name":"🎳Seed┃Hub","type":3,"api":"csp_SeedHub","timeout":60,"searchable":1,"changeable":0,"jar":"./vox.jar"},
     {
             "key": "夸克推送",
             "name": "👊夸克┃推送",
