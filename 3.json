@@ -16,6 +16,16 @@
       "switchable": 1
     },
     {
+      "key": "央视频",
+      "name": "🦋 央视频(关梯)",
+      "type": 3,
+      "api": "./py_cctv23.py",
+      "ext": "",
+      "searchable": 1,
+      "quickSearch": 1,
+      "category": "综合"
+    },
+    {
             "key": "配置中心",
             "name": "配置｜潇洒",
             "type": 3,
