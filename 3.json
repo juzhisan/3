@@ -150,6 +150,15 @@
             }
         },
         {
+            "key": "番茄影视",
+            "name": "番茄 • APP",
+            "type": 3,
+            "api": "csp_AppFQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 0
+        },
+        {
             "key": "咕噜",
             "name": "咕噜 • APP",
             "type": 3,
@@ -369,7 +378,7 @@
             "filterable": 1,
             "changeable": 1,
             "ext": {
-                "site": [
+                "site":[
                     "https://www.wogg.live",
                     "https://woggpan.888484.xyz",
                     "https://wogg.xxooo.cf",
@@ -388,7 +397,7 @@
             "filterable": 1,
             "changeable": 1,
             "ext": {
-                "site": [
+                "site":[
                     "http://xsayang.fun",
                     "http://38.76.197.172:12521"
                 ]
@@ -405,7 +414,7 @@
             "filterable": 1,
             "changeable": 1,
             "ext": {
-                "site": [
+                "site":[
                     "https://123.666291.xyz",
                     "https://666.666291.xyz",
                     "https://www.muou.site",
@@ -424,8 +433,27 @@
             "filterable": 1,
             "changeable": 1,
             "ext": {
-                "site": [
+                "site":[
                     "http://shandian.blog"
+                ]
+            },
+            "timeout": 60
+        },
+        {
+            "key": "蜡笔",
+            "name": "蜡笔 • 4K",
+            "type": 3,
+            "api": "csp_PanWebShare",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "changeable": 1,
+            "ext": {
+                "site":[
+                    "https://www.fmcf.fun",
+                    "https://www.mmpanpan.site",
+                    "http://tvpanpan.site",
+                    "http://www.tvpanpan.site"
                 ]
             },
             "timeout": 60
@@ -440,7 +468,7 @@
             "filterable": 1,
             "changeable": 1,
             "ext": {
-                "site": [
+                "site":[
                     "https://tv.yydsys.top",
                     "https://tv.yydsys.cc",
                     "https://tv.214521.xyz"
@@ -458,7 +486,7 @@
             "filterable": 1,
             "changeable": 1,
             "ext": {
-                "site": [
+                "site":[
                     "https://woog.nxog.eu.org",
                     "https://ogkk.nxog.eu.org",
                     "https://woog.430520.xyz"
@@ -476,7 +504,7 @@
             "filterable": 1,
             "changeable": 1,
             "ext": {
-                "site": [
+                "site":[
                     "http://xhban.xyz",
                     "http://38.76.197.172:16969"
                 ]
@@ -493,8 +521,9 @@
             "filterable": 1,
             "changeable": 1,
             "ext": {
-                "site": [
-                    "https://www.hjzhencai.top"
+                "site":[
+                    "https://www.hjzhencai.top",
+                    "https://www.huanjuanwp.shop"
                 ]
             },
             "timeout": 60
@@ -507,7 +536,7 @@
             "searchable": 1,
             "quickSearch": 0,
             "ext": {
-                "site": [
+                "site":[
                     "https://sidhub.cc",
                     "https://seeduck.cc",
                     "https://hubdog.cc",
@@ -574,6 +603,19 @@
             "name": "双星 • 4K",
             "type": 3,
             "api": "csp_ShuangXing",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "style": {
+                "type": "list"
+            },
+            "timeout": 60
+        },
+        {
+            "key": "卡卡",
+            "name": "卡卡 • 4K",
+            "type": 3,
+            "api": "csp_KKPan",
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 0,
@@ -670,8 +712,18 @@
             }
         },
         {
+            "key": "觅盘",
+            "name": "觅盘 • 搜索",
+            "type": 3,
+            "api": "csp_MiPan",
+            "searchable": 1,
+            "quickSearch": 0,
+            "filterable": 0,
+            "timeout": 60
+        },
+        {
             "key": "盘搜",
-            "name": "盘搜｜搜索",
+            "name": "盘搜 • 搜索",
             "type": 3,
             "api": "csp_PanSou",
             "searchable": 1,
@@ -680,38 +732,8 @@
             "timeout": 60
         },
         {
-            "key": "糖果",
-            "name": "糖果｜搜索",
-            "type": 3,
-            "api": "csp_TGSou",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "timeout": 60
-        },
-        {
-            "key": "兄弟",
-            "name": "兄弟｜搜索",
-            "type": 3,
-            "api": "csp_XiongdiPan",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "timeout": 60
-        },
-        {
-            "key": "九七",
-            "name": "九七｜搜索",
-            "type": 3,
-            "api": "csp_97Sou",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "timeout": 60
-        },
-        {
             "key": "百酷",
-            "name": "百酷｜搜索",
+            "name": "百酷 • 搜索",
             "type": 3,
             "api": "csp_Baiku",
             "searchable": 1,
@@ -720,10 +742,10 @@
             "timeout": 60
         },
         {
-            "key": "米搜",
-            "name": "米搜｜搜索",
+            "key": "酷乐",
+            "name": "酷乐 • 搜索",
             "type": 3,
-            "api": "csp_MiSou",
+            "api": "csp_KuLe",
             "searchable": 1,
             "quickSearch": 0,
             "filterable": 0,
@@ -731,7 +753,7 @@
         },
         {
             "key": "鬼鬼",
-            "name": "鬼鬼｜搜索",
+            "name": "鬼鬼 • 搜索",
             "type": 3,
             "api": "csp_GuiGui",
             "searchable": 1,
@@ -740,28 +762,8 @@
             "timeout": 60
         },
         {
-            "key": "混合",
-            "name": "混合｜搜索",
-            "type": 3,
-            "api": "csp_HunHePan",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "timeout": 60
-        },
-        {
-            "key": "天翼",
-            "name": "天翼｜搜索",
-            "type": 3,
-            "api": "csp_TianYiSo",
-            "searchable": 1,
-            "quickSearch": 0,
-            "filterable": 0,
-            "timeout": 60
-        },
-        {
             "key": "趣盘",
-            "name": "趣盘｜搜索",
+            "name": "趣盘 • 搜索",
             "type": 3,
             "api": "csp_QuPanSo",
             "searchable": 1,
